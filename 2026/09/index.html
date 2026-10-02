@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="HYSTON SYNC+ 09 · A MONTH IN MOTION. 这个月，我们把更多想法推到了现实里。">
+<title>HYSTON SYNC+ 09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;700;900&family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single dark scroll — cover, then seven fixed columns, each a full-width "spread" with a mono coordinate rail on the left. */
+:root{
+  --ink:#0A0A0B;        /* ground */
+  --ink-2:#141416;      /* raised surface */
+  --line:#2A2A2E;       /* hairlines */
+  --silver:#C9C9CC;     /* primary type on dark */
+  --mute:#8B8B91;       /* secondary type */
+  --dim:#5E5E64;        /* tertiary, decorative only */
+  --wine:#8E2A35;       /* accent, used sparingly */
+  --wine-hi:#C0485A;    /* accent for text on dark */
+  --f-display:'Big Shoulders Display','Arial Narrow',sans-serif;
+  --f-cn-display:'Noto Serif SC','Songti SC',serif;
+  --f-body:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--silver);font-family:var(--f-body);font-size:16px;line-height:1.7;padding-inline:clamp(16px,5vw,72px);padding-block:0;-webkit-font-smoothing:antialiased}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+a{color:var(--silver)}
+:focus-visible{outline:2px solid var(--wine-hi);outline-offset:3px}
+.wrap{max-width:1180px;margin-inline:auto}
+.mono{font-family:var(--f-mono);letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:var(--mute)}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--ink) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-inline:calc(-1*clamp(16px,5vw,72px));padding:12px clamp(16px,5vw,72px)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.bar b{font-family:var(--f-mono);font-weight:500;letter-spacing:.22em;font-size:13px;color:var(--silver)}
+.bar nav{display:flex;gap:14px;flex-wrap:wrap}
+.bar nav a{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);text-decoration:none}
+.bar nav a:hover{color:var(--silver)}
+
+/* cover */
+.cover{padding-block:clamp(56px,10vw,128px) clamp(48px,8vw,96px);display:grid;gap:28px}
+.cover .kicker{display:flex;gap:18px;flex-wrap:wrap}
+.cover h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(72px,17vw,232px);line-height:.82;letter-spacing:-.01em;color:var(--silver);text-wrap:balance}
+.cover h1 .n{color:var(--wine-hi)}
+.cover .motto{font-family:var(--f-display);font-weight:300;font-size:clamp(28px,4.4vw,56px);letter-spacing:.06em;margin:0;color:var(--silver)}
+.cover .cn{font-family:var(--f-cn-display);font-weight:600;font-size:clamp(20px,2.4vw,28px);margin:0;color:var(--mute)}
+.cover .coords{display:flex;gap:10px 28px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px}
+
+/* sections */
+section.col{border-top:1px solid var(--line);padding-block:clamp(48px,7vw,96px);display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px 48px;scroll-margin-top:56px}
+@media (max-width:820px){section.col{grid-template-columns:minmax(0,1fr)}}
+.rail{display:flex;flex-direction:column;gap:6px}
+.rail .no{font-family:var(--f-display);font-weight:700;font-size:56px;line-height:1;color:var(--dim)}
+.rail .name{font-family:var(--f-mono);font-size:13px;letter-spacing:.2em;color:var(--silver)}
+.rail .cn{font-size:13px;color:var(--mute)}
+h2{margin:0 0 28px;font-family:var(--f-cn-display);font-weight:900;font-size:clamp(28px,3.6vw,44px);line-height:1.25;color:var(--silver);text-wrap:balance;max-width:22em}
+
+/* signals */
+.signals{list-style:none;margin:0;padding:0;display:grid}
+.signals li{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:4px 20px;padding-block:22px;border-bottom:1px solid var(--line);align-items:baseline}
+.signals li:first-child{padding-top:0}
+.signals .rk{font-family:var(--f-display);font-weight:700;font-size:40px;line-height:1;color:var(--dim)}
+.signals li:first-child .rk{color:var(--wine-hi)}
+.signals h3{margin:0;font-size:clamp(19px,2vw,23px);font-weight:500;color:var(--silver);line-height:1.45}
+.signals p{margin:6px 0 0;color:var(--mute);max-width:40em}
+.signals .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--mute);border:1px solid var(--line);padding:3px 8px;white-space:nowrap}
+@media (max-width:560px){.signals li{grid-template-columns:40px minmax(0,1fr)}.signals .tag{grid-column:2;justify-self:start}}
+
+/* numbers */
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.num{background:var(--ink);padding:28px 24px;display:flex;flex-direction:column;gap:8px}
+.num .v{font-family:var(--f-display);font-weight:900;font-size:clamp(64px,8vw,104px);line-height:.9;color:var(--silver);font-variant-numeric:tabular-nums}
+.num .v small{font-size:.42em;font-weight:300;margin-left:4px;color:var(--mute)}
+.num .l{font-size:15px;color:var(--silver)}
+.num .s{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;color:var(--mute)}
+.note{margin-top:16px;font-size:13px;color:var(--mute)}
+
+/* built */
+.built{display:grid;gap:0;border-top:1px solid var(--line)}
+.built details{border-bottom:1px solid var(--line)}
+.built summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:16px;align-items:baseline;padding-block:20px}
+.built summary::-webkit-details-marker{display:none}
+.built summary .t{font-family:var(--f-display);font-weight:700;font-size:clamp(26px,3vw,36px);letter-spacing:.02em;color:var(--silver);line-height:1.1}
+.built summary .t span{display:block;font-family:var(--f-body);font-weight:400;font-size:14px;letter-spacing:0;color:var(--mute);margin-top:6px}
+.built summary .k{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute)}
+.built summary .pm{font-family:var(--f-mono);font-size:20px;color:var(--mute);width:20px;text-align:center;transition:transform .25s}
+.built details[open] summary .pm{transform:rotate(45deg);color:var(--wine-hi)}
+.built summary:hover .t{color:#fff}
+.built .body{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px;padding-bottom:28px}
+@media (max-width:700px){.built .body{grid-template-columns:minmax(0,1fr)}}
+.ph{aspect-ratio:16/9;max-width:100%;border:1px dashed var(--dim);display:grid;place-items:center;font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);background:repeating-linear-gradient(135deg,var(--ink) 0 10px,var(--ink-2) 10px 20px);text-align:center;padding:12px}
+.built .body p{margin:0;color:var(--silver);max-width:34em}
+
+/* world */
+.world{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px}
+@media (max-width:900px){.world{grid-template-columns:minmax(0,1fr)}}
+.map{border:1px solid var(--line);background:var(--ink-2);overflow:hidden}
+.map svg{display:block;width:100%;height:auto}
+.map .arc{fill:none;stroke:var(--dim);stroke-width:1.2;transition:stroke .3s}
+.map .arc.plan{stroke-dasharray:4 6}
+.map .arc.on{stroke:var(--wine-hi);stroke-width:2}
+.map .city circle.dot{fill:var(--silver)}
+.map .city circle.halo{fill:none;stroke:var(--wine-hi);stroke-width:1.5;opacity:0}
+.map .city.on circle.halo{opacity:1;animation:pulse 2.2s ease-out infinite}
+.map .city text{font-family:var(--f-mono);font-size:13px;letter-spacing:.12em;fill:var(--mute)}
+.map .city.on text{fill:var(--silver)}
+.map .city.plan circle.dot{fill:none;stroke:var(--mute);stroke-width:1.5}
+@keyframes pulse{0%{r:6;opacity:.9}100%{r:22;opacity:0}}
+.cities{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.cities button{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;background:transparent;color:var(--mute);border:1px solid var(--line);padding:10px 14px;cursor:pointer;min-height:44px}
+.cities button[aria-pressed="true"]{color:var(--silver);border-color:var(--wine-hi);background:color-mix(in srgb,var(--wine) 22%,transparent)}
+.cities button:hover{color:var(--silver)}
+.panel h3{margin:0 0 4px;font-family:var(--f-display);font-weight:700;font-size:40px;line-height:1;color:var(--silver);letter-spacing:.02em}
+.panel .st{margin-bottom:16px}
+.panel ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.panel li{padding-left:18px;position:relative;color:var(--silver)}
+.panel li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:1px;background:var(--wine-hi)}
+
+/* lines */
+.lines{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.line{background:var(--ink);padding:24px;display:flex;flex-direction:column;gap:10px}
+.line .h{font-family:var(--f-display);font-weight:700;font-size:30px;letter-spacing:.06em;color:var(--silver);line-height:1}
+.line p{margin:0;color:var(--mute);font-size:15px}
+.line .c{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--dim);margin-top:auto}
+
+/* changed */
+.changed{display:grid;gap:36px}
+.changed blockquote{margin:0;font-family:var(--f-cn-display);font-weight:600;font-size:clamp(22px,2.6vw,30px);line-height:1.5;color:var(--silver);max-width:26em;text-wrap:balance}
+.changed .was{display:block;font-family:var(--f-body);font-weight:300;font-size:15px;color:var(--mute);margin-bottom:10px}
+.changed .was s{text-decoration-color:var(--wine-hi)}
+.changed figcaption{margin-top:10px;font-size:13px;color:var(--mute)}
+
+/* next */
+.next{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.next li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding-block:18px;border-bottom:1px solid var(--line);align-items:baseline}
+.next .d{font-family:var(--f-display);font-weight:700;font-size:28px;color:var(--silver);font-variant-numeric:tabular-nums}
+.next .d.tbd{color:var(--dim)}
+.next .w{font-size:18px;color:var(--silver)}
+.next .w span{display:block;font-size:14px;color:var(--mute)}
+
+/* archive / footer */
+footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap:36px}
+.issues{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.issue{background:var(--ink);padding:20px;display:flex;flex-direction:column;gap:4px;min-height:120px}
+.issue .i{font-family:var(--f-display);font-weight:900;font-size:44px;line-height:1;color:var(--dim)}
+.issue.cur .i{color:var(--wine-hi)}
+.issue .m{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute)}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot .mail{font-family:var(--f-mono);font-size:13px;letter-spacing:.08em;color:var(--silver);user-select:all}
+</style>
+</head>
+<body>
+
+
+<div class="bar"><div class="wrap">
+  <b>HYSTON SYNC+</b>
+  <nav aria-label="栏目">
+    <a href="#signals">01 SIGNALS</a><a href="#numbers">02 NUMBERS</a><a href="#built">03 BUILT</a><a href="#world">04 WORLD</a><a href="#lines">05 LINES</a><a href="#changed">06 CHANGED</a><a href="#next">07 NEXT</a>
+  </nav>
+</div></div>
+
+<main class="wrap" id="app">
+  <header class="cover">
+    <div class="kicker mono"><span>HYSTON SYNC+</span><span id="c-issue"></span><span id="c-date"></span></div>
+    <h1 id="c-title"></h1>
+    <p class="motto" id="c-motto"></p>
+    <p class="cn" id="c-cn"></p>
+    <div class="coords mono" id="c-coords"></div>
+  </header>
+
+  <section class="col" id="signals">
+    <div class="rail"><span class="no">01</span><span class="name">SIGNALS</span><span class="cn">本月最重要的五件事</span></div>
+    <div><h2>按重要性排序，不按主题分类。</h2><ol class="signals" id="s-list"></ol></div>
+  </section>
+
+  <section class="col" id="numbers">
+    <div class="rail"><span class="no">02</span><span class="name">NUMBERS</span><span class="cn">关键数字</span></div>
+    <div><h2>只放数字，不加形容词。</h2><div class="nums" id="n-grid"></div><p class="note" id="n-note"></p></div>
+  </section>
+
+  <section class="col" id="built">
+    <div class="rail"><span class="no">03</span><span class="name">BUILT</span><span class="cn">这个月真正做出来的东西</span></div>
+    <div><h2>点开每一件，看它是什么。</h2><div class="built" id="b-list"></div></div>
+  </section>
+
+  <section class="col" id="world">
+    <div class="rail"><span class="no">04</span><span class="name">IN THE WORLD</span><span class="cn">城市、活动、机构、合作</span></div>
+    <div>
+      <h2>从墨尔本出发的六条线。</h2>
+      <div class="world">
+        <div class="map" id="w-map"></div>
+        <div>
+          <div class="cities" id="w-btns" role="group" aria-label="选择城市"></div>
+          <div class="panel" id="w-panel" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="col" id="lines">
+    <div class="rail"><span class="no">05</span><span class="name">BUSINESS LINES</span><span class="cn">业务线</span></div>
+    <div><h2>六条线，这个月各自往前走了一步。</h2><div class="lines" id="l-grid"></div></div>
+  </section>
+
+  <section class="col" id="changed">
+    <div class="rail"><span class="no">06</span><span class="name">WHAT CHANGED</span><span class="cn">判断发生了什么变化</span></div>
+    <div><h2>这个月，我们改了三个看法。</h2><div class="changed" id="ch-list"></div></div>
+  </section>
+
+  <section class="col" id="next">
+    <div class="rail"><span class="no">07</span><span class="name">NEXT</span><span class="cn">下个月只看这五件事</span></div>
+    <div><h2 id="nx-h"></h2><ol class="next" id="nx-list"></ol></div>
+  </section>
+
+  <footer>
+    <div class="mono">ARCHIVE · 往期</div>
+    <div class="issues" id="f-issues"></div>
+    <div class="foot">
+      <span class="mono">HYSTON PTY LTD · MELBOURNE · CHONGQING</span>
+      <span class="mail">admin@hyston.life</span>
+    </div>
+  </footer>
+</main>
+
+<script>
+/* ---------- 每月只改这里 / Edit monthly data here ---------- */
+const ISSUES = [
+  { no:"09", month:"2026.09", status:"current" },
+  { no:"10", month:"2026.10", status:"upcoming" }
+];
+const SYNC = {
+  no:"09", date:"2026.09",
+  title:"SYNC+ / <span class=\"n\">09</span>",
+  motto:"A MONTH IN MOTION.",
+  cn:"这个月，我们把更多想法推到了现实里。",
+  coords:["MELBOURNE","CHONGQING","HANGZHOU","HONG KONG"],
+  signals:[
+    {t:"519 墨尔本 CBD 店进入试营业倒计时", d:"9 月 26 日发出“还有十天开始试营业”，包厢试音完成。这是九月互动最高的一条。", tag:"LIVE · MEL"},
+    {t:"杭州之后，重新定义“重庆出海”", d:"参加第五届全球数字贸易博览会。结论：重庆需要的不只是出口，而是一套持续运行的海外接口。", tag:"GLOBAL · HGH"},
+    {t:"HYSTON HOTEL 重庆勒点酒店 2.0 上线", d:"[补充：2.0 版本具体改了什么]", tag:"HOTEL · CKG"},
+    {t:"HYSTON 全链路 AI 生产系统发布", d:"从一个指令生成小游戏，到 AI HYSTON 动画 Sample，整条生产链路第一次公开。", tag:"AI"},
+    {t:"AFL CHINA 合作，下一站上海", d:"10 月 17 日上海见。", tag:"GLOBAL · SHA"}
+  ],
+  numbers:[
+    {v:96, u:"", l:"条公开记录", s:"SEPT · 视频号 / 公众号 / 图文 / 音乐"},
+    {v:3, u:"", l:"件原创单品与概念作品", s:"INTERVAL 03 · INTERVAL 04 · VERTICA 01"},
+    {v:10, u:"天", l:"519 试营业倒计时", s:"FROM 26 SEPT"},
+    {v:4.8, u:"×", l:"真实现场内容的平均互动，是概念作品的倍数", s:"SAMPLE · 前 38 条记录", dec:1}
+  ],
+  numbersNote:"数字来自九月公开发布的记录。4.8× 的样本为前 38 条：真实的人与现场 7 条，概念作品 5 条。",
+  built:[
+    {t:"INTERVAL / 04", s:"HYSTON 原创单品", k:"PRODUCT", d:"两片银色弧面错开，为尚未过去的一秒留出位置。"},
+    {t:"INTERVAL / 03", s:"A Different Angle of Time · Touching the Unreadable", k:"PRODUCT", d:"INTERVAL 系列第三件，九月分两支影像发布。"},
+    {t:"VERTICA / 01", s:"概念车 · 山城向上生长", k:"PRODUCT · AI", d:"用 AI 做的概念车设计，从重庆的立体地形出发。"},
+    {t:"全链路 AI 生产系统", s:"一个指令把游戏做出来", k:"AI", d:"从指令到可玩的小游戏，展示 HYSTON 的 AI 生产链路。"},
+    {t:"AI HYSTON 动画 Sample", s:"AI HYSTON 频道", k:"AI · MEDIA", d:"AI HYSTON 的第一支动画样片。"},
+    {t:"如果奶奶陪我长大", s:"AI 影像", k:"MEDIA", d:"让想念有了被看见的形状。"},
+    {t:"晚一点说再见", s:"酒桌游戏", k:"PRODUCT", d:"九月评论最多的一条。"},
+    {t:"把灯开到想关的时候", s:"原创音乐", k:"MUSIC", d:"Hyston 的原创作品。"}
+  ],
+  cities:[
+    {id:"mel", name:"MELBOURNE", cn:"墨尔本", lon:144.96, lat:-37.81, home:true, st:"HOME BASE",
+      items:["519 墨尔本 CBD 店：包厢试音，进入试营业倒计时","墨尔本中国留学生中秋国庆文艺晚会，副总领事刘东源、丁莉参赞出席","川渝文化亮相联邦广场","墨大副校长送上节日祝福"]},
+    {id:"ckg", name:"CHONGQING", cn:"重庆", lon:106.55, lat:29.56, st:"ROOTS",
+      items:["HYSTON HOTEL 勒点酒店 2.0 上线","重庆馆未来构想：不需要固定建筑"]},
+    {id:"hgh", name:"HANGZHOU", cn:"杭州", lon:120.15, lat:30.27, st:"SEPT · 数贸会",
+      items:["第五届全球数字贸易博览会","数字文化产业对接","《杭州之后，我们重新理解了“重庆出海”》"]},
+    {id:"hkg", name:"HONG KONG", cn:"香港", lon:114.17, lat:22.32, st:"PREVIEW",
+      items:["HYSTON HK 艺术展览预告"]},
+    {id:"sha", name:"SHANGHAI", cn:"上海", lon:121.47, lat:31.23, plan:true, st:"NEXT · 10.17", dy:-14, anchor:"start", dx:12,
+      items:["AFL CHINA，10 月 17 日上海见"]},
+    {id:"lax", name:"LOS ANGELES", cn:"洛杉矶", lon:-118.24, lat:34.05, plan:true, st:"PLANNED",
+      items:["构想中：重庆企业与洛杉矶企业的闭门对接"]}
+  ],
+  lines:[
+    {h:"HOTEL", p:"勒点酒店 2.0 上线。", c:"CHONGQING"},
+    {h:"LIVE", p:"519 试营业倒计时，中秋国庆晚会，联邦广场活动。", c:"MELBOURNE"},
+    {h:"AI", p:"全链路 AI 生产系统、AI 小游戏、AI HYSTON 动画。", c:"MEL · CKG"},
+    {h:"PRODUCT", p:"INTERVAL 03 / 04，VERTICA 01。", c:"HYSTON ORIGINAL"},
+    {h:"MEDIA", p:"AI HYSTON 频道、视频号、公众号持续输出。", c:"96 RECORDS"},
+    {h:"GLOBAL", p:"杭州数贸会，AFL CHINA，香港展览预告。", c:"HGH · SHA · HKG"}
+  ],
+  changed:[
+    {was:"重庆出海 = 出口", now:"重庆需要的不只是出口，而是一套持续运行的海外接口。"},
+    {was:"重庆馆 = 一座建筑", now:"未来的重庆馆可以没有固定建筑：可以是墨尔本的重庆产业 Showcase，是重庆企业与洛杉矶企业的闭门对接，是重庆 AI 公司的第一个 Australian Pilot。"},
+    {was:"最用心的作品 = 最打动人的内容", now:"有人、有地点、有情绪的内容，平均互动是概念作品的 4.8 倍。", cap:"样本：九月前 38 条公开记录。"}
+  ],
+  nextH:"十月，只看这五件。",
+  next:[
+    {d:"~10.06", w:"519 墨尔本 CBD 店试营业", s:"按 9 月 26 日“还有十天”推算"},
+    {d:"10.17", w:"AFL CHINA · 上海", s:"上海见"},
+    {d:"OCT", w:"HYSTON HK 艺术展览", s:"[补充：开幕日期]"},
+    {d:"10.31", w:"SYNC+ 10", s:"下一期"},
+    {d:"—", tbd:true, w:"[第五件 · 待定]", s:""}
+  ]
+};
+
+/* ---------- render ---------- */
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+$("c-issue").textContent = "ISSUE " + SYNC.no;
+$("c-date").textContent = SYNC.date;
+$("c-title").innerHTML = SYNC.title;
+$("c-motto").textContent = SYNC.motto;
+$("c-cn").textContent = SYNC.cn;
+$("c-coords").innerHTML = SYNC.coords.map(c => `<span>${esc(c)}</span>`).join("<span aria-hidden=\"true\">·</span>");
+
+$("s-list").innerHTML = SYNC.signals.map((s,i) =>
+  `<li><span class="rk">${String(i+1).padStart(2,"0")}</span><div><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p></div><span class="tag">${esc(s.tag)}</span></li>`).join("");
+
+const fmt = (v,dec) => dec ? v.toFixed(dec) : Math.round(v).toString();
+$("n-grid").innerHTML = SYNC.numbers.map((n,i) =>
+  `<div class="num"><span class="v" data-i="${i}">${fmt(n.v,n.dec)}<small>${esc(n.u)}</small></span><span class="l">${esc(n.l)}</span><span class="s">${esc(n.s)}</span></div>`).join("");
+$("n-note").textContent = SYNC.numbersNote;
+
+$("b-list").innerHTML = SYNC.built.map(b =>
+  `<details><summary><span class="t">${esc(b.t)}<span>${esc(b.s)}</span></span><span class="k">${esc(b.k)}</span><span class="pm" aria-hidden="true">+</span></summary>
+   <div class="body"><div class="ph">[ 项目图 / 视频 · ${esc(b.t)} ]</div><p>${esc(b.d)}</p></div></details>`).join("");
+
+$("l-grid").innerHTML = SYNC.lines.map(l =>
+  `<div class="line"><span class="h">${esc(l.h)}</span><p>${esc(l.p)}</p><span class="c">${esc(l.c)}</span></div>`).join("");
+
+$("ch-list").innerHTML = SYNC.changed.map(c =>
+  `<figure style="margin:0"><blockquote><span class="was">以前：<s>${esc(c.was)}</s></span>${esc(c.now)}</blockquote>${c.cap?`<figcaption>${esc(c.cap)}</figcaption>`:""}</figure>`).join("");
+
+$("nx-h").textContent = SYNC.nextH;
+$("nx-list").innerHTML = SYNC.next.map(n =>
+  `<li><span class="d${n.tbd?" tbd":""}">${esc(n.d)}</span><span class="w">${esc(n.w)}${n.s?`<span>${esc(n.s)}</span>`:""}</span></li>`).join("");
+
+$("f-issues").innerHTML = ISSUES.map(x =>
+  `<div class="issue${x.status==="current"?" cur":""}"><span class="i">${esc(x.no)}</span><span class="m">${esc(x.month)}</span><span class="m">${x.status==="current"?"本期":"即将发布"}</span></div>`).join("");
+
+/* ---------- map ---------- */
+(function(){
+  const W=1000,H=460, L0=60, SPAN=240, LAT_TOP=60, LAT_SPAN=110;
+  const px = c => ({x:((c.lon - L0 + 360) % 360)/SPAN*W, y:(LAT_TOP - c.lat)/LAT_SPAN*H});
+  const home = SYNC.cities.find(c => c.home), hp = px(home);
+  let dots = "";
+  for (let x=10; x<W; x+=20) for (let y=10; y<H; y+=20) dots += `<circle cx="${x}" cy="${y}" r="1" fill="#26262A"/>`;
+  let arcs = "", nodes = "";
+  SYNC.cities.forEach(c => {
+    const p = px(c);
+    if (!c.home) {
+      const mx=(hp.x+p.x)/2, my=Math.min(hp.y,p.y) - Math.abs(p.x-hp.x)*0.25 - 40;
+      arcs += `<path class="arc${c.plan?" plan":""}" data-c="${c.id}" d="M${hp.x.toFixed(1)} ${hp.y.toFixed(1)} Q${mx.toFixed(1)} ${my.toFixed(1)} ${p.x.toFixed(1)} ${p.y.toFixed(1)}"/>`;
+    }
+    const dx = c.dx ?? (p.x > 700 ? -12 : 12), anchor = c.anchor ?? (p.x > 700 ? "end" : "start"), dy = c.dy ?? 5;
+    nodes += `<g class="city${c.plan?" plan":""}" data-c="${c.id}"><circle class="halo" cx="${p.x}" cy="${p.y}" r="6"/><circle class="dot" cx="${p.x}" cy="${p.y}" r="5"/><text x="${p.x+dx}" y="${p.y+dy}" text-anchor="${anchor}">${c.name}</text></g>`;
+  });
+  $("w-map").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="从墨尔本连接到重庆、杭州、香港、上海、洛杉矶的线路图"><g>${dots}</g><g>${arcs}</g><g>${nodes}</g></svg>`;
+  $("w-btns").innerHTML = SYNC.cities.map(c => `<button type="button" id="city-${c.id}" data-c="${c.id}" aria-pressed="false">${c.cn}</button>`).join("");
+  function pick(id){
+    const c = SYNC.cities.find(x => x.id===id);
+    document.querySelectorAll("#w-btns button").forEach(b => b.setAttribute("aria-pressed", b.dataset.c===id));
+    document.querySelectorAll("#w-map .city").forEach(g => g.classList.toggle("on", g.dataset.c===id));
+    document.querySelectorAll("#w-map .arc").forEach(a => a.classList.toggle("on", a.dataset.c===id || (c.home)));
+    $("w-panel").innerHTML = `<h3>${esc(c.name)}</h3><div class="st mono">${esc(c.cn)} · ${esc(c.st)}</div><ul>${c.items.map(i=>`<li>${esc(i)}</li>`).join("")}</ul>`;
+  }
+  $("w-btns").addEventListener("click", e => { const b = e.target.closest("button"); if (b) pick(b.dataset.c); });
+  pick("mel");
+})();
+
+/* ---------- count-up: values are already final at rest; replay once when scrolled into view ---------- */
+(function(){
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    io.unobserve(en.target);
+    const n = SYNC.numbers[+en.target.dataset.i], small = en.target.querySelector("small").outerHTML, t0 = performance.now(), dur = 1100;
+    const step = t => { const k = Math.min(1,(t-t0)/dur), e = 1-Math.pow(1-k,3);
+      en.target.innerHTML = fmt(n.v*e, n.dec) + small; if (k<1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  }), {threshold:.6});
+  document.querySelectorAll(".num .v").forEach(el => io.observe(el));
+})();
+</script>
+
+</body>
+</html>
