@@ -256,6 +256,7 @@ footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap
 <script>
 /* ---------- 每月只改这里 / Edit monthly data here ---------- */
 const ISSUES = [
+  { no:"06", month:"2026.06", status:"past", href:"/sync/2026/06/" },
   { no:"07", month:"2026.07", status:"current", href:"/sync/2026/07/" },
   { no:"08", month:"2026.08", status:"next", href:"/sync/2026/08/" },
   { no:"09", month:"2026.09", status:"latest", href:"/sync/2026/09/" },
@@ -381,7 +382,7 @@ $("nx-list").innerHTML = SYNC.next.map(n =>
   `<li><span class="d${n.tbd?" tbd":""}">${esc(n.d)}</span><span class="w">${esc(n.w)}${n.s?`<span>${esc(n.s)}</span>`:""}</span></li>`).join("");
 
 $("f-issues").innerHTML = ISSUES.map(x => {
-  const lab = x.status==="current" ? "本期" : x.status==="past" ? "往期 →" : x.status==="next" ? "下一期 →" : x.status==="latest" ? "最新一期 →" : "即将发布";
+  const lab = x.status==="current" ? "本期" : x.status==="past" ? "往期 →" : x.status==="next" ? "下一期 →" : x.status==="newer" ? "阅读 →" : x.status==="latest" ? "最新一期 →" : "即将发布";
   const inner = `<span class="i">${esc(x.no)}</span><span class="m">${esc(x.month)}</span><span class="m">${lab}</span>`;
   return x.href && x.status!=="current" ? `<a class="issue link" href="${x.href}">${inner}</a>` : `<div class="issue${x.status==="current"?" cur":""}">${inner}</div>`;
 }).join("");
