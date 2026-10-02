@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="HYSTON SYNC+ 09 · 九月月报：经贸推介会、服务贸易、四川代表团、519、勒点酒店 2.0、杭州数贸会。">
-<title>HYSTON SYNC+ 09</title>
+<meta name="description" content="HYSTON SYNC+ 07 · 七月月报：ANGEL 26 开拍、中澳服务贸易合作备忘录、START UP, SISTERS!、HYSTON 杯墨尔本挑战赛。">
+<title>HYSTON SYNC+ 07</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;700;900&family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -211,13 +211,13 @@ footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap
 
   <section class="col" id="built">
     <div class="rail"><span class="no">04</span><span class="name">BUILT</span><span class="cn">这个月真正做出来的东西</span></div>
-    <div><h2>这个月真正做出来的十四件东西。</h2><div class="built" id="b-list"></div></div>
+    <div><h2>这个月真正做出来的十件东西。</h2><div class="built" id="b-list"></div></div>
   </section>
 
   <section class="col" id="world">
     <div class="rail"><span class="no">05</span><span class="name">IN THE WORLD</span><span class="cn">城市、活动、机构、合作</span></div>
     <div>
-      <h2>从墨尔本出发，连到五座城市。</h2>
+      <h2>从墨尔本出发，连到重庆与北京。</h2>
       <div class="world">
         <div class="map" id="w-map"></div>
         <div>
@@ -256,111 +256,89 @@ footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap
 <script>
 /* ---------- 每月只改这里 / Edit monthly data here ---------- */
 const ISSUES = [
-  { no:"07", month:"2026.07", status:"past", href:"/sync/2026/07/" },
-  { no:"08", month:"2026.08", status:"past", href:"/sync/2026/08/" },
-  { no:"09", month:"2026.09", status:"current", href:"/sync/2026/09/" },
+  { no:"07", month:"2026.07", status:"current", href:"/sync/2026/07/" },
+  { no:"08", month:"2026.08", status:"next", href:"/sync/2026/08/" },
+  { no:"09", month:"2026.09", status:"latest", href:"/sync/2026/09/" },
   { no:"10", month:"2026.10", status:"upcoming" }
 ];
 const SYNC = {
-  no:"09", date:"2026.09",
-  title:"SYNC+ / <span class=\"n\">09</span>",
-  motto:"A MONTH IN MOTION.",
-  cn:"这个月，我们把更多想法推到了现实里。",
-  coords:["MELBOURNE","CHONGQING","BEIJING","HANGZHOU","HONG KONG"],
+  no:"07", date:"2026.07",
+  title:"SYNC+ / <span class=\"n\">07</span>",
+  motto:"GIVE HER BACK HER NAME.",
+  cn:"这个月，七十二个人陪一位母亲，重新认识她自己。",
+  coords:["CHONGQING","MELBOURNE","BEIJING"],
   signals:[
-    {t:"9.10 中国（重庆）—澳大利亚经贸推介会落地墨尔本", d:"活动在墨尔本会展中心（MCEC）举行，由重庆市商务委员会、重庆市供销合作总社主办。HYSTON 负责澳洲端嘉宾邀请与 PR 传播，Hyston 以澳洲重庆市文化体育教育旅游协会会长身份受邀出席。我们对外的统一口径定为“重庆智造”，HYSTON 的角色也从“活动传播”延伸到“澳洲端资源与落地接口”。", tag:"GLOBAL · MEL"},
-    {t:"一个月内，与中国服务贸易协会、成都国际商会、四川省代表团、重庆民营经济国际合作商会建立工作机制", d:"9 月先后拜访中国服务贸易协会（北京）、两次线上工作会，与成都国际商会召开线上圆桌，参与四川省代表团访问墨尔本座谈，并向重庆民营经济国际合作商会正式致函推进 MOU。九月真正的变化，是从“出席”变成“有下一步”。", tag:"NETWORK"},
-    {t:"519 墨尔本 CBD 店：10 月 6 日试营业倒计时", d:"519 负责场地与夜生活产品，HYSTON 负责策划、视觉、内容与传播（519 / Night Programme Curated by HYSTON）。9 月完成包厢试音、施工收尾，并建立了 10 天传播手册和开业总控表。9 月 26 日发出的“还有十天”是全月互动最高的一条。", tag:"LIVE · MEL"},
-    {t:"杭州之后，重新定义“重庆出海”", d:"9 月 23—24 日参加第五届全球数字贸易博览会数字文化产业交流对接活动，与省级领导和数字文化产业代表同场，讨论 AI、文化 IP 与内容出海。结论写进了公众号长文：重庆需要的不只是出口，而是一套持续运行的海外接口。", tag:"GLOBAL · HGH"},
-    {t:"HYSTON HOTEL 重庆勒点酒店 2.0 全部房型上线", d:"9 月 24 日上线。从 1.0 到 2.0，我们重新调整了空间、细节和入住体验，门头、灯箱和 Logo 同步迭代，并围绕会议与商务场景补充内容。窗外是重庆，楼下是天街；酒店也成了 HYSTON 重庆团队“住着办公”的日常场景。", tag:"HOTEL · CKG"}
+    {t:"《ANGEL 26》开拍：72 个人接力，陪一位母亲回到 26 岁", d:"起点是一句话：“我到了妈妈当年生我的年龄。”7 月 19 日发出公开招募，收到 72 位参与者（重庆 57 位、远程 15 位），其中 47 位接受出镜；排期覆盖 7 月 21 日至 8 月 2 日。每人认领一小时体验，自然地问出一个问题，把她的原话交给下一位。执行手册开篇写着：这不是一场惊喜，是一次重新认识。", tag:"FILM · CKG"},
+    {t:"五天，二十项从没做过的事", d:"7 月 22 日到 27 日集中体验：穿搭、拳击、射箭、吉他、爵士舞、电玩、手串、冲浪、烘焙、妆造、四宫格拍照、花展、看戏、机车拍摄、真人 CS、插花、播客录制、宣传片拍摄、二次元 Cosplay、漂移。她的状态优先于预设流程，所有环节都可以被她暂停、改写或结束。", tag:"FILM · CKG"},
+    {t:"中澳服务贸易合作备忘录进入修订", d:"澳洲重庆市文化体育教育旅游协会与中国服务贸易协会的备忘录完成修订讨论稿和乙方修订版，同时起草首批合作项目启动表：中国企业赴澳市场拓展、职业教育培训与产业人才合作、中澳服务贸易圆桌会议。签署地点拟定北京。", tag:"NETWORK · BJS"},
+    {t:"START UP, SISTERS! 官宣客座导师", d:"HYSTON 在墨尔本发起的女性创业真人秀 IP。7 月完成工作人员招募与面试、主办方海报，以及客座导师官宣物料：一位联邦议员、影子内阁制造业、工业、AI 与数字经济部长，将与选手见面，分享产业与公共政策的经验。", tag:"IP · MEL"},
+    {t:"HYSTON 杯 2026 墨尔本挑战赛", d:"7 月发布赛事海报：7 月 26 日开赛，双打，32 个名额。泸州老窖冠名，HYSTON TENNIS 赛事运营，HYSTON MEDIA 媒体支持。海报上写：业余，不代表随便；双打，不只是配合。“ONE MATCH. ONE CHANCE. YOUR AO JOURNEY STARTS HERE.”", tag:"SPORT · MEL"}
   ],
   numbers:[
-    {v:20, u:"+", l:"家机构与组织有过直接交流", s:"政府 · 商协会 · 高校 · 体育 · 文化"},
-    {v:8, u:"份", l:"正式文件对外发出", s:"新闻稿 4 · 观察稿 1 · 合作函 2 · 会展建议 1"},
-    {v:4, u:"城", l:"工作城市", s:"墨尔本 · 重庆 · 北京 · 杭州"},
-    {v:96, u:"", l:"条公开记录", s:"视频号 / 公众号 / 图文 / 音乐"},
-    {v:10, u:"天", l:"519 试营业倒计时", s:"FROM 26 SEPT · OPEN 6 OCT"},
-    {v:4.8, u:"×", l:"真实现场内容的平均互动，是概念作品的倍数", s:"SAMPLE · 前 38 条记录", dec:1}
+    {v:72, u:"人", l:"ANGEL 26 报名参与", s:"重庆 57 · 远程 15"},
+    {v:47, u:"人", l:"接受出镜", s:"其余参与者只做幕后"},
+    {v:20, u:"项", l:"五天内完成的体验", s:"7.22 – 7.27 · 重庆"},
+    {v:100, u:"件", l:"体验库", s:"舞台 · 身体 · 运动 · 创造 · 新职业 · 支线"},
+    {v:32, u:"席", l:"HYSTON 杯墨尔本挑战赛名额", s:"7.26 · 双打"},
+    {v:194, u:"份", l:"七月归档文件", s:"设计与宣传物料 153"}
   ],
-  numbersNote:"机构与文件数量来自九月归档的新闻稿、合作函和工作记录；公开记录 96 条，共获 403 次点赞、92 条评论。4.8× 的样本为前 38 条：真实的人与现场 7 条，概念作品 5 条。",
+  numbersNote:"数字来自七月产出归档（194 份文件、9 个类别）、ANGEL 26 任务分配表与活动行程表。报名与出镜人数为去重后数据；体验项数按行程表实际排期统计。",
   peopleH:"这个月，我们和谁谈了什么。",
-  peopleNote:"按时间排列。对方只列职位与机构；“推进中”“受邀”表示仍在沟通，不代表已签约或已确认合作。",
+  peopleNote:"按时间排列。对方只列职位与机构；“修订中”“官宣准备”表示文件已完成但仍在推进，不代表已签约。ANGEL 26 参与者与主人公信息不公开。",
   people:[
-    {d:"09.07", p:"重庆", org:"重庆文旅集团 · 重庆艺术大市场", who:"两位旅澳艺术前辈", what:"把旅澳艺术前辈的作品与支持从墨尔本带回重庆，完成作品交接与见证。一次交接，延伸为中澳文化资源的长期连接。", st:"已完成"},
-    {d:"09.08", p:"北京", org:"中国服务贸易协会", who:"协会相关负责人", what:"拜访协会，围绕服务贸易、国际合作、跨境电商人才培养、AI 与数字营销、企业真实项目本地化交流。", st:"已交流"},
-    {d:"09.10", p:"墨尔本 · MCEC", org:"重庆市商务委员会 · 重庆市供销合作总社 · 商务部外贸发展事务局", who:"主办方代表 · 商务部外贸发展事务局局长", what:"中国（重庆）—澳大利亚经贸推介会。HYSTON 负责澳洲端嘉宾邀请与 PR；会上公开数据显示，今年 1—7 月渝澳贸易同比增长 25.9%。", st:"已完成"},
-    {d:"09.11", p:"致函", org:"中国服务贸易协会", who:"协会", what:"正式致函，建议建立中澳服务贸易合作机制：企业赴澳拓展、国际化人才培养、“中澳服务贸易圆桌会议”、项目双向推荐，形成共识后研究 MOU。", st:"推进中"},
-    {d:"09.14", p:"线上", org:"成都国际商会", who:"秘书长及团队", what:"线上圆桌：成都与墨尔本经贸往来、企业国际化、专业展会合作与文化交流。双方同意从“单次亮相”转向可跟进、可转化的项目对接。", st:"已交流"},
-    {d:"09.15", p:"线上", org:"中国服务贸易协会", who:"工会主席兼副秘书长 · 国际部部长 · 国际部干事 · 会员会展部主任", what:"工作交流会：中澳跨境电商人才培养、课程共建、高校合作与服务贸易资源对接，以跨境电商为首个切入点，筹备专题圆桌。", st:"推进中"},
-    {d:"09.16", p:"墨尔本", org:"四川省代表团 · 维州华人社团联合会 · 澳大利亚四川商会", who:"代表团团长（四川省人大常委会副主任）及省人大外侨委、省侨联成员 · 维州华人社团联合会主席、副主席 · 澳大利亚四川商会会长 · 川味餐饮企业总经理", what:"座谈四川“十五五”、成渝双城经济圈、新能源与农业。Hyston 提出“川渝协同出海”：访问不是终点，要看 30 天、60 天、90 天后还有没有项目在推进；同时介绍跨境电商与数字贸易人才合作设想。", st:"已完成"},
-    {d:"09.17", p:"墨尔本", org:"重庆市政府新闻办政策吹风会（线上关注）", who:"协会秘书处", what:"发布观察稿，解读《重庆市加力培育建设国际消费中心城市若干政策措施》30 条：海外端不只“传播重庆”，更要帮重庆“接住流量”。", st:"已发布"},
-    {d:"09.18", p:"致函", org:"中国服务贸易协会", who:"协会", what:"提交《2027 年墨尔本重点会展及中澳服务贸易合作建议》：Digital Health Festival、AIME、APPEX 与 Australian Manufacturing Week、Food and Hospitality Week、Hort Connections，建议以 2027 年 5 月为首个窗口。", st:"已提交"},
-    {d:"09.18", p:"致函", org:"重庆民营经济国际合作商会", who:"商会", what:"致函推进中澳民营经济国际合作 MOU：渝企赴澳拓展、需求筛选与项目推荐、代表团互访、品牌在澳传播、澳洲企业进入重庆的双向通道。9 月 26 日双方举行工作交流。", st:"推进中"},
-    {d:"09.22", p:"成都", org:"四川天府新区改革创新研究院 · 四川财经职业学院", who:"主办方", what:"受邀参加“交子连丝路·财智通中外”2026 交子“一带一路”文化交流活动（约 600 人），对接川渝高校国际学生、青年交流与巴蜀非遗传播。", st:"受邀"},
-    {d:"09.23", p:"杭州", org:"第五届全球数字贸易博览会", who:"省级领导 · 数字文化产业代表", what:"数字文化产业交流对接活动：AI、文化 IP、内容出海与全球化新路径。", st:"已参加"},
-    {d:"09.24", p:"墨尔本", org:"中国驻墨尔本总领事馆 · 墨尔本大学", who:"副总领事 · 教育事务参赞衔领事 · 墨尔本大学副校长", what:"2026 墨尔本中国留学生中秋国庆文艺晚会。HYSTON Media 负责直播宣传与媒体支持，教育部留学服务中心同步直播。副总领事说：留学生也是连接中国与世界的桥梁。", st:"已完成"},
-    {d:"09.24", p:"线上", org:"AFL CHINA", who:"主席 · 秘书长", what:"关注与指导交流，建立 “HYSTON × AFL CHINA” 工作群，约定 10 月 17 日上海见。", st:"推进中"},
-    {d:"09 中", p:"墨尔本", org:"ACBC 澳中篮球协会", who:"会长", what:"Hyston 以协会会长身份出席中秋篮球交流活动，并与 ACBC 会长建立后续联系。体育是青年、社区与国际交流门槛最低的公共语言。", st:"已完成"},
-    {d:"09 中", p:"墨尔本", org:"Tennis Australia 相关赛事", who:"赛事方", what:"澳网业余挑战赛墨尔本站：现场照片、人物采访与赛事视频，积累本地网球资源。", st:"已完成"},
-    {d:"09.27", p:"墨尔本 · 联邦广场", org:"GAPPER AUS · 澳洲中国舞蹈协会（ACDA）· Macro Vision", who:"活动主办团队", what:"Chinese Traditional Cultural Festival 2026：川渝文化展位亮相联邦广场，中澳政界及社区嘉宾到访交流。", st:"已完成"}
+    {d:"07.02", p:"线上", org:"中国服务贸易协会", who:"秘书长", what:"首轮会议后提交合作文稿与第二轮会议议程草案：企业出海服务与职业教育培训两个优先方向，并建议在墨尔本举办中澳服务贸易圆桌。", st:"已提交"},
+    {d:"07.19", p:"重庆 · 线上", org:"ANGEL 26 公开招募", who:"72 位参与者（重庆 57 · 远程 15）", what:"愿意参与 8 月女性与母女关系特别项目的人，填写可用时间与擅长的事；每人认领一小时体验，由执行导演按固定方向选题。", st:"已完成"},
+    {d:"07.20", p:"墨尔本", org:"HYSTON Melbourne Internship Program 2026", who:"实习生招募", what:"“刚来墨尔本，也可以进入真实项目现场。”上四休三，参与活动执行、内容策划、Proposal 与 deck，与品牌、社团、商会和场地方对接。", st:"已发布"},
+    {d:"07.22", p:"线上", org:"中国服务贸易协会", who:"协会", what:"中澳服务贸易合作备忘录修订讨论稿与乙方修订版，附首批合作项目启动表。启动条件写明：专项协议、启动款、必要审批、关键资源四项同时满足，项目才算正式启动。", st:"修订中"},
+    {d:"07.22–27", p:"重庆", org:"时代天街 · 解放碑 · 两江新区等场馆", who:"拳馆、射箭馆、冲浪馆、舞蹈室、花艺工作室、剧院、漂移俱乐部等 20 家", what:"ANGEL 26 集中体验周。拍摄规范：只拍主人公，避开路人；记录发生，而不是制造反应。", st:"已完成"},
+    {d:"07.25", p:"墨尔本", org:"START UP, SISTERS!", who:"联邦议员 · 影子内阁制造业、工业、AI 与数字经济部长", what:"担任客座导师（Guest Mentor），与选手见面并分享产业和公共政策视角。官宣稿、海报与各平台文案同步完成。", st:"官宣准备"},
+    {d:"07.26", p:"墨尔本", org:"泸州老窖", who:"冠名赞助方", what:"HYSTON 杯 2026 墨尔本挑战赛冠名；国窖 1573 与泸州老窖产品作为比赛奖品与报名礼。", st:"冠名"},
+    {d:"07.28", p:"墨尔本 · Box Hill", org:"Whitehorse City Council", who:"市议会", what:"Hyston Chongqing Taste 提交临时食品经营申报，参加 8 月 29—30 日 Eastern Heritage Market 2026（Box Hill Town Hall）。", st:"已提交"}
   ],
   built:[
-    {t:"勒点酒店 2.0", s:"HYSTON HOTEL · 重庆", k:"HOTEL", m:"9.24 上线", d:"所有房型重新调整空间、细节和入住体验；门头、灯箱、Logo 迭代；同步完成 Hotel Film、Room Sequence 与 7 秒品牌短片 RIGHT HERE RIGHT NOW。"},
-    {t:"519 开业系统", s:"Night Programme Curated by HYSTON", k:"LIVE", m:"10.6 试营业", d:"10 天传播与运营执行手册、开业总控表、每日海报与 7 秒竖屏视频脚本；包厢试音完成。"},
-    {t:"HYSTON 全链路 AI 生产系统", s:"60 Seconds of an AI-Native System", k:"AI", m:"9.27 发布", d:"IDEA → DESIGN → BUILD → TEST → DEPLOY → DISTRIBUTE。同月发布 AI HYSTON 动画 Sample 与 HYSTON Brand Film。"},
-    {t:"一个指令把游戏做出来", s:"AI 小游戏", k:"AI", m:"9.26", d:"从 0 到能玩只要一个指令，从能玩到多人同玩、全球排名只用了 5 分钟；BGM 是 Hyston 的原创歌曲《可是这个世界就是这样》。"},
-    {t:"晚一点说再见 LATER.", s:"AI HYSTON 自制酒桌游戏", k:"PRODUCT", m:"体验版开放", d:"4–8 人各自用手机加入同一桌，支持全员无酒精。九月评论最多的一条。"},
-    {t:"INTERVAL / 03 · 04", s:"HYSTON 原创单品", k:"PRODUCT · AI", m:"9.23 · 9.30", d:"03：A Different Angle of Time / Touching the Unreadable。04：HOLD THE INTERVAL，两片银色弧面错开，为尚未过去的一秒留出位置。AI HYSTON · 每天亲手创造一个产品。"},
-    {t:"VERTICA / 01", s:"概念车 · 山城向上生长", k:"PRODUCT · AI", m:"9.23", d:"把重庆的山体、高差、穿楼、索道、高架与两江交汇，翻译成一台概念车的比例、曲面、灯光和运动方式。"},
-    {t:"如果奶奶陪我长大", s:"HYSTON AI 影像", k:"MEDIA", m:"9.30", d:"在另一个平行时空里，让已经离开的奶奶陪自己长大、毕业、旅行，生成了五十多张“共同生活过”的照片。"},
-    {t:"《梦的科学边界》", s:"The Scientific Boundaries of Dreaming · 中英双语专论", k:"RESEARCH", m:"9.27", d:"从“读梦”、清醒梦交流到平行时空的科学边界：梦仍然可以是诗，但诗不能代替证据。"},
-    {t:"产品原型", s:"HYSTON MIND v0.2 · LIFE ECHO 记忆护照 v0.2 · HYSTON SOCIAL · HYSTON RUN", k:"AI · PRODUCT", m:"原型阶段", d:"九月推进的四个 AI 产品原型，覆盖个人思维工具、AI 康养记忆、社交与运动场景。"},
-    {t:"《无史之城》预告", s:"The City Without Yesterday · AI 原创科幻短片", k:"FILM", m:"制作中", d:"约 6 分钟、英文对白，围绕记忆、历史与被观察的文明。"},
-    {t:"原创音乐", s:"《再抱抱我吧闹钟快响了》等", k:"MUSIC", m:"9.26", d:"“把灯开到想关的时候，那时如果又想起这个梦，我会知道该往哪里走。”九月同步完成多首作品的分轨与封面。"},
-    {t:"PAWS OFF 001", s:"THE SILENT PICNIC · 人宠友好生活音乐节", k:"LIVE", m:"提案", d:"人戴耳机听音乐，狗狗保留自己的空间：Silent Disco × 人宠分区的小规模试点方案，场地与预算待锁定。"},
-    {t:"HYSTON 项目合作清单", s:"对外版 · 11 个项目", k:"BUSINESS", m:"9.24", d:"CARE、梦境酒店、梦境研究、梦境艺术展、《创业吧 姐姐》、AI 品牌影像、《重庆时空》等，按阶段向投资人、产业伙伴和赞助方开放。"}
+    {t:"ANGEL 26 项目执行手册", s:"RECLAIMING 26 · INTERNAL PRODUCTION MANUAL", k:"FILM", m:"7.21", d:"体验规则、接力机制、自然提问、拍摄与授权标准、风险预案和 S0—S3 四级保密。判断标准只有一句：这件事如果没有镜头，她还愿意做吗？"},
+    {t:"ANGEL 26 拍摄", s:"72 人接力 · 20 项体验", k:"FILM", m:"7.22 – 7.27", d:"5 天集中体验，每天回传原话与愿望线索；同时完成海报十余版和首映视觉。"},
+    {t:"中澳服务贸易合作备忘录", s:"修订讨论稿 · 乙方修订版 · 首批项目启动表", k:"NETWORK", m:"7.22", d:"企业赴澳、职业教育、服务贸易圆桌三个首批项目，各自写清目标、分工、启动条件与审批节点。"},
+    {t:"START UP, SISTERS!", s:"墨尔本女性创业真人秀", k:"IP", m:"7.20 – 7.25", d:"工作人员招募与面试海报、主办方海报、客座导师官宣物料包。Break Boundaries. Write Your Own Chapter."},
+    {t:"HYSTON 杯 2026 墨尔本挑战赛", s:"HYSTON TENNIS", k:"SPORT", m:"7.26", d:"双打 32 人，冠军、亚军、季军均设奖品；前 20 位报名送大礼包。"},
+    {t:"HYSTON 品牌系统", s:"LIFE · MEDIA · TENNIS · PRODUCER", k:"BRAND", m:"7.28 – 7.30", d:"整理 HYSTON 全家桶标识、PRODUCER 周边与公众号 12 张切图模板。"},
+    {t:"Hyston Chongqing Taste", s:"重庆味道 · 墨尔本临时食品摊位", k:"FOOD", m:"7.28", d:"墨尔本市议会注册的临时食品经营，7 月完成重庆味道视觉物料和下一场市集的申报。"},
+    {t:"AI HYSTON CUT 0.1 beta", s:"AI 剪辑工作流", k:"AI", m:"7.16", d:"原始素材到成片、双语字幕、竖屏与品牌模板，用自然语言下指令。5 月开始搭，7 月出第一个 beta。"},
+    {t:"原创音乐", s:"《山外有我》· Anything Is Fine · First Breath, First Strike · The Name · The Water Waits", k:"MUSIC", m:"7.28 – 7.30", d:"《山外有我》完成 8 轨分轨；四首英文作品导出。"},
+    {t:"影像", s:"《我们是未定义的主角》· 展览讲解 · 活动剪辑", k:"MEDIA", m:"7.19 – 7.27", d:"七月成片 7 支，另有 ANGEL 26 制作片段与 Live Photo 选片。"}
   ],
   cities:[
+    {id:"ckg", name:"CHONGQING", cn:"重庆", lon:106.55, lat:29.56, st:"ANGEL 26", dx:-10, anchor:"end",
+      items:["7.19 ANGEL 26 公开招募：72 人报名","7.21 项目执行手册","7.22 – 7.27 五天二十项体验：时代天街、解放碑、两江新区","8.04 首映筹备：160 席"]},
     {id:"mel", name:"MELBOURNE", cn:"墨尔本", lon:144.96, lat:-37.81, home:true, st:"HOME BASE",
-      items:["9.10 中国（重庆）—澳大利亚经贸推介会 · MCEC","9.16 四川省代表团座谈","9.24 中国留学生中秋国庆文艺晚会，HYSTON Media 直播支持","9.27 川渝文化亮相联邦广场","ACBC 中秋篮球交流 · 澳网业余挑战赛墨尔本站","519 墨尔本 CBD 店：包厢试音，10.6 试营业"]},
-    {id:"ckg", name:"CHONGQING", cn:"重庆", lon:106.55, lat:29.56, st:"ROOTS",
-      items:["旅澳艺术前辈作品交接：重庆文旅集团、重庆艺术大市场","HYSTON 重庆办公室落地时代天街","勒点酒店 2.0 全部房型上线","重庆民营经济国际合作商会：MOU 推进与工作交流"]},
-    {id:"bjs", name:"BEIJING", cn:"北京", lon:116.40, lat:39.90, st:"SERVICE TRADE",
-      items:["拜访中国服务贸易协会","跨境电商人才培养、AI 与数字营销、企业项目本地化","HYSTON 北京代表参与服贸会现场内容记录"]},
-    {id:"hgh", name:"HANGZHOU", cn:"杭州", lon:120.15, lat:30.27, st:"9.23 · 数贸会",
-      items:["第五届全球数字贸易博览会","数字文化产业交流对接活动","《杭州之后，我们重新理解了“重庆出海”》"]},
-    {id:"hkg", name:"HONG KONG", cn:"香港", lon:114.17, lat:22.32, st:"PREVIEW",
-      items:["HYSTON HK 艺术展览预告：ART, TRAVEL, MEDIA, LIVE, AI AND BEYOND"]},
-    {id:"sha", name:"SHANGHAI", cn:"上海", lon:121.47, lat:31.23, plan:true, st:"NEXT · 10.17", dy:-14, anchor:"start", dx:12,
-      items:["AFL CHINA，10 月 17 日上海见"]},
-    {id:"lax", name:"LOS ANGELES", cn:"洛杉矶", lon:-118.24, lat:34.05, plan:true, st:"PLANNED",
-      items:["构想中：重庆企业与洛杉矶企业的闭门对接"]}
+      items:["7.20 HYSTON Melbourne Internship Program 2026","7.25 START UP, SISTERS! 客座导师官宣物料","7.26 HYSTON 杯 2026 墨尔本挑战赛","7.28 Hyston Chongqing Taste 市集申报"]},
+    {id:"bjs", name:"BEIJING", cn:"北京", lon:116.40, lat:39.90, plan:true, st:"MOU · 拟签署地", dx:10, dy:-6, anchor:"start",
+      items:["中澳服务贸易合作备忘录修订中，签署地点拟定北京"]}
   ],
   lines:[
-    {h:"GLOBAL", p:"经贸推介会、四川代表团、成都国际商会、重庆民营经济国际合作商会、杭州数贸会。HYSTON 定位为澳洲端资源与落地接口。", c:"MEL · CKG · HGH"},
-    {h:"SERVICE TRADE", p:"与中国服务贸易协会建立工作机制：跨境电商人才、课程共建、2027 墨尔本重点会展建议。", c:"BJS · MEL"},
-    {h:"LIVE", p:"519 开业系统、中秋国庆晚会直播、联邦广场文化节、PAWS OFF 001 提案。", c:"MELBOURNE"},
-    {h:"HOTEL", p:"勒点酒店 2.0 上线，酒店影像三支；梦境酒店方向进入合作清单。", c:"CHONGQING"},
-    {h:"AI", p:"全链路 AI 生产系统、AI 小游戏、四个产品原型、AI HYSTON 动画。", c:"MEL · CKG"},
-    {h:"PRODUCT", p:"INTERVAL 03 / 04、VERTICA 01、晚一点说再见 LATER.。", c:"HYSTON ORIGINAL"},
-    {h:"SPORT", p:"ACBC 中秋篮球交流、澳网业余挑战赛、AFL CHINA 对接、网球对谈节目筹备。", c:"MEL · SHA"},
-    {h:"MEDIA", p:"96 条公开记录，公众号长文、观察稿、《梦的科学边界》专论，Instagram 本地化起步。", c:"96 RECORDS"}
+    {h:"FILM", p:"ANGEL 26：招募、执行手册、五天二十项体验、海报与首映准备。", c:"CHONGQING"},
+    {h:"NETWORK", p:"中国服务贸易协会：合作文稿、备忘录修订、首批项目启动表。", c:"BJS · MEL"},
+    {h:"IP", p:"START UP, SISTERS!：招募、面试、主办方海报、客座导师官宣。", c:"MELBOURNE"},
+    {h:"SPORT", p:"HYSTON 杯 2026 墨尔本挑战赛，泸州老窖冠名。", c:"MELBOURNE"},
+    {h:"PEOPLE", p:"墨尔本实习生计划：让刚来的人直接进入真实项目。", c:"MELBOURNE"},
+    {h:"BRAND", p:"HYSTON 全家桶标识、PRODUCER 周边、公众号切图模板。", c:"HYSTON ORIGINAL"},
+    {h:"FOOD", p:"Hyston Chongqing Taste：重庆味道物料与市集申报。", c:"MELBOURNE"},
+    {h:"AI · MUSIC", p:"AI HYSTON CUT 0.1 beta；《山外有我》与四首英文作品。", c:"MEL · CKG"}
   ],
   changed:[
-    {was:"代表团访问 = 合作", now:"访问不是终点。真正检验一次交流的，是 30 天、60 天、90 天之后还有没有项目在推进。"},
-    {was:"重庆出海 = 出口", now:"重庆需要的不只是出口，而是一套持续运行的海外接口。"},
-    {was:"传播重庆 = 让更多人看见", now:"传播解决“为什么来”，城市服务和产品解决“来了以后怎么样”。海外端要帮重庆接住流量。"},
-    {was:"最用心的作品 = 最打动人的内容", now:"有人、有地点、有情绪的内容，平均互动是概念作品的 4.8 倍。", cap:"样本：九月前 38 条公开记录。"}
+    {was:"惊喜 = 让她感动", now:"这不是一场惊喜，是一次重新认识。我们不替她规定什么叫 26 岁，只负责把门打开。"},
+    {was:"拍纪录片 = 拍到反应", now:"记录发生，而不是制造反应。保留笨拙、笑场、停顿和沉默。"},
+    {was:"合作 = 签了字", now:"专项协议、启动款、必要审批、关键资源，四项同时满足，项目才算正式启动。"},
+    {was:"实习 = 打杂", now:"刚来墨尔本，也可以进入真实项目现场。找事做，而不是找工作。"}
   ],
-  nextH:"十月，要落地的事。",
+  nextH:"八月，要发生的事。",
   next:[
-    {d:"10.02", w:"HYSTON 场上聊 · 第 01 期", s:"球场上的对谈节目，首期嘉宾为一位联邦议员"},
-    {d:"10.06", w:"519 墨尔本 CBD 店试营业", s:"开业夜现场传播，素材沉淀为之后四周内容"},
-    {d:"10.09", w:"Yapify 国际学生社交市集 · 墨尔本大学", s:"HYSTON MEDIA 现场媒体"},
-    {d:"10.17", w:"AFL CHINA · 上海", s:"上海见"},
-    {d:"OCT", w:"机构合作进入文本阶段", s:"重庆民营经济国际合作商会 MOU 文本；中国服务贸易协会专题圆桌"},
-    {d:"OCT", w:"HYSTON HK 艺术展览", s:"日期待公布"},
-    {d:"10.31", w:"SYNC+ 10", s:"下一期"}
+    {d:"08.04", w:"《ANGEL 26｜和女儿交换人生》重庆首映", s:"星光68 臻选影城 · 160 席"},
+    {d:"AUG", w:"中澳服务贸易合作备忘录", s:"拟在北京签署，日期待定", tbd:true},
+    {d:"AUG", w:"Her Star 与汽车品牌提案", s:"商务委版本、MG、长城汽车"},
+    {d:"08.22", w:"HYSTON TENNIS CUP · 墨尔本", s:"混双赛"},
+    {d:"08.29", w:"Eastern Heritage Market 2026", s:"8.29—30 · Hyston Chongqing Taste · Box Hill Town Hall"},
+    {d:"08.31", w:"SYNC+ 08", s:"下一期"}
   ]
 };
 

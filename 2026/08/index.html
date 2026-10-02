@@ -256,6 +256,7 @@ footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap
 <script>
 /* ---------- 每月只改这里 / Edit monthly data here ---------- */
 const ISSUES = [
+  { no:"07", month:"2026.07", status:"past", href:"/sync/2026/07/" },
   { no:"08", month:"2026.08", status:"current", href:"/sync/2026/08/" },
   { no:"09", month:"2026.09", status:"latest", href:"/sync/2026/09/" },
   { no:"10", month:"2026.10", status:"upcoming" }
@@ -271,7 +272,7 @@ const SYNC = {
     {t:"“交换人生”从一部片，变成一个可复制的模式", d:"首映之后，同一个机制被推到了三个具体空间：三洞桥2号的《和妈妈交换人生》实体体验（90 天验证方案）、东郊记忆的《和孩子交换人生》城市代际共创试点（2 天拍摄、6–8 组母亲与成年子女、1 天公开日、30 天周期），以及面向品牌的 Her Star 女性故事 IP。八月真正的变化是：一个故事，开始有了场地、周期和合作方。", tag:"IP · CKG · CTU"},
     {t:"Her Star 向汽车品牌与商务系统打开", d:"8.07 完成 Her Star v23 主 IP 版（商务委专用版）；8.10 向 MG 提交 START UP, SISTERS! 战略合作提案；8.11 完成 Her Star × 长城汽车 GWM 穿越澳洲方案：“She drives her own story. 方向，由她决定。”同一个女性故事 IP，分别对应城市、商务系统与中国智造出海三个入口。", tag:"BRAND · MEL"},
     {t:"8.21 拜访重庆市会展行业协会", d:"带着 10 页建议书去拜访，目标不是泛泛介绍，而是找一条能落地的路径：连接重庆会展团队与墨尔本资源、做重庆城市与品牌的澳洲展示、把 AI 互动放进中小型会展。同时把边界写清楚：商业合作由 HYSTON 承接，文化教育与社区交流由协会参与，两条线分开记录。", tag:"NETWORK · CKG"},
-    {t:"8.22 第一届 HYSTON TENNIS CUP", d:"墨尔本 Donald McLean Reserve，22 位选手、11 组混双，双小组积分赛，19:00 开球、21:45 熄灯。从赛制、岗位分工到背景板全部自己做。它是九月澳网业余挑战赛、十月《HYSTON 场上聊》的起点。", tag:"SPORT · MEL"}
+    {t:"8.22 HYSTON TENNIS CUP", d:"墨尔本 Donald McLean Reserve，22 位选手、11 组混双，双小组积分赛，19:00 开球、21:45 熄灯。从赛制、岗位分工到背景板全部自己做。它是九月澳网业余挑战赛、十月《HYSTON 场上聊》的起点。", tag:"SPORT · MEL"}
   ],
   numbers:[
     {v:124, u:"份", l:"八月归档文件", s:"文档 74 · 媒体 50 · 约 6.57 GB"},
@@ -297,7 +298,7 @@ const SYNC = {
     {d:"08.18", p:"成都", org:"东郊记忆", who:"园区运营方", what:"《和孩子交换人生》城市代际共创试点：年轻人发起、妈妈成为主角、园区成为故事；2 天拍摄、6–8 组家庭、1 天公开日、30 天周期。", st:"提案"},
     {d:"08.19", p:"重庆", org:"功夫女足", who:"主创团队", what:"功夫女足首映礼现场影像。", st:"已完成"},
     {d:"08.21", p:"重庆", org:"重庆市会展行业协会（CQCEIA）", who:"协会负责人", what:"拜访并提交 10 页合作建议：连接资源、形成展示、验证案例，先做一个真实、可展示、可复盘的小样板。", st:"已交流"},
-    {d:"08.22", p:"墨尔本", org:"HYSTON TENNIS CUP", who:"22 位选手 · 现场工作团队", what:"第一届 HYSTON 网球杯，混双双小组积分赛，附现场岗位分工表与 Final Rundown。", st:"已完成"}
+    {d:"08.22", p:"墨尔本", org:"HYSTON TENNIS CUP", who:"22 位选手 · 现场工作团队", what:"HYSTON 网球杯，混双双小组积分赛，附现场岗位分工表与 Final Rundown。", st:"已完成"}
   ],
   built:[
     {t:"《ANGEL 26｜和女儿交换人生》", s:"原创纪实影像 · 重庆首映", k:"FILM", m:"8.04 首映", d:"一位普通的川渝母亲，从“都可以”到“我想”。8.16 同步完成片头。"},
@@ -316,7 +317,7 @@ const SYNC = {
     {id:"ckg", name:"CHONGQING", cn:"重庆", lon:106.55, lat:29.56, st:"FOCUS", dx:12, dy:2, anchor:"start",
       items:["8.04《ANGEL 26》首映 · 观音桥","8.07 Her Star v23 · 商务委专用版","8.08 解放碑看场 · 重庆办公室手册 V1.0","8.10–11 三洞桥2号《和妈妈交换人生》","8.14 勒点酒店改造启动","8.21 拜访重庆市会展行业协会"]},
     {id:"mel", name:"MELBOURNE", cn:"墨尔本", lon:144.96, lat:-37.81, home:true, st:"HOME BASE",
-      items:["8.10 MG × START UP, SISTERS! 提案","8.11 Her Star × 长城汽车 GWM 穿越澳洲方案","8.22 第一届 HYSTON TENNIS CUP","8.18 519 招聘与筹备"]},
+      items:["8.10 MG × START UP, SISTERS! 提案","8.11 Her Star × 长城汽车 GWM 穿越澳洲方案","8.22 HYSTON TENNIS CUP","8.18 519 招聘与筹备"]},
     {id:"ctu", name:"CHENGDU", cn:"成都", lon:104.07, lat:30.67, st:"8.18 · 东郊记忆", dx:-8, dy:-10, anchor:"end",
       items:["《和孩子交换人生》城市代际共创试点提案"]},
     {id:"lzh", name:"LUZHOU", cn:"泸州", lon:105.44, lat:28.87, st:"8.13", dx:-8, dy:18, anchor:"end",
@@ -328,7 +329,7 @@ const SYNC = {
     {h:"BRAND", p:"MG、长城汽车 GWM 两份汽车品牌提案；泸州老窖现场影像。", c:"MEL · LZH"},
     {h:"NETWORK", p:"重庆市商务委员会（Her Star）、重庆市会展行业协会；HYSTON 与协会双轨分工。", c:"CHONGQING"},
     {h:"SPACE", p:"三洞桥2号联合运营、重庆办公室 40㎡ 手册、勒点酒店改造启动。", c:"CHONGQING"},
-    {h:"SPORT", p:"第一届 HYSTON TENNIS CUP：22 位选手、11 组混双。", c:"MELBOURNE"},
+    {h:"SPORT", p:"HYSTON TENNIS CUP：22 位选手、11 组混双。", c:"MELBOURNE"},
     {h:"AI", p:"HYSTON GPT 知识库、任务系统与 Idea Bank；AI HYSTON CUT 持续迭代。", c:"MEL · CKG"},
     {h:"MUSIC", p:"四首原创歌曲完成分轨，14 段配乐工作稿。", c:"HYSTON ORIGINAL"}
   ],
@@ -388,7 +389,7 @@ $("nx-list").innerHTML = SYNC.next.map(n =>
   `<li><span class="d${n.tbd?" tbd":""}">${esc(n.d)}</span><span class="w">${esc(n.w)}${n.s?`<span>${esc(n.s)}</span>`:""}</span></li>`).join("");
 
 $("f-issues").innerHTML = ISSUES.map(x => {
-  const lab = x.status==="current" ? "本期" : x.status==="past" ? "往期 →" : x.status==="latest" ? "最新一期 →" : "即将发布";
+  const lab = x.status==="current" ? "本期" : x.status==="past" ? "往期 →" : x.status==="next" ? "下一期 →" : x.status==="latest" ? "最新一期 →" : "即将发布";
   const inner = `<span class="i">${esc(x.no)}</span><span class="m">${esc(x.month)}</span><span class="m">${lab}</span>`;
   return x.href && x.status!=="current" ? `<a class="issue link" href="${x.href}">${inner}</a>` : `<div class="issue${x.status==="current"?" cur":""}">${inner}</div>`;
 }).join("");
