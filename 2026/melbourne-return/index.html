@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="HYSTON SYNC+ · 回墨尔本一个月（2026.09.09—10.09）：北京、墨尔本、重庆、成都、杭州、香港六个地理节点。">
+<title>HYSTON SYNC+ MEL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;700;900&family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single dark scroll — cover, then seven fixed columns, each a full-width "spread" with a mono coordinate rail on the left. */
+:root{
+  --ink:#0A0A0B;        /* ground */
+  --ink-2:#141416;      /* raised surface */
+  --line:#2A2A2E;       /* hairlines */
+  --silver:#C9C9CC;     /* primary type on dark */
+  --mute:#8B8B91;       /* secondary type */
+  --dim:#5E5E64;        /* tertiary, decorative only */
+  --wine:#8E2A35;       /* accent, used sparingly */
+  --wine-hi:#C0485A;    /* accent for text on dark */
+  --f-display:'Big Shoulders Display','Arial Narrow',sans-serif;
+  --f-cn-display:'Noto Serif SC','Songti SC',serif;
+  --f-body:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--silver);font-family:var(--f-body);font-size:16px;line-height:1.7;padding-inline:clamp(16px,5vw,72px);padding-block:0;-webkit-font-smoothing:antialiased}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+a{color:var(--silver)}
+:focus-visible{outline:2px solid var(--wine-hi);outline-offset:3px}
+.wrap{max-width:1180px;margin-inline:auto}
+.mono{font-family:var(--f-mono);letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:var(--mute)}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--ink) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-inline:calc(-1*clamp(16px,5vw,72px));padding:12px clamp(16px,5vw,72px)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.bar b{font-family:var(--f-mono);font-weight:500;letter-spacing:.22em;font-size:13px;color:var(--silver)}
+.bar nav{display:flex;gap:14px;flex-wrap:wrap}
+.bar nav a{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);text-decoration:none}
+.bar nav a:hover{color:var(--silver)}
+
+/* cover */
+.cover{padding-block:clamp(56px,10vw,128px) clamp(48px,8vw,96px);display:grid;gap:28px}
+.cover .kicker{display:flex;gap:18px;flex-wrap:wrap}
+.cover h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(72px,17vw,232px);line-height:.82;letter-spacing:-.01em;color:var(--silver);text-wrap:balance}
+.cover h1 .n{color:var(--wine-hi)}
+.cover .motto{font-family:var(--f-display);font-weight:300;font-size:clamp(28px,4.4vw,56px);letter-spacing:.06em;margin:0;color:var(--silver)}
+.cover .cn{font-family:var(--f-cn-display);font-weight:600;font-size:clamp(20px,2.4vw,28px);margin:0;color:var(--mute)}
+.cover .coords{display:flex;gap:10px 28px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px}
+
+/* sections */
+section.col{border-top:1px solid var(--line);padding-block:clamp(48px,7vw,96px);display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px 48px;scroll-margin-top:56px}
+@media (max-width:820px){section.col{grid-template-columns:minmax(0,1fr)}}
+.rail{display:flex;flex-direction:column;gap:6px}
+.rail .no{font-family:var(--f-display);font-weight:700;font-size:56px;line-height:1;color:var(--dim)}
+.rail .name{font-family:var(--f-mono);font-size:13px;letter-spacing:.2em;color:var(--silver)}
+.rail .cn{font-size:13px;color:var(--mute)}
+h2{margin:0 0 28px;font-family:var(--f-cn-display);font-weight:900;font-size:clamp(28px,3.6vw,44px);line-height:1.25;color:var(--silver);text-wrap:balance;max-width:22em}
+
+/* signals */
+.signals{list-style:none;margin:0;padding:0;display:grid}
+.signals li{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:4px 20px;padding-block:22px;border-bottom:1px solid var(--line);align-items:baseline}
+.signals li:first-child{padding-top:0}
+.signals .rk{font-family:var(--f-display);font-weight:700;font-size:40px;line-height:1;color:var(--dim)}
+.signals li:first-child .rk{color:var(--wine-hi)}
+.signals h3{margin:0;font-size:clamp(19px,2vw,23px);font-weight:500;color:var(--silver);line-height:1.45}
+.signals p{margin:6px 0 0;color:var(--mute);max-width:40em}
+.signals .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--mute);border:1px solid var(--line);padding:3px 8px;white-space:nowrap}
+@media (max-width:560px){.signals li{grid-template-columns:40px minmax(0,1fr)}.signals .tag{grid-column:2;justify-self:start}}
+
+/* numbers */
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.num{background:var(--ink);padding:28px 24px;display:flex;flex-direction:column;gap:8px}
+.num .v{font-family:var(--f-display);font-weight:900;font-size:clamp(64px,8vw,104px);line-height:.9;color:var(--silver);font-variant-numeric:tabular-nums}
+.num .v small{font-size:.42em;font-weight:300;margin-left:4px;color:var(--mute)}
+.num .l{font-size:15px;color:var(--silver)}
+.num .s{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;color:var(--mute)}
+.note{margin-top:16px;font-size:13px;color:var(--mute)}
+
+/* built */
+.built{display:grid;gap:0;border-top:1px solid var(--line)}
+.built details{border-bottom:1px solid var(--line)}
+.built summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:16px;align-items:baseline;padding-block:20px}
+.built summary::-webkit-details-marker{display:none}
+.built summary .t{font-family:var(--f-display);font-weight:700;font-size:clamp(26px,3vw,36px);letter-spacing:.02em;color:var(--silver);line-height:1.1}
+.built summary .t span{display:block;font-family:var(--f-body);font-weight:400;font-size:14px;letter-spacing:0;color:var(--mute);margin-top:6px}
+.built summary .k{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute)}
+.built summary .pm{font-family:var(--f-mono);font-size:20px;color:var(--mute);width:20px;text-align:center;transition:transform .25s}
+.built details[open] summary .pm{transform:rotate(45deg);color:var(--wine-hi)}
+.built summary:hover .t{color:#fff}
+.built .body{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:24px;padding-bottom:28px}
+@media (max-width:700px){.built .body{grid-template-columns:minmax(0,1fr)}}
+.ph{aspect-ratio:16/9;max-width:100%;border:1px dashed var(--dim);display:grid;place-items:center;font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);background:repeating-linear-gradient(135deg,var(--ink) 0 10px,var(--ink-2) 10px 20px);text-align:center;padding:12px}
+.built .body p{margin:0;color:var(--silver);max-width:34em}
+
+/* world */
+.world{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px}
+@media (max-width:900px){.world{grid-template-columns:minmax(0,1fr)}}
+.map{border:1px solid var(--line);background:var(--ink-2);overflow:hidden;align-self:start}
+.map svg{display:block;width:100%;height:auto}
+.map .arc{fill:none;stroke:var(--dim);stroke-width:1.2;transition:stroke .3s}
+.map .arc.plan{stroke-dasharray:4 6}
+.map .arc.on{stroke:var(--wine-hi);stroke-width:2}
+.map .city circle.dot{fill:var(--silver)}
+.map .city circle.halo{fill:none;stroke:var(--wine-hi);stroke-width:1.5;opacity:0}
+.map .city.on circle.halo{opacity:1;animation:pulse 2.2s ease-out infinite}
+.map .city text{font-family:var(--f-mono);font-size:13px;letter-spacing:.12em;fill:var(--mute)}
+.map .city.on text{fill:var(--silver)}
+.map .city.plan circle.dot{fill:none;stroke:var(--mute);stroke-width:1.5}
+@keyframes pulse{0%{r:6;opacity:.9}100%{r:22;opacity:0}}
+.cities{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.cities button{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;background:transparent;color:var(--mute);border:1px solid var(--line);padding:10px 14px;cursor:pointer;min-height:44px}
+.cities button[aria-pressed="true"]{color:var(--silver);border-color:var(--wine-hi);background:color-mix(in srgb,var(--wine) 22%,transparent)}
+.cities button:hover{color:var(--silver)}
+.panel h3{margin:0 0 4px;font-family:var(--f-display);font-weight:700;font-size:40px;line-height:1;color:var(--silver);letter-spacing:.02em}
+.panel .st{margin-bottom:16px}
+.panel ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.panel li{padding-left:18px;position:relative;color:var(--silver)}
+.panel li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:1px;background:var(--wine-hi)}
+
+/* lines */
+.lines{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;padding:1px}
+.lines>*{box-shadow:0 0 0 1px var(--line)}
+.line{background:var(--ink);padding:24px;display:flex;flex-direction:column;gap:10px}
+.line .h{font-family:var(--f-display);font-weight:700;font-size:30px;letter-spacing:.06em;color:var(--silver);line-height:1}
+.line p{margin:0;color:var(--mute);font-size:15px}
+.line .c{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--dim);margin-top:auto}
+
+/* changed */
+.changed{display:grid;gap:36px}
+.changed blockquote{margin:0;font-family:var(--f-cn-display);font-weight:600;font-size:clamp(22px,2.6vw,30px);line-height:1.5;color:var(--silver);max-width:26em;text-wrap:balance}
+.changed .was{display:block;font-family:var(--f-body);font-weight:300;font-size:15px;color:var(--mute);margin-bottom:10px}
+.changed .was s{text-decoration-color:var(--wine-hi)}
+.changed figcaption{margin-top:10px;font-size:13px;color:var(--mute)}
+
+/* next */
+.next{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.next li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding-block:18px;border-bottom:1px solid var(--line);align-items:baseline}
+.next .d{font-family:var(--f-display);font-weight:700;font-size:28px;color:var(--silver);font-variant-numeric:tabular-nums}
+.next .d.tbd{color:var(--dim)}
+.next .w{font-size:18px;color:var(--silver)}
+.next .w span{display:block;font-size:14px;color:var(--mute)}
+
+
+/* people */
+.people{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--line)}
+.people li{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:6px 24px;padding-block:22px;border-bottom:1px solid var(--line);align-items:baseline}
+.people .d{font-family:var(--f-display);font-weight:700;font-size:28px;line-height:1;color:var(--silver);font-variant-numeric:tabular-nums}
+.people .d span{display:block;font-family:var(--f-mono);font-weight:400;font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:8px}
+.people h3{margin:0;font-size:clamp(17px,1.8vw,20px);font-weight:500;color:var(--silver);line-height:1.45}
+.people .who{margin:6px 0 0;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--wine-hi);line-height:1.6}
+.people p{margin:8px 0 0;color:var(--mute);max-width:44em}
+.people .st{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);border:1px solid var(--line);padding:3px 8px;white-space:nowrap}
+.people .st.done{color:var(--silver);border-color:var(--dim)}
+@media (max-width:640px){.people li{grid-template-columns:64px minmax(0,1fr)}.people .d{font-size:22px}.people .st{grid-column:2;justify-self:start}}
+.built .meta{display:flex;flex-direction:column;gap:10px;border-left:1px solid var(--line);padding-left:16px;align-self:start}
+.built .meta span{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;color:var(--mute)}
+.built .meta b{font-family:var(--f-display);font-weight:700;font-size:24px;color:var(--silver);letter-spacing:.04em}
+
+/* archive / footer */
+footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap:36px}
+.issues{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1px;padding:1px}
+.issues>*{box-shadow:0 0 0 1px var(--line)}
+.issue{background:var(--ink);padding:20px;display:flex;flex-direction:column;gap:4px;min-height:120px}
+.issue .i{font-family:var(--f-display);font-weight:900;font-size:44px;line-height:1;color:var(--dim)}
+.issue.cur .i{color:var(--wine-hi)}
+.issue.link{text-decoration:none;color:inherit;transition:background .2s}
+.issue.link:hover{background:#141418}
+.issue.link:hover .i{color:var(--wine-hi)}
+.issue .m{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute)}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot .mail{font-family:var(--f-mono);font-size:13px;letter-spacing:.08em;color:var(--silver);user-select:all}
+</style>
+</head>
+<body>
+
+
+<div class="bar"><div class="wrap">
+  <b>HYSTON SYNC+</b>
+  <nav aria-label="栏目">
+    <a href="#signals">01 SIGNALS</a><a href="#numbers">02 NUMBERS</a><a href="#people">03 TIMELINE</a><a href="#built">04 BUILT</a><a href="#world">05 WORLD</a><a href="#lines">06 LINES</a><a href="#changed">07 CHANGED</a><a href="#next">08 NEXT</a>
+  </nav>
+</div></div>
+
+<main class="wrap" id="app">
+  <header class="cover">
+    <div class="kicker mono"><span>HYSTON SYNC+</span><span id="c-issue"></span><span id="c-date"></span></div>
+    <h1 id="c-title"></h1>
+    <p class="motto" id="c-motto"></p>
+    <p class="cn" id="c-cn"></p>
+    <div class="coords mono" id="c-coords"></div>
+  </header>
+
+  <section class="col" id="signals">
+    <div class="rail"><span class="no">01</span><span class="name">SIGNALS</span><span class="cn">这个月最重要的五件事</span></div>
+    <div><h2>按重要性排序，不按主题分类。</h2><ol class="signals" id="s-list"></ol></div>
+  </section>
+
+  <section class="col" id="numbers">
+    <div class="rail"><span class="no">02</span><span class="name">NUMBERS</span><span class="cn">关键数字</span></div>
+    <div><h2>只放数字，不加形容词。</h2><div class="nums" id="n-grid"></div><p class="note" id="n-note"></p></div>
+  </section>
+
+  <section class="col" id="people">
+    <div class="rail"><span class="no">03</span><span class="name">TIMELINE</span><span class="cn">按时间走过的地方</span></div>
+    <div><h2 id="p-h"></h2><ol class="people" id="p-list"></ol><p class="note" id="p-note"></p></div>
+  </section>
+
+  <section class="col" id="built">
+    <div class="rail"><span class="no">04</span><span class="name">BUILT</span><span class="cn">这个月真正做出来的东西</span></div>
+    <div><h2>这个月真正做出来的八件东西。</h2><div class="built" id="b-list"></div></div>
+  </section>
+
+  <section class="col" id="world">
+    <div class="rail"><span class="no">05</span><span class="name">IN THE WORLD</span><span class="cn">城市、活动、机构、合作</span></div>
+    <div>
+      <h2>从墨尔本出发，连到六个节点。</h2>
+      <div class="world">
+        <div class="map" id="w-map"></div>
+        <div>
+          <div class="cities" id="w-btns" role="group" aria-label="选择城市"></div>
+          <div class="panel" id="w-panel" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="col" id="lines">
+    <div class="rail"><span class="no">06</span><span class="name">BUSINESS LINES</span><span class="cn">业务线</span></div>
+    <div><h2>六条线，这个月各自往前走了一步。</h2><div class="lines" id="l-grid"></div></div>
+  </section>
+
+  <section class="col" id="changed">
+    <div class="rail"><span class="no">07</span><span class="name">WHAT CHANGED</span><span class="cn">判断发生了什么变化</span></div>
+    <div><h2>这个月，三个变化。</h2><div class="changed" id="ch-list"></div></div>
+  </section>
+
+  <section class="col" id="next">
+    <div class="rail"><span class="no">08</span><span class="name">NEXT</span><span class="cn">接下来要落地的事</span></div>
+    <div><h2 id="nx-h"></h2><ol class="next" id="nx-list"></ol></div>
+  </section>
+
+  <footer>
+    <div class="mono">ARCHIVE · 往期</div>
+    <div class="issues" id="f-issues"></div>
+    <div class="foot">
+      <span class="mono">HYSTON PTY LTD · MELBOURNE · CHONGQING</span>
+      <span class="mail">admin@hyston.life</span>
+    </div>
+  </footer>
+</main>
+
+<script>
+/* ---------- 每月只改这里 / Edit monthly data here ---------- */
+const ISSUES = [
+  { no:"06", month:"2026.06", status:"past", href:"/sync/2026/06/" },
+  { no:"07", month:"2026.07", status:"past", href:"/sync/2026/07/" },
+  { no:"08", month:"2026.08", status:"past", href:"/sync/2026/08/" },
+  { no:"09", month:"2026.09", status:"past", href:"/sync/2026/09/" },
+  { no:"MEL", month:"09.09—10.09", status:"current", href:"/sync/2026/melbourne-return/" }
+];
+const SYNC = {
+  no:"MEL", date:"2026.09.09 — 2026.10.09",
+  title:"SYNC+ / <span class=\"n\">MEL</span>",
+  motto:"BACK IN MELBOURNE. 30 DAYS.",
+  cn:"回到墨尔本的第一个月：一座母港，连着六个节点。",
+  coords:["MELBOURNE","BEIJING","CHONGQING","CHENGDU","HANGZHOU","HONG KONG"],
+  signals:[
+    {t:"9.9 落地墨尔本：北京 → 墨尔本，一个月的起点", d:"9 月 8 日 Hyston 在北京拜访中国服务贸易协会（朋友圈地点标签为北京），9 月 9 日发出“落地 Mel”，9 月 11 日发“返澳首秀”。回来第二天，重庆市商务委员会副主任一行与商务部外贸发展事务局局长到访墨尔本交流指导，HYSTON 负责澳洲端接待与传播。", tag:"MEL · BJS"},
+    {t:"墨尔本的社区与体育场：联邦广场、VFL 总决赛、澳网业余挑战赛", d:"9 月 12 日澳大利亚网球协会 × 国窖 1573 澳网业余挑战赛墨尔本站落幕；9 月 19 日与 28 日川渝文化与《重庆市民》两次出现在联邦广场；9 月 20 日受邀走进 VFL & VFLW 总决赛，Box Hill Hawks 夺冠；之后走进澳大利亚国家网球中心。一个月里，体育成为 HYSTON 在墨尔本最稳定的社交入口。", tag:"SPORT · MEL"},
+    {t:"10 月 5 日：第三届维州创新展与墨尔本企业家峰会，白马市市长第五次合作", d:"澳洲川渝文化教育体协会、澳洲重庆市商会协办第三届维州创新展；Hyston 出席 2026 墨尔本企业家峰会，交流 AI 原生人类体验业务方向。白马市市长第五次与 HYSTON 合作，从《重庆市民》一路到维州创新展。10 月 2 日，HYSTON Pty Ltd Director 还出席了 Build Better Melbourne 2026。", tag:"NETWORK · MEL"},
+    {t:"墨尔本在管六条线：北京、重庆、成都、杭州同时在动", d:"9 月 11 日发出“北京 / 墨尔本 / 重庆六线并行的周五”。回来的一个月里，HYSTON 北京团队跟进服贸会，重庆团队参加重跨会与沙坪坝活动，成都同事代表澳洲川渝文化教育体协会出席交子“一带一路”文化交流，杭州参加第五届全球数字贸易博览会。", tag:"CN NODES"},
+    {t:"10 月：HUMAN ARCHIVE 启动，LIFE ARCHIVE 迎来第一个澳洲本地客户", d:"10 月 4 日 HUMAN ARCHIVE 正式启动；10 月 6 日 John Stonemart Memorials 加入 LIFE ARCHIVE 合作伙伴网络；上线第二天迎来第一个澳洲本地客户。同月 AI HYSTON CUT 1.0 发布，TALENT 跨境人才资源 v0.2.1 与 DREAM HOTEL「盗梦笔记」上线。", tag:"BUILT · MEL"}
+  ],
+  numbers:[
+    {v:30, u:"天", l:"回到墨尔本的第一个月", s:"09.09 — 10.09"},
+    {v:6, u:"个", l:"一个月里在动的地理节点", s:"墨尔本 · 北京 · 重庆 · 成都 · 杭州 · 香港"},
+    {v:5, u:"次", l:"白马市市长与 HYSTON 的合作", s:"AS OF 10.05"},
+    {v:4789, u:"", l:"位中国人才 · TALENT 跨境人才资源 v0.2.1", s:"连接 1,500+ 家 · 10.09"},
+    {v:4.8, u:"级", l:"10 月 3 日凌晨维州地震", s:"墨尔本多地有震感 · HYSTON HOTEL 当天满房", dec:1},
+    {v:1, u:"个", l:"LIFE ARCHIVE 第一个澳洲本地客户", s:"上线第二天 · 10.07"}
+  ],
+  numbersNote:"数字来自朋友圈标题与配文；人才数量与“连接 1,500+ 家”来自 10 月 9 日的发布标题。日期为朋友圈发布日期，活动当天如有出入以主办方为准。",
+  peopleH:"一个月，按时间走过的地方。",
+  peopleNote:"对方只列职位与机构。“受邀”“推进中”“预告”表示尚未发生或仍在沟通，不代表已确认合作。本期条目依据朋友圈标题与配文整理，尚未逐篇打开正文核对的条目标为“待核”。",
+  people:[
+    {d:"09.08", p:"北京", org:"中国服务贸易协会", who:"协会相关负责人", what:"拜访与工作交流，朋友圈地点标签为北京；次日落地墨尔本。", st:"已交流"},
+    {d:"09.09", p:"墨尔本", org:"落地 Mel", who:"", what:"“落地 Mel”，15:51 发出；9 月 11 日发“返澳首秀”。", st:"已到达"},
+    {d:"09.10", p:"墨尔本", org:"重庆市商务委员会 · 商务部外贸发展事务局", who:"重庆市商务委员会副主任一行 · 商务部外贸发展事务局局长", what:"到访墨尔本交流并指导工作；副主任致辞完整版视频同日发布。", st:"已完成"},
+    {d:"09.11", p:"墨尔本", org:"联邦议员 · 白马市市长", who:"一位联邦议员 · 白马市市长", what:"社交场合与合影。Hyston 写道：第一次感觉到社交场合不用自己“营业”，市长一直在帮 HYSTON 引荐。", st:"已完成"},
+    {d:"09.12", p:"墨尔本", org:"澳大利亚网球协会 × 国窖 1573", who:"赛事方", what:"澳网业余挑战赛墨尔本站圆满落幕，现场多张照片；同日发布“山海有回声：一份来自墨尔本的艺术心意回到重庆”。", st:"已完成"},
+    {d:"09.13", p:"墨尔本", org:"澳中篮球协会", who:"协会会长", what:"祝贺中秋交流活动圆满成功；同日 519 现场发 bump out 招人，519 Live 直播。", st:"已完成"},
+    {d:"09.14", p:"线上", org:"成都国际商会", who:"商会负责人", what:"线上圆桌会议；同日受邀参加 2026 交子“一带一路”文化交流活动的新闻稿发布。", st:"已交流"},
+    {d:"09.15", p:"北京 · 线上", org:"中国服务贸易协会", who:"协会负责人与相关部门", what:"工作交流会；同日发布 CSETA“中澳合作联络官”招募：重庆、成都、杭州、上海各 1 名。", st:"推进中"},
+    {d:"09.16", p:"墨尔本", org:"四川省代表团", who:"四川省人大常委会副主任一行", what:"访澳交流。", st:"已完成"},
+    {d:"09.17—18", p:"线上", org:"重庆市政府新闻发布", who:"CSETA 协会秘书处", what:"线上参加重庆建设国际消费中心城市、“十五五”超大城市现代化治理规划发布并发布观察。", st:"已发布"},
+    {d:"09.19", p:"墨尔本 · 联邦广场", org:"重庆市民", who:"HYSTON 团队", what:"联邦广场《重庆市民》直播与展位。", st:"已完成"},
+    {d:"09.20", p:"墨尔本", org:"VFL & VFLW 总决赛", who:"Box Hill Hawks 董事", what:"感谢董事邀请与引荐，Box Hill Hawks 夺冠；发布“以体育为桥”文章。", st:"已完成"},
+    {d:"09.21", p:"重庆", org:"重跨会 · 澳网国际主裁", who:"HYSTON 重庆团队", what:"重庆团队走进重跨会；另一条：教 AO 澳网国际主裁说重庆话；澳大利亚网球协会赛事总监谈澳网中国市场。", st:"已发布"},
+    {d:"09.22", p:"重庆 · 成都 · 上海", org:"MoonLab 沙坪坝 · 交子“一带一路”启动仪式 · AustCham Shanghai", who:"HYSTON 重庆 · 成都团队 · 澳大利亚商会上海团队", what:"重庆沙坪坝活动；成都同事代表澳洲川渝文化教育体协会出席交子文化交流；与澳大利亚商会上海团队工作交流；走进澳大利亚国家网球中心。", st:"已完成"},
+    {d:"09.23", p:"杭州", org:"第五届全球数字贸易博览会", who:"省级领导 · 数字文化产业代表", what:"受邀参加数字文化产业交流对接活动，讨论 AI、数字文化与内容出海；“杭州明年再见”（9.26）。", st:"已参加"},
+    {d:"09.24—25", p:"墨尔本", org:"2026 墨尔本中国留学生中秋国庆文艺晚会", who:"中国驻墨尔本总领事馆教育事务参赞衔领事 · 副总领事 · 墨尔本大学副校长", what:"HYSTON 出席并做直播与媒体支持；同日 AFL CHINA 关注与指导交流，约定 10.17 上海见。", st:"已完成"},
+    {d:"09.26", p:"线上", org:"重庆民营经济国际合作商会", who:"商会", what:"澳洲重庆市文化体育教育旅游协会与商会举行工作交流：渝商出海，联动全球。", st:"推进中"},
+    {d:"09.28", p:"墨尔本 · 联邦广场", org:"川渝文化亮相联邦广场", who:"澳洲中国舞蹈协会 · GAPPER AUS", what:"中澳政界及社区嘉宾到访展位交流。", st:"已完成"},
+    {d:"09.29", p:"香港", org:"HYSTON HK", who:"", what:"HK COMING SOON 预告海报，日期待公布。", st:"预告"},
+    {d:"10.01", p:"墨尔本 · 重庆", org:"重庆文旅集团全资子公司", who:"旅澳华人艺术家", what:"大洋传墨韵，艺系渝澳情：旅澳华人题赠墨宝；同日发布《杭州之后，我们重新理解了“重庆出海”》。", st:"已发布"},
+    {d:"10.02", p:"墨尔本", org:"Build Better Melbourne 2026", who:"HYSTON Pty Ltd Director", what:"出席并发布 AI 在建筑环境领域的观察；519 开球视频。", st:"已完成"},
+    {d:"10.05", p:"墨尔本", org:"第三届维州创新展 · 墨尔本企业家峰会", who:"聚澳传媒 · 澳亚商贸发展协会 · 白马市市长", what:"澳洲川渝文化教育体协会、澳洲重庆市商会协办；Hyston 出席企业家峰会，白马市市长第五次与 HYSTON 合作。", st:"已完成"},
+    {d:"10.06", p:"重庆 · 墨尔本", org:"HYSTON HOTEL · LIFE ARCHIVE", who:"合作机构", what:"HYSTON HOTEL 面向长期资本与战略伙伴开放合作；John Stonemart Memorials 加入 LIFE ARCHIVE 人生档案合作伙伴网络；“新韵重庆”直播第一万遍。", st:"已发布"}
+  ],
+  built:[
+    {t:"HUMAN ARCHIVE", s:"HYSTON LIFE · 正式启动", k:"ARCHIVE", m:"10.04", d:"“终于终于终于正式启动”。HYSTON LIFE ARCHIVE 人生档案：10 月 6 日加入首个外部合作伙伴，上线第二天迎来第一个澳洲本地客户。"},
+    {t:"AI HYSTON CUT 1.0", s:"一个指令剪辑 · 字幕识别", k:"AI", m:"10.02", d:"首个 1 小时 12 分钟素材跑通长视频对话剪辑，7 分 39 秒成片；一次性输出时长继续突破，字幕识别能力超过剪映；10 月 7 日从剪辑加字幕到发布与运营全链路由一条指令执行。"},
+    {t:"TALENT 跨境人才资源 v0.2.1", s:"HYSTON TALENT", k:"PLATFORM", m:"10.09", d:"4,789 位中国人才，连接 1,500+ 家（标题已截断，家数口径待核）。同日 DREAM HOTEL「盗梦笔记」正式上线：写下一个梦，看见它。"},
+    {t:"HYSTON HOTEL「另一个我没睡」", s:"勒点梦境酒店", k:"HOTEL", m:"10.06", d:"一个很小、但觉得很重要的产品。同期 10 月 3 日、4 日 HYSTON HOTEL 发布“满房”海报。"},
+    {t:"HYSTON 短剧", s:"第一个视频发布", k:"FILM", m:"10.08", d:"短剧第一个视频在 TikTok 上线，配文提到被不同国家的观众看到（正文待核）。"},
+    {t:"《无史之城》", s:"AI 原创科幻短片", k:"FILM", m:"09.15", d:"一个十年前的设想，如今 4 小时完成 6 分钟科幻短片制作。"},
+    {t:"《梦的科学边界》", s:"The Scientific Boundaries of Dreaming", k:"RESEARCH", m:"09.27", d:"专论发表；“梦科学现在究竟走到了哪里”。"},
+    {t:"HYSTON 原创 IP · 酒桌游戏", s:"AI HYSTON", k:"PRODUCT", m:"09.27—28", d:"AI HYSTON 自制酒桌游戏“晚一点说再见”；HYSTON 原创 IP 视频。"}
+  ],
+  cities:[
+    {id:"mel", name:"MELBOURNE", cn:"墨尔本", lon:144.96, lat:-37.81, home:true, st:"HOME BASE · 09.09 落地",
+      items:["9.10 重庆市商务委员会副主任一行与商务部外贸发展事务局局长到访","9.12 澳网业余挑战赛墨尔本站 · 9.20 VFL & VFLW 总决赛","9.19 / 9.28 联邦广场：《重庆市民》与川渝文化","9.24—25 中国留学生中秋国庆文艺晚会","10.2 Build Better Melbourne 2026","10.3 凌晨 4.8 级地震，墨尔本有震感","10.5 第三届维州创新展 · 企业家峰会，白马市市长第五次合作"]},
+    {id:"bjs", name:"BEIJING", cn:"北京", lon:116.40, lat:39.90, st:"09.08 · 起点", dy:5, anchor:"start", dx:12,
+      items:["9.8 中国服务贸易协会拜访与工作交流","9.11 HYSTON 北京团队服贸会现场","9.15 中国服务贸易协会工作交流会"]},
+    {id:"ckg", name:"CHONGQING", cn:"重庆", lon:106.55, lat:29.56, st:"TEAM · ROOTS", dy:20, anchor:"end", dx:-12,
+      items:["9.21 重庆团队走进重跨会","9.22 沙坪坝 MoonLab 活动","9.24 HYSTON HOTEL 重庆","9.26 重庆民营经济国际合作商会工作交流","10.1 大洋传墨韵：旅澳华人题赠墨宝","10.6 “新韵重庆”直播第一万遍"]},
+    {id:"ctu", name:"CHENGDU", cn:"成都", lon:104.07, lat:30.57, st:"TEAM · 交子", dy:-8, anchor:"end", dx:-12,
+      items:["9.14 成都国际商会线上圆桌","9.22—23 交子“一带一路”文化交流活动，澳洲川渝文化教育体协会代表出席"]},
+    {id:"hgh", name:"HANGZHOU", cn:"杭州", lon:120.15, lat:30.27, st:"9.23 · 数贸会", dy:20, anchor:"start", dx:12,
+      items:["第五届全球数字贸易博览会 · 数字文化产业交流对接活动","《杭州之后，我们重新理解了“重庆出海”》","“杭州明年再见”"]},
+    {id:"hkg", name:"HONG KONG", cn:"香港", lon:114.17, lat:22.32, st:"PREVIEW", dy:5, anchor:"end", dx:-12,
+      items:["9.29 HK COMING SOON 预告，日期待公布"]},
+    {id:"sha", name:"SHANGHAI", cn:"上海", lon:121.47, lat:31.23, plan:true, st:"NEXT · 10.17", dy:-8, anchor:"start", dx:12,
+      items:["9.22 澳大利亚商会上海团队工作交流","10.17 AFL CHINA，上海见"]}
+  ],
+  lines:[
+    {h:"GLOBAL", p:"重庆与商务部门到访、四川省代表团、成都国际商会、重庆民营经济国际合作商会、杭州数贸会。", c:"MEL · CKG · HGH"},
+    {h:"SPORT", p:"澳网业余挑战赛、VFL 总决赛、澳中篮球协会、国家网球中心、AFL CHINA 上海之约。", c:"MEL · SHA"},
+    {h:"LIVE", p:"联邦广场两次出场、中秋国庆文艺晚会、519 开球。", c:"MELBOURNE"},
+    {h:"HOTEL", p:"HYSTON HOTEL 满房（10.3、10.4）、对长期资本与战略伙伴开放合作。", c:"CHONGQING"},
+    {h:"AI / ARCHIVE", p:"HUMAN ARCHIVE、LIFE ARCHIVE、AI HYSTON CUT 1.0、TALENT v0.2.1、DREAM HOTEL。", c:"MEL · CKG"},
+    {h:"MEDIA", p:"“山海有回声”“杭州之后”两篇长文，短剧首支视频，HYSTON 官方号持续更新。", c:"HYSTON OFFICIAL"}
+  ],
+  changed:[
+    {was:"社交场合 = 我要自己营业", now:"回到墨尔本第三天，Hyston 写道：第一次感觉到社交场合不用营业，市长一直在帮我们到处输出引荐。", cap:"来源：9.11 朋友圈。"},
+    {was:"重庆团队在重庆", now:"“终于在重庆也开始有一点点墨尔本的感觉了。”", cap:"来源：9.18 朋友圈。"},
+    {was:"一次访问 = 一次活动", now:"一个月里，同一批机构在北京、墨尔本、成都、杭州、重庆反复出现：线上圆桌、工作交流会、联络官招募，开始从“出席”变成“有下一步”。", cap:"整理自 9 月时间线；待你确认措辞。"}
+  ],
+  nextH:"接下来要落地的事。",
+  next:[
+    {d:"10.17", w:"AFL CHINA · 上海", s:"9.24 约定，上海见"},
+    {d:"OCT", w:"HYSTON HK 预告", s:"日期待公布"},
+    {d:"OCT", w:"HYSTON 短剧", s:"首支视频之后的后续发布"},
+    {d:"OCT", w:"HUMAN ARCHIVE / LIFE ARCHIVE", s:"更多合作伙伴与本地客户"},
+    {d:"10.31", w:"SYNC+ 10", s:"下一期月报"}
+  ]
+};
+
+/* ---------- render ---------- */
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+$("c-issue").textContent = "ISSUE " + SYNC.no;
+$("c-date").textContent = SYNC.date;
+$("c-title").innerHTML = SYNC.title;
+$("c-motto").textContent = SYNC.motto;
+$("c-cn").textContent = SYNC.cn;
+$("c-coords").innerHTML = SYNC.coords.map(c => `<span>${esc(c)}</span>`).join("<span aria-hidden=\"true\">·</span>");
+
+$("s-list").innerHTML = SYNC.signals.map((s,i) =>
+  `<li><span class="rk">${String(i+1).padStart(2,"0")}</span><div><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p></div><span class="tag">${esc(s.tag)}</span></li>`).join("");
+
+const fmt = (v,dec) => dec ? v.toFixed(dec) : Math.round(v).toString();
+$("n-grid").innerHTML = SYNC.numbers.map((n,i) =>
+  `<div class="num"><span class="v" data-i="${i}">${fmt(n.v,n.dec)}<small>${esc(n.u)}</small></span><span class="l">${esc(n.l)}</span><span class="s">${esc(n.s)}</span></div>`).join("");
+$("n-note").textContent = SYNC.numbersNote;
+
+$("b-list").innerHTML = SYNC.built.map(b =>
+  `<details><summary><span class="t">${esc(b.t)}<span>${esc(b.s)}</span></span><span class="k">${esc(b.k)}</span><span class="pm" aria-hidden="true">+</span></summary>
+   <div class="body"><div class="meta"><span>${esc(b.k)}</span><b>${esc(b.m)}</b></div><p>${esc(b.d)}</p></div></details>`).join("");
+
+$("p-h").textContent = SYNC.peopleH;
+$("p-note").textContent = SYNC.peopleNote;
+$("p-list").innerHTML = SYNC.people.map(x =>
+  `<li><span class="d">${esc(x.d)}<span>${esc(x.p)}</span></span><div><h3>${esc(x.org)}</h3><div class="who">${esc(x.who)}</div><p>${esc(x.what)}</p></div><span class="st${/已/.test(x.st)?" done":""}">${esc(x.st)}</span></li>`).join("");
+
+$("l-grid").innerHTML = SYNC.lines.map(l =>
+  `<div class="line"><span class="h">${esc(l.h)}</span><p>${esc(l.p)}</p><span class="c">${esc(l.c)}</span></div>`).join("");
+
+$("ch-list").innerHTML = SYNC.changed.map(c =>
+  `<figure style="margin:0"><blockquote><span class="was">以前：<s>${esc(c.was)}</s></span>${esc(c.now)}</blockquote>${c.cap?`<figcaption>${esc(c.cap)}</figcaption>`:""}</figure>`).join("");
+
+$("nx-h").textContent = SYNC.nextH;
+$("nx-list").innerHTML = SYNC.next.map(n =>
+  `<li><span class="d${n.tbd?" tbd":""}">${esc(n.d)}</span><span class="w">${esc(n.w)}${n.s?`<span>${esc(n.s)}</span>`:""}</span></li>`).join("");
+
+$("f-issues").innerHTML = ISSUES.map(x => {
+  const lab = x.status==="current" ? "本期" : x.status==="past" ? "往期 →" : x.status==="next" ? "下一期 →" : x.status==="newer" ? "阅读 →" : x.status==="latest" ? "最新一期 →" : "即将发布";
+  const inner = `<span class="i">${esc(x.no)}</span><span class="m">${esc(x.month)}</span><span class="m">${lab}</span>`;
+  return x.href && x.status!=="current" ? `<a class="issue link" href="${x.href}">${inner}</a>` : `<div class="issue${x.status==="current"?" cur":""}">${inner}</div>`;
+}).join("");
+
+/* ---------- map ---------- */
+(function(){
+  const W=1000,H=460, L0=95, SPAN=60, LAT_TOP=52, LAT_SPAN=96;
+  const px = c => ({x:((c.lon - L0 + 360) % 360)/SPAN*W, y:(LAT_TOP - c.lat)/LAT_SPAN*H});
+  const home = SYNC.cities.find(c => c.home), hp = px(home);
+  let dots = "";
+  for (let x=10; x<W; x+=20) for (let y=10; y<H; y+=20) dots += `<circle cx="${x}" cy="${y}" r="1" fill="#26262A"/>`;
+  let arcs = "", nodes = "";
+  SYNC.cities.forEach(c => {
+    const p = px(c);
+    if (!c.home) {
+      const mx=(hp.x+p.x)/2, my=Math.min(hp.y,p.y) - Math.abs(p.x-hp.x)*0.12 - 30;
+      arcs += `<path class="arc${c.plan?" plan":""}" data-c="${c.id}" d="M${hp.x.toFixed(1)} ${hp.y.toFixed(1)} Q${mx.toFixed(1)} ${my.toFixed(1)} ${p.x.toFixed(1)} ${p.y.toFixed(1)}"/>`;
+    }
+    const dx = c.dx ?? (p.x > 700 ? -12 : 12), anchor = c.anchor ?? (p.x > 700 ? "end" : "start"), dy = c.dy ?? 5;
+    nodes += `<g class="city${c.plan?" plan":""}" data-c="${c.id}"><circle class="halo" cx="${p.x}" cy="${p.y}" r="6"/><circle class="dot" cx="${p.x}" cy="${p.y}" r="5"/><text x="${p.x+dx}" y="${p.y+dy}" text-anchor="${anchor}">${c.name}</text></g>`;
+  });
+  $("w-map").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="从墨尔本连接到${SYNC.cities.filter(c=>!c.home).map(c=>c.cn).join("、")}的线路图"><g>${dots}</g><g>${arcs}</g><g>${nodes}</g></svg>`;
+  $("w-btns").innerHTML = SYNC.cities.map(c => `<button type="button" id="city-${c.id}" data-c="${c.id}" aria-pressed="false">${c.cn}</button>`).join("");
+  function pick(id){
+    const c = SYNC.cities.find(x => x.id===id);
+    document.querySelectorAll("#w-btns button").forEach(b => b.setAttribute("aria-pressed", b.dataset.c===id));
+    document.querySelectorAll("#w-map .city").forEach(g => g.classList.toggle("on", g.dataset.c===id));
+    document.querySelectorAll("#w-map .arc").forEach(a => a.classList.toggle("on", a.dataset.c===id || (c.home)));
+    $("w-panel").innerHTML = `<h3>${esc(c.name)}</h3><div class="st mono">${esc(c.cn)} · ${esc(c.st)}</div><ul>${c.items.map(i=>`<li>${esc(i)}</li>`).join("")}</ul>`;
+  }
+  $("w-btns").addEventListener("click", e => { const b = e.target.closest("button"); if (b) pick(b.dataset.c); });
+  pick("mel");
+})();
+
+/* ---------- count-up: values are already final at rest; replay once when scrolled into view ---------- */
+(function(){
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    io.unobserve(en.target);
+    const n = SYNC.numbers[+en.target.dataset.i], small = en.target.querySelector("small").outerHTML, t0 = performance.now(), dur = 1100;
+    const step = t => { const k = Math.min(1,(t-t0)/dur), e = 1-Math.pow(1-k,3);
+      en.target.innerHTML = fmt(n.v*e, n.dec) + small; if (k<1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  }), {threshold:.6});
+  document.querySelectorAll(".num .v").forEach(el => io.observe(el));
+})();
+</script>
+
+</body>
+</html>
