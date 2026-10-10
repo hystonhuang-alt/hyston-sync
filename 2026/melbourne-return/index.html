@@ -217,7 +217,7 @@ footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap
   <section class="col" id="world">
     <div class="rail"><span class="no">05</span><span class="name">IN THE WORLD</span><span class="cn">城市、活动、机构、合作</span></div>
     <div>
-      <h2>从墨尔本出发，连到六个节点。</h2>
+      <h2>从墨尔本出发，连到六个节点，下一步再连三个。</h2>
       <div class="world">
         <div class="map" id="w-map"></div>
         <div>
@@ -325,7 +325,7 @@ const SYNC = {
     {id:"mel", name:"MELBOURNE", cn:"墨尔本", lon:144.96, lat:-37.81, home:true, st:"HOME BASE · 09.09 落地",
       items:["9.10 重庆市商务委员会副主任一行与商务部外贸发展事务局局长到访","9.12 澳网业余挑战赛墨尔本站 · 9.20 VFL & VFLW 总决赛","9.19 / 9.28 联邦广场：《重庆市民》与川渝文化","9.24—25 中国留学生中秋国庆文艺晚会","10.2 Build Better Melbourne 2026","10.3 凌晨 4.8 级地震，墨尔本有震感","10.5 第三届维州创新展 · 企业家峰会，白马市市长第五次合作"]},
     {id:"bjs", name:"BEIJING", cn:"北京", lon:116.40, lat:39.90, st:"09.08 · 起点", dy:5, anchor:"start", dx:12,
-      items:["9.8 中国服务贸易协会拜访与工作交流","9.11 HYSTON 北京团队服贸会现场","9.15 中国服务贸易协会工作交流会"]},
+      items:["9.8 中国服务贸易协会拜访与工作交流","9.11 HYSTON 北京团队服贸会现场","9.15 中国服务贸易协会工作交流会","10月 北京市侨联侨界人才发展研修班 · 清华大学（日期待定）"]},
     {id:"ckg", name:"CHONGQING", cn:"重庆", lon:106.55, lat:29.56, st:"TEAM · ROOTS", dy:20, anchor:"end", dx:-12,
       items:["9.21 重庆团队走进重跨会","9.22 沙坪坝 MoonLab 活动","9.24 HYSTON HOTEL 重庆","9.26 重庆民营经济国际合作商会工作交流","10.1 大洋传墨韵：旅澳华人题赠墨宝","10.6 “新韵重庆”直播第一万遍"]},
     {id:"ctu", name:"CHENGDU", cn:"成都", lon:104.07, lat:30.57, st:"TEAM · 交子", dy:-8, anchor:"end", dx:-12,
@@ -333,7 +333,11 @@ const SYNC = {
     {id:"hgh", name:"HANGZHOU", cn:"杭州", lon:120.15, lat:30.27, st:"9.23 · 数贸会", dy:20, anchor:"start", dx:12,
       items:["第五届全球数字贸易博览会 · 数字文化产业交流对接活动","《杭州之后，我们重新理解了“重庆出海”》","“杭州明年再见”"]},
     {id:"hkg", name:"HONG KONG", cn:"香港", lon:114.17, lat:22.32, st:"PREVIEW", dy:5, anchor:"end", dx:-12,
-      items:["9.29 HK COMING SOON 预告，日期待公布"]},
+      items:["9.29 HK COMING SOON 预告，日期待公布","10月 香港公司落地（推进中）"]},
+    {id:"nkg", name:"NANJING", cn:"南京", lon:118.78, lat:32.06, plan:true, st:"NEXT · 10月", dy:-8, anchor:"end", dx:-12,
+      items:["南京大学鼓楼校区：江苏省人工智能学会与 HYSTON 团队交流会（日期待定）"]},
+    {id:"sgp", name:"SINGAPORE", cn:"新加坡", lon:103.82, lat:1.35, plan:true, st:"NEXT · 10月", dy:5, anchor:"start", dx:12,
+      items:["Anthropic 新加坡本地团队交流（日期待定）"]},
     {id:"sha", name:"SHANGHAI", cn:"上海", lon:121.47, lat:31.23, plan:true, st:"NEXT · 10.17", dy:-8, anchor:"start", dx:12,
       items:["9.22 澳大利亚商会上海团队工作交流","10.17 AFL CHINA，上海见"]}
   ],
@@ -350,12 +354,15 @@ const SYNC = {
     {was:"重庆团队在重庆", now:"“终于在重庆也开始有一点点墨尔本的感觉了。”", cap:"来源：9.18 朋友圈。"},
     {was:"一次访问 = 一次活动", now:"一个月里，同一批机构在北京、墨尔本、成都、杭州、重庆反复出现：线上圆桌、工作交流会、联络官招募，开始从“出席”变成“有下一步”。", cap:"整理自 9 月时间线；待你确认措辞。"}
   ],
-  nextH:"接下来要落地的事。",
+  nextH:"十月，接下来要落地的事。",
   next:[
-    {d:"10.17", w:"AFL CHINA · 上海", s:"9.24 约定，上海见"},
-    {d:"OCT", w:"HYSTON HK 预告", s:"日期待公布"},
-    {d:"OCT", w:"HYSTON 短剧", s:"首支视频之后的后续发布"},
-    {d:"OCT", w:"HUMAN ARCHIVE / LIFE ARCHIVE", s:"更多合作伙伴与本地客户"},
+    {d:"10月", w:"新加坡 · Anthropic 本地团队交流", s:"与 Anthropic 新加坡本地团队的交流，日期待定"},
+    {d:"10月", w:"南京 · 南京大学鼓楼校区", s:"江苏省人工智能学会与 HYSTON 团队交流会，日期待定"},
+    {d:"10月", w:"香港 · 公司落地", s:"HYSTON HK 公司落地，与 HK COMING SOON 预告同步推进"},
+    {d:"10月", w:"美国 · 旧金山—洛杉矶 团队落地", s:"HYSTON 美国团队在旧金山与洛杉矶落地"},
+    {d:"10月", w:"北京 · 北京市侨联 · 清华大学", s:"侨界人才发展研修班，清华大学，日期待定"},
+    {d:"10.17", w:"上海 · AFL CHINA", s:"9.24 约定，上海见"},
+    {d:"OCT", w:"HYSTON 短剧 · HUMAN ARCHIVE / LIFE ARCHIVE", s:"首支视频之后的后续发布；更多合作伙伴与本地客户"},
     {d:"10.31", w:"SYNC+ 10", s:"下一期月报"}
   ]
 };
