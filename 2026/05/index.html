@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="HYSTON SYNC+ 05 · 五月月报：《重庆市民》墨尔本第三场演唱会筹备、SHE WALKS 女性秀场、分众传媒澳洲场景媒体观察 01–06、悉尼 BTS 世巡媒体发布会；附朋友圈逐条全文。">
+<title>HYSTON SYNC+ 05</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;700;900&family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single dark scroll — cover, then seven fixed columns, each a full-width "spread" with a mono coordinate rail on the left. */
+:root{
+  --ink:#0A0A0B;        /* ground */
+  --ink-2:#141416;      /* raised surface */
+  --line:#2A2A2E;       /* hairlines */
+  --silver:#C9C9CC;     /* primary type on dark */
+  --mute:#8B8B91;       /* secondary type */
+  --dim:#5E5E64;        /* tertiary, decorative only */
+  --wine:#8E2A35;       /* accent, used sparingly */
+  --wine-hi:#C0485A;    /* accent for text on dark */
+  --f-display:'Big Shoulders Display','Arial Narrow',sans-serif;
+  --f-cn-display:'Noto Serif SC','Songti SC',serif;
+  --f-body:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--silver);font-family:var(--f-body);font-size:16px;line-height:1.7;padding-inline:clamp(16px,5vw,72px);padding-block:0;-webkit-font-smoothing:antialiased}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+a{color:var(--silver)}
+:focus-visible{outline:2px solid var(--wine-hi);outline-offset:3px}
+.wrap{max-width:1180px;margin-inline:auto}
+.mono{font-family:var(--f-mono);letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:var(--mute)}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--ink) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-inline:calc(-1*clamp(16px,5vw,72px));padding:12px clamp(16px,5vw,72px)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.bar b{font-family:var(--f-mono);font-weight:500;letter-spacing:.22em;font-size:13px;color:var(--silver)}
+.bar nav{display:flex;gap:14px;flex-wrap:wrap}
+.bar nav a{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);text-decoration:none}
+.bar nav a:hover{color:var(--silver)}
+
+/* cover */
+.cover{padding-block:clamp(56px,10vw,128px) clamp(48px,8vw,96px);display:grid;gap:28px}
+.cover .kicker{display:flex;gap:18px;flex-wrap:wrap}
+.cover h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(72px,17vw,232px);line-height:.82;letter-spacing:-.01em;color:var(--silver);text-wrap:balance}
+.cover h1 .n{color:var(--wine-hi)}
+.cover .motto{font-family:var(--f-display);font-weight:300;font-size:clamp(28px,4.4vw,56px);letter-spacing:.06em;margin:0;color:var(--silver)}
+.cover .cn{font-family:var(--f-cn-display);font-weight:600;font-size:clamp(20px,2.4vw,28px);margin:0;color:var(--mute)}
+.cover .coords{display:flex;gap:10px 28px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px}
+
+/* sections */
+section.col{border-top:1px solid var(--line);padding-block:clamp(48px,7vw,96px);display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px 48px;scroll-margin-top:56px}
+@media (max-width:820px){section.col{grid-template-columns:minmax(0,1fr)}}
+.rail{display:flex;flex-direction:column;gap:6px}
+.rail .no{font-family:var(--f-display);font-weight:700;font-size:56px;line-height:1;color:var(--dim)}
+.rail .name{font-family:var(--f-mono);font-size:13px;letter-spacing:.2em;color:var(--silver)}
+.rail .cn{font-size:13px;color:var(--mute)}
+h2{margin:0 0 28px;font-family:var(--f-cn-display);font-weight:900;font-size:clamp(28px,3.6vw,44px);line-height:1.25;color:var(--silver);text-wrap:balance;max-width:22em}
+
+/* signals */
+.signals{list-style:none;margin:0;padding:0;display:grid}
+.signals li{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:4px 20px;padding-block:22px;border-bottom:1px solid var(--line);align-items:baseline}
+.signals li:first-child{padding-top:0}
+.signals .rk{font-family:var(--f-display);font-weight:700;font-size:40px;line-height:1;color:var(--dim)}
+.signals li:first-child .rk{color:var(--wine-hi)}
+.signals h3{margin:0;font-size:clamp(19px,2vw,23px);font-weight:500;color:var(--silver);line-height:1.45}
+.signals p{margin:6px 0 0;color:var(--mute);max-width:40em}
+.signals .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--mute);border:1px solid var(--line);padding:3px 8px;white-space:nowrap}
+@media (max-width:560px){.signals li{grid-template-columns:40px minmax(0,1fr)}.signals .tag{grid-column:2;justify-self:start}}
+
+/* numbers */
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.num{background:var(--ink);padding:28px 24px;display:flex;flex-direction:column;gap:8px}
+.num .v{font-family:var(--f-display);font-weight:900;font-size:clamp(64px,8vw,104px);line-height:.9;color:var(--silver);font-variant-numeric:tabular-nums}
+.num .v small{font-size:.42em;font-weight:300;margin-left:4px;color:var(--mute)}
+.num .l{font-size:15px;color:var(--silver)}
+.num .s{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;color:var(--mute)}
+.note{margin-top:16px;font-size:13px;color:var(--mute)}
+
+/* built */
+.built{display:grid;gap:0;border-top:1px solid var(--line)}
+.built details{border-bottom:1px solid var(--line)}
+.built summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:16px;align-items:baseline;padding-block:20px}
+.built summary::-webkit-details-marker{display:none}
+.built summary .t{font-family:var(--f-display);font-weight:700;font-size:clamp(26px,3vw,36px);letter-spacing:.02em;color:var(--silver);line-height:1.1}
+.built summary .t span{display:block;font-family:var(--f-body);font-weight:400;font-size:14px;letter-spacing:0;color:var(--mute);margin-top:6px}
+.built summary .k{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute)}
+.built summary .pm{font-family:var(--f-mono);font-size:20px;color:var(--mute);width:20px;text-align:center;transition:transform .25s}
+.built details[open] summary .pm{transform:rotate(45deg);color:var(--wine-hi)}
+.built summary:hover .t{color:#fff}
+.built .body{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:24px;padding-bottom:28px}
+@media (max-width:700px){.built .body{grid-template-columns:minmax(0,1fr)}}
+.ph{aspect-ratio:16/9;max-width:100%;border:1px dashed var(--dim);display:grid;place-items:center;font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);background:repeating-linear-gradient(135deg,var(--ink) 0 10px,var(--ink-2) 10px 20px);text-align:center;padding:12px}
+.built .body p{margin:0;color:var(--silver);max-width:34em}
+
+/* world */
+.world{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px}
+@media (max-width:900px){.world{grid-template-columns:minmax(0,1fr)}}
+.map{border:1px solid var(--line);background:var(--ink-2);overflow:hidden}
+.map svg{display:block;width:100%;height:auto}
+.map .arc{fill:none;stroke:var(--dim);stroke-width:1.2;transition:stroke .3s}
+.map .arc.plan{stroke-dasharray:4 6}
+.map .arc.on{stroke:var(--wine-hi);stroke-width:2}
+.map .city circle.dot{fill:var(--silver)}
+.map .city circle.halo{fill:none;stroke:var(--wine-hi);stroke-width:1.5;opacity:0}
+.map .city.on circle.halo{opacity:1;animation:pulse 2.2s ease-out infinite}
+.map .city text{font-family:var(--f-mono);font-size:13px;letter-spacing:.12em;fill:var(--mute)}
+.map .city.on text{fill:var(--silver)}
+.map .city.plan circle.dot{fill:none;stroke:var(--mute);stroke-width:1.5}
+@keyframes pulse{0%{r:6;opacity:.9}100%{r:22;opacity:0}}
+.cities{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.cities button{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;background:transparent;color:var(--mute);border:1px solid var(--line);padding:10px 14px;cursor:pointer;min-height:44px}
+.cities button[aria-pressed="true"]{color:var(--silver);border-color:var(--wine-hi);background:color-mix(in srgb,var(--wine) 22%,transparent)}
+.cities button:hover{color:var(--silver)}
+.panel h3{margin:0 0 4px;font-family:var(--f-display);font-weight:700;font-size:40px;line-height:1;color:var(--silver);letter-spacing:.02em}
+.panel .st{margin-bottom:16px}
+.panel ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.panel li{padding-left:18px;position:relative;color:var(--silver)}
+.panel li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:1px;background:var(--wine-hi)}
+
+/* lines */
+.lines{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;padding:1px}
+.lines>*{box-shadow:0 0 0 1px var(--line)}
+.line{background:var(--ink);padding:24px;display:flex;flex-direction:column;gap:10px}
+.line .h{font-family:var(--f-display);font-weight:700;font-size:30px;letter-spacing:.06em;color:var(--silver);line-height:1}
+.line p{margin:0;color:var(--mute);font-size:15px}
+.line .c{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--dim);margin-top:auto}
+
+/* changed */
+.changed{display:grid;gap:36px}
+.changed blockquote{margin:0;font-family:var(--f-cn-display);font-weight:600;font-size:clamp(22px,2.6vw,30px);line-height:1.5;color:var(--silver);max-width:26em;text-wrap:balance}
+.changed .was{display:block;font-family:var(--f-body);font-weight:300;font-size:15px;color:var(--mute);margin-bottom:10px}
+.changed .was s{text-decoration-color:var(--wine-hi)}
+.changed figcaption{margin-top:10px;font-size:13px;color:var(--mute)}
+
+/* next */
+.next{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.next li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding-block:18px;border-bottom:1px solid var(--line);align-items:baseline}
+.next .d{font-family:var(--f-display);font-weight:700;font-size:28px;color:var(--silver);font-variant-numeric:tabular-nums}
+.next .d.tbd{color:var(--dim)}
+.next .w{font-size:18px;color:var(--silver)}
+.next .w span{display:block;font-size:14px;color:var(--mute)}
+
+
+/* people */
+.people{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--line)}
+.people li{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:6px 24px;padding-block:22px;border-bottom:1px solid var(--line);align-items:baseline}
+.people .d{font-family:var(--f-display);font-weight:700;font-size:28px;line-height:1;color:var(--silver);font-variant-numeric:tabular-nums}
+.people .d span{display:block;font-family:var(--f-mono);font-weight:400;font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:8px}
+.people h3{margin:0;font-size:clamp(17px,1.8vw,20px);font-weight:500;color:var(--silver);line-height:1.45}
+.people .who{margin:6px 0 0;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--wine-hi);line-height:1.6}
+.people p{margin:8px 0 0;color:var(--mute);max-width:44em}
+.people .st{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);border:1px solid var(--line);padding:3px 8px;white-space:nowrap}
+.people .st.done{color:var(--silver);border-color:var(--dim)}
+@media (max-width:640px){.people li{grid-template-columns:64px minmax(0,1fr)}.people .d{font-size:22px}.people .st{grid-column:2;justify-self:start}}
+.built .meta{display:flex;flex-direction:column;gap:10px;border-left:1px solid var(--line);padding-left:16px;align-self:start}
+.built .meta span{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;color:var(--mute)}
+.built .meta b{font-family:var(--f-display);font-weight:700;font-size:24px;color:var(--silver);letter-spacing:.04em}
+
+/* archive / footer */
+footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap:36px}
+.issues{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1px;padding:1px}
+.issues>*{box-shadow:0 0 0 1px var(--line)}
+.issue{background:var(--ink);padding:20px;display:flex;flex-direction:column;gap:4px;min-height:120px}
+.issue .i{font-family:var(--f-display);font-weight:900;font-size:44px;line-height:1;color:var(--dim)}
+.issue.cur .i{color:var(--wine-hi)}
+.issue.link{text-decoration:none;color:inherit;transition:background .2s}
+.issue.link:hover{background:#141418}
+.issue.link:hover .i{color:var(--wine-hi)}
+.issue .m{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute)}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot .mail{font-family:var(--f-mono);font-size:13px;letter-spacing:.08em;color:var(--silver);user-select:all}
+
+/* archive */
+.arch .day{display:grid;grid-template-columns:96px minmax(0,1fr);gap:8px 24px;padding-block:22px;border-bottom:1px solid var(--line)}
+.arch .day h3{margin:0;font-family:var(--f-display);font-weight:700;font-size:28px;line-height:1;color:var(--silver);font-variant-numeric:tabular-nums}
+.arch .day h3 small{display:block;font-family:var(--f-mono);font-weight:400;font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:8px}
+.arch ol{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.arch li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:2px 14px}
+.arch .tm{font-family:var(--f-mono);font-size:12px;color:var(--mute);padding-top:3px}
+.arch .ty{grid-column:2;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;color:var(--wine-hi);order:-1}
+.arch .tx{grid-column:2;color:var(--silver);max-width:46em;line-height:1.75;overflow-wrap:anywhere}
+.arch .md{color:var(--mute);font-size:14px}
+.arch details>summary{cursor:pointer;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--mute);padding-block:10px}
+@media (max-width:640px){.arch .day{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+
+
+<div class="bar"><div class="wrap">
+  <b>HYSTON SYNC+</b>
+  <nav aria-label="栏目">
+    <a href="#signals">01 SIGNALS</a><a href="#numbers">02 NUMBERS</a><a href="#people">03 PEOPLE</a><a href="#built">04 BUILT</a><a href="#world">05 WORLD</a><a href="#lines">06 LINES</a><a href="#changed">07 CHANGED</a><a href="#next">08 NEXT</a><a href="#archive">09 ARCHIVE</a>
+  </nav>
+</div></div>
+
+<main class="wrap" id="app">
+  <header class="cover">
+    <div class="kicker mono"><span>HYSTON SYNC+</span><span id="c-issue"></span><span id="c-date"></span></div>
+    <h1 id="c-title"></h1>
+    <p class="motto" id="c-motto"></p>
+    <p class="cn" id="c-cn"></p>
+    <div class="coords mono" id="c-coords"></div>
+  </header>
+
+  <section class="col" id="signals">
+    <div class="rail"><span class="no">01</span><span class="name">SIGNALS</span><span class="cn">本月最重要的五件事</span></div>
+    <div><h2>按重要性排序，不按主题分类。</h2><ol class="signals" id="s-list"></ol></div>
+  </section>
+
+  <section class="col" id="numbers">
+    <div class="rail"><span class="no">02</span><span class="name">NUMBERS</span><span class="cn">关键数字</span></div>
+    <div><h2>只放数字，不加形容词。</h2><div class="nums" id="n-grid"></div><p class="note" id="n-note"></p></div>
+  </section>
+
+  <section class="col" id="people">
+    <div class="rail"><span class="no">03</span><span class="name">PEOPLE</span><span class="cn">和谁谈了什么</span></div>
+    <div><h2 id="p-h"></h2><ol class="people" id="p-list"></ol><p class="note" id="p-note"></p></div>
+  </section>
+
+  <section class="col" id="built">
+    <div class="rail"><span class="no">04</span><span class="name">BUILT</span><span class="cn">这个月真正做出来的东西</span></div>
+    <div><h2>这个月真正做出来的八件东西。</h2><div class="built" id="b-list"></div></div>
+  </section>
+
+  <section class="col" id="world">
+    <div class="rail"><span class="no">05</span><span class="name">IN THE WORLD</span><span class="cn">城市、活动、机构、合作</span></div>
+    <div>
+      <h2>墨尔本、悉尼、重庆，三座城同时推进。</h2>
+      <div class="world">
+        <div class="map" id="w-map"></div>
+        <div>
+          <div class="cities" id="w-btns" role="group" aria-label="选择城市"></div>
+          <div class="panel" id="w-panel" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="col" id="lines">
+    <div class="rail"><span class="no">06</span><span class="name">BUSINESS LINES</span><span class="cn">业务线</span></div>
+    <div><h2>八条线，五月各自往前走了一步。</h2><div class="lines" id="l-grid"></div></div>
+  </section>
+
+  <section class="col" id="changed">
+    <div class="rail"><span class="no">07</span><span class="name">WHAT CHANGED</span><span class="cn">判断发生了什么变化</span></div>
+    <div><h2>这个月，我们改了四个看法。</h2><div class="changed" id="ch-list"></div></div>
+  </section>
+
+  <section class="col" id="next">
+    <div class="rail"><span class="no">08</span><span class="name">NEXT</span><span class="cn">下个月要落地的事</span></div>
+    <div><h2 id="nx-h"></h2><ol class="next" id="nx-list"></ol></div>
+  </section>
+
+  <section class="col arch" id="archive">
+    <div class="rail"><span class="no">09</span><span class="name">ARCHIVE</span><span class="cn">朋友圈逐条全文</span></div>
+    <div><h2>五月朋友圈，逐条全文。</h2><p class="note" style="margin:-12px 0 24px">本月朋友圈共 166 条，逐条存档；其中 10 条（招聘、仅自己可见、私人生活等）不在公开页收录，另有部分公众号文章正文未读取，仅存标题。评论区与第三方互动不收录。</p>
+    <details open><summary>▾ 展开 / 收起全文（共 156 条，由新到旧）</summary>
+<div class="day"><h3>05.31<small>周日</small></h3><ol>
+<li><span class="tm">23:58</span><span class="ty">视频号</span><div class="tx">发现新大陆了 <span class="md">(视频：耳返初体验 业余歌手突然想转正)</span></div></li>
+<li><span class="tm">时间待查</span><span class="ty">图2张</span><div class="tx">如此酒精浓度的团队<br>昨天活动现场0人喝多真是值得表扬</div></li>
+<li><span class="tm">14:00</span><span class="ty">视频号</span><div class="tx">对于电影版演唱会来说这个屏幕场景确实很理想 <span class="md">(京华戏院 sound check《重庆市民》)</span></div></li>
+<li><span class="tm">12:42</span><span class="ty">链接</span><div class="tx">欢迎关注! 《留学申请全攻略：本硕博全奖申请课程》<span class="md">(B站课堂)</span></div></li>
+<li><span class="tm">00:43</span><span class="ty">视频号</span><div class="tx">关于导演得第二个问题我的AI Voyager 1的回答是<br>原来一个人真正的故乡会变成她看待世界的方式<br>我的版本是<br>前两年平行的你和反引力造梦都比较宏观<br>而今年我想回到自身回到出身来处<br>于是 <span class="md">(视频：为什么演唱会叫重庆市民)</span></div></li>
+<li><span class="tm">00:02</span><span class="ty">视频号</span><div class="tx">说唱职业病belike <span class="md">(视频：当主办方是Rapper，主办方讲话)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.30<small>周六</small></h3><ol>
+<li><span class="tm">23:40</span><span class="ty">图9张</span><div class="tx">感谢台前幕后的每一位💗<br>今晚的墨尔本<br>女性不只是风景 也是力量<br>这一束光 不是照亮她们<br>是确认她们本来就在发光 <span class="md">(SHE WALKS 墨尔本华人女性秀场 现场合影、主持、舞台)</span></div></li>
+<li><span class="tm">14:42</span><span class="ty">视频号</span><div class="tx">2026 She walks 墨尔本华人女性秀场 <span class="md">(直播封面：SHE WALKS MELBOURNE 背景板，ORGANISER/PRODUCED BY HYSTON)</span></div></li>
+<li><span class="tm">02:35</span><span class="ty">视频号</span><div class="tx">虽然现在看着有很多细节都很尴尬<br>但情绪真的可以穿越时空😂 <span class="md">(视频：《重庆市民》中国好声音重庆音乐选拔 半决赛完整版 6年前的夏天)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.29<small>周五</small></h3><ol>
+<li><span class="tm">23:16</span><span class="ty">视频号</span><div class="tx">倒计时10个小时的real talk了 <span class="md">(视频：真心话 女性活动一天婉拒三波参与者，HYSTON LIFE)</span></div></li>
+<li><span class="tm">18:50</span><span class="ty">视频号</span><div class="tx">先喝完再social <span class="md">(视频：Hyston进酒展 Priya说是老朋友)</span></div></li>
+<li><span class="tm">14:12</span><span class="ty">视频号</span><div class="tx">很神奇以前一起happy<br>现在一起work也很happy <span class="md">(视频：黄总工作场合遇到老朋友belike)</span></div></li>
+<li><span class="tm">12:06</span><span class="ty">图2张</span><div class="tx">倒计时一天 <span class="md">(SHE WALKS MELBOURNE 倒计时海报 ×2)</span></div></li>
+<li><span class="tm">00:19</span><span class="ty">视频号</span><div class="tx">那个时候自己是自己的商务一个人到处飞<br>如今HYSTON背后是一群散落在世界各地00后的女生故事 <span class="md">(视频：6年前的7天国庆6场商演6个城市，《重庆市民》)</span></div></li>
+<li><span class="tm">00:05</span><span class="ty">图1张</span><div class="tx">Producer Tina生日快乐！ <span class="md">(红裙海报)</span></div></li>
+<li><span class="tm">—</span><span class="ty">长文</span><div class="tx">关于Daisy导演问的第二个问题<br>为什么演唱会叫《重庆市民》？<br>以下是Voyager 1-HYSTONGPT ai的回答：因为我发现，人离开一座城市很多年之后，那座城市还是会留在身体里。它会变成你的说话方式、情绪结构、走路速度、深夜习惯、甚至是面对世界的方法。&quot;市民&quot;这两个字对我来说，不是户籍。也不是一个简单的地域标签。它更像一种：长期生活过的痕迹。重庆把很多东西写进了我身体里。比如：爬坡上坎的习惯。在雾里找方向的能力。拥抱环境里的生命力。很重现实里的浪漫主义。还有一种——明明生活很辛苦，但还是想继续往前冲的劲。这些东西后来跟着我去了很多地方。去了墨尔本。去了舞台。去了我的歌里。也去了 HYSTON 的世界观里。所以《重庆市民》不是怀旧。 …<span class="md">(下续)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.28<small>周四</small></h3><ol>
+<li><span class="tm">22:57</span><span class="ty">图1张</span><div class="tx">咱们也闪亮登场 <span class="md">(HYSTON PRODUCER 团队海报：ARIA<br>CHARLING<br>ZOEY<br>TINA)</span></div></li>
+<li><span class="tm">13:05</span><span class="ty">图1张</span><div class="tx">2 Days to go <span class="md">(SHE WALKS MELBOURNE 倒计时海报 Zoey Xu 油爆琵琶)</span></div></li>
+<li><span class="tm">01:09</span><span class="ty">图3张</span><div class="tx">恭喜 也真的很自豪<br>从零基础到国家一级运动员<br>再通过橄榄球第一名考上大学<br>每次收到这样的消息也每次都觉得很感触<br>直到现在我还是希望自己做过的事走过的路相信过的东西能感染到身边<span class="md">(的一些人，右侧被窗口裁切)</span><br>所以当这些故事开花结果的时候<br>当一次又一次闭环发生的时候<br>也总会想起<br>从北体的那个小小旧旧的宿舍<br>走到今天的墨尔本<br>全靠这一路的类似这样的精神粮食<br>这也是《重庆市民》的一部分内核吧。<br>不是宏大的城市叙事<br>而是一个普通重庆人<br>在很多条路上不断出发不断跌倒不断把自己练出来<br>然后又把这种力量给下一个人</div></li>
+<li><span class="tm">00:03</span><span class="ty">视频号</span><div class="tx">《Chongqing Citzen》重庆市民主题曲<br>唯一的重庆话是 雄起 <span class="md">(创作人 黄欣悦 Hyston 制作...)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.27<small>周三</small></h3><ol>
+<li><span class="tm">22:40</span><span class="ty">视频号</span><div class="tx">last check <span class="md">(视频：今天又是辛苦准备场地的一天，办公室走廊两人背影)</span></div></li>
+<li><span class="tm">22:14</span><span class="ty">图1张</span><div class="tx">欢迎适老产品对接 <span class="md">(海报：澳洲重庆市商会 美国适老产品供需对接活动 2026跨境电商发展大会专项对接；活动信息/采购产品需求/对接商品/采购清单)</span></div></li>
+<li><span class="tm">20:41</span><span class="ty">图4张</span><div class="tx">三天倒计时 <span class="md">(SHE WALKS MELBOURNE 倒计时海报：3 Yvonne<br>4 Donna<br>5 Sherry Lam<br>主视觉)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.26<small>周二</small></h3><ol>
+<li><span class="tm">13:56</span><span class="ty">图3张</span><div class="tx">酒店的会一开<br>每天都在 明天是回重庆出差还是在墨尔本之间徘徊<br>郑总推的这个软件真是 5分钟 99+消息 <span class="md">(图：深空照片、通讯消息截图、聊天群截图)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.25<small>周一</small></h3><ol>
+<li><span class="tm">23:46</span><span class="ty">视频号</span><div class="tx">今日复盘 <span class="md">(视频未加载)</span></div></li>
+<li><span class="tm">23:41</span><span class="ty">视频号</span><div class="tx">唱自己的歌尽量不跑调 <span class="md">(视频：重庆市民，对着手机录唱)</span></div></li>
+<li><span class="tm">23:22</span><span class="ty">视频号</span><div class="tx">它曾经不是游客眼里的风景<br>而是重庆人日常里的路<br>从渝中到南岸<br>从这一岸到那一岸<br>它把江水切开的城市<br>重新接在一起<br><br>后来桥更多了<br>轨道更密了<br>过江的方式越来越多<br>长江索道也从通勤工具<br>慢慢变成重庆被世界记住的一张城市名片 <span class="md">(视频：重庆时空 第二十二集 长江索道 &quot;幕后团队讲重庆历史 一条索道的身份转型&quot;)</span></div></li>
+<li><span class="tm">13:46</span><span class="ty">公众号</span><div class="tx">公共空间的商业觉醒 → 《HYSTON Media × 分众传媒｜澳洲场景媒体观察 06 电梯屏不是广告入侵：它是公共空间的商业觉醒》<span class="md">(原创，5.25 13:35，12赞/20转/8喜欢/2评)</span>。正文<span class="md">（信息图）</span>：线上流量越来越贵，澳洲本地广告需要新的入口；让沉默的空间拥有信息价值，让每一次经过成为有意义的连接；电梯/大堂/楼宇/社区是每天被人经过的地方，也可成为品牌与生活的连接点；三类价值——对物业<span class="md">（激活公共空间、提升物业形象、拓展新的营收、连接本地商业与增强社区）</span>、对社区与住户<span class="md">（获取更有序的本地生活信息、了解社区活动与物业通知、更直观地匹配商家、让日常生活更便捷更有序）</span>、对品牌<span class="md">（进入高密度人群的日常场景、建立区域认知与信任、精准匹配、触达更多本地客群）</span>；我们相信，好的场景媒体不打扰生活，而是服务生活：内容精选<br>视觉高级<br>频率适中<br>精准匹配<br>服务社区；让公共空间更有价值，让城市生活更有温度。</div></li>
+<li><span class="tm">11:12</span><span class="ty">图1张</span><div class="tx">五天倒计时 <span class="md">(SHE WALKS MELBOURNE 海报 Sherry Lam，2023 TVB 澳洲华裔小姐…)</span></div></li>
+<li><span class="tm">10:07</span><span class="ty">图1张</span><div class="tx">墨尔本电梯广告投放覆盖100+楼宇 <span class="md">(海报：5月底限时优惠 电梯广告投放 7折；高频触达/精准覆盖/稳定曝光；限时政策：5月底前 电梯广告投放享7折优惠；欢迎咨询楼宇/公寓/社区场景合作)</span></div></li>
+<li><span class="tm">01:27</span><span class="ty">视频号</span><div class="tx">辛苦Yonina老师今天的专业指导<br>还有Yonina老师请的夜宵🌹🌹🌹 <span class="md">(视频：当你平时中性风的老板 办了一场女性内场体验营，黑裙走位)</span></div></li>
+<li><span class="tm">00:20</span><span class="ty">视频号</span><div class="tx">照母山最值得讲的<br>不只是它今天是一座城市森林公园<br>而是这个名字本身<br>就像一层被时间反复改写过的地貌记忆<br><br>它曾在不同资料里出现过不同写法<br>照磨山<br>赵墓山<br>再到今天被更多人熟悉的照母山<br><br>名字的变化<br>像一座山在不同年代留下的影子<br>有人从地形里理解它<br>有人从传说里理解它<br>有人从城市生长里重新靠近它 <span class="md">(视频：重庆时空 第二十一集 照母山 &quot;从照磨山到文化公园&quot;)</span></div></li>
+<li><span class="tm">00:19</span><span class="ty">图1张</span><div class="tx">当我终于把三方工程师和设计师<br>拉进一个群<br>他们就会像openclaw一样开始加班🥱🙏🙏🙏</div></li>
+</ol></div>
+<div class="day"><h3>05.24<small>周日</small></h3><ol>
+<li><span class="tm">20:49</span><span class="ty">图2张</span><div class="tx">能在生意上遇到像家人一样的朋友真的很难能可贵❤️</div></li>
+<li><span class="tm">19:11</span><span class="ty">视频号</span><div class="tx">开始集训啦 <span class="md">(排练室，导演在拍摄)</span></div></li>
+<li><span class="tm">18:16</span><span class="ty">图1张</span><div class="tx">重庆市民现场阵容继续确认<br><br>这一次，Lancy 将作为 Dancer 加入<br>黄欣悦墨尔本第三场个人演唱会《重庆市民》。// Lancy 的加入，<br>让《重庆市民》的舞台不只被唱出来，<br>也被身体重新打开。// 声音是叙事。/ 舞蹈是证词。/ 现场是我们共同进入的城市切片。// 欢迎 Lancy。/ 一起进入《重庆市民》。</div></li>
+<li><span class="tm">13:47</span><span class="ty">图1张</span><div class="tx">倒计时6天 <span class="md">(SHE WALKS 海报 光影剪影)</span></div></li>
+<li><span class="tm">13:32</span><span class="ty">公众号</span><div class="tx">澳洲本地商家缺的不是广告预算<br>是被反复遇见的能力 → 《HYSTON Media × 分众传媒｜澳洲场景媒体观察 05 澳洲本地商家缺的不是广告预算，是&quot;被反复遇见&quot;的能力》<span class="md">(正文待补读)</span></div></li>
+<li><span class="tm">01:45</span><span class="ty">视频号</span><div class="tx">带大家一起上船啦 <span class="md">(视频未加载)</span></div></li>
+<li><span class="tm">01:19</span><span class="ty">视频号</span><div class="tx">本周复盘总结 HYSTON WEEKLY SYNC+ <span class="md">(封面：HYSTON WEEKLY SYNC+ 2026.05.16–05.23，一周两条时间线…5.16–5.23 每日图标)</span></div></li>
+<li><span class="tm">00:09</span><span class="ty">视频号</span><div class="tx">特朗普暂缓AI监管行政令的争议继续发酵 <span class="md">(封面 5.23 AI日报：01 东南亚AI从&quot;试试看&quot;进入企业部署<br>02 Anker发布自研AI THUS芯片<br>03 Zetrix AI联手深圳数据交易所做跨境数据平台<br>04 Epoch AI更新全球AI能力评测数据库<br>05 特朗普暂缓AI监管行政令继续发酵；今日人话总结：5月23日，AI正在从&quot;大模型新闻&quot;，转成五种更小但更真实的入口…)</span></div></li>
+<li><span class="tm">00:07</span><span class="ty">图3张</span><div class="tx">HYSTON HOTEL<br>新增情趣房初稿<br>征求一下大家的建议 <span class="md">(红黑配色主题房间效果图×3，HYSTON霓虹字)</span></div></li>
+<li><span class="tm">00:05</span><span class="ty">图4张</span><div class="tx">HYSTON第一次以<br>media<br>industry access 的身份<br>进入全球巡演系统现场<br><br>有时候会突然意识到<br>以前在iMe的平台上接触到的世巡物料<br>现在已经变成了自己公司手里的 media pass<br><br>从underground club<br>到 stadium tour<br><br>世界比想象中更像一张 backstage map<br>Sydney<br>Rain<br>Live Nation<br>BTS WORLD TOUR &quot;ARIRANG&quot;<br><br>有些门<br>真的会因为你一直往前走<br>慢慢打开 <span class="md">(图：Live Nation 媒体证件、BTS WORLD TOUR ARIRANG 海报)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.23<small>周六</small></h3><ol>
+<li><span class="tm">22:54</span><span class="ty">视频号</span><div class="tx">She Walks墨尔本华人女性秀场体验营倒计时7天 <span class="md">(视频：7天后 普通人也能走秀，倒计时7天)</span></div></li>
+<li><span class="tm">20:33</span><span class="ty">公众号</span><div class="tx">中国广告出海带来的是一套场景媒体方法论 → 《HYSTON Media × 分众传媒｜澳洲场景媒体观察 04 分众不是&quot;中国广告出海&quot;：它带来的是一套场景媒体方法论》<span class="md">(正文待补读)</span></div></li>
+<li><span class="tm">19:20</span><span class="ty">视频号</span><div class="tx">下次少喝点 <span class="md">(视频：跟着00后老板参加文化交流活动的一晚)</span></div></li>
+<li><span class="tm">00:37</span><span class="ty">图2张</span><div class="tx">今天感受了一下当天往返悉尼的出差节奏<br>然后又收到了来自妈妈每天的劝退 <span class="md">(微信聊天截图)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.22<small>周五</small></h3><ol>
+<li><span class="tm">22:44</span><span class="ty">视频号</span><div class="tx">今天在BTS船上的那三个小时<br>悄悄给自己留了10分钟<br>在资源云集的船上关掉我的社交系统<br>暂时不怕少聊一句少一次机会<br>站在船头<br>就这样看看一会儿下雨刮风<br>一会儿晴空万里的悉尼河面<br>我突然好想三峡啊<br>又想起去年国庆团队陪我一起去山峡出差的时候 <span class="md">(视频：三峡移民)</span></div></li>
+<li><span class="tm">21:12</span><span class="ty">公众号</span><div class="tx">澳洲场景媒体观察 03 → 《HYSTON Media × 分众传媒｜澳洲场景媒体观察 03 澳洲不是没有流量，是流量散在城市的骨缝里》<span class="md">(正文待补读)</span></div></li>
+<li><span class="tm">16:14</span><span class="ty">图9张</span><div class="tx">BTS 世巡媒体发布会<br>三个小时的船上<br>kpi再次超标完成 good work!<br>networking 建联了 40+ 悉尼媒体人<br>以及音乐人<br>Tiktok ABC BSB<br>LiveNation的一位墨尔本同事居然跟我早上坐的同一个航班<br>whatslively 老板居然说我醉酒状态下保暖为主的衣服是全场最佳穿搭<br>以下是得到今天下午3点才能发的活动素材 <span class="md">(悉尼港船上合影、海港大桥、歌剧院)</span></div></li>
+<li><span class="tm">10:54</span><span class="ty">视频号</span><div class="tx">期待一下今天悉尼韩娱发布会吧！ <span class="md">(视频：悉尼发布会，歌剧院前)</span></div></li>
+<li><span class="tm">06:32</span><span class="ty">视频号</span><div class="tx">一睁眼秒回重庆 <span class="md">(视频：欢迎来到雾都墨尔本，凌晨公路雨夜)</span></div></li>
+<li><span class="tm">01:11</span><span class="ty">图1张</span><div class="tx">当同事以为你在胡言乱语<br>于是 <span class="md">(截图：HYSTON Official 群 &quot;仍在应酬今日复盘 明天发…&quot;)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.21<small>周四</small></h3><ol>
+<li><span class="tm">23:58</span><span class="ty">视频号</span><div class="tx">一网情深 <span class="md">(视频：泸州老窖，聚餐现场)</span></div></li>
+<li><span class="tm">23:58</span><span class="ty">视频号</span><div class="tx">辛苦大家 <span class="md">(视频：四川川剧团 Sichuan Crossing)</span></div></li>
+<li><span class="tm">19:42</span><span class="ty">视频号</span><div class="tx">白马市唱完来墨尔本市 <span class="md">(视频：《重庆市民》黄欣悦墨尔本第三场演唱会 墨尔本市市政厅 场地inspection)</span></div></li>
+<li><span class="tm">16:54</span><span class="ty">公众号</span><div class="tx">电梯不是通道<br>它是澳洲本地广告最被低估的战场 → 《HYSTON Media × 分众传媒｜澳洲场景媒体观察 02 电梯不是通道：它是澳洲本地广告最被低估的战场》<span class="md">(正文待补读)</span></div></li>
+<li><span class="tm">16:08</span><span class="ty">图1张</span><div class="tx">这一刻这海报梦回<br>HYSTON墨尔本和泸州老窖一月澳网活动 <span class="md">(国窖1573 澳网背景板前合影)</span></div></li>
+<li><span class="tm">14:03</span><span class="ty">图1张</span><div class="tx">很荣幸加入感谢国窖1573澳洲团队🤝 <span class="md">(合影：执行总裁 Bruce、…Robin、…合伙人 Hyston 等；国窖1573销售公司)</span></div></li>
+<li><span class="tm">11:33</span><span class="ty">图1张</span><div class="tx">由澳洲重庆市文化体育教育旅游协会联合青年企业家商会主办的墨尔本华人女性秀场体验营即将跟大家见面啦！ <span class="md">(SHE WALKS MELBOURNE 墨尔本华人女性秀场体验营 海报，Canterbury Rd, Surrey Hills, Dec 2027?)</span></div></li>
+<li><span class="tm">02:31</span><span class="ty">视频号</span><div class="tx">今日SYNC <span class="md">(封面 HYSTON DAILY 5.20 · 27 LINES，一日27条：HYSTON Travel 澳洲重庆线、重庆旅游产品底盘梳理、HYSTON Media 品牌表达成型、美团/MATEPOWER 点位合作、…、She Walks 报名新增、…、今日结构判断 等；封面小字清晰度有限，逐条标题未能全部辨认)</span></div></li>
+<li><span class="tm">02:30</span><span class="ty">视频号</span><div class="tx">HSBC告诉员工不要对抗AI<br>Standard Chartered则忙着安排&quot;低价值人力&quot;说法带来的争议 <span class="md">(封面10条：01 OpenAI在新加坡设立海外首个Applied AI Lab<br>02 新加坡讨论给AI产品贴&quot;营养标签&quot;<br>03 HSBC CEO：不要对抗AI<br>04 StanChart CEO安抚&quot;低价值人力&quot;争议<br>05 新加坡敦促金融机构用AI创造更好的岗位<br>06 年轻人开始对AI就业未来发出嗟声<br>07 Tesla在立陶宛推出Full Self-Driving<br>08 阿里巴巴发布新AI芯片<br>09 Thales与Google Cloud做德国本土云<br>10 Analog Devices上调收入预期)</span></div></li>
+<li><span class="tm">01:36</span><span class="ty">视频号</span><div class="tx">睡! <span class="md">(视频：最累的520 16个小时超长待机 27个完成事项)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.20<small>周三</small></h3><ol>
+<li><span class="tm">20:24</span><span class="ty">图1张</span><div class="tx">欢迎入住HYSTON HOTEL <span class="md">(海报：我爱你，不止今天。夕阳城市与床景)</span></div></li>
+<li><span class="tm">19:26</span><span class="ty">图2张</span><div class="tx">同事说今天起这么早<br>奖励一下 领到个520早起奖励红包🧧 <span class="md">(¥520.00 已被接收×2)</span></div></li>
+<li><span class="tm">18:06</span><span class="ty">视频号</span><div class="tx">这些独一无二的520反复是超越爱情的平凡浪漫<br>每一次都在向这个星球表达<br>我爱你<br>那时是超越时空的爱<br>是不计回报的炙热<br>是无论风险的勇敢<br>是浪漫的罪名<br>也是热爱的救赎 <span class="md">(视频：&quot;我爱你&quot;…)</span></div></li>
+<li><span class="tm">17:46</span><span class="ty">公众号</span><div class="tx">当线上流量越来越贵<br>澳洲本地广告需要新的入口 → 《被刷到，不等于被记住：澳洲本地广告为什么需要线下场景？HYSTON × 分众传媒澳洲场景媒体观察 01》<span class="md">(正文待补读)</span></div></li>
+<li><span class="tm">10:27</span><span class="ty">视频号</span><div class="tx">他回去不是为了找什么，是为了确认他真的已经往外面走了很远。虽然老是会梦到那里，但这次回去也发现自己已经不再属于那里，所以走过之后不会再做那些梦了。岁月无情的扑面感很难受，但那是小时候那段真实经历迎面砸过来的证据。GAI哥回到荒废的学校遇到老馆子的阿姨问拍什么他说&quot;就拍点东西，以后老了可以看&quot;去完之后&quot;我再也不会回来了，我没有东西掉在这&quot;因为那些东西还在原地，但他已经不是原来那个只能在乡镇里想象世界的人了。<span class="md">(视频：梦话)</span></div></li>
+<li><span class="tm">00:49</span><span class="ty">图2张</span><div class="tx">一共四桌堂食的餐厅<br>隔壁桌偶遇美团老板<br>天命PR人 <span class="md">(与黄衣男士合影×2)</span></div></li>
+<li><span class="tm">00:41</span><span class="ty">视频号</span><div class="tx">今日HYSTON SYNC+ <span class="md">(视频封面未加载，正文无更多)</span></div></li>
+<li><span class="tm">00:40</span><span class="ty">视频号</span><div class="tx">OpenAI赢下马斯克诉讼 <span class="md">(视频封面未加载)</span></div></li>
+<li><span class="tm">00:30</span><span class="ty">视频号</span><div class="tx">其实关于以前那些自己看到都会脚趾抠地的演出视频也犹豫了一下 <span class="md">(视频：《重庆市民》黄欣悦墨尔本第三场个人演唱会 2026.6.18，第一集 为什么开始唱歌)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.19<small>周二</small></h3><ol>
+<li><span class="tm">22:37</span><span class="ty">视频号</span><div class="tx">是的今早的阿瓦隆机场<br>有一个人在机场门口咆哮<br>&quot;你看看你定的机票&quot; <span class="md">(视频：喜提降落阿瓦隆机场 周五去悉尼，SVA 9点起床来机场)</span></div></li>
+<li><span class="tm">17:58</span><span class="ty">图2张</span><div class="tx">感谢中国服务贸易协会邀请<br>海报还在制作中<br>关于2026跨境电商发展大会<br>美国适老产品供需对接活动<br>大家有需求请联系<br><span class="md">(微信号 hysclubforlove)</span></div></li>
+<li><span class="tm">17:49</span><span class="ty">图1张</span><div class="tx">4年了终于有个封面了 <span class="md">(人像侧影封面)</span></div></li>
+<li><span class="tm">08:19</span><span class="ty">视频号</span><div class="tx">看到那位瘦小的女士从外面拉上门的那一瞬间<br>我还以为坐的是那种二十年前的面包车 <span class="md">(视频：飞机舱内，Jetstar)</span></div></li>
+<li><span class="tm">00:43</span><span class="ty">图1张</span><div class="tx">HYSTON SYNC 5.18 <span class="md">(全球节点表：地图+每项进展表，含 HYSTON CARE、重庆文旅等，状态灯：已完成/进行中/待处理；封面小字不清晰，逐行未能辨认)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.18<small>周一</small></h3><ol>
+<li><span class="tm">23:15</span><span class="ty">视频号</span><div class="tx">准备好明天的Google年度开发者大会了吗<br>倒计时1天零3小时44分钟50秒 <span class="md">(封面 AI日报 5.18：…Google I/O 相关6条)</span></div></li>
+<li><span class="tm">21:32</span><span class="ty">视频号</span><div class="tx">异国推进背后vlog <span class="md">(视频未加载)</span></div></li>
+<li><span class="tm">11:00</span><span class="ty">视频号</span><div class="tx">这又是谁拍的这么好看😏 <span class="md">(视频未加载)</span></div></li>
+<li><span class="tm">02:11</span><span class="ty">视频号</span><div class="tx">看到13秒开始泪目<br>看完以后就哭了 <span class="md">(视频：6年前第一场万人演唱会，编导/后期 Charling)</span></div></li>
+<li><span class="tm">01:51</span><span class="ty">图1张</span><div class="tx">被未来追着跑 <span class="md">(全球节点图/信息图：世界地图+各城市节点+进度条)</span></div></li>
+<li><span class="tm">01:51</span><span class="ty">视频号</span><div class="tx">当Steven Soderbergh承认在John Lennon纪录片里使用Meta AI生成部分画面<br>莫纳开始真正面对一个问题<br>AI到底是后期工具<br>还是创作边界的改写者 <span class="md">(封面 AI HYSTON｜今日AI新闻 2026/5/17：1 Nvidia黄仁勋… 2 AI麦当劳… 3 Steven Soderbergh承认在John Lennon纪录片使用Meta AI… 4 教皇… 5 YouTube扩大AI Deepfake检测至所有用户)</span></div></li>
+<li><span class="tm">00:57</span><span class="ty">图3张</span><div class="tx">感谢陈总引荐董司 张会长<br>辛苦团队幸会中国服务贸易协会秘书长🤝<br>也欢迎更多机会来到重庆落地！ <span class="md">(会议现场：中国服务贸易协会 …工作委员会 成立大会，领奖/合影)</span></div></li>
+<li><span class="tm">00:48</span><span class="ty">视频号</span><div class="tx">每天都在踱步 <span class="md">(视频未加载)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.17<small>周日</small></h3><ol>
+<li><span class="tm">21:15</span><span class="ty">视频号</span><div class="tx">辛苦大家🙏 <span class="md">(视频：中国服务贸易协会 现场 2026.5.17)</span></div></li>
+<li><span class="tm">15:22</span><span class="ty">视频号</span><div class="tx">听到进鼓那一下我就知道6月18号那一天有多嗨了<br>直接从悉尼一个不知道叫什么的小镇帅回墨尔本 <span class="md">(视频：排练间架子鼓、排练)</span></div></li>
+<li><span class="tm">09:05</span><span class="ty">视频号</span><div class="tx">这是谁拍的 拍的真好😏 <span class="md">(视频：悉尼95年女老板 创业日常(6)</span>)</div></li>
+<li><span class="tm">02:31</span><span class="ty">视频号</span><div class="tx">最近Charling的工作量有点太大了辛苦🥹 <span class="md">(视频：墨尔本00后老板的去班味vlog)</span></div></li>
+<li><span class="tm">01:53</span><span class="ty">文字</span><div class="tx">感谢陈总 感谢董司 受益匪浅🙏🙏🙏</div></li>
+<li><span class="tm">00:17</span><span class="ty">视频号</span><div class="tx">替我微醺🌹 <span class="md">(视频：当Hyston不在墨尔本时 HYSTON墨尔本营业状态belike，与Pernod…交流)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.16<small>周六</small></h3><ol>
+<li><span class="tm">23:04</span><span class="ty">图9张</span><div class="tx">谢谢大家把我在袁总店里偷闲<br>在门口跟Sophy catch up也算进去了<br>也感谢Sophy老师引荐吴总<br>不过真的受益匪浅<br>像在读一本不是普通人教版的电影版教材<br><br>这个复盘提案真挺不错的<br>但这些能放照片的也只有在悉尼划水的我<br>和墨尔本的Penfolds酒会了<br>我们杜老师so far已经替我微醺了 <span class="md">(图：复盘提案页、悉尼合影、Penfolds &quot;An Exclusive Evening of Discovery&quot; 酒会邀请、Penfolds 红色礼盒与酒)</span></div></li>
+<li><span class="tm">02:53</span><span class="ty">视频号</span><div class="tx">提前回答一下为什么是给6年前呢<br>致敬2020年5月20号第一场商演 <span class="md">(视频：第一场商演)</span></div></li>
+<li><span class="tm">01:40</span><span class="ty">视频号</span><div class="tx">以前我以为那些歌只是某一段时间的情绪 <span class="md">(视频：演唱会预热 短视频导演提问 &quot;你为什么写歌？&quot; 重庆市民)</span></div></li>
+<li><span class="tm">01:00</span><span class="ty">视频号</span><div class="tx">本来十八梯should be18级的 <span class="md">(视频：重庆时空 第二十集 十八梯 &quot;一座城里的台阶 变成命运&quot;)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.15<small>周五</small></h3><ol>
+<li><span class="tm">23:30</span><span class="ty">图1张</span><div class="tx">感谢重庆团队今天上大分<br>5个人cover 25人次<br>线下7轮catchup真的辛苦了🥹<br>也感谢各位的资源对接 铭记在心！ <span class="md">(HYSTON 重庆 夜景图)</span></div></li>
+<li><span class="tm">22:41</span><span class="ty">视频号</span><div class="tx">AI HYSTON 5.15 <span class="md">(封面10条头条，小字清晰度有限，可辨认：02 Anthropic与…启动2亿美元AI公益合作<br>03 Anthropic扩大与PwC合作<br>04 Anthropic据报估值冲9000亿美元<br>05 美国新芯片出口管制不是中美谈判重点<br>08 Anthropic 15亿美元股权和解接受审查<br>09 AI最贵赛道提升…<br>10 教育警告AI造梦风险；其余待核)</span></div></li>
+<li><span class="tm">17:25</span><span class="ty">公众号</span><div class="tx">欢迎大家参加我们赞助的蒙纳士校友茶话会 → 《【MCSA 活动】蒙纳士校友茶话会重磅登场｜诚邀校友共赴相聚之约！》</div></li>
+<li><span class="tm">15:45</span><span class="ty">视频号</span><div class="tx">他说对面UTR 9<br>那真的很长脸了Qwest <span class="md">(视频：网球场球员背影)</span></div></li>
+<li><span class="tm">12:34</span><span class="ty">部分可见</span><div class="tx">重庆做商业装修的团队🙋</div></li>
+<li><span class="tm">10:04</span><span class="ty">文字</span><div class="tx">来悉尼的第一晚好棒的作息 睡十个小时起床才十点</div></li>
+</ol></div>
+<div class="day"><h3>05.14<small>周四</small></h3><ol>
+<li><span class="tm">19:36</span><span class="ty">视频号</span><div class="tx">真是有点心酸 <span class="md">(视频：26冲浪选手 干什么都酸的心酸，车内屏幕)</span></div></li>
+<li><span class="tm">11:54</span><span class="ty">图1张</span><div class="tx">Life <span class="md">(车与房屋、山景)</span></div></li>
+<li><span class="tm">08:25</span><span class="ty">视频号</span><div class="tx">Tim昨天：黄教明天有没有时间喝咖啡<br>我：明天比较突然要开车去悉尼<br>Tim：要不一起吧我也出去溜溜新车把你放在悉尼我第二天回<br>于是我们一起出发了<br>感谢网球从学生变朋友<br>最难能可贵的是陪我疯的tim老师还是我们上一代的年纪 <span class="md">(视频：墨尔本🚗悉尼，hyston的歌Spotify已上线)</span></div></li>
+<li><span class="tm">08:21</span><span class="ty">同上文案，另一条</span><div class="tx">评论：搞娱乐效果落地的魏洲：早；Hyston：hahahh；早魏总 你太早了；方案方案哈哈🌹；魏洲：已经做好了；Hyston：棒棒</div></li>
+<li><span class="tm">01:30</span><span class="ty">视频号</span><div class="tx">关于同一座城市在两条江写下的两次回答 <span class="md">(视频：重庆时空 第十九集 东水门/千厮门大桥 &quot;两江之间 一座城把自己建成完整&quot;)</span></div></li>
+<li><span class="tm">01:19</span><span class="ty">视频号</span><div class="tx">时隔两个月依旧热血沸腾 <span class="md">(视频：重庆时空 第八集 开埠遗址 &quot;在江岸重新读懂世界的那一刻&quot;)</span></div></li>
+<li><span class="tm">00:33</span><span class="ty">视频号</span><div class="tx">AI HYSTON<br>OpenAI向欧洲关键行业开放GPT-5.5-Cyber<br>Daybreak开始挑战Anthropic Mythos<br>三星劳资谈判裂AI芯片供应链面临风险<br>鸿海进入非洲主权AI基础设施市场 <span class="md">(封面10条：01 OpenAI向欧洲关键行业开放GPT-5.5-Cyber<br>02 OpenAI Daybreak挑战Anthropic Mythos<br>03 三星劳资谈判裂AI芯片供应链面临风险<br>04 新加坡建设&quot;可信AI中心&quot;<br>05 Google…中心<br>06 CME推出……<br>07 Google DeepMind推出&quot;AI时代的超级循环&quot;<br>08 Google Cloud发布企业AI Agent重塑<br>09 基于可见AI视频工具 估值达200亿美元<br>10 鸿海进入非洲主权AI基础设施市场；今日判断…)</span></div></li>
+</ol></div>
+<div class="day"><h3>05.13<small>周三</small></h3><ol>
+<li><span class="tm">20:43</span><span class="ty">视频号</span><div class="tx">欢迎Fiona! <span class="md">(视频：欢迎舍得&amp;劲酒 Marketing负责人，舍得·劲酒)</span></div></li>
+<li><span class="tm">14:49</span><span class="ty">图1张</span><div class="tx">Motel Wanted<br>大家有合适的物业可以推荐一下🙏 <span class="md">(海报：IS LOOKING FOR MOTELS，墨尔本—悉尼走廊的汽车旅馆物业征集，路线图)</span></div></li>
+<li><span class="tm">14:15</span><span class="ty">图1张</span><div class="tx">周日墨尔本CBD 第一站不见不散! <span class="md">(海报：打卡墨尔本100个网球场 Melbourne Courts Challenge，HYSTON Tennis Club 发起，HYSTON 品牌旗下 …)</span></div></li>
+<li><span class="tm">03:06</span><span class="ty">视频号</span><div class="tx">This is<span class="md">（视频：留学到底给我带来了什么呢 <span class="md">(1)</span>）</span></div></li>
+<li><span class="tm">03:06</span><span class="ty">视频号</span><div class="tx"><span class="md">(无文字)</span> 独自骑行穿越印尼<span class="md">（视频）</span></div></li>
+<li><span class="tm">03:02</span><span class="ty">视频号</span><div class="tx">给我看爽了<span class="md">（视频：20惊喜婚礼纪实）</span></div></li>
+<li><span class="tm">02:57</span><span class="ty">视频号</span><div class="tx">栋啊<span class="md">（视频：第二个疯狂自由的我了 The second crazy free me）</span></div></li>
+<li><span class="tm">02:51</span><span class="ty">链接</span><div class="tx">看完了51集<br>再次get到致60岁的黄欣悦的含金量</div></li>
+<li><span class="tm">02:33</span><span class="ty">视频号</span><div class="tx">两年前的小黄说<span class="md">（视频：99次日落 Hyston 墨尔本骑行自驾篇 A41公路真的好浪漫 Daily Inspiration）</span></div></li>
+<li><span class="tm">02:26</span><span class="ty">视频号</span><div class="tx">怀念然后出发<span class="md">（视频封面：99次日落 悉尼骑行到墨尔本 自驾 hotdog；车边草地）</span></div></li>
+<li><span class="tm">02:10</span><span class="ty">视频号</span><div class="tx">人生第一次开右驾是打了个grab<span class="md">（视频：关于我打车去给别人当司机这回事）</span></div></li>
+</ol></div>
+<div class="day"><h3>05.12<small>周二</small></h3><ol>
+<li><span class="tm">17:28</span><span class="ty">图文</span><div class="tx">黄欣悦墨尔本第三场公益个人演唱会《重庆市民》欢迎您来<span class="md">（海报：夜景重庆，06 …）</span></div></li>
+<li><span class="tm">17:16</span><span class="ty">视频号</span><div class="tx">谢谢啊<span class="md">（视频字幕：你永远不知道00后p人老板的行程之墨尔本大学演出；舞台紫光，工作人员背影）</span></div></li>
+<li><span class="tm">14:20</span><span class="ty">视频号</span><div class="tx">投资公共交通就是投资维州未来<span class="md">（视频：联邦政府拟投入38亿澳元 维州议员与工人）</span></div></li>
+</ol></div>
+<div class="day"><h3>05.11<small>周一</small></h3><ol>
+<li><span class="tm">08:44</span><span class="ty">视频号</span><div class="tx">AI 正在从搜索时代进入代理时代<span class="md">（视频：今日AI观察 5/10 信息图）</span></div></li>
+</ol></div>
+<div class="day"><h3>05.10<small>周日</small></h3><ol>
+<li><span class="tm">22:15</span><span class="ty">视频号</span><div class="tx">那这剪辑和摄影都得加鸡腿<span class="md">（视频字幕：跟着00后老板参加政商晚宴的一晚；中华人民共和国驻墨尔本总领事馆领事等合影）</span></div></li>
+<li><span class="tm">14:57</span><span class="ty">视频号</span><div class="tx">和妈妈交换人生🌹<span class="md">（视频：酒会/场馆，字幕 Drink when you should 该喝酒就喝）</span></div></li>
+</ol></div>
+<div class="day"><h3>05.09<small>周六</small></h3><ol>
+<li><span class="tm">19:50</span><span class="ty">公众号</span><div class="tx">把小人物的命唱得像史诗<span class="md">（文章：从社会边缘里看见史诗 GAI《星梦》——一个本来该做梦的人怎么一步一步被生活安排去替别人制造梦）</span><span class="md">（正文待补读）</span></div></li>
+<li><span class="tm">19:45</span><span class="ty">视频号</span><div class="tx">云晚宴<span class="md">（视频：宴会厅蓝红灯光，&quot;可观看回放&quot;）</span></div></li>
+<li><span class="tm">19:31</span><span class="ty">图文9图</span><div class="tx">维州华人社团联合会👍👍👍 也感谢京京邀请 也感谢大家的❤️<span class="md">（图：FCA INAUGURATION GALA 5 May? 海报、签到、与各界嘉宾合影，图注标注头衔）</span></div></li>
+<li><span class="tm">00:08</span><span class="ty">视频号</span><div class="tx">又听哭了GAI哥<br>好神奇的量子纠缠啊<br>我听完的反应<br>为什么他会想到写商k妹妹呢<br>又为什么是现在发出来呢<br>为什么能在我刚经历过这样一段特殊感情之后上线呢<span class="md">（视频：GAI《星梦》）</span></div></li>
+</ol></div>
+<div class="day"><h3>05.08<small>周五</small></h3><ol>
+<li><span class="tm">00:28</span><span class="ty">图文9图</span><div class="tx">辛苦 Lancy 和 Christine 的打 call<span class="md">（图：演出现场，工作人员荧光背心登台架、舞台灯光、观众）</span></div></li>
+<li><span class="tm">00:01</span><span class="ty">视频号</span><div class="tx">AI不是远方的科幻<br>它正在变成世界运行的新协议<span class="md">（视频：AI HYSTON 今日AI新闻 2026.05.07 信息图，10条标题小字不可辨）</span></div></li>
+</ol></div>
+<div class="day"><h3>05.07<small>周四</small></h3><ol>
+<li><span class="tm">23:41</span><span class="ty">QQ音乐</span><div class="tx">老年人终于开始上QQ音乐了<span class="md">（歌曲：另一个我没睡）</span></div></li>
+<li><span class="tm">20:29</span><span class="ty">视频号</span><div class="tx">欢迎大家来看演出哦<span class="md">（视频：Hyston 墨尔本大学演出 8:30 sound check 8:50演出开始）</span></div></li>
+<li><span class="tm">20:08</span><span class="ty">视频号</span><div class="tx">重庆市民第二版<span class="md">（视频未加载）</span>；Hyston 评论：6.18 预告</div></li>
+<li><span class="tm">20:01</span><span class="ty">图文9图</span><div class="tx">欢迎泉州市市长蔡战胜先生一行<br>很荣幸作为本次墨尔本论坛的 Event Lead<br>以统筹负责人的身份深度<br>站在国际交流项目的中间<br>沉浸体验各大品牌的互动合作<br>从一封封 official invitation<br>到和匹克、七匹狼、鸿星尔克等品牌企业董事长深入交流<br>我们能感受到的不只是国际活动<br>而是一个城市一条产业链一个品牌出海故事<br>如何在真实世界里被搭建起来<span class="md">（图：合影含 匹克 CEO、福诚董事长、七匹狼董事长/市工商联主席、八马茶业董事长；书写/签名 新合作 论坛墙；有现场合影）</span></div></li>
+<li><span class="tm">01:47</span><span class="ty">图文9图</span><div class="tx">从玩笑野心梦话<br>变成了系统里真实存在的一行名字和🇨🇳国旗<br>世界很大路很长<br>但今天这一步是真的<span class="md">（图：国际网球赛事 ITF 系统名单截图 HUANG Hyston、ITF Academy 证书、W15 Brisbane 等赛事列表）</span></div></li>
+<li><span class="tm">01:35</span><span class="ty">文字</span><div class="tx">突然紧张</div></li>
+<li><span class="tm">00:07</span><span class="ty">链接</span><div class="tx">很难要求17岁的自己像现在一样成熟<br>那不是幼稚<br>是少年气<span class="md">（播客：Hyston这个名字是17岁的我拼出来的 - 平行的你｜小宇宙 - 听播客，上小宇宙）</span></div></li>
+</ol></div>
+<div class="day"><h3>05.06<small>周三</small></h3><ol>
+<li><span class="tm">23:32</span><span class="ty">视频号</span><div class="tx">从模型竞争到系统竞争<br>下一代的现实权利 我们拭目以待<span class="md">（视频：AI HYSTON 今日AI新闻 2026.05.06 信息图，10条）</span></div></li>
+<li><span class="tm">22:31</span><span class="ty">图文9图</span><div class="tx">摄影师是怎么老在远景抓到我喝酒的瞬间的按下快门的<span class="md">（图：论坛/酒会现场合影、观众席）</span></div></li>
+<li><span class="tm">19:24</span><span class="ty">图文1图</span><div class="tx">欢迎大家参加墨尔本华人女性秀场体验营 青年企业家商会 澳洲重庆市文化体育教育旅游协会联合主办<span class="md">（海报：她·走·墨尔本 墨尔本华人女性秀场体验营）</span></div></li>
+<li><span class="tm">18:54</span><span class="ty">图文1图</span><div class="tx">又收获到了来自中华人民共和国驻墨尔本总领事的能量🤩<span class="md">（截图片段：……被房总夸了，我好开心……在朋友圈看到我们做的…）</span></div></li>
+<li><span class="tm">18:11</span><span class="ty">视频号</span><div class="tx">昨天在Lancy非常chill的小聚小酌里<br>讲到了我Star和Moon的专辑 然后一出问<br>你有写给太阳过吗<br>于是<span class="md">（视频封面：《写给太阳》 HYSTON）</span></div></li>
+</ol></div>
+<div class="day"><h3>05.05<small>周二</small></h3><ol>
+<li><span class="tm">19:06</span><span class="ty">视频号</span><div class="tx">是谁会在我们店免费喝一年呢<span class="md">（视频未加载）</span></div></li>
+<li><span class="tm">16:57</span><span class="ty">图文9图</span><div class="tx">当公司的operation manager和marketing manager和director lucky三人组一起去展会networking<br>就会收获一台美的的墨尔本最大奖<br>空调一台<br>本来Joanne理想状态是开重庆市民当敞篷给她送回家 结果刚放上车对面道警车封路 打了个uber 然后uber来了警察走了<span class="md">（图：展会 AIRDS 签到牌 YUAN LIN、美的 Midea 奖品、敞篷车）</span></div></li>
+<li><span class="tm">16:11</span><span class="ty">视频号</span><div class="tx">She Walks 墨尔本正式宣发<span class="md">（视频：SHE WALKS 宣发访谈，两位女嘉宾坐沙发）</span></div></li>
+<li><span class="tm">10:54</span><span class="ty">图文9图</span><div class="tx">早起见市长<br>早起好客户<span class="md">（图：ARBS 展会 胸牌 HYSTON HUANG Director、会议演讲台、机器人展品、与工作人员合影）</span></div></li>
+</ol></div>
+<div class="day"><h3>05.04<small>周一</small></h3><ol>
+<li><span class="tm">23:44</span><span class="ty">视频号</span><div class="tx">感谢莅临construction site<span class="md">（视频未加载）</span>；Hyston评论：谢谢准备的小礼物🎁！；滑翔大蟑螂：强！👍</div></li>
+<li><span class="tm">23:17</span><span class="ty">图文4图</span><div class="tx">HYSTON五月第一个广告<br>5.7院线不见不散<br>古天乐周润发郭富城梁家辉吴彦祖全明星阵容<span class="md">（图：电影海报《寒战》类全明星阵容、HYSTON 在电梯/屏幕前自拍，电梯屏广告）</span></div></li>
+<li><span class="tm">20:29</span><span class="ty">文字</span><div class="tx">公司同事互相挤眼是要干嘛😁😁😁</div></li>
+<li><span class="tm">02:08</span><span class="ty">图文5图</span><div class="tx">看到网易云上6年前写的歌词像是在看小学生传的情书一样离谱陌生<span class="md">（图：多张歌词截图）</span></div></li>
+<li><span class="tm">01:45</span><span class="ty">图文多图</span><div class="tx">关于Joy of missing out是当时HYSTON还是HysClub时的品牌态度<br>录完第一期车上车程一百多公里的播客<br>也突然被20年自言自语的全英网易云油腻口音以及巨大的背景音的古早播客攻击<br>哈哈哈还知道请嘉宾小黄<span class="md">（图：播客后台、网易云截图）</span>；Hyston评论：妈呀随便听了几段好大信息量</div></li>
+<li><span class="tm">01:35</span><span class="ty">链接</span><div class="tx">本来昨天定的今天的主题不是南开的<br>但是早上的雨的味道一下子把我拉回了那里<span class="md">（播客：南开六年：我最早的精神地基 - 平行的你｜小宇宙）</span></div></li>
+</ol></div>
+<div class="day"><h3>05.03<small>周日</small></h3><ol>
+<li><span class="tm">17:30</span><span class="ty">图文1图</span><div class="tx">帅哥美女出街咯<span class="md">（图：街边停放的跑车，银色与红色）</span></div></li>
+</ol></div>
+<div class="day"><h3>05.02<small>周六</small></h3><ol>
+<li><span class="tm">22:22</span><span class="ty">图文9图</span><div class="tx">五月5-7日欢迎大家参加澳大利亚空调制冷与建筑服务展览会<br>看到老东家TCL真的亲切😏<span class="md">（图：ARBS展会 TCL展台、荧光背心工作人员、自拍、展厅）</span></div></li>
+</ol></div>
+<div class="day"><h3>05.01<small>周五</small></h3><ol>
+<li><span class="tm">23:43</span><span class="ty">图文9图</span><div class="tx">恭喜孙会长<br>WTC 大洋洲商会周年庆典圆满结束<br>感谢大洋洲工商业委员会举办<br>让来自各行业的企业代表交流合作共话发展<span class="md">（图：活动合影，图注含多位商会/企业职务头衔，Love my Team；HYSTON 团队成员合影）</span></div></li>
+</ol></div>
+    </details></div>
+  </section>
+
+  <footer>
+    <div class="mono">ARCHIVE · 往期</div>
+    <div class="issues" id="f-issues"></div>
+    <div class="foot">
+      <span class="mono">HYSTON PTY LTD · MELBOURNE · CHONGQING</span>
+      <span class="mail">admin@hyston.life</span>
+    </div>
+  </footer>
+</main>
+
+<script>
+/* ---------- 每月只改这里 / Edit monthly data here ---------- */
+const ISSUES = [
+ {
+  "no": "01",
+  "month": "2026.01",
+  "status": "past",
+  "href": "/sync/2026/01/"
+ },
+ {
+  "no": "02",
+  "month": "2026.02",
+  "status": "past",
+  "href": "/sync/2026/02/"
+ },
+ {
+  "no": "03",
+  "month": "2026.03",
+  "status": "past",
+  "href": "/sync/2026/03/"
+ },
+ {
+  "no": "04",
+  "month": "2026.04",
+  "status": "past",
+  "href": "/sync/2026/04/"
+ },
+ {
+  "no": "05",
+  "month": "2026.05",
+  "status": "current",
+  "href": "/sync/2026/05/"
+ },
+ {
+  "no": "06",
+  "month": "2026.06",
+  "status": "past",
+  "href": "/sync/2026/06/"
+ },
+ {
+  "no": "07",
+  "month": "2026.07",
+  "status": "past",
+  "href": "/sync/2026/07/"
+ },
+ {
+  "no": "08",
+  "month": "2026.08",
+  "status": "past",
+  "href": "/sync/2026/08/"
+ },
+ {
+  "no": "09",
+  "month": "2026.09",
+  "status": "past",
+  "href": "/sync/2026/09/"
+ },
+ {
+  "no": "MEL",
+  "month": "09.09—10.09",
+  "status": "past",
+  "href": "/sync/2026/melbourne-return/"
+ },
+ {
+  "no": "10",
+  "month": "2026.10",
+  "status": "upcoming"
+ }
+];
+const SYNC = {
+ "no": "05",
+ "date": "2026.05",
+ "title": "SYNC+ / <span class=\"n\">05</span>",
+ "motto": "I AM A CHONGQING CITIZEN.",
+ "cn": "这个月，我们一边筹备《重庆市民》，一边把女性舞台和场景媒体同时搭起来。",
+ "coords": [
+  "MELBOURNE",
+  "SYDNEY",
+  "CHONGQING"
+ ],
+ "signals": [
+  {
+   "t": "《重庆市民》：黄欣悦墨尔本第三场个人演唱会，6.18",
+   "d": "5.12 发出欢迎海报；5.16 起每天一条“你为什么写歌”预热短视频；5.17 排练听到进鼓；5.21 去墨尔本市政厅场地 inspection；5.24 Lancy 作为 Dancer 加入阵容并开始集训；5.28 主题曲《Chongqing Citizen》“唯一的重庆话是：雄起”；5.29 用 HYSTON AI 回答导演“为什么叫重庆市民”；5.31 京华戏院 sound check，电影版演唱会。",
+   "tag": "LIVE"
+  },
+  {
+   "t": "SHE WALKS 墨尔本华人女性秀场，5.30",
+   "d": "由澳洲重庆市文化体育教育旅游协会联合青年企业家商会主办、HYSTON 制作。5.5 正式宣发，5.6 起体验营招募，5.23 倒计时 7 天，每天一张倒计时海报；5.30 现场，“这一束光不是照亮她们，是确认她们本来就在发光”。",
+   "tag": "WOMEN"
+  },
+  {
+   "t": "HYSTON Media × 分众传媒：澳洲场景媒体观察 01–06",
+   "d": "5.20 至 5.25 连续六篇：被刷到不等于被记住、电梯不是通道、流量散在城市的骨缝里、分众不是“中国广告出海”、澳洲本地商家缺的是被反复遇见的能力、电梯屏是公共空间的商业觉醒。同时发出“墨尔本电梯广告 100+ 楼宇覆盖，5 月底前 7 折”。",
+   "tag": "MEDIA"
+  },
+  {
+   "t": "悉尼：BTS 世巡媒体发布会与 40+ 媒体人",
+   "d": "5.14 驾车前往悉尼，5.16 在悉尼拜访商界朋友；5.22 在悉尼港船上三小时的 BTS 世巡媒体发布会，建联 40+ 悉尼媒体人与音乐人，涉及 TikTok、ABC、LiveNation 等；5.24 称“HYSTON 第一次以 media / industry access 身份进入全球巡演系统现场”。",
+   "tag": "SYDNEY"
+  },
+  {
+   "t": "机构网络：中国服务贸易协会、泉州、国窖 1573",
+   "d": "5.7 作为 Event Lead 欢迎泉州市市长一行的墨尔本论坛；5.17 出席中国服务贸易协会工作委员会成立大会，5.19 受邀参与 2026 跨境电商发展大会美国适老产品供需对接；5.21 宣布加入国窖 1573 澳洲团队。",
+   "tag": "NETWORK"
+  }
+ ],
+ "numbers": [
+  {
+   "v": 6,
+   "u": "篇",
+   "l": "澳洲场景媒体观察",
+   "s": "5.20 – 5.25"
+  },
+  {
+   "v": 40,
+   "u": "+",
+   "l": "悉尼建联媒体人与音乐人",
+   "s": "5.22 BTS 世巡媒体发布会"
+  },
+  {
+   "v": 100,
+   "u": "+",
+   "l": "墨尔本电梯广告覆盖楼宇",
+   "s": "5 月底前 7 折"
+  },
+  {
+   "v": 27,
+   "u": "项",
+   "l": "最累的 520：一日完成事项",
+   "s": "16 小时超长待机"
+  },
+  {
+   "v": 25,
+   "u": "人次",
+   "l": "重庆团队一天覆盖",
+   "s": "5 人 · 线下 7 轮 catch-up"
+  },
+  {
+   "v": 166,
+   "u": "条",
+   "l": "朋友圈（全部逐条存档）",
+   "s": "5.1 – 5.31"
+  }
+ ],
+ "numbersNote": "本期内容来自 Hyston 五月发布的朋友圈（只读本人发布内容，评论区与第三方互动不收录）。招聘、仅自己可见、个人目标等类共 10 条未在公开页收录；多条公众号、视频号的正文尚未读取，仅存标题与文案。",
+ "peopleH": "这个月，我们和谁谈了什么。",
+ "peopleNote": "按时间排列。对方只列职位与机构。出席、支持与合影不代表商业合作或背书。",
+ "people": [
+  {
+   "d": "05.01",
+   "p": "墨尔本",
+   "org": "WTC 大洋洲商会 · 大洋洲工商业委员会",
+   "who": "会长",
+   "what": "出席商会周年庆典，各行业企业代表交流合作。",
+   "st": "出席"
+  },
+  {
+   "d": "05.05",
+   "p": "墨尔本",
+   "org": "ARBS 澳大利亚空调制冷与建筑服务展览会",
+   "who": "市长 · 客户",
+   "what": "“早起见市长，早起见好客户”；展会 networking。",
+   "st": "出席"
+  },
+  {
+   "d": "05.07",
+   "p": "墨尔本",
+   "org": "泉州市政府",
+   "who": "泉州市市长一行",
+   "what": "墨尔本论坛，HYSTON 作为 Event Lead 统筹，沉浸体验各大品牌。",
+   "st": "统筹"
+  },
+  {
+   "d": "05.06",
+   "p": "墨尔本",
+   "org": "中华人民共和国驻墨尔本总领事馆",
+   "who": "总领事 · 领事",
+   "what": "对 HYSTON 内容给予鼓励；5.10 政商晚宴合影。",
+   "st": "鼓励"
+  },
+  {
+   "d": "05.09",
+   "p": "墨尔本",
+   "org": "维州华人社团联合会",
+   "who": "联合会",
+   "what": "FCA Inauguration Gala 现场与各界嘉宾合影。",
+   "st": "出席"
+  },
+  {
+   "d": "05.13",
+   "p": "墨尔本",
+   "org": "舍得 · 劲酒",
+   "who": "Marketing 负责人",
+   "what": "欢迎新朋友。",
+   "st": "见面"
+  },
+  {
+   "d": "05.17",
+   "p": "墨尔本",
+   "org": "中国服务贸易协会",
+   "who": "秘书长 · 工作委员会成员",
+   "what": "经朋友引荐，出席工作委员会成立大会，欢迎更多机会来重庆落地。",
+   "st": "出席"
+  },
+  {
+   "d": "05.19",
+   "p": "墨尔本",
+   "org": "中国服务贸易协会 · 澳洲重庆市商会",
+   "who": "主办方",
+   "what": "2026 跨境电商发展大会美国适老产品供需对接活动：海报制作中，接受对接需求。",
+   "st": "受邀"
+  },
+  {
+   "d": "05.21",
+   "p": "墨尔本",
+   "org": "国窖 1573 销售公司（澳洲）",
+   "who": "执行总裁 · 团队 · 合伙人",
+   "what": "宣布加入国窖 1573 澳洲团队；并回顾一月澳网活动海报。",
+   "st": "加入"
+  },
+  {
+   "d": "05.22",
+   "p": "悉尼",
+   "org": "BTS 世巡媒体发布会",
+   "who": "悉尼媒体与音乐人",
+   "what": "悉尼港船上三小时，建联 40+ 媒体人与音乐人；中间给自己留了 10 分钟，关掉社交系统。",
+   "st": "建联"
+  },
+  {
+   "d": "05.30",
+   "p": "墨尔本",
+   "org": "澳洲重庆市文化体育教育旅游协会 · 青年企业家商会",
+   "who": "联合主办方与参与女性",
+   "what": "SHE WALKS 墨尔本华人女性秀场体验营，HYSTON 制作。",
+   "st": "已完成"
+  }
+ ],
+ "built": [
+  {
+   "t": "《重庆市民》演唱会筹备",
+   "s": "6.18 墨尔本市政厅",
+   "k": "LIVE",
+   "m": "5.12 – 5.31",
+   "d": "海报、排练、场地 inspection、舞者阵容、主题曲、预热视频系列、京华戏院 sound check。"
+  },
+  {
+   "t": "SHE WALKS 墨尔本",
+   "s": "华人女性秀场体验营",
+   "k": "WOMEN",
+   "m": "5.5 – 5.30",
+   "d": "宣发访谈、八张以上倒计时海报、内场体验营、5.30 现场。"
+  },
+  {
+   "t": "澳洲场景媒体观察 01–06",
+   "s": "HYSTON Media × 分众传媒",
+   "k": "MEDIA",
+   "m": "5.20 – 5.25",
+   "d": "六篇公众号，覆盖电梯、楼宇与本地商家的“被反复遇见”。"
+  },
+  {
+   "t": "AI HYSTON 日报与每周 SYNC+",
+   "s": "HYSTON DAILY · WEEKLY",
+   "k": "AI",
+   "m": "全月",
+   "d": "AI 日报每日发布；5.16–5.23 每周复盘 SYNC+；5.20 一日 27 条完成事项。"
+  },
+  {
+   "t": "播客《平行的你》",
+   "s": "小宇宙",
+   "k": "PODCAST",
+   "m": "5.4 – 5.7",
+   "d": "《南开六年：我最早的精神地基》《Hyston 这个名字是 17 岁的我拼出来的》；5.4 同时谈到“Joy of missing out”。"
+  },
+  {
+   "t": "HYSTON Tennis",
+   "s": "ITF 注册 · 100 个网球场",
+   "k": "SPORT",
+   "m": "5.7 – 5.13",
+   "d": "ITF 系统名单出现 HUANG Hyston；发起 Melbourne Courts Challenge：打卡墨尔本 100 个网球场。"
+  },
+  {
+   "t": "全球节点图 HYSTON SYNC",
+   "s": "5.18 · 被未来追着跑",
+   "k": "MAP",
+   "m": "5.18",
+   "d": "世界地图 + 各城市节点 + 进度条。"
+  },
+  {
+   "t": "《重庆时空》第 19–20 集",
+   "s": "东水门 / 千厮门 · 十八梯",
+   "k": "MEDIA",
+   "m": "5.14 – 5.16",
+   "d": "“同一座城市在两条江写下的两次回答”；“一座城里的台阶，变成命运”。"
+  }
+ ],
+ "cities": [
+  {
+   "id": "mel",
+   "name": "MELBOURNE",
+   "cn": "墨尔本",
+   "lon": 144.96,
+   "lat": -37.81,
+   "home": true,
+   "st": "HOME BASE",
+   "items": [
+    "《重庆市民》排练与场地",
+    "SHE WALKS 5.30",
+    "分众传媒场景媒体观察",
+    "泉州论坛 Event Lead",
+    "ARBS 展会、WTC 商会"
+   ]
+  },
+  {
+   "id": "syd",
+   "name": "SYDNEY",
+   "cn": "悉尼",
+   "lon": 151.21,
+   "lat": -33.87,
+   "st": "5.14 – 5.22",
+   "dx": -12,
+   "dy": -12,
+   "anchor": "end",
+   "items": [
+    "5.14 驾车去悉尼",
+    "5.16 悉尼商界拜访",
+    "5.22 BTS 世巡媒体发布会"
+   ]
+  },
+  {
+   "id": "ckg",
+   "name": "CHONGQING",
+   "cn": "重庆",
+   "lon": 106.55,
+   "lat": 29.56,
+   "st": "ROOTS",
+   "items": [
+    "重庆团队：5 人覆盖 25 人次",
+    "勒点酒店 520 海报",
+    "《重庆时空》第 19–20 集",
+    "《重庆市民》致敬 2020.5.20 第一场商演"
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "h": "LIVE",
+   "p": "《重庆市民》6.18；SHE WALKS 5.30。",
+   "c": "MELBOURNE"
+  },
+  {
+   "h": "MEDIA",
+   "p": "场景媒体观察 01–06；电梯广告 100+ 楼宇。",
+   "c": "MELBOURNE"
+  },
+  {
+   "h": "AI",
+   "p": "AI HYSTON 日报；每周 SYNC+；全球节点图。",
+   "c": "GLOBAL"
+  },
+  {
+   "h": "WOMEN",
+   "p": "SHE WALKS 体验营与场地。",
+   "c": "MELBOURNE"
+  },
+  {
+   "h": "NETWORK",
+   "p": "泉州、服贸协会、国窖 1573、总领馆、各商会。",
+   "c": "MEL · SYD · CKG"
+  },
+  {
+   "h": "SPORT",
+   "p": "HYSTON Tennis、ITF、100 个网球场。",
+   "c": "MELBOURNE"
+  },
+  {
+   "h": "PODCAST",
+   "p": "《平行的你》两期。",
+   "c": "HYSTON ORIGINAL"
+  },
+  {
+   "h": "HOTEL",
+   "p": "520 海报与酒店新增主题房稿。",
+   "c": "CHONGQING"
+  }
+ ],
+ "changed": [
+  {
+   "was": "歌 = 某一段时间的情绪",
+   "now": "重庆把很多东西写进了身体里：“市民”不是户籍，是长期生活过的痕迹。"
+  },
+  {
+   "was": "女性活动 = 照亮她们",
+   "now": "这一束光，不是照亮她们，是确认她们本来就在发光。"
+  },
+  {
+   "was": "电梯广告 = 广告入侵",
+   "now": "电梯屏是公共空间的商业觉醒：被刷到，不等于被记住。"
+  },
+  {
+   "was": "出差 = 打卡",
+   "now": "在资源云集的船上，关掉社交系统十分钟：不怕少聊一句少一次机会。"
+  }
+ ],
+ "nextH": "六月，要发生的事。",
+ "next": [
+  {
+   "d": "06.02",
+   "w": "重庆艺术大市场协办",
+   "s": "《重庆市民》墨尔本城市音乐 Live Film"
+  },
+  {
+   "d": "06.05",
+   "w": "HYSTON Media × 分众传媒系列续篇",
+   "s": "四篇场景媒体观察"
+  },
+  {
+   "d": "06.18",
+   "w": "《重庆市民》首映",
+   "s": "墨尔本市政厅 · 重庆直辖 29 周年"
+  },
+  {
+   "d": "06.29",
+   "w": "首映回顾片发布",
+   "s": "HYSTON"
+  },
+  {
+   "d": "06.30",
+   "w": "SYNC+ 06",
+   "s": "下一期"
+  }
+ ]
+};
+
+/* ---------- render ---------- */
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+$("c-issue").textContent = "ISSUE " + SYNC.no;
+$("c-date").textContent = SYNC.date;
+$("c-title").innerHTML = SYNC.title;
+$("c-motto").textContent = SYNC.motto;
+$("c-cn").textContent = SYNC.cn;
+$("c-coords").innerHTML = SYNC.coords.map(c => `<span>${esc(c)}</span>`).join("<span aria-hidden=\"true\">·</span>");
+
+$("s-list").innerHTML = SYNC.signals.map((s,i) =>
+  `<li><span class="rk">${String(i+1).padStart(2,"0")}</span><div><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p></div><span class="tag">${esc(s.tag)}</span></li>`).join("");
+
+const fmt = (v,dec) => dec ? v.toFixed(dec) : Math.round(v).toString();
+$("n-grid").innerHTML = SYNC.numbers.map((n,i) =>
+  `<div class="num"><span class="v" data-i="${i}">${fmt(n.v,n.dec)}<small>${esc(n.u)}</small></span><span class="l">${esc(n.l)}</span><span class="s">${esc(n.s)}</span></div>`).join("");
+$("n-note").textContent = SYNC.numbersNote;
+
+$("b-list").innerHTML = SYNC.built.map(b =>
+  `<details><summary><span class="t">${esc(b.t)}<span>${esc(b.s)}</span></span><span class="k">${esc(b.k)}</span><span class="pm" aria-hidden="true">+</span></summary>
+   <div class="body"><div class="meta"><span>${esc(b.k)}</span><b>${esc(b.m)}</b></div><p>${esc(b.d)}</p></div></details>`).join("");
+
+$("p-h").textContent = SYNC.peopleH;
+$("p-note").textContent = SYNC.peopleNote;
+$("p-list").innerHTML = SYNC.people.map(x =>
+  `<li><span class="d">${esc(x.d)}<span>${esc(x.p)}</span></span><div><h3>${esc(x.org)}</h3><div class="who">${esc(x.who)}</div><p>${esc(x.what)}</p></div><span class="st${/已/.test(x.st)?" done":""}">${esc(x.st)}</span></li>`).join("");
+
+$("l-grid").innerHTML = SYNC.lines.map(l =>
+  `<div class="line"><span class="h">${esc(l.h)}</span><p>${esc(l.p)}</p><span class="c">${esc(l.c)}</span></div>`).join("");
+
+$("ch-list").innerHTML = SYNC.changed.map(c =>
+  `<figure style="margin:0"><blockquote><span class="was">以前：<s>${esc(c.was)}</s></span>${esc(c.now)}</blockquote>${c.cap?`<figcaption>${esc(c.cap)}</figcaption>`:""}</figure>`).join("");
+
+$("nx-h").textContent = SYNC.nextH;
+$("nx-list").innerHTML = SYNC.next.map(n =>
+  `<li><span class="d${n.tbd?" tbd":""}">${esc(n.d)}</span><span class="w">${esc(n.w)}${n.s?`<span>${esc(n.s)}</span>`:""}</span></li>`).join("");
+
+$("f-issues").innerHTML = ISSUES.map(x => {
+  const lab = x.status==="current" ? "本期" : x.status==="past" ? "往期 →" : x.status==="next" ? "下一期 →" : x.status==="newer" ? "阅读 →" : x.status==="latest" ? "最新一期 →" : "即将发布";
+  const inner = `<span class="i">${esc(x.no)}</span><span class="m">${esc(x.month)}</span><span class="m">${lab}</span>`;
+  return x.href && x.status!=="current" ? `<a class="issue link" href="${x.href}">${inner}</a>` : `<div class="issue${x.status==="current"?" cur":""}">${inner}</div>`;
+}).join("");
+
+/* ---------- map ---------- */
+(function(){
+  const W=1000,H=460, L0=60, SPAN=240, LAT_TOP=60, LAT_SPAN=110;
+  const px = c => ({x:((c.lon - L0 + 360) % 360)/SPAN*W, y:(LAT_TOP - c.lat)/LAT_SPAN*H});
+  const home = SYNC.cities.find(c => c.home), hp = px(home);
+  let dots = "";
+  for (let x=10; x<W; x+=20) for (let y=10; y<H; y+=20) dots += `<circle cx="${x}" cy="${y}" r="1" fill="#26262A"/>`;
+  let arcs = "", nodes = "";
+  SYNC.cities.forEach(c => {
+    const p = px(c);
+    if (!c.home) {
+      const mx=(hp.x+p.x)/2, my=Math.min(hp.y,p.y) - Math.abs(p.x-hp.x)*0.25 - 40;
+      arcs += `<path class="arc${c.plan?" plan":""}" data-c="${c.id}" d="M${hp.x.toFixed(1)} ${hp.y.toFixed(1)} Q${mx.toFixed(1)} ${my.toFixed(1)} ${p.x.toFixed(1)} ${p.y.toFixed(1)}"/>`;
+    }
+    const dx = c.dx ?? (p.x > 700 ? -12 : 12), anchor = c.anchor ?? (p.x > 700 ? "end" : "start"), dy = c.dy ?? 5;
+    nodes += `<g class="city${c.plan?" plan":""}" data-c="${c.id}"><circle class="halo" cx="${p.x}" cy="${p.y}" r="6"/><circle class="dot" cx="${p.x}" cy="${p.y}" r="5"/><text x="${p.x+dx}" y="${p.y+dy}" text-anchor="${anchor}">${c.name}</text></g>`;
+  });
+  $("w-map").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="从墨尔本连接到${SYNC.cities.filter(c=>!c.home).map(c=>c.cn).join("、")}的线路图"><g>${dots}</g><g>${arcs}</g><g>${nodes}</g></svg>`;
+  $("w-btns").innerHTML = SYNC.cities.map(c => `<button type="button" id="city-${c.id}" data-c="${c.id}" aria-pressed="false">${c.cn}</button>`).join("");
+  function pick(id){
+    const c = SYNC.cities.find(x => x.id===id);
+    document.querySelectorAll("#w-btns button").forEach(b => b.setAttribute("aria-pressed", b.dataset.c===id));
+    document.querySelectorAll("#w-map .city").forEach(g => g.classList.toggle("on", g.dataset.c===id));
+    document.querySelectorAll("#w-map .arc").forEach(a => a.classList.toggle("on", a.dataset.c===id || (c.home)));
+    $("w-panel").innerHTML = `<h3>${esc(c.name)}</h3><div class="st mono">${esc(c.cn)} · ${esc(c.st)}</div><ul>${c.items.map(i=>`<li>${esc(i)}</li>`).join("")}</ul>`;
+  }
+  $("w-btns").addEventListener("click", e => { const b = e.target.closest("button"); if (b) pick(b.dataset.c); });
+  pick("mel");
+})();
+
+/* ---------- count-up: values are already final at rest; replay once when scrolled into view ---------- */
+(function(){
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    io.unobserve(en.target);
+    const n = SYNC.numbers[+en.target.dataset.i], small = en.target.querySelector("small").outerHTML, t0 = performance.now(), dur = 1100;
+    const step = t => { const k = Math.min(1,(t-t0)/dur), e = 1-Math.pow(1-k,3);
+      en.target.innerHTML = fmt(n.v*e, n.dec) + small; if (k<1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  }), {threshold:.6});
+  document.querySelectorAll(".num .v").forEach(el => io.observe(el));
+})();
+</script>
+
+</body>
+</html>

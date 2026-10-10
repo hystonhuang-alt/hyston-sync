@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="HYSTON SYNC+ 01 · 一月月报：勒点酒店从 logo 到可住空间、泸州老窖×澳网抽奖连播、中医春晚与传统医药大会、HYSTON AI 全矩阵上线；附朋友圈逐条全文。">
+<title>HYSTON SYNC+ 01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;700;900&family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single dark scroll — cover, then seven fixed columns, each a full-width "spread" with a mono coordinate rail on the left. */
+:root{
+  --ink:#0A0A0B;        /* ground */
+  --ink-2:#141416;      /* raised surface */
+  --line:#2A2A2E;       /* hairlines */
+  --silver:#C9C9CC;     /* primary type on dark */
+  --mute:#8B8B91;       /* secondary type */
+  --dim:#5E5E64;        /* tertiary, decorative only */
+  --wine:#8E2A35;       /* accent, used sparingly */
+  --wine-hi:#C0485A;    /* accent for text on dark */
+  --f-display:'Big Shoulders Display','Arial Narrow',sans-serif;
+  --f-cn-display:'Noto Serif SC','Songti SC',serif;
+  --f-body:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--silver);font-family:var(--f-body);font-size:16px;line-height:1.7;padding-inline:clamp(16px,5vw,72px);padding-block:0;-webkit-font-smoothing:antialiased}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+a{color:var(--silver)}
+:focus-visible{outline:2px solid var(--wine-hi);outline-offset:3px}
+.wrap{max-width:1180px;margin-inline:auto}
+.mono{font-family:var(--f-mono);letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:var(--mute)}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--ink) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-inline:calc(-1*clamp(16px,5vw,72px));padding:12px clamp(16px,5vw,72px)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.bar b{font-family:var(--f-mono);font-weight:500;letter-spacing:.22em;font-size:13px;color:var(--silver)}
+.bar nav{display:flex;gap:14px;flex-wrap:wrap}
+.bar nav a{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);text-decoration:none}
+.bar nav a:hover{color:var(--silver)}
+
+/* cover */
+.cover{padding-block:clamp(56px,10vw,128px) clamp(48px,8vw,96px);display:grid;gap:28px}
+.cover .kicker{display:flex;gap:18px;flex-wrap:wrap}
+.cover h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(72px,17vw,232px);line-height:.82;letter-spacing:-.01em;color:var(--silver);text-wrap:balance}
+.cover h1 .n{color:var(--wine-hi)}
+.cover .motto{font-family:var(--f-display);font-weight:300;font-size:clamp(28px,4.4vw,56px);letter-spacing:.06em;margin:0;color:var(--silver)}
+.cover .cn{font-family:var(--f-cn-display);font-weight:600;font-size:clamp(20px,2.4vw,28px);margin:0;color:var(--mute)}
+.cover .coords{display:flex;gap:10px 28px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px}
+
+/* sections */
+section.col{border-top:1px solid var(--line);padding-block:clamp(48px,7vw,96px);display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px 48px;scroll-margin-top:56px}
+@media (max-width:820px){section.col{grid-template-columns:minmax(0,1fr)}}
+.rail{display:flex;flex-direction:column;gap:6px}
+.rail .no{font-family:var(--f-display);font-weight:700;font-size:56px;line-height:1;color:var(--dim)}
+.rail .name{font-family:var(--f-mono);font-size:13px;letter-spacing:.2em;color:var(--silver)}
+.rail .cn{font-size:13px;color:var(--mute)}
+h2{margin:0 0 28px;font-family:var(--f-cn-display);font-weight:900;font-size:clamp(28px,3.6vw,44px);line-height:1.25;color:var(--silver);text-wrap:balance;max-width:22em}
+
+/* signals */
+.signals{list-style:none;margin:0;padding:0;display:grid}
+.signals li{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:4px 20px;padding-block:22px;border-bottom:1px solid var(--line);align-items:baseline}
+.signals li:first-child{padding-top:0}
+.signals .rk{font-family:var(--f-display);font-weight:700;font-size:40px;line-height:1;color:var(--dim)}
+.signals li:first-child .rk{color:var(--wine-hi)}
+.signals h3{margin:0;font-size:clamp(19px,2vw,23px);font-weight:500;color:var(--silver);line-height:1.45}
+.signals p{margin:6px 0 0;color:var(--mute);max-width:40em}
+.signals .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--mute);border:1px solid var(--line);padding:3px 8px;white-space:nowrap}
+@media (max-width:560px){.signals li{grid-template-columns:40px minmax(0,1fr)}.signals .tag{grid-column:2;justify-self:start}}
+
+/* numbers */
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.num{background:var(--ink);padding:28px 24px;display:flex;flex-direction:column;gap:8px}
+.num .v{font-family:var(--f-display);font-weight:900;font-size:clamp(64px,8vw,104px);line-height:.9;color:var(--silver);font-variant-numeric:tabular-nums}
+.num .v small{font-size:.42em;font-weight:300;margin-left:4px;color:var(--mute)}
+.num .l{font-size:15px;color:var(--silver)}
+.num .s{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;color:var(--mute)}
+.note{margin-top:16px;font-size:13px;color:var(--mute)}
+
+/* built */
+.built{display:grid;gap:0;border-top:1px solid var(--line)}
+.built details{border-bottom:1px solid var(--line)}
+.built summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:16px;align-items:baseline;padding-block:20px}
+.built summary::-webkit-details-marker{display:none}
+.built summary .t{font-family:var(--f-display);font-weight:700;font-size:clamp(26px,3vw,36px);letter-spacing:.02em;color:var(--silver);line-height:1.1}
+.built summary .t span{display:block;font-family:var(--f-body);font-weight:400;font-size:14px;letter-spacing:0;color:var(--mute);margin-top:6px}
+.built summary .k{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute)}
+.built summary .pm{font-family:var(--f-mono);font-size:20px;color:var(--mute);width:20px;text-align:center;transition:transform .25s}
+.built details[open] summary .pm{transform:rotate(45deg);color:var(--wine-hi)}
+.built summary:hover .t{color:#fff}
+.built .body{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:24px;padding-bottom:28px}
+@media (max-width:700px){.built .body{grid-template-columns:minmax(0,1fr)}}
+.ph{aspect-ratio:16/9;max-width:100%;border:1px dashed var(--dim);display:grid;place-items:center;font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);background:repeating-linear-gradient(135deg,var(--ink) 0 10px,var(--ink-2) 10px 20px);text-align:center;padding:12px}
+.built .body p{margin:0;color:var(--silver);max-width:34em}
+
+/* world */
+.world{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px}
+@media (max-width:900px){.world{grid-template-columns:minmax(0,1fr)}}
+.map{border:1px solid var(--line);background:var(--ink-2);overflow:hidden}
+.map svg{display:block;width:100%;height:auto}
+.map .arc{fill:none;stroke:var(--dim);stroke-width:1.2;transition:stroke .3s}
+.map .arc.plan{stroke-dasharray:4 6}
+.map .arc.on{stroke:var(--wine-hi);stroke-width:2}
+.map .city circle.dot{fill:var(--silver)}
+.map .city circle.halo{fill:none;stroke:var(--wine-hi);stroke-width:1.5;opacity:0}
+.map .city.on circle.halo{opacity:1;animation:pulse 2.2s ease-out infinite}
+.map .city text{font-family:var(--f-mono);font-size:13px;letter-spacing:.12em;fill:var(--mute)}
+.map .city.on text{fill:var(--silver)}
+.map .city.plan circle.dot{fill:none;stroke:var(--mute);stroke-width:1.5}
+@keyframes pulse{0%{r:6;opacity:.9}100%{r:22;opacity:0}}
+.cities{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.cities button{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;background:transparent;color:var(--mute);border:1px solid var(--line);padding:10px 14px;cursor:pointer;min-height:44px}
+.cities button[aria-pressed="true"]{color:var(--silver);border-color:var(--wine-hi);background:color-mix(in srgb,var(--wine) 22%,transparent)}
+.cities button:hover{color:var(--silver)}
+.panel h3{margin:0 0 4px;font-family:var(--f-display);font-weight:700;font-size:40px;line-height:1;color:var(--silver);letter-spacing:.02em}
+.panel .st{margin-bottom:16px}
+.panel ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.panel li{padding-left:18px;position:relative;color:var(--silver)}
+.panel li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:1px;background:var(--wine-hi)}
+
+/* lines */
+.lines{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;padding:1px}
+.lines>*{box-shadow:0 0 0 1px var(--line)}
+.line{background:var(--ink);padding:24px;display:flex;flex-direction:column;gap:10px}
+.line .h{font-family:var(--f-display);font-weight:700;font-size:30px;letter-spacing:.06em;color:var(--silver);line-height:1}
+.line p{margin:0;color:var(--mute);font-size:15px}
+.line .c{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--dim);margin-top:auto}
+
+/* changed */
+.changed{display:grid;gap:36px}
+.changed blockquote{margin:0;font-family:var(--f-cn-display);font-weight:600;font-size:clamp(22px,2.6vw,30px);line-height:1.5;color:var(--silver);max-width:26em;text-wrap:balance}
+.changed .was{display:block;font-family:var(--f-body);font-weight:300;font-size:15px;color:var(--mute);margin-bottom:10px}
+.changed .was s{text-decoration-color:var(--wine-hi)}
+.changed figcaption{margin-top:10px;font-size:13px;color:var(--mute)}
+
+/* next */
+.next{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.next li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding-block:18px;border-bottom:1px solid var(--line);align-items:baseline}
+.next .d{font-family:var(--f-display);font-weight:700;font-size:28px;color:var(--silver);font-variant-numeric:tabular-nums}
+.next .d.tbd{color:var(--dim)}
+.next .w{font-size:18px;color:var(--silver)}
+.next .w span{display:block;font-size:14px;color:var(--mute)}
+
+
+/* people */
+.people{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--line)}
+.people li{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:6px 24px;padding-block:22px;border-bottom:1px solid var(--line);align-items:baseline}
+.people .d{font-family:var(--f-display);font-weight:700;font-size:28px;line-height:1;color:var(--silver);font-variant-numeric:tabular-nums}
+.people .d span{display:block;font-family:var(--f-mono);font-weight:400;font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:8px}
+.people h3{margin:0;font-size:clamp(17px,1.8vw,20px);font-weight:500;color:var(--silver);line-height:1.45}
+.people .who{margin:6px 0 0;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--wine-hi);line-height:1.6}
+.people p{margin:8px 0 0;color:var(--mute);max-width:44em}
+.people .st{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);border:1px solid var(--line);padding:3px 8px;white-space:nowrap}
+.people .st.done{color:var(--silver);border-color:var(--dim)}
+@media (max-width:640px){.people li{grid-template-columns:64px minmax(0,1fr)}.people .d{font-size:22px}.people .st{grid-column:2;justify-self:start}}
+.built .meta{display:flex;flex-direction:column;gap:10px;border-left:1px solid var(--line);padding-left:16px;align-self:start}
+.built .meta span{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;color:var(--mute)}
+.built .meta b{font-family:var(--f-display);font-weight:700;font-size:24px;color:var(--silver);letter-spacing:.04em}
+
+/* archive / footer */
+footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap:36px}
+.issues{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1px;padding:1px}
+.issues>*{box-shadow:0 0 0 1px var(--line)}
+.issue{background:var(--ink);padding:20px;display:flex;flex-direction:column;gap:4px;min-height:120px}
+.issue .i{font-family:var(--f-display);font-weight:900;font-size:44px;line-height:1;color:var(--dim)}
+.issue.cur .i{color:var(--wine-hi)}
+.issue.link{text-decoration:none;color:inherit;transition:background .2s}
+.issue.link:hover{background:#141418}
+.issue.link:hover .i{color:var(--wine-hi)}
+.issue .m{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute)}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot .mail{font-family:var(--f-mono);font-size:13px;letter-spacing:.08em;color:var(--silver);user-select:all}
+
+/* archive */
+.arch .day{display:grid;grid-template-columns:96px minmax(0,1fr);gap:8px 24px;padding-block:22px;border-bottom:1px solid var(--line)}
+.arch .day h3{margin:0;font-family:var(--f-display);font-weight:700;font-size:28px;line-height:1;color:var(--silver);font-variant-numeric:tabular-nums}
+.arch .day h3 small{display:block;font-family:var(--f-mono);font-weight:400;font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:8px}
+.arch ol{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.arch li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:2px 14px}
+.arch .tm{font-family:var(--f-mono);font-size:12px;color:var(--mute);padding-top:3px}
+.arch .ty{grid-column:2;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;color:var(--wine-hi);order:-1}
+.arch .tx{grid-column:2;color:var(--silver);max-width:46em;line-height:1.75;overflow-wrap:anywhere}
+.arch .md{color:var(--mute);font-size:14px}
+.arch details>summary{cursor:pointer;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--mute);padding-block:10px}
+@media (max-width:640px){.arch .day{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+
+
+<div class="bar"><div class="wrap">
+  <b>HYSTON SYNC+</b>
+  <nav aria-label="栏目">
+    <a href="#signals">01 SIGNALS</a><a href="#numbers">02 NUMBERS</a><a href="#people">03 PEOPLE</a><a href="#built">04 BUILT</a><a href="#world">05 WORLD</a><a href="#lines">06 LINES</a><a href="#changed">07 CHANGED</a><a href="#next">08 NEXT</a><a href="#archive">09 ARCHIVE</a>
+  </nav>
+</div></div>
+
+<main class="wrap" id="app">
+  <header class="cover">
+    <div class="kicker mono"><span>HYSTON SYNC+</span><span id="c-issue"></span><span id="c-date"></span></div>
+    <h1 id="c-title"></h1>
+    <p class="motto" id="c-motto"></p>
+    <p class="cn" id="c-cn"></p>
+    <div class="coords mono" id="c-coords"></div>
+  </header>
+
+  <section class="col" id="signals">
+    <div class="rail"><span class="no">01</span><span class="name">SIGNALS</span><span class="cn">本月最重要的五件事</span></div>
+    <div><h2>按重要性排序，不按主题分类。</h2><ol class="signals" id="s-list"></ol></div>
+  </section>
+
+  <section class="col" id="numbers">
+    <div class="rail"><span class="no">02</span><span class="name">NUMBERS</span><span class="cn">关键数字</span></div>
+    <div><h2>只放数字，不加形容词。</h2><div class="nums" id="n-grid"></div><p class="note" id="n-note"></p></div>
+  </section>
+
+  <section class="col" id="people">
+    <div class="rail"><span class="no">03</span><span class="name">PEOPLE</span><span class="cn">和谁谈了什么</span></div>
+    <div><h2 id="p-h"></h2><ol class="people" id="p-list"></ol><p class="note" id="p-note"></p></div>
+  </section>
+
+  <section class="col" id="built">
+    <div class="rail"><span class="no">04</span><span class="name">BUILT</span><span class="cn">这个月真正做出来的东西</span></div>
+    <div><h2>这个月真正做出来的八件东西。</h2><div class="built" id="b-list"></div></div>
+  </section>
+
+  <section class="col" id="world">
+    <div class="rail"><span class="no">05</span><span class="name">IN THE WORLD</span><span class="cn">城市、活动、机构、合作</span></div>
+    <div>
+      <h2>墨尔本、上海、重庆、北京、雄安，一个月五个落点。</h2>
+      <div class="world">
+        <div class="map" id="w-map"></div>
+        <div>
+          <div class="cities" id="w-btns" role="group" aria-label="选择城市"></div>
+          <div class="panel" id="w-panel" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="col" id="lines">
+    <div class="rail"><span class="no">06</span><span class="name">BUSINESS LINES</span><span class="cn">业务线</span></div>
+    <div><h2>八条线，一月各自往前走了一步。</h2><div class="lines" id="l-grid"></div></div>
+  </section>
+
+  <section class="col" id="changed">
+    <div class="rail"><span class="no">07</span><span class="name">WHAT CHANGED</span><span class="cn">判断发生了什么变化</span></div>
+    <div><h2>这个月，我们改了四个看法。</h2><div class="changed" id="ch-list"></div></div>
+  </section>
+
+  <section class="col" id="next">
+    <div class="rail"><span class="no">08</span><span class="name">NEXT</span><span class="cn">下个月要落地的事</span></div>
+    <div><h2 id="nx-h"></h2><ol class="next" id="nx-list"></ol></div>
+  </section>
+
+  <section class="col arch" id="archive">
+    <div class="rail"><span class="no">09</span><span class="name">ARCHIVE</span><span class="cn">朋友圈逐条全文</span></div>
+    <div><h2>一月朋友圈，逐条全文。</h2><p class="note" style="margin:-12px 0 24px">本月朋友圈共 83 条，逐条存档；其中 5 条（招聘、仅自己可见、私人生活等）不在公开页收录，另有部分公众号文章正文未读取，仅存标题。评论区与第三方互动不收录。</p>
+    <details open><summary>▾ 展开 / 收起全文（共 78 条，由新到旧）</summary>
+<div class="day"><h3>01.30<small>周五</small></h3><ol>
+<li><span class="tm">19:01</span><span class="ty">视频号</span><div class="tx">抽奖合集！<span class="md">（视频封面：AO 泸州老窖 购泸州老窖 赢澳网门票 Buy Luzhou Laojiao Win Australian Open Tickets；国窖；抽奖合集）</span></div></li>
+<li><span class="tm">01:41</span><span class="ty">视频号直播(可观看回放)</span><div class="tx">挑战睡完每一间房 第一天<span class="md">（直播封面：勒点酒店 欢迎你做梦 HYSTON/HOTEL EST 2026，联系电话略）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.28<small>周三</small></h3><ol>
+<li><span class="tm">22:10</span><span class="ty">图文9图</span><div class="tx">我在＿<span class="md">（图：勒点酒店走廊/电梯广告海报合影多张——“重庆住勒点 勒点是重庆”、勒点嘞梦 HYSTON DREAM、勒点星月 HYSTON STAR &amp; MOON、“我在勒点 空间在勒点 时间在勒点 HERE/NOW”；施工中的“HYS”字样外墙、立体发光“勒点酒店”招牌、前厅）</span></div></li>
+<li><span class="tm">03:29</span><span class="ty">视频号</span><div class="tx">很荣幸在这次澳洲女篮现场HYSTON墨尔本采访到了WNBL粉丝增长主管 也希望韩旭在接下来的比赛里大显身手！<span class="md">（视频封面：HYSTON official 文旅出海·海外招商·AI共创·城市造梦；HYSTON墨尔本 对话WNBL粉丝增长主管；球馆内两位女士采访）</span></div></li>
+<li><span class="tm">00:30</span><span class="ty">视频号</span><div class="tx">山河还在故人却失帧<br>谨以此献给贾樟柯导演团队的《山河故人》<span class="md">（视频封面：《山河故人》 MOUNTAINS MAY DEPART 贾樟柯 导演作品；“《时间的口音》”）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.27<small>周二</small></h3><ol>
+<li><span class="tm">22:36</span><span class="ty">图文9图</span><div class="tx">一年前的回旋镖现在正中靶心<br>今天我的心跟墨尔本的天气一样是45度<br>有些提前量的相遇就像我们团队开始跟每个链接的人说的一样 有种“这辈子我们注定会一起干些事情”的感觉<br>谢谢陈总帮我们不仅成功链接了澳洲女篮 让做NBA的博主帮我们改口播送团队vip票也触及到AFL团队 澳式足球联盟澳洲橄榄球 在澳洲国民影响力不亚于澳网 也在今天完成了对WNBL的球迷发展负责人的采访<span class="md">（图：微信聊天截图若干；WNBL Southside Melbourne Flyers vs Perth 比赛票 Tue 27 Jan 7:00 PM；与WNBL工作人员合影——Hyston 与同伴；“HYSTON 25TH BIRTHDAY” 背景合影）</span></div></li>
+<li><span class="tm">03:28</span><span class="ty">文字</span><div class="tx">【关于AU DAY澳洲国庆】作为中国重庆来到澳洲发展团队 首先向这片土地的传统守护者原住民与托雷斯海峡岛民致以敬意<br>也向长者过去 现在与未来致敬<br>在同事的直播下看完了庆典 第一反应是和WH前市长聊到的关于重庆无人机的议题我们也想从重庆开始火起来的表演形式能早日在澳洲亮相<br>今天的Australia Day它对很多人来说 是庆祝 但对一些人来说 它也携带着历史与现实的刺痛也正如墨尔本市长Nick Reece也公开说过 对原住民而言 这一天可能是“heartache” 而关于日期的讨论是一个“sensible”的议题。/ 一个成熟的城市和国家 不需要把这一天“解释成同一种感受” 我们可以一起庆祝 也可以一起承认这片土地上有人感到骄傲有人感到失落 有人在派对 有人在游行 有人在庆祝归属 有人在追问正义<br>在澳洲生活 工作 创造 也在这里学到一种很珍贵的能力 让不同的人在同一张桌上被认真对待<br>其实我们做事的方式很像“造桥” 但桥不是为了让人忘记河流 而是承认距离仍在 但我们依然选择走向彼此 今天我们不必把争议解决掉 但我们可以把彼此看见<br>祝大家平安开心 也祝这片土地越来越包容 越来越诚实 Happy Australia Day. Cheers.</div></li>
+<li><span class="tm">02:36</span><span class="ty">视频号</span><div class="tx">也祝曲总继续在演艺事业里大红大紫！<span class="md">（视频封面：第一次在首都机场接机曲总；两位女士自拍）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.25<small>周日</small></h3><ol>
+<li><span class="tm">02:44</span><span class="ty">视频号</span><div class="tx">北体这两个字很干净<br>干净到会照出没说出口的那句<br>我差一点就成为另一个版本的我<span class="md">（视频封面：蝴蝶时空 北体 今天我们来到的是 Today we come to；北京体育大学校门前）</span></div></li>
+<li><span class="tm">02:03</span><span class="ty">图文9图</span><div class="tx">在海淀区信息路48号<span class="md">（图：北京体育大学校门、牌坊、“信息路48号”路牌多角度，Hyston 在门前打卡）</span></div></li>
+<li><span class="tm">01:44</span><span class="ty">视频号</span><div class="tx">北体的画中画<span class="md">（封面：红/藏青球衣者在球场踢球，叠字“北体”）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.24<small>周六</small></h3><ol>
+<li><span class="tm">18:22</span><span class="ty">图文4图</span><div class="tx">在勒点 欢迎你是你<span class="md">（图：勒点酒店四张黑白/星月主题海报——“在勒点 她不被定义 全女友好房 把理解设为默认值”“在勒点 欢迎你 梦不是用来醒来的是用来记录的”“在勒点 欢迎你 星代表/月代表…因为人无法只成为其中之一”“我在勒点 空间在勒点 时间在勒哈 HERE/NOW”）</span></div></li>
+<li><span class="tm">19:30</span><span class="ty">小红书链接</span><div class="tx">呜呜也谢谢你这样又可靠又有创造力的神仙队友<br>谢谢你把现场的光影 声音 情绪都收进镜头里<span class="md">（链接卡：当我走出舒适圈去尝试更多<br>墨尔本大大小小casual工作 vlog）</span></div></li>
+<li><span class="tm">18:37</span><span class="ty">文字</span><div class="tx">🙋重庆话“的”是哩还是嘞呀</div></li>
+</ol></div>
+<div class="day"><h3>01.23<small>周五</small></h3><ol>
+<li><span class="tm">01:37</span><span class="ty">图文1图</span><div class="tx">Rod Laver Arena纸质门票发放✅<span class="md">（AO 2026纸质票照片，Australian Open Day Session, Rod Laver Arena, Fri 23 Jan 2026）</span></div></li>
+<li><span class="tm">01:36</span><span class="ty">视频号</span><div class="tx">泸州老窖 Clayton Bottle-O 澳网门票开奖<span class="md">（视频：在酒类店内手持泸州老窖/OA联名礼盒，叠字“Clayton Bottle-O开奖”）</span></div></li>
+<li><span class="tm">01:15</span><span class="ty">图文1图</span><div class="tx">HYSTON LIFE烟火：在秦总店里吃到一半出来拿酒<br>看到隔壁火锅店老板在和女儿吵英语题<br>于是端着酒给八年级的妹妹讲了快二十分钟<br>结果老板让我过来吃还留我下来给妹妹补几天课<span class="md">（图：桌上试卷）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.22<small>周四</small></h3><ol>
+<li><span class="tm">23:25</span><span class="ty">图文9图</span><div class="tx">HYSTON 2026 AI全矩阵上线 https://hystonai.figma.site<span class="md">（9图为官网长截图：我们做什么<br>品牌运营增长<br>互动占位传播<br>数字记忆馆&amp;陈列<br>三种可购买的合作方式<br>底座包<br>我们服务的对象<br>合作流程<span class="md">(对齐需求→方案与报价→交付与迭代)</span><br>常见问题<span class="md">(是否需要产能？数据是否安全？数字人是否需要授权？)</span>）</span></div></li>
+<li><span class="tm">02:21</span><span class="ty">视频号</span><div class="tx">这是关于“黄教”和“老黄”的称呼的故事<span class="md">（视频：《99次日落》人生底片-聚光灯外 EP05 先导预告片；“18岁重庆女生代表中国拿亚洲第一”，国家橄榄球俱乐部训练）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.21<small>周三</small></h3><ol>
+<li><span class="tm">21:59</span><span class="ty">公众号</span><div class="tx">让合作不止停在握手<br>而能落在项目落在产品落在长期共同体——《青年企业家商会见证 2026第三届全球中医春节联欢晚会录制圆满成功》</div></li>
+<li><span class="tm">20:17</span><span class="ty">图文2图</span><div class="tx">除了澳洲的政府工作人员会用微信以外<br>中国文化已经神奇到赤道几内亚共和国驻华大使馆大使都要用微信了<span class="md">（图1：春晚现场红色背景与嘉宾合影；图2：赤道几内亚驻华大使递交国书新闻截图）</span></div></li>
+<li><span class="tm">16:43</span><span class="ty">公众号</span><div class="tx">感谢中国国际教育电视台——《【活动】凝聚杏林力量 弘扬中医文化 2026第三届全球中医春节联欢晚会录制圆满成功》</div></li>
+<li><span class="tm">04:38</span><span class="ty">图文6图</span><div class="tx">亲测 比全季好用😁 贴肤！<span class="md">（勒点酒店毛巾/床垫压印“HYSTON HOTEL 勒点酒店”细节+浴巾自拍）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.20<small>周二</small></h3><ol>
+<li><span class="tm">01:16</span><span class="ty">图文9图</span><div class="tx">四年前写<br>分别是为了下一次在更高处重逢<br>于是在她的18岁<br>她代表中国队打了U20拿了亚洲冠军<br>然后点开她的朋友圈看到了<br>无意中和我在17岁发朋友圈 无独有偶<br>但是<br>她是亚洲冠军🌹<br>她叫<span class="md">（姓名略）</span><br>来自重庆<span class="md">（图：国家橄榄球俱乐部训练基地合影、亚洲冠军领奖台、中国队合影国旗、朋友圈截图、橄榄球/训练照等）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.19<small>周一</small></h3><ol>
+<li><span class="tm">23:14</span><span class="ty">视频号</span><div class="tx">复盘vlog<span class="md">（视频：地下车库，黑衣长发背影抱纸箱）</span></div></li>
+<li><span class="tm">17:43</span><span class="ty">视频号</span><div class="tx">在北京竟然喝到了墨尔本的味道<span class="md">（视频叠字“三下学堂的咖啡 梦回墨尔本”；定位 北京·中国传媒大学）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.18<small>周日</small></h3><ol>
+<li><span class="tm">15:46</span><span class="ty">视频号</span><div class="tx">感谢千姐周六晚上店里晚高峰还接待我们参观<br>看完新店真的大为震撼四个主题空间衔接设计<br>空间不是拼出来的 是流出来的 一转身就是下一段剧情<span class="md">（视频封面：“考察北京头部娱乐综合体 三里屯 PH Group”；定位 北京）</span></div></li>
+<li><span class="tm">15:19</span><span class="ty">直播链接</span><div class="tx">澳网门票开奖墨尔本第十家店快闪<span class="md">（链接卡：@Hyston黄欣悦 正在直播，快去看！）</span></div></li>
+<li><span class="tm">14:38</span><span class="ty">直播链接</span><div class="tx">澳网门票抽奖快闪直播 1.18 墨尔本第9家店</div></li>
+</ol></div>
+<div class="day"><h3>01.17<small>周六</small></h3><ol>
+<li><span class="tm">18:51</span><span class="ty">视频号</span><div class="tx">被导演训练完后膜拜一下央视摄影团队<br>三个摇杆 4个特写镜头 两个定机位<span class="md">（视频：晚宴/录制现场蓝紫灯光、观众席）</span></div></li>
+<li><span class="tm">03:19</span><span class="ty">图文9图</span><div class="tx">2026“一带一路”传统医药发展交流与合作大会欢迎晚宴<br>感谢团队 感谢大家对青年企业家协会的支持<span class="md">（图：欢迎晚宴红色舞台、与外籍嘉宾及中方嘉宾合影、宴会厅、车库背影等）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.16<small>周五</small></h3><ol>
+<li><span class="tm">20:59</span><span class="ty">小红书直播链接</span><div class="tx">@Hyston黄欣悦 正在直播，快去看！<span class="md">（封面：多人合影）</span></div></li>
+<li><span class="tm">19:38</span><span class="ty">视频号</span><div class="tx"><span class="md">（无文字；封面：宴会厅，大屏红色主题，圆桌白椅）</span></div></li>
+<li><span class="tm">04:00</span><span class="ty">图文3图</span><div class="tx">辛苦李总大晚上送车来大兴<span class="md">（图：地下车库白色奔驰SUV旁人物、夜间收费站/高速）</span></div></li>
+<li><span class="tm">02:44</span><span class="ty">视频号</span><div class="tx">重庆素材太多 连分发都摆烂了<br>于是先出个今天的无关紧要的vlog吧<span class="md">（视频叠字“重庆特种兵报道”，旅馆走廊、一人叉腰看着杂物；定位 北京市·北京野生动物园）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.15<small>周四</small></h3><ol>
+<li><span class="tm">23:22</span><span class="ty">视频号</span><div class="tx">Doncaster East 1号亚超店<span class="md">（视频：泸州老窖×AO“购泸州老窖赢澳网门票 Doncaster East1号亚超开奖”）</span></div></li>
+<li><span class="tm">22:52</span><span class="ty">视频号</span><div class="tx">送澳网门票直播抽奖切片<span class="md">（视频：泸州老窖送澳网门票 Chadstone抽奖切片）</span></div></li>
+<li><span class="tm">16:13</span><span class="ty">视频号</span><div class="tx">它是一座城市的接口连接权力与民间 内陆与海洋故乡与他乡<br>古代的官船贡船从这里出发<br>像把一座城的敬畏装进江水里<br>送去更高的地方<br>今天我们站在这里<br>早就不朝拜天子了<br>但我们仍然朝拜某种东西<br>远方 自由 一次翻盘的可能<br>和自己不认输的那口气<span class="md">（视频：《洪崖洞朝天门 HYSTON重庆时空》，江边栏杆旁持花人）</span></div></li>
+<li><span class="tm">11:17</span><span class="ty">视频号</span><div class="tx">把沉睡的空间变成可融资、可运营、可讲故事的资产<span class="md">（视频：《2025对话：中国旅游集团20强》四川旅投集团党委书记、董事长 演讲/对话）</span></div></li>
+<li><span class="tm">03:34</span><span class="ty">视频号</span><div class="tx">等下次回来做一期摩托车视角的重庆<span class="md">（视频叠字“500斤摩托”，骑行者戴棒球帽眼镜）</span></div></li>
+<li><span class="tm">03:02</span><span class="ty">视频号</span><div class="tx">江北嘴是江<br>替重庆留下的那一句<br>开场白<span class="md">（视频叠字“江北嘴”“江北嘴为什么叫江北嘴”，人物站在江北嘴广场草坪）</span></div></li>
+<li><span class="tm">02:44</span><span class="ty">视频号</span><div class="tx">澳网拉开序幕！欢迎大家来参与门票抽奖<span class="md">（视频：泸州老窖×AO“购泸州老窖赢澳网门票 Balwyn运时店开奖”）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.13<small>周二</small></h3><ol>
+<li><span class="tm">17:02</span><span class="ty">视频号</span><div class="tx">这是Jessie手机上开始对话的视频<span class="md">（三人户外自拍，其中一人比耶）</span></div></li>
+<li><span class="tm">16:10</span><span class="ty">图文9图</span><div class="tx">当你在飞机上认识了一个在重庆待了4年<br>被中国新媒体文化同化的外国人<br>问她来自哪里她说from your heart<br>最爱的重庆的地方是九街<br>手机没电没信号因为采访<br>完全没看到来接机的刘总<br>多亏刘总带了眼镜一下叫住我<br>直奔工地 看到一直打了快半个月的视频的工地<br>真的有点感觉不真实<span class="md">（图：江北机场“飞抵重庆”接机合影捧花×5、工地现场/装修空间×3）</span></div></li>
+<li><span class="tm">15:22</span><span class="ty">视频号</span><div class="tx">吃火锅就喝<span class="md">（视频叠字“吃火锅就喝泸州老窖”，小酒杯倒酒）</span></div></li>
+<li><span class="tm">02:03</span><span class="ty">视频号</span><div class="tx">快两个小时的素材里 张总金句频出<br>感触最深的是预告里的这一段<br>“你要把散落在世界的重庆每一颗珍珠串起来”<span class="md">（视频：《99次日落》人生底片-聚光灯外 EP04「在上海有一座世外桃源 重庆女企业家」拜访张舒惠女士）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.12<small>周一</small></h3><ol>
+<li><span class="tm">04:11</span><span class="ty">图文6图</span><div class="tx">辛苦冯老师 也感谢林老师<br>恭喜开业大吉！！！<span class="md">（图：门店内外、Hyston与店主合影、吧台打酒、店门夜景）</span></div></li>
+<li><span class="tm">01:25</span><span class="ty">图文4图</span><div class="tx">感谢张会长的热情接待🌷🌷🌷<span class="md">（图：上海市重庆商会 前台合影、荣誉墙合影、会客厅会谈、党支部/工作站合影）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.11<small>周日</small></h3><ol>
+<li><span class="tm">20:03</span><span class="ty">视频号</span><div class="tx">Boxhill Sessions开奖啦<span class="md">（视频叠字“1.10首次开奖 BoxHill Sessions店 现在是2025年墨尔本时间1月10号”）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.10<small>周六</small></h3><ol>
+<li><span class="tm">19:05</span><span class="ty">小红书直播链接</span><div class="tx">今天的收官店<span class="md">（@Hyston黄欣悦 正在直播，快去看！封面：AO×泸州老窖海报）</span></div></li>
+<li><span class="tm">16:29</span><span class="ty">小红书直播链接</span><div class="tx">第五家店<span class="md">（直播预告卡）</span></div></li>
+<li><span class="tm">15:01</span><span class="ty">小红书直播链接</span><div class="tx">10号抽奖第4家</div></li>
+<li><span class="tm">14:10</span><span class="ty">小红书直播链接</span><div class="tx">第三家<span class="md">（AO×泸州老窖海报封面）</span></div></li>
+<li><span class="tm">13:29</span><span class="ty">视频号</span><div class="tx">第二家<span class="md">（封面：购泸州老窖 赢澳网门票 活动海报）</span></div></li>
+<li><span class="tm">13:01</span><span class="ty">视频号</span><div class="tx">开奖咯<span class="md">（封面同上：购泸州老窖赢澳网门票）</span></div></li>
+<li><span class="tm">03:09</span><span class="ty">公众号</span><div class="tx">故事从我的上一个头像说起——《穿越罗布泊后 从无知无畏到开始后怕 敬畏》</div></li>
+<li><span class="tm">01:38</span><span class="ty">图文9图</span><div class="tx">传统从来不只是龙凤和红色<br>传统是我们怎么把情绪安顿好<br>写字 是把心收回来<br>喝茶 是把时间放慢<br>一针一线 是把思念缝进现实<br><br>所以来中华传统文化快闪店<br>不是只来打卡一个好看<br>是来把自己捡回去一点点<br>在异乡我们不缺热闹<br>我们缺一个地方<br>让我们不用解释也能被理解<span class="md">（9图：糖画/漆扇/毛笔书法/剪纸/课程日程表/红纸福字/灯笼DIY/串珠/硬笔书法）</span></div></li>
+<li><span class="tm">01:30</span><span class="ty">视频号</span><div class="tx">感谢前市长Andrew一直以来的支持和帮助<br>让我们一起深入市政府看看澳洲的行政中心吧！<span class="md">（视频：《99次日落》《聚光灯外》EP3 第一集，与前市长在市政厅合影）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.09<small>周五</small></h3><ol>
+<li><span class="tm">16:30</span><span class="ty">图文2图</span><div class="tx">2026 墨尔本亚洲文化美食节<br>欢迎国内企业来墨尔本<br>见人 见路 见结果<span class="md">（图：活动海报，商务旅行套餐、2026墨尔本亚洲文化美食节主办/日程）</span></div></li>
+<li><span class="tm">14:35</span><span class="ty">视频号</span><div class="tx">今天墨尔本再次飙升43度 热浪狂风<span class="md">（视频叠字“周三墨尔本 42度烤蛋7个小时”，碟中煎蛋）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.08<small>周四</small></h3><ol>
+<li><span class="tm">23:20</span><span class="ty">视频号</span><div class="tx">这首歌叫什么来着<span class="md">（视频：车内两人跟唱）</span></div></li>
+<li><span class="tm">23:05</span><span class="ty">视频号</span><div class="tx">新增Ming餐厅<span class="md">（视频：泸州老窖，酒柜前手持礼盒，叠字“在我们最后的这几天时间里”）</span></div></li>
+<li><span class="tm">19:38</span><span class="ty">图文1图</span><div class="tx">HYSTON澳洲二月行程<br>这趟假期的奢侈 不是景点 是大人也能当大人<span class="md">（海报：“澳洲亲子游 交换人生”，粉色马与HYSTON字样）</span></div></li>
+<li><span class="tm">01:21</span><span class="ty">图文1图</span><div class="tx">大家这么积极顺便😲😲😲<br>帮我们选一下26年的第一件新衣服吧<br>上面还是下面一版<span class="md">（图：HYSTON Producer 白T，前“HYSTON 黄欣悦 Hyston｜北京”、背“重庆 CHONGQING”及团队英文名字列表，上下两版）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.07<small>周三</small></h3><ol>
+<li><span class="tm">23:52</span><span class="ty">图文2图</span><div class="tx">2选1呢宝宝们<span class="md">（图：勒点酒店 HYSTON HOTEL logo 两版）</span></div></li>
+<li><span class="tm">20:53</span><span class="ty">视频号</span><div class="tx">门店合集<span class="md">（视频：购泸州老窖 赢2026年澳网门票，多家门店店主举礼盒合集）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.06<small>周二</small></h3><ol>
+<li><span class="tm">22:07</span><span class="ty">视频号</span><div class="tx">Tim：走抓pipi<br>好久没往城市外走了<br>月球空间站听起茧了兴奋得来了一首<br>开了6个小时 拍摄17分钟 抓pipi 一个小时<span class="md">（视频：《高模禁区》Produced Hyston，田野公路航拍）</span></div></li>
+<li><span class="tm">19:38</span><span class="ty">视频号</span><div class="tx">感谢Andrew的邀请！<span class="md">（视频：与新市长会面 Teaser: Whitehorse City Council Tour「上任市长带你逛白马市市政厅」「不开玩笑 我坐上了市长椅子」）</span></div></li>
+<li><span class="tm">09:20</span><span class="ty">视频号</span><div class="tx">《高楼禁区》<span class="md">（视频号卡片，封面：人站在海中）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.04<small>周日</small></h3><ol>
+<li><span class="tm">01:52</span><span class="ty">图文3图</span><div class="tx">在量子里<br>没有被观测的状态<br>不等于不存在<br>在人生里也是 在友情里也是<br>我之前觉得友情是一定要互相见证 互相参与<br>站在彼此人生的重要时刻里<br>像合影一样清晰像时间轴一样对齐<br>后来我慢慢发现<br>有些感情并不在现场<br>它可能长期静默<br>很久不在你的发布里<br>也不在你的高光时刻<br>但当你某一天想起她们<br>发现她们依然准确地存在于你心里<br>没有被生活稀释<br>没有被距离删除<br>然后幡然醒悟<br>她们从未消失<br>只是没有被观测<br><br>友情不一定要持续参与<br>有些关系的形态更接近量子态<br>它不塌缩成天天联系<br>不塌缩成时刻并肩作战<br>但它始终保留着可被调用的能量<br>你知道她们<br>她们也知道你在<br>不用刻意经营<br>一旦相遇状态仍然成立<br><br>我不再用<br>有没有陪我走过某一段<br>去衡量友情<br>我更在意的是<br>在我不被观测的那些时刻<br>她是否依然成立<span class="md">（图：与两位女性朋友聚餐合影×3）</span></div></li>
+<li><span class="tm">01:30</span><span class="ty">图文1图</span><div class="tx">可能态并不缺席<br>它只是需要一个场<br>来决定是否存在<span class="md">（海报：HYSTON「重庆练习生 S1 大学城招募」——项目入口<span class="md">(会展/展会/品牌活动等真实任务)</span>、落地空间<span class="md">(录制、展映、工作坊)</span>、资源通道<span class="md">(项目可对接品牌/合作方/投资)</span>）</span></div></li>
+</ol></div>
+<div class="day"><h3>01.03<small>周六</small></h3><ol>
+<li><span class="tm">17:54</span><span class="ty">公众号</span><div class="tx">活动详情🔎——《购泸州老窖，赢2026年澳网门票！》</div></li>
+</ol></div>
+<div class="day"><h3>01.02<small>周五</small></h3><ol>
+<li><span class="tm">22:44</span><span class="ty">图文1图</span><div class="tx">有奖问答 第一个字念什么🙋<span class="md">（图：勒点酒店 HYSTON HOTEL 黑底月牙logo，手写“勒点酒店”）</span></div></li>
+<li><span class="tm">00:21</span><span class="ty">YouTube链接</span><div class="tx">https://youtu.be/8yhaxawpo5I?feature=shared<br>本片含：临时起意、情绪过载、夜间自救与日常奇迹。请勿在“人生低电量”时观看：可能会突然想改变生活。</div></li>
+</ol></div>
+<div class="day"><h3>01.01<small>周四</small></h3><ol>
+<li><span class="tm">21:44</span><span class="ty">视频号</span><div class="tx">购购购gogogo<span class="md">（视频：购泸州老窖赢2026年澳网门票，店内展示老窖旗下任意产品）</span></div></li>
+<li><span class="tm">21:36</span><span class="ty">视频号</span><div class="tx">所有抽奖箱就位，看看哪家店离你最近吧！<span class="md">（视频叠字“泸州老窖送澳网门票 抽奖箱全体就位”，Hyston戴棒球帽在酒店内展示）</span></div></li>
+<li><span class="tm">03:02</span><span class="ty">图文1图</span><div class="tx">新年快乐<span class="md">（黑色西装白T、纱巾的女性肖像）</span></div></li>
+<li><span class="tm">02:19</span><span class="ty">视频号</span><div class="tx">没有预设的目的地是关于自由、旅程、以及在不确定中活着的勇气<span class="md">（视频：原创歌曲《Live the Unknown》作词曲 Hyston黄欣悦，封面“THIS IS LIFE”城市夜景）</span></div></li>
+</ol></div>
+    </details></div>
+  </section>
+
+  <footer>
+    <div class="mono">ARCHIVE · 往期</div>
+    <div class="issues" id="f-issues"></div>
+    <div class="foot">
+      <span class="mono">HYSTON PTY LTD · MELBOURNE · CHONGQING</span>
+      <span class="mail">admin@hyston.life</span>
+    </div>
+  </footer>
+</main>
+
+<script>
+/* ---------- 每月只改这里 / Edit monthly data here ---------- */
+const ISSUES = [
+ {
+  "no": "01",
+  "month": "2026.01",
+  "status": "current",
+  "href": "/sync/2026/01/"
+ },
+ {
+  "no": "02",
+  "month": "2026.02",
+  "status": "past",
+  "href": "/sync/2026/02/"
+ },
+ {
+  "no": "03",
+  "month": "2026.03",
+  "status": "past",
+  "href": "/sync/2026/03/"
+ },
+ {
+  "no": "04",
+  "month": "2026.04",
+  "status": "past",
+  "href": "/sync/2026/04/"
+ },
+ {
+  "no": "05",
+  "month": "2026.05",
+  "status": "past",
+  "href": "/sync/2026/05/"
+ },
+ {
+  "no": "06",
+  "month": "2026.06",
+  "status": "past",
+  "href": "/sync/2026/06/"
+ },
+ {
+  "no": "07",
+  "month": "2026.07",
+  "status": "past",
+  "href": "/sync/2026/07/"
+ },
+ {
+  "no": "08",
+  "month": "2026.08",
+  "status": "past",
+  "href": "/sync/2026/08/"
+ },
+ {
+  "no": "09",
+  "month": "2026.09",
+  "status": "past",
+  "href": "/sync/2026/09/"
+ },
+ {
+  "no": "MEL",
+  "month": "09.09—10.09",
+  "status": "past",
+  "href": "/sync/2026/melbourne-return/"
+ },
+ {
+  "no": "10",
+  "month": "2026.10",
+  "status": "upcoming"
+ }
+];
+const SYNC = {
+ "no": "01",
+ "date": "2026.01",
+ "title": "SYNC+ / <span class=\"n\">01</span>",
+ "motto": "CHECK IN TO THE DREAM.",
+ "cn": "这个月，勒点酒店从一个 logo 长成了一栋可以住的楼。",
+ "coords": [
+  "MELBOURNE",
+  "SHANGHAI",
+  "CHONGQING",
+  "BEIJING"
+ ],
+ "signals": [
+  {
+   "t": "勒点酒店 HYSTON HOTEL：从“勒”字怎么念，到整栋楼开始被看见",
+   "d": "1.2 发出 logo 二选一并问“第一个字念什么”（Hyston 自述写了 27 遍已不认识这个字）；1.13 抵达重庆直奔工地；1.21 亲测毛巾与床垫压印；1.24–1.28 海报系统（全女友好房、星月、HERE/NOW）与立体发光招牌；1.30 开启直播“挑战睡完每一间房 第一天”。",
+   "tag": "HOTEL"
+  },
+  {
+   "t": "泸州老窖 × 澳网：墨尔本多家门店连续抽奖直播",
+   "d": "1.1 起“所有抽奖箱就位”，1.3 公众号活动详情，1.10 单日直播开奖从第一家连到第五家并以收官店结束，1.18 快闪到第十家，1.23 Rod Laver Arena 纸质门票发放。",
+   "tag": "LIVE"
+  },
+  {
+   "t": "中医春晚与“一带一路”传统医药大会",
+   "d": "1.17 雄安会展酒店欢迎晚宴，1.21 第三届全球中医春节联欢晚会录制圆满；播出安排为 2.10 首播、2.11–15 重播、3.3 再次重播。",
+   "tag": "BEIJING · XIONG'AN"
+  },
+  {
+   "t": "HYSTON 2026 AI 全矩阵上线",
+   "d": "1.22 官网上线：我们做什么、品牌运营增长、互动占位传播、数字记忆馆与陈列、三种可购买的合作方式、底座包、服务对象、合作流程、常见问题。",
+   "tag": "AI"
+  },
+  {
+   "t": "墨尔本本地网络继续打开",
+   "d": "白马市（Whitehorse）前市长带看市政厅并与新市长会面；亚洲文化美食节邀请国内企业来墨尔本；对 WNBL 粉丝增长主管做了采访。",
+   "tag": "MELBOURNE"
+  }
+ ],
+ "numbers": [
+  {
+   "v": 83,
+   "u": "条",
+   "l": "朋友圈（全部逐条存档）",
+   "s": "1.1 – 1.30"
+  },
+  {
+   "v": 10,
+   "u": "+家",
+   "l": "泸州老窖 × 澳网抽奖门店",
+   "s": "1.18 已到第十家快闪"
+  },
+  {
+   "v": 27,
+   "u": "遍",
+   "l": "为勒点酒店手写“勒”字",
+   "s": "1.2 logo 二选一最终 5 : 5"
+  },
+  {
+   "v": 5,
+   "u": "地",
+   "l": "一月落脚城市",
+   "s": "墨尔本 · 上海 · 重庆 · 北京 · 雄安"
+  },
+  {
+   "v": 3,
+   "u": "集",
+   "l": "《99次日落》聚光灯外",
+   "s": "EP3 / EP4 / EP5 先导"
+  },
+  {
+   "v": 2.1,
+   "u": "",
+   "l": "中医春晚首播日",
+   "s": "中国国际教育电视台 · 2.11–15 重播",
+   "dec": 2
+  }
+ ],
+ "numbersNote": "本期内容来自 Hyston 一月发布的朋友圈（只读本人发布内容，评论区与第三方互动不收录）；数字以朋友圈原文为准。招聘、租房、私人生活类共 5 条未在公开页收录。",
+ "peopleH": "这个月，我们和谁谈了什么。",
+ "peopleNote": "按时间排列。对方只列职位与机构。到访、祝福与支持不代表商业合作或背书。",
+ "people": [
+  {
+   "d": "01.06",
+   "p": "墨尔本",
+   "org": "City of Whitehorse",
+   "who": "前任市长 · 新任市长",
+   "what": "受邀参访市政厅，与新市长会面；拍摄《99次日落》聚光灯外 EP3「上任市长带你逛白马市市政厅」，并聊到重庆无人机表演在澳洲落地的可能。",
+   "st": "已拍摄"
+  },
+  {
+   "d": "01.09",
+   "p": "墨尔本",
+   "org": "维州山东同乡会暨商会 · 澳中商贸文化促进会",
+   "who": "两家社团",
+   "what": "支持 2026 墨尔本亚洲文化美食节：欢迎国内企业来墨尔本，见人、见路、见结果。",
+   "st": "支持"
+  },
+  {
+   "d": "01.10",
+   "p": "墨尔本",
+   "org": "多家酒类零售门店",
+   "who": "门店店主",
+   "what": "泸州老窖 × 澳网门票抽奖：第一至第五家当天连播开奖，晚间收官；后续快闪至第十家。",
+   "st": "合作"
+  },
+  {
+   "d": "01.12",
+   "p": "上海",
+   "org": "上海市重庆商会",
+   "who": "商会会长",
+   "what": "周日到访接待；同日出席野菌培养室 Wildrink Lab 上海店开业。",
+   "st": "到访"
+  },
+  {
+   "d": "01.17",
+   "p": "雄安",
+   "org": "青年企业家协会 · 传统医药大会组委会",
+   "who": "主办团队 · 央视摄影团队",
+   "what": "2026“一带一路”传统医药发展交流与合作大会欢迎晚宴；对央视摄影团队的镜头配置做了记录。",
+   "st": "出席"
+  },
+  {
+   "d": "01.18",
+   "p": "北京",
+   "org": "PH Group（三里屯）",
+   "who": "门店负责人",
+   "what": "晚高峰接待参观新店，对四个主题空间的动线与衔接设计做了复盘：空间不是拼出来的，是流出来的。",
+   "st": "到访"
+  },
+  {
+   "d": "01.21",
+   "p": "北京",
+   "org": "中国国际教育电视台 · 青年企业家商会",
+   "who": "节目与商会团队",
+   "what": "2026 第三届全球中医春节联欢晚会录制圆满；播出安排确认为 2.10 首播。",
+   "st": "已完成"
+  },
+  {
+   "d": "01.27",
+   "p": "墨尔本",
+   "org": "WNBL · AFL 体系",
+   "who": "粉丝增长主管 · 赛事合作方",
+   "what": "在 Southside Melbourne Flyers 对 Perth 的比赛现场完成对 WNBL 球迷发展负责人的采访，并触达 AFL 团队。",
+   "st": "已采访"
+  }
+ ],
+ "built": [
+  {
+   "t": "勒点酒店 HYSTON HOTEL",
+   "s": "重庆大学城 · 概念到可住空间",
+   "k": "HOTEL",
+   "m": "1.2 – 1.30",
+   "d": "logo 二选一与“勒”字之问；工地到访；毛巾床垫压印；走廊、电梯、前厅与立体发光招牌；1.30 直播挑战睡完每一间房。"
+  },
+  {
+   "t": "勒点海报系统",
+   "s": "全女友好房 · 星月 · HERE / NOW",
+   "k": "DESIGN",
+   "m": "1.24 – 1.28",
+   "d": "“我在勒点 空间在勒点 时间在勒点”；手机锁屏海报 0:23 的三层概念：城市代码 023、凌晨半梦半醒、最私密的界面。"
+  },
+  {
+   "t": "HYSTON 2026 AI 全矩阵官网",
+   "s": "hystonai.figma.site",
+   "k": "AI",
+   "m": "1.22",
+   "d": "九屏官网：服务对象、三种合作方式、底座包、合作流程与常见问题。"
+  },
+  {
+   "t": "《99次日落》聚光灯外",
+   "s": "人生底片系列",
+   "k": "FILM",
+   "m": "1.10 – 1.22",
+   "d": "EP3 白马市市政厅，EP4「在上海有一座世外桃源」，EP5「18 岁重庆女生代表中国拿亚洲第一」先导预告。"
+  },
+  {
+   "t": "泸州老窖 × 澳网 抽奖直播",
+   "s": "墨尔本多门店",
+   "k": "LIVE",
+   "m": "1.1 – 1.23",
+   "d": "门店合集、逐店开奖直播与切片、纸质门票发放。"
+  },
+  {
+   "t": "原创歌曲《Live the Unknown》",
+   "s": "作词曲 Hyston 黄欣悦",
+   "k": "MUSIC",
+   "m": "1.1",
+   "d": "“没有预设的目的地是关于自由、旅程、以及在不确定中活着的勇气。”"
+  },
+  {
+   "t": "中华传统文化快闪店",
+   "s": "糖画 · 漆扇 · 书法 · 剪纸 · 灯笼 · 串珠",
+   "k": "EVENT",
+   "m": "1.10",
+   "d": "九个体验项目与课程日程：“不是只来打卡一个好看，是来把自己捡回去一点点。”"
+  },
+  {
+   "t": "HYSTON Producer 白 T",
+   "s": "BRAND",
+   "k": "BRAND",
+   "m": "1.8",
+   "d": "前后两版并把团队英文名印上背面，朋友圈投票选出 2026 年第一件新衣服。"
+  }
+ ],
+ "cities": [
+  {
+   "id": "mel",
+   "name": "MELBOURNE",
+   "cn": "墨尔本",
+   "lon": 144.96,
+   "lat": -37.81,
+   "home": true,
+   "st": "HOME BASE",
+   "items": [
+    "泸州老窖 × 澳网抽奖连播",
+    "白马市市政厅参访与新市长会面",
+    "亚洲文化美食节",
+    "WNBL 球迷发展负责人采访",
+    "中华传统文化快闪店"
+   ]
+  },
+  {
+   "id": "sha",
+   "name": "SHANGHAI",
+   "cn": "上海",
+   "lon": 121.47,
+   "lat": 31.23,
+   "st": "1.11 – 1.12",
+   "dx": 14,
+   "dy": 14,
+   "items": [
+    "野菌培养室 Wildrink Lab 上海店开业",
+    "上海市重庆商会接待",
+    "浦东机场往返"
+   ]
+  },
+  {
+   "id": "ckg",
+   "name": "CHONGQING",
+   "cn": "重庆",
+   "lon": 106.55,
+   "lat": 29.56,
+   "st": "ROOTS",
+   "anchor": "end",
+   "dx": -14,
+   "dy": 14,
+   "items": [
+    "1.13 抵达，直奔勒点酒店工地",
+    "洪崖洞朝天门、江北嘴 vlog",
+    "勒点酒店走廊、电梯、前厅与招牌",
+    "1.30 挑战睡完每一间房"
+   ]
+  },
+  {
+   "id": "bj",
+   "name": "BEIJING",
+   "cn": "北京",
+   "lon": 116.4,
+   "lat": 39.9,
+   "st": "1.16 – 1.25",
+   "dx": 14,
+   "dy": -6,
+   "items": [
+    "三里屯 PH Group 考察",
+    "中国传媒大学",
+    "北京橄榄球训练基地",
+    "中医春晚录制",
+    "北京体育大学"
+   ]
+  },
+  {
+   "id": "xa",
+   "name": "XIONG'AN",
+   "cn": "雄安",
+   "lon": 115.97,
+   "lat": 38.99,
+   "st": "1.17",
+   "anchor": "end",
+   "dx": -12,
+   "dy": -8,
+   "items": [
+    "2026“一带一路”传统医药大会欢迎晚宴",
+    "雄安会展酒店"
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "h": "HOTEL",
+   "p": "勒点酒店从 logo 到招牌，1.30 开始直播试睡。",
+   "c": "CHONGQING"
+  },
+  {
+   "h": "LIVE",
+   "p": "泸州老窖 × 澳网抽奖连播；纸质门票发放。",
+   "c": "MELBOURNE"
+  },
+  {
+   "h": "AI",
+   "p": "HYSTON 2026 AI 全矩阵官网上线，三种可购买合作方式。",
+   "c": "GLOBAL"
+  },
+  {
+   "h": "FILM",
+   "p": "《99次日落》聚光灯外 EP3–EP5。",
+   "c": "MEL · SHA · BJ"
+  },
+  {
+   "h": "NETWORK",
+   "p": "白马市、WNBL、AFL、上海市重庆商会、PH Group。",
+   "c": "MEL · SHA · BJ"
+  },
+  {
+   "h": "CULTURE",
+   "p": "中医春晚、传统医药大会、传统文化快闪店。",
+   "c": "BEIJING · MELBOURNE"
+  },
+  {
+   "h": "MUSIC",
+   "p": "《Live the Unknown》。",
+   "c": "HYSTON ORIGINAL"
+  },
+  {
+   "h": "DESIGN",
+   "p": "勒点海报系统、锁屏 0:23、Producer 白 T。",
+   "c": "HYSTON ORIGINAL"
+  }
+ ],
+ "changed": [
+  {
+   "was": "酒店 = 一间房",
+   "now": "酒店是一整套叙事：从 logo、走廊海报、手机锁屏，到“我在勒点 空间在勒点 时间在勒点”。"
+  },
+  {
+   "was": "友情 = 必须互相见证",
+   "now": "有些关系更接近量子态：不被观测的时候，她依然成立。"
+  },
+  {
+   "was": "传统 = 龙凤和红色",
+   "now": "传统是我们怎么把情绪安顿好：写字是把心收回来，喝茶是把时间放慢。"
+  },
+  {
+   "was": "空间 = 拼出来的",
+   "now": "好的空间是流出来的：一转身就是下一段剧情。"
+  }
+ ],
+ "nextH": "二月，要发生的事。",
+ "next": [
+  {
+   "d": "02.02",
+   "w": "《勒点嘞梦》连载开篇",
+   "s": "第一章：整栋楼都把我留给了我"
+  },
+  {
+   "d": "02.07",
+   "w": "原创歌曲《钢筋里长出的月亮》",
+   "s": "Alive"
+  },
+  {
+   "d": "02.10",
+   "w": "中医春晚首播",
+   "s": "中国国际教育电视台，2.11–15 重播"
+  },
+  {
+   "d": "02.15",
+   "w": "CCTV 国际频道晚间直播",
+   "s": "第三届全球中医春节联欢晚会"
+  },
+  {
+   "d": "02.28",
+   "w": "SYNC+ 02",
+   "s": "下一期"
+  }
+ ]
+};
+
+/* ---------- render ---------- */
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+$("c-issue").textContent = "ISSUE " + SYNC.no;
+$("c-date").textContent = SYNC.date;
+$("c-title").innerHTML = SYNC.title;
+$("c-motto").textContent = SYNC.motto;
+$("c-cn").textContent = SYNC.cn;
+$("c-coords").innerHTML = SYNC.coords.map(c => `<span>${esc(c)}</span>`).join("<span aria-hidden=\"true\">·</span>");
+
+$("s-list").innerHTML = SYNC.signals.map((s,i) =>
+  `<li><span class="rk">${String(i+1).padStart(2,"0")}</span><div><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p></div><span class="tag">${esc(s.tag)}</span></li>`).join("");
+
+const fmt = (v,dec) => dec ? v.toFixed(dec) : Math.round(v).toString();
+$("n-grid").innerHTML = SYNC.numbers.map((n,i) =>
+  `<div class="num"><span class="v" data-i="${i}">${fmt(n.v,n.dec)}<small>${esc(n.u)}</small></span><span class="l">${esc(n.l)}</span><span class="s">${esc(n.s)}</span></div>`).join("");
+$("n-note").textContent = SYNC.numbersNote;
+
+$("b-list").innerHTML = SYNC.built.map(b =>
+  `<details><summary><span class="t">${esc(b.t)}<span>${esc(b.s)}</span></span><span class="k">${esc(b.k)}</span><span class="pm" aria-hidden="true">+</span></summary>
+   <div class="body"><div class="meta"><span>${esc(b.k)}</span><b>${esc(b.m)}</b></div><p>${esc(b.d)}</p></div></details>`).join("");
+
+$("p-h").textContent = SYNC.peopleH;
+$("p-note").textContent = SYNC.peopleNote;
+$("p-list").innerHTML = SYNC.people.map(x =>
+  `<li><span class="d">${esc(x.d)}<span>${esc(x.p)}</span></span><div><h3>${esc(x.org)}</h3><div class="who">${esc(x.who)}</div><p>${esc(x.what)}</p></div><span class="st${/已/.test(x.st)?" done":""}">${esc(x.st)}</span></li>`).join("");
+
+$("l-grid").innerHTML = SYNC.lines.map(l =>
+  `<div class="line"><span class="h">${esc(l.h)}</span><p>${esc(l.p)}</p><span class="c">${esc(l.c)}</span></div>`).join("");
+
+$("ch-list").innerHTML = SYNC.changed.map(c =>
+  `<figure style="margin:0"><blockquote><span class="was">以前：<s>${esc(c.was)}</s></span>${esc(c.now)}</blockquote>${c.cap?`<figcaption>${esc(c.cap)}</figcaption>`:""}</figure>`).join("");
+
+$("nx-h").textContent = SYNC.nextH;
+$("nx-list").innerHTML = SYNC.next.map(n =>
+  `<li><span class="d${n.tbd?" tbd":""}">${esc(n.d)}</span><span class="w">${esc(n.w)}${n.s?`<span>${esc(n.s)}</span>`:""}</span></li>`).join("");
+
+$("f-issues").innerHTML = ISSUES.map(x => {
+  const lab = x.status==="current" ? "本期" : x.status==="past" ? "往期 →" : x.status==="next" ? "下一期 →" : x.status==="newer" ? "阅读 →" : x.status==="latest" ? "最新一期 →" : "即将发布";
+  const inner = `<span class="i">${esc(x.no)}</span><span class="m">${esc(x.month)}</span><span class="m">${lab}</span>`;
+  return x.href && x.status!=="current" ? `<a class="issue link" href="${x.href}">${inner}</a>` : `<div class="issue${x.status==="current"?" cur":""}">${inner}</div>`;
+}).join("");
+
+/* ---------- map ---------- */
+(function(){
+  const W=1000,H=460, L0=60, SPAN=240, LAT_TOP=60, LAT_SPAN=110;
+  const px = c => ({x:((c.lon - L0 + 360) % 360)/SPAN*W, y:(LAT_TOP - c.lat)/LAT_SPAN*H});
+  const home = SYNC.cities.find(c => c.home), hp = px(home);
+  let dots = "";
+  for (let x=10; x<W; x+=20) for (let y=10; y<H; y+=20) dots += `<circle cx="${x}" cy="${y}" r="1" fill="#26262A"/>`;
+  let arcs = "", nodes = "";
+  SYNC.cities.forEach(c => {
+    const p = px(c);
+    if (!c.home) {
+      const mx=(hp.x+p.x)/2, my=Math.min(hp.y,p.y) - Math.abs(p.x-hp.x)*0.25 - 40;
+      arcs += `<path class="arc${c.plan?" plan":""}" data-c="${c.id}" d="M${hp.x.toFixed(1)} ${hp.y.toFixed(1)} Q${mx.toFixed(1)} ${my.toFixed(1)} ${p.x.toFixed(1)} ${p.y.toFixed(1)}"/>`;
+    }
+    const dx = c.dx ?? (p.x > 700 ? -12 : 12), anchor = c.anchor ?? (p.x > 700 ? "end" : "start"), dy = c.dy ?? 5;
+    nodes += `<g class="city${c.plan?" plan":""}" data-c="${c.id}"><circle class="halo" cx="${p.x}" cy="${p.y}" r="6"/><circle class="dot" cx="${p.x}" cy="${p.y}" r="5"/><text x="${p.x+dx}" y="${p.y+dy}" text-anchor="${anchor}">${c.name}</text></g>`;
+  });
+  $("w-map").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="从墨尔本连接到${SYNC.cities.filter(c=>!c.home).map(c=>c.cn).join("、")}的线路图"><g>${dots}</g><g>${arcs}</g><g>${nodes}</g></svg>`;
+  $("w-btns").innerHTML = SYNC.cities.map(c => `<button type="button" id="city-${c.id}" data-c="${c.id}" aria-pressed="false">${c.cn}</button>`).join("");
+  function pick(id){
+    const c = SYNC.cities.find(x => x.id===id);
+    document.querySelectorAll("#w-btns button").forEach(b => b.setAttribute("aria-pressed", b.dataset.c===id));
+    document.querySelectorAll("#w-map .city").forEach(g => g.classList.toggle("on", g.dataset.c===id));
+    document.querySelectorAll("#w-map .arc").forEach(a => a.classList.toggle("on", a.dataset.c===id || (c.home)));
+    $("w-panel").innerHTML = `<h3>${esc(c.name)}</h3><div class="st mono">${esc(c.cn)} · ${esc(c.st)}</div><ul>${c.items.map(i=>`<li>${esc(i)}</li>`).join("")}</ul>`;
+  }
+  $("w-btns").addEventListener("click", e => { const b = e.target.closest("button"); if (b) pick(b.dataset.c); });
+  pick("mel");
+})();
+
+/* ---------- count-up: values are already final at rest; replay once when scrolled into view ---------- */
+(function(){
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    io.unobserve(en.target);
+    const n = SYNC.numbers[+en.target.dataset.i], small = en.target.querySelector("small").outerHTML, t0 = performance.now(), dur = 1100;
+    const step = t => { const k = Math.min(1,(t-t0)/dur), e = 1-Math.pow(1-k,3);
+      en.target.innerHTML = fmt(n.v*e, n.dec) + small; if (k<1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  }), {threshold:.6});
+  document.querySelectorAll(".num .v").forEach(el => io.observe(el));
+})();
+</script>
+
+</body>
+</html>

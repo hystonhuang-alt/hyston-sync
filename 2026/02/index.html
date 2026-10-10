@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="HYSTON SYNC+ 02 · 二月月报：《勒点嘞梦》三章连载与 28 晚试住、中医春晚首播、勒点酒店走向开业；附朋友圈逐条全文。">
+<title>HYSTON SYNC+ 02</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;700;900&family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single dark scroll — cover, then seven fixed columns, each a full-width "spread" with a mono coordinate rail on the left. */
+:root{
+  --ink:#0A0A0B;        /* ground */
+  --ink-2:#141416;      /* raised surface */
+  --line:#2A2A2E;       /* hairlines */
+  --silver:#C9C9CC;     /* primary type on dark */
+  --mute:#8B8B91;       /* secondary type */
+  --dim:#5E5E64;        /* tertiary, decorative only */
+  --wine:#8E2A35;       /* accent, used sparingly */
+  --wine-hi:#C0485A;    /* accent for text on dark */
+  --f-display:'Big Shoulders Display','Arial Narrow',sans-serif;
+  --f-cn-display:'Noto Serif SC','Songti SC',serif;
+  --f-body:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--silver);font-family:var(--f-body);font-size:16px;line-height:1.7;padding-inline:clamp(16px,5vw,72px);padding-block:0;-webkit-font-smoothing:antialiased}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+a{color:var(--silver)}
+:focus-visible{outline:2px solid var(--wine-hi);outline-offset:3px}
+.wrap{max-width:1180px;margin-inline:auto}
+.mono{font-family:var(--f-mono);letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:var(--mute)}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--ink) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-inline:calc(-1*clamp(16px,5vw,72px));padding:12px clamp(16px,5vw,72px)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.bar b{font-family:var(--f-mono);font-weight:500;letter-spacing:.22em;font-size:13px;color:var(--silver)}
+.bar nav{display:flex;gap:14px;flex-wrap:wrap}
+.bar nav a{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);text-decoration:none}
+.bar nav a:hover{color:var(--silver)}
+
+/* cover */
+.cover{padding-block:clamp(56px,10vw,128px) clamp(48px,8vw,96px);display:grid;gap:28px}
+.cover .kicker{display:flex;gap:18px;flex-wrap:wrap}
+.cover h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(72px,17vw,232px);line-height:.82;letter-spacing:-.01em;color:var(--silver);text-wrap:balance}
+.cover h1 .n{color:var(--wine-hi)}
+.cover .motto{font-family:var(--f-display);font-weight:300;font-size:clamp(28px,4.4vw,56px);letter-spacing:.06em;margin:0;color:var(--silver)}
+.cover .cn{font-family:var(--f-cn-display);font-weight:600;font-size:clamp(20px,2.4vw,28px);margin:0;color:var(--mute)}
+.cover .coords{display:flex;gap:10px 28px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px}
+
+/* sections */
+section.col{border-top:1px solid var(--line);padding-block:clamp(48px,7vw,96px);display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px 48px;scroll-margin-top:56px}
+@media (max-width:820px){section.col{grid-template-columns:minmax(0,1fr)}}
+.rail{display:flex;flex-direction:column;gap:6px}
+.rail .no{font-family:var(--f-display);font-weight:700;font-size:56px;line-height:1;color:var(--dim)}
+.rail .name{font-family:var(--f-mono);font-size:13px;letter-spacing:.2em;color:var(--silver)}
+.rail .cn{font-size:13px;color:var(--mute)}
+h2{margin:0 0 28px;font-family:var(--f-cn-display);font-weight:900;font-size:clamp(28px,3.6vw,44px);line-height:1.25;color:var(--silver);text-wrap:balance;max-width:22em}
+
+/* signals */
+.signals{list-style:none;margin:0;padding:0;display:grid}
+.signals li{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:4px 20px;padding-block:22px;border-bottom:1px solid var(--line);align-items:baseline}
+.signals li:first-child{padding-top:0}
+.signals .rk{font-family:var(--f-display);font-weight:700;font-size:40px;line-height:1;color:var(--dim)}
+.signals li:first-child .rk{color:var(--wine-hi)}
+.signals h3{margin:0;font-size:clamp(19px,2vw,23px);font-weight:500;color:var(--silver);line-height:1.45}
+.signals p{margin:6px 0 0;color:var(--mute);max-width:40em}
+.signals .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--mute);border:1px solid var(--line);padding:3px 8px;white-space:nowrap}
+@media (max-width:560px){.signals li{grid-template-columns:40px minmax(0,1fr)}.signals .tag{grid-column:2;justify-self:start}}
+
+/* numbers */
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.num{background:var(--ink);padding:28px 24px;display:flex;flex-direction:column;gap:8px}
+.num .v{font-family:var(--f-display);font-weight:900;font-size:clamp(64px,8vw,104px);line-height:.9;color:var(--silver);font-variant-numeric:tabular-nums}
+.num .v small{font-size:.42em;font-weight:300;margin-left:4px;color:var(--mute)}
+.num .l{font-size:15px;color:var(--silver)}
+.num .s{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;color:var(--mute)}
+.note{margin-top:16px;font-size:13px;color:var(--mute)}
+
+/* built */
+.built{display:grid;gap:0;border-top:1px solid var(--line)}
+.built details{border-bottom:1px solid var(--line)}
+.built summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:16px;align-items:baseline;padding-block:20px}
+.built summary::-webkit-details-marker{display:none}
+.built summary .t{font-family:var(--f-display);font-weight:700;font-size:clamp(26px,3vw,36px);letter-spacing:.02em;color:var(--silver);line-height:1.1}
+.built summary .t span{display:block;font-family:var(--f-body);font-weight:400;font-size:14px;letter-spacing:0;color:var(--mute);margin-top:6px}
+.built summary .k{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute)}
+.built summary .pm{font-family:var(--f-mono);font-size:20px;color:var(--mute);width:20px;text-align:center;transition:transform .25s}
+.built details[open] summary .pm{transform:rotate(45deg);color:var(--wine-hi)}
+.built summary:hover .t{color:#fff}
+.built .body{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:24px;padding-bottom:28px}
+@media (max-width:700px){.built .body{grid-template-columns:minmax(0,1fr)}}
+.ph{aspect-ratio:16/9;max-width:100%;border:1px dashed var(--dim);display:grid;place-items:center;font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);background:repeating-linear-gradient(135deg,var(--ink) 0 10px,var(--ink-2) 10px 20px);text-align:center;padding:12px}
+.built .body p{margin:0;color:var(--silver);max-width:34em}
+
+/* world */
+.world{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px}
+@media (max-width:900px){.world{grid-template-columns:minmax(0,1fr)}}
+.map{border:1px solid var(--line);background:var(--ink-2);overflow:hidden}
+.map svg{display:block;width:100%;height:auto}
+.map .arc{fill:none;stroke:var(--dim);stroke-width:1.2;transition:stroke .3s}
+.map .arc.plan{stroke-dasharray:4 6}
+.map .arc.on{stroke:var(--wine-hi);stroke-width:2}
+.map .city circle.dot{fill:var(--silver)}
+.map .city circle.halo{fill:none;stroke:var(--wine-hi);stroke-width:1.5;opacity:0}
+.map .city.on circle.halo{opacity:1;animation:pulse 2.2s ease-out infinite}
+.map .city text{font-family:var(--f-mono);font-size:13px;letter-spacing:.12em;fill:var(--mute)}
+.map .city.on text{fill:var(--silver)}
+.map .city.plan circle.dot{fill:none;stroke:var(--mute);stroke-width:1.5}
+@keyframes pulse{0%{r:6;opacity:.9}100%{r:22;opacity:0}}
+.cities{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.cities button{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;background:transparent;color:var(--mute);border:1px solid var(--line);padding:10px 14px;cursor:pointer;min-height:44px}
+.cities button[aria-pressed="true"]{color:var(--silver);border-color:var(--wine-hi);background:color-mix(in srgb,var(--wine) 22%,transparent)}
+.cities button:hover{color:var(--silver)}
+.panel h3{margin:0 0 4px;font-family:var(--f-display);font-weight:700;font-size:40px;line-height:1;color:var(--silver);letter-spacing:.02em}
+.panel .st{margin-bottom:16px}
+.panel ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.panel li{padding-left:18px;position:relative;color:var(--silver)}
+.panel li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:1px;background:var(--wine-hi)}
+
+/* lines */
+.lines{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;padding:1px}
+.lines>*{box-shadow:0 0 0 1px var(--line)}
+.line{background:var(--ink);padding:24px;display:flex;flex-direction:column;gap:10px}
+.line .h{font-family:var(--f-display);font-weight:700;font-size:30px;letter-spacing:.06em;color:var(--silver);line-height:1}
+.line p{margin:0;color:var(--mute);font-size:15px}
+.line .c{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--dim);margin-top:auto}
+
+/* changed */
+.changed{display:grid;gap:36px}
+.changed blockquote{margin:0;font-family:var(--f-cn-display);font-weight:600;font-size:clamp(22px,2.6vw,30px);line-height:1.5;color:var(--silver);max-width:26em;text-wrap:balance}
+.changed .was{display:block;font-family:var(--f-body);font-weight:300;font-size:15px;color:var(--mute);margin-bottom:10px}
+.changed .was s{text-decoration-color:var(--wine-hi)}
+.changed figcaption{margin-top:10px;font-size:13px;color:var(--mute)}
+
+/* next */
+.next{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.next li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding-block:18px;border-bottom:1px solid var(--line);align-items:baseline}
+.next .d{font-family:var(--f-display);font-weight:700;font-size:28px;color:var(--silver);font-variant-numeric:tabular-nums}
+.next .d.tbd{color:var(--dim)}
+.next .w{font-size:18px;color:var(--silver)}
+.next .w span{display:block;font-size:14px;color:var(--mute)}
+
+
+/* people */
+.people{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--line)}
+.people li{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:6px 24px;padding-block:22px;border-bottom:1px solid var(--line);align-items:baseline}
+.people .d{font-family:var(--f-display);font-weight:700;font-size:28px;line-height:1;color:var(--silver);font-variant-numeric:tabular-nums}
+.people .d span{display:block;font-family:var(--f-mono);font-weight:400;font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:8px}
+.people h3{margin:0;font-size:clamp(17px,1.8vw,20px);font-weight:500;color:var(--silver);line-height:1.45}
+.people .who{margin:6px 0 0;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--wine-hi);line-height:1.6}
+.people p{margin:8px 0 0;color:var(--mute);max-width:44em}
+.people .st{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);border:1px solid var(--line);padding:3px 8px;white-space:nowrap}
+.people .st.done{color:var(--silver);border-color:var(--dim)}
+@media (max-width:640px){.people li{grid-template-columns:64px minmax(0,1fr)}.people .d{font-size:22px}.people .st{grid-column:2;justify-self:start}}
+.built .meta{display:flex;flex-direction:column;gap:10px;border-left:1px solid var(--line);padding-left:16px;align-self:start}
+.built .meta span{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;color:var(--mute)}
+.built .meta b{font-family:var(--f-display);font-weight:700;font-size:24px;color:var(--silver);letter-spacing:.04em}
+
+/* archive / footer */
+footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap:36px}
+.issues{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1px;padding:1px}
+.issues>*{box-shadow:0 0 0 1px var(--line)}
+.issue{background:var(--ink);padding:20px;display:flex;flex-direction:column;gap:4px;min-height:120px}
+.issue .i{font-family:var(--f-display);font-weight:900;font-size:44px;line-height:1;color:var(--dim)}
+.issue.cur .i{color:var(--wine-hi)}
+.issue.link{text-decoration:none;color:inherit;transition:background .2s}
+.issue.link:hover{background:#141418}
+.issue.link:hover .i{color:var(--wine-hi)}
+.issue .m{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute)}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot .mail{font-family:var(--f-mono);font-size:13px;letter-spacing:.08em;color:var(--silver);user-select:all}
+
+/* archive */
+.arch .day{display:grid;grid-template-columns:96px minmax(0,1fr);gap:8px 24px;padding-block:22px;border-bottom:1px solid var(--line)}
+.arch .day h3{margin:0;font-family:var(--f-display);font-weight:700;font-size:28px;line-height:1;color:var(--silver);font-variant-numeric:tabular-nums}
+.arch .day h3 small{display:block;font-family:var(--f-mono);font-weight:400;font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:8px}
+.arch ol{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.arch li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:2px 14px}
+.arch .tm{font-family:var(--f-mono);font-size:12px;color:var(--mute);padding-top:3px}
+.arch .ty{grid-column:2;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;color:var(--wine-hi);order:-1}
+.arch .tx{grid-column:2;color:var(--silver);max-width:46em;line-height:1.75;overflow-wrap:anywhere}
+.arch .md{color:var(--mute);font-size:14px}
+.arch details>summary{cursor:pointer;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--mute);padding-block:10px}
+@media (max-width:640px){.arch .day{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+
+
+<div class="bar"><div class="wrap">
+  <b>HYSTON SYNC+</b>
+  <nav aria-label="栏目">
+    <a href="#signals">01 SIGNALS</a><a href="#numbers">02 NUMBERS</a><a href="#people">03 PEOPLE</a><a href="#built">04 BUILT</a><a href="#world">05 WORLD</a><a href="#lines">06 LINES</a><a href="#changed">07 CHANGED</a><a href="#next">08 NEXT</a><a href="#archive">09 ARCHIVE</a>
+  </nav>
+</div></div>
+
+<main class="wrap" id="app">
+  <header class="cover">
+    <div class="kicker mono"><span>HYSTON SYNC+</span><span id="c-issue"></span><span id="c-date"></span></div>
+    <h1 id="c-title"></h1>
+    <p class="motto" id="c-motto"></p>
+    <p class="cn" id="c-cn"></p>
+    <div class="coords mono" id="c-coords"></div>
+  </header>
+
+  <section class="col" id="signals">
+    <div class="rail"><span class="no">01</span><span class="name">SIGNALS</span><span class="cn">本月最重要的五件事</span></div>
+    <div><h2>按重要性排序，不按主题分类。</h2><ol class="signals" id="s-list"></ol></div>
+  </section>
+
+  <section class="col" id="numbers">
+    <div class="rail"><span class="no">02</span><span class="name">NUMBERS</span><span class="cn">关键数字</span></div>
+    <div><h2>只放数字，不加形容词。</h2><div class="nums" id="n-grid"></div><p class="note" id="n-note"></p></div>
+  </section>
+
+  <section class="col" id="people">
+    <div class="rail"><span class="no">03</span><span class="name">PEOPLE</span><span class="cn">和谁谈了什么</span></div>
+    <div><h2 id="p-h"></h2><ol class="people" id="p-list"></ol><p class="note" id="p-note"></p></div>
+  </section>
+
+  <section class="col" id="built">
+    <div class="rail"><span class="no">04</span><span class="name">BUILT</span><span class="cn">这个月真正做出来的东西</span></div>
+    <div><h2>这个月真正做出来的六件东西。</h2><div class="built" id="b-list"></div></div>
+  </section>
+
+  <section class="col" id="world">
+    <div class="rail"><span class="no">05</span><span class="name">IN THE WORLD</span><span class="cn">城市、活动、机构、合作</span></div>
+    <div>
+      <h2>二月，几乎都发生在重庆。</h2>
+      <div class="world">
+        <div class="map" id="w-map"></div>
+        <div>
+          <div class="cities" id="w-btns" role="group" aria-label="选择城市"></div>
+          <div class="panel" id="w-panel" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="col" id="lines">
+    <div class="rail"><span class="no">06</span><span class="name">BUSINESS LINES</span><span class="cn">业务线</span></div>
+    <div><h2>八条线，二月各自往前走了一步。</h2><div class="lines" id="l-grid"></div></div>
+  </section>
+
+  <section class="col" id="changed">
+    <div class="rail"><span class="no">07</span><span class="name">WHAT CHANGED</span><span class="cn">判断发生了什么变化</span></div>
+    <div><h2>这个月，我们改了三个看法。</h2><div class="changed" id="ch-list"></div></div>
+  </section>
+
+  <section class="col" id="next">
+    <div class="rail"><span class="no">08</span><span class="name">NEXT</span><span class="cn">下个月要落地的事</span></div>
+    <div><h2 id="nx-h"></h2><ol class="next" id="nx-list"></ol></div>
+  </section>
+
+  <section class="col arch" id="archive">
+    <div class="rail"><span class="no">09</span><span class="name">ARCHIVE</span><span class="cn">朋友圈逐条全文</span></div>
+    <div><h2>二月朋友圈，逐条全文。</h2><p class="note" style="margin:-12px 0 24px">本月朋友圈共 25 条，逐条存档；其中 5 条（招聘、仅自己可见、私人生活等）不在公开页收录，另有部分公众号文章正文未读取，仅存标题。评论区与第三方互动不收录。</p>
+    <details open><summary>▾ 展开 / 收起全文（共 20 条，由新到旧）</summary>
+<div class="day"><h3>02.27<small>周五</small></h3><ol>
+<li><span class="tm">15:32</span><span class="ty">图文1图</span><div class="tx">单身墨缘会目前女生报名爆满 男生稀缺啊！<span class="md">（海报：2026单身墨缘会 party邀请；女生节不落单，快来“墨缘”撞好运；3月8日<span class="md">(女生节)</span> 1:30pm–4:30pm；298-300 Oban Road, Donvale, Vic 3111；墨尔本单身男女：青年组<span class="md">(18-36岁)</span>32人、成熟组<span class="md">(37-56岁)</span>32人；报名费 $18本地金/$20，人民币99元；主办方 墨缘涛声）</span></div></li>
+</ol></div>
+<div class="day"><h3>02.26<small>周四</small></h3><ol>
+<li><span class="tm">14:09</span><span class="ty">文字</span><div class="tx">重庆有哪位老板缺平面设计吗</div></li>
+</ol></div>
+<div class="day"><h3>02.25<small>周三</small></h3><ol>
+<li><span class="tm">04:51</span><span class="ty">公众号</span><div class="tx">梦像你就已经足够珍贵<br>因为真实的你本来就不只属于白天<span class="md">（正文待补读）</span></div></li>
+</ol></div>
+<div class="day"><h3>02.20<small>周五</small></h3><ol>
+<li><span class="tm">03:03</span><span class="ty">视频号</span><div class="tx">又是一年生日快乐米米<span class="md">（视频封面：可是美貌是她身上最不值一提的优点；夜景江边与朋友合影；米恩 生日快乐）</span></div></li>
+</ol></div>
+<div class="day"><h3>02.19<small>周四</small></h3><ol>
+<li><span class="tm">02:19</span><span class="ty">音乐</span><div class="tx">欢迎来到勒点<span class="md">（音频卡片：勒点把你放好）</span></div></li>
+</ol></div>
+<div class="day"><h3>02.18<small>周三</small></h3><ol>
+<li><span class="tm">20:20</span><span class="ty">视频号</span><div class="tx">这就是This is Life吧<span class="md">（视频：商场广场上，一位穿红衣的女士在键盘前街头演奏，旁边立着“勒点酒店 HYSTON”展板）</span></div></li>
+</ol></div>
+<div class="day"><h3>02.17<small>周二</small></h3><ol>
+<li><span class="tm">03:00</span><span class="ty">视频号</span><div class="tx">新年快乐<span class="md">（视频封面：青年企业家商会春节晚宴，现场多位嘉宾合影，含 Hyston；Young Entrepreneurs Chamber of Commerce）</span></div></li>
+</ol></div>
+<div class="day"><h3>02.16<small>周一</small></h3><ol>
+<li><span class="tm">00:08</span><span class="ty">视频号直播(可观看回放)</span><div class="tx">辣死了呜呜<span class="md">（直播封面：商场广场“勒点酒店 HYSTON”展板前，两位路人/同伴）</span></div></li>
+</ol></div>
+<div class="day"><h3>02.15<small>周日</small></h3><ol>
+<li><span class="tm">17:24</span><span class="ty">链接</span><div class="tx">今晚7:30直播链接，敬请收看CCTV国际频道！<span class="md">（链接：2026凝聚杏林力量 弘扬中医文化 中国国际教育电视台第三届全球中医春节联欢晚会）</span></div></li>
+<li><span class="tm">15:59</span><span class="ty">图文2图</span><div class="tx">✌️<span class="md">（图：勒点酒店前台摆件，红盒金色“福”字；“重庆住勒点 勒点”宣传卡/房卡）</span></div></li>
+</ol></div>
+<div class="day"><h3>02.10<small>周二</small></h3><ol>
+<li><span class="tm">02:50</span><span class="ty">视频号</span><div class="tx">这是什么品牌活动官方摄影剪辑<span class="md">（视频：夜晚商业街，穿牛仔外套的人走向镜头）</span></div></li>
+<li><span class="tm">01:23</span><span class="ty">图文1图</span><div class="tx">嘻嘻<span class="md">（截图：美团充电宝 “勒点·HYSTON设计师酒店（重庆大学城…）</span>” 3.0元/60分钟）</div></li>
+</ol></div>
+<div class="day"><h3>02.08<small>周日</small></h3><ol>
+<li><span class="tm">01:00</span><span class="ty">图文9图</span><div class="tx">明年再见👋<span class="md">（图：中医春晚海报-嘉宾；2026“一带一路”传统医药发展交流与合作大会暨第三届全球中医春节联欢晚会·第三届春晚录制 手机截图；Hyston 戴红围巾与帽子现场；舞台大屏；二维码页；与嘉宾合影；观众席大场面）</span></div></li>
+</ol></div>
+<div class="day"><h3>02.07<small>周六</small></h3><ol>
+<li><span class="tm">04:22</span><span class="ty">音乐</span><div class="tx">等我长出翅膀<br>我会把高楼也变成星系<span class="md">（音频卡片）</span></div></li>
+<li><span class="tm">03:56</span><span class="ty">公众号</span><div class="tx">今天是在勒点的第九个晚上<span class="md">（文章封面：月球/宇航员插画；正文待补读）</span></div></li>
+</ol></div>
+<div class="day"><h3>02.04<small>周三</small></h3><ol>
+<li><span class="tm">04:10</span><span class="ty">视频号</span><div class="tx">来勒点开会<span class="md">（视频封面：勒点酒店 全女友好酒店 LGBT友好；HYSTON PTY LTD；联系方式 admin@hyston.life www.hyston.life 微信 hysclub；城市：英格兰/泰国曼谷/澳大利亚墨尔本/中国重庆 成都 上海 深圳）</span></div></li>
+</ol></div>
+<div class="day"><h3>02.03<small>周二</small></h3><ol>
+<li><span class="tm">17:42</span><span class="ty">文字</span><div class="tx">🙋 宠物友好的专属房间<br>大家觉得带狗狗或者猫猫住酒店需要什么物品</div></li>
+</ol></div>
+<div class="day"><h3>02.02<small>周一</small></h3><ol>
+<li><span class="tm">05:52</span><span class="ty">公众号</span><div class="tx">今天是第四晚<span class="md">（文章封面：夜里的 HYSTON 大楼；正文待补读）</span></div></li>
+</ol></div>
+<div class="day"><h3>02.01<small>周日</small></h3><ol>
+<li><span class="tm">03:17</span><span class="ty">视频号</span><div class="tx">此刻的我正在使用中的重庆时间<span class="md">（视频封面：勒点酒店走廊广告介绍；走廊海报屏幕“住勒点”；字幕 That is the Chongqing time I am using at this moment）</span></div></li>
+<li><span class="tm">02:20</span><span class="ty">视频号</span><div class="tx">蹭一下隔壁全季<span class="md">（视频封面：勒点酒店电梯广告介绍；电梯门海报“勒点星月 HYSTON STAR &amp; MOON 欢迎你是你”；因为人无法只成为其中之一 Because you can&#x27;t just be one of them）</span></div></li>
+</ol></div>
+    </details></div>
+  </section>
+
+  <footer>
+    <div class="mono">ARCHIVE · 往期</div>
+    <div class="issues" id="f-issues"></div>
+    <div class="foot">
+      <span class="mono">HYSTON PTY LTD · MELBOURNE · CHONGQING</span>
+      <span class="mail">admin@hyston.life</span>
+    </div>
+  </footer>
+</main>
+
+<script>
+/* ---------- 每月只改这里 / Edit monthly data here ---------- */
+const ISSUES = [
+ {
+  "no": "01",
+  "month": "2026.01",
+  "status": "past",
+  "href": "/sync/2026/01/"
+ },
+ {
+  "no": "02",
+  "month": "2026.02",
+  "status": "current",
+  "href": "/sync/2026/02/"
+ },
+ {
+  "no": "03",
+  "month": "2026.03",
+  "status": "past",
+  "href": "/sync/2026/03/"
+ },
+ {
+  "no": "04",
+  "month": "2026.04",
+  "status": "past",
+  "href": "/sync/2026/04/"
+ },
+ {
+  "no": "05",
+  "month": "2026.05",
+  "status": "past",
+  "href": "/sync/2026/05/"
+ },
+ {
+  "no": "06",
+  "month": "2026.06",
+  "status": "past",
+  "href": "/sync/2026/06/"
+ },
+ {
+  "no": "07",
+  "month": "2026.07",
+  "status": "past",
+  "href": "/sync/2026/07/"
+ },
+ {
+  "no": "08",
+  "month": "2026.08",
+  "status": "past",
+  "href": "/sync/2026/08/"
+ },
+ {
+  "no": "09",
+  "month": "2026.09",
+  "status": "past",
+  "href": "/sync/2026/09/"
+ },
+ {
+  "no": "MEL",
+  "month": "09.09—10.09",
+  "status": "past",
+  "href": "/sync/2026/melbourne-return/"
+ },
+ {
+  "no": "10",
+  "month": "2026.10",
+  "status": "upcoming"
+ }
+];
+const SYNC = {
+ "no": "02",
+ "date": "2026.02",
+ "title": "SYNC+ / <span class=\"n\">02</span>",
+ "motto": "SLEEP IN THE BUILDING.",
+ "cn": "这个月，我们在自己的酒店里住了 28 个晚上，把梦写成了三章。",
+ "coords": [
+  "CHONGQING",
+  "BEIJING",
+  "MELBOURNE"
+ ],
+ "signals": [
+  {
+   "t": "《勒点嘞梦》三章连载，记录在勒点住下的 28 个晚上",
+   "d": "2.2 第一章《整栋楼都把我留给了我》（第四晚）；2.7 第二章《在勒点的第7晚梦到了工作问题的解法》（第九个晚上）；2.25 第三章《梦不需要像答案 梦只要像你》（第 28 个晚上）。三篇公众号正文本期仅存标题与首句。",
+   "tag": "STORY"
+  },
+  {
+   "t": "中医春晚首播",
+   "d": "2.8 发出“明年再见”并回顾录制现场；2.10 在中国国际教育电视台首播；2.15 发出 CCTV 国际频道晚 7:30 直播链接。",
+   "tag": "CULTURE"
+  },
+  {
+   "t": "勒点酒店走向开业前最后一公里",
+   "d": "2.1 走廊与电梯广告；2.4 视频介绍“全女友好 · LGBT 友好”；2.5 高空外立面吊篮作业；2.10 美团充电宝页面出现“勒点·HYSTON 设计师酒店（重庆大学城）”；2.15 前台摆件与房卡；2.3 向朋友征集宠物友好房的必备物品。",
+   "tag": "HOTEL"
+  },
+  {
+   "t": "两首歌：《钢筋里长出的月亮》与《勒点把你放好》",
+   "d": "2.7 发布《钢筋里长出的月亮》（Alive）：“等我长出翅膀，我会把高楼也变成星系”；2.19 发布《勒点把你放好》，并解释“勒”：普通话 le，重庆话 lei。",
+   "tag": "MUSIC"
+  },
+  {
+   "t": "商场广场上的街头钢琴与“勒点”展板",
+   "d": "2.16 直播与 2.18 视频：商场广场里，“勒点酒店 HYSTON”展板旁有人在街头演奏，配文“这就是 This is Life 吧”。",
+   "tag": "CITY"
+  }
+ ],
+ "numbers": [
+  {
+   "v": 28,
+   "u": "晚",
+   "l": "在勒点酒店住下的夜晚",
+   "s": "2.25 第三章写于第 28 晚"
+  },
+  {
+   "v": 3,
+   "u": "章",
+   "l": "《勒点嘞梦》连载",
+   "s": "2.2 · 2.7 · 2.25"
+  },
+  {
+   "v": 7,
+   "u": "城",
+   "l": "宣传视频列出的城市",
+   "s": "英格兰 · 曼谷 · 墨尔本 · 重庆 · 成都 · 上海 · 深圳"
+  },
+  {
+   "v": 3,
+   "u": "元",
+   "l": "美团充电宝 60 分钟",
+   "s": "勒点·HYSTON 设计师酒店 · 重庆大学城",
+   "dec": 1
+  },
+  {
+   "v": 2.1,
+   "u": "",
+   "l": "中医春晚首播日",
+   "s": "2.11–15 重播 · 3.3 再次重播",
+   "dec": 2
+  },
+  {
+   "v": 25,
+   "u": "条",
+   "l": "朋友圈（全部逐条存档）",
+   "s": "2.1 – 2.27"
+  }
+ ],
+ "numbersNote": "本期内容来自 Hyston 二月发布的朋友圈（只读本人发布内容，评论区与第三方互动不收录）。招聘与资金兑换类共 5 条未在公开页收录；三篇公众号文章正文尚未读取。",
+ "peopleH": "这个月，我们和谁谈了什么。",
+ "peopleNote": "按时间排列。二月以内部推进与重庆本地为主，对方只列机构。",
+ "people": [
+  {
+   "d": "02.05",
+   "p": "重庆",
+   "org": "沙坪坝区陈家桥街道",
+   "who": "街道安全生产工作会",
+   "what": "到基层参加 2026 年安全生产工作会，并回到大学校园走访。",
+   "st": "出席"
+  },
+  {
+   "d": "02.08",
+   "p": "北京",
+   "org": "中医春晚组委会 · 传统医药大会",
+   "who": "嘉宾与观众",
+   "what": "回顾第三届春晚录制与“一带一路”传统医药大会现场，“明年再见”。",
+   "st": "已完成"
+  },
+  {
+   "d": "02.10",
+   "p": "北京",
+   "org": "中国国际教育电视台",
+   "who": "播出方",
+   "what": "第三届全球中医春晚在该台首播；2.15 晚间 CCTV 国际频道直播。",
+   "st": "首播"
+  },
+  {
+   "d": "02.10",
+   "p": "重庆",
+   "org": "美团",
+   "who": "平台",
+   "what": "勒点·HYSTON 设计师酒店（重庆大学城）在美团充电宝页面出现，3.0 元 / 60 分钟。",
+   "st": "上线"
+  },
+  {
+   "d": "02.17",
+   "p": "北京",
+   "org": "青年企业家商会",
+   "who": "春节晚宴嘉宾",
+   "what": "出席春节晚宴并合影拜年。",
+   "st": "出席"
+  }
+ ],
+ "built": [
+  {
+   "t": "《勒点嘞梦》连载",
+   "s": "HYSTON 公众号",
+   "k": "STORY",
+   "m": "2.2 · 2.7 · 2.25",
+   "d": "以“在勒点的第 N 个晚上”为时间轴的三章梦境记录，第三章写于第 28 晚。"
+  },
+  {
+   "t": "勒点酒店走廊 · 电梯 · 前台",
+   "s": "“重庆住勒点”“勒点星月 欢迎你是你”",
+   "k": "HOTEL",
+   "m": "2.1 – 2.15",
+   "d": "走廊海报屏、电梯门海报、前台红盒“福”字摆件与房卡。"
+  },
+  {
+   "t": "《钢筋里长出的月亮》",
+   "s": "Alive",
+   "k": "MUSIC",
+   "m": "2.7",
+   "d": "“感谢这个时代能让我做出这样的歌。”"
+  },
+  {
+   "t": "《勒点把你放好》",
+   "s": "欢迎来到勒点",
+   "k": "MUSIC",
+   "m": "2.19",
+   "d": "为酒店做的主题音乐；“勒”：普通话 le，重庆话 lei。"
+  },
+  {
+   "t": "宠物友好专属房间",
+   "s": "向朋友征集清单",
+   "k": "HOTEL",
+   "m": "2.3",
+   "d": "带狗或猫入住需要什么：尿垫、猫砂盆、食盆水盆、粘毛筒、消毒湿巾、除味剂、捡便袋等。"
+  },
+  {
+   "t": "高空外立面作业",
+   "s": "“我们老板上天”",
+   "k": "SITE",
+   "m": "2.5",
+   "d": "凌晨确认“黄总恐高症失效”：吊篮作业视频。"
+  }
+ ],
+ "cities": [
+  {
+   "id": "ckg",
+   "name": "CHONGQING",
+   "cn": "重庆",
+   "lon": 106.55,
+   "lat": 29.56,
+   "home": true,
+   "st": "BASE · FEB",
+   "anchor": "end",
+   "dx": -14,
+   "dy": 14,
+   "items": [
+    "勒点酒店试住第 4 – 28 晚",
+    "《勒点嘞梦》三章",
+    "美团页面上线",
+    "商场广场街头钢琴与勒点展板",
+    "沙坪坝区安全生产工作会"
+   ]
+  },
+  {
+   "id": "bj",
+   "name": "BEIJING",
+   "cn": "北京",
+   "lon": 116.4,
+   "lat": 39.9,
+   "st": "春晚",
+   "dx": 14,
+   "dy": -6,
+   "items": [
+    "第三届全球中医春晚回顾",
+    "中国国际教育电视台 2.10 首播",
+    "青年企业家商会春节晚宴"
+   ]
+  },
+  {
+   "id": "mel",
+   "name": "MELBOURNE",
+   "cn": "墨尔本",
+   "lon": 144.96,
+   "lat": -37.81,
+   "st": "PLAN",
+   "plan": true,
+   "items": [
+    "单身墨缘会海报转发（第三方活动）",
+    "酒店宣传视频中的城市之一"
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "h": "HOTEL",
+   "p": "勒点酒店走廊、电梯、前台与美团页面。",
+   "c": "CHONGQING"
+  },
+  {
+   "h": "STORY",
+   "p": "《勒点嘞梦》三章连载。",
+   "c": "WECHAT"
+  },
+  {
+   "h": "MUSIC",
+   "p": "《钢筋里长出的月亮》《勒点把你放好》。",
+   "c": "HYSTON ORIGINAL"
+  },
+  {
+   "h": "CULTURE",
+   "p": "中医春晚首播与 CCTV 国际频道直播。",
+   "c": "BEIJING"
+  },
+  {
+   "h": "CITY",
+   "p": "商场广场街头钢琴与勒点展板。",
+   "c": "CHONGQING"
+  },
+  {
+   "h": "CARE",
+   "p": "宠物友好房、全女友好、LGBT 友好。",
+   "c": "HYSTON HOTEL"
+  },
+  {
+   "h": "LOCAL",
+   "p": "沙坪坝区基层安全生产工作会。",
+   "c": "CHONGQING"
+  },
+  {
+   "h": "BRAND",
+   "p": "品牌周边与拜年内容。",
+   "c": "HYSTON"
+  }
+ ],
+ "changed": [
+  {
+   "was": "酒店开业 = 一个日期",
+   "now": "开业前先自己住满 28 个晚上，把每一晚的梦写成章节。"
+  },
+  {
+   "was": "梦 = 要像答案",
+   "now": "梦不需要像答案，梦只要像你。"
+  },
+  {
+   "was": "“勒”字 = 一个读音",
+   "now": "普通话 le，重庆话 lei：酒店名字本身就是一次方言科普。"
+  }
+ ],
+ "nextH": "三月，要发生的事。",
+ "next": [
+  {
+   "d": "03.02",
+   "w": "《重庆时空》第一集上线",
+   "s": "巴蔓子墓 · 00 后团队讲重庆历史"
+  },
+  {
+   "d": "03.08",
+   "w": "《重庆时空》第二季《重庆女性地图》",
+   "s": "妇女节立项"
+  },
+  {
+   "d": "03.09",
+   "w": "勒点酒店登顶美团榜单",
+   "s": "入住 · 销售 · 转化 · 销售额 · 浏览 五项第一"
+  },
+  {
+   "d": "03.29",
+   "w": "首届墨尔本亚洲美食文化节",
+   "s": "Boxhill Town Hall · 《意识下载》"
+  },
+  {
+   "d": "03.31",
+   "w": "SYNC+ 03",
+   "s": "下一期"
+  }
+ ]
+};
+
+/* ---------- render ---------- */
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+$("c-issue").textContent = "ISSUE " + SYNC.no;
+$("c-date").textContent = SYNC.date;
+$("c-title").innerHTML = SYNC.title;
+$("c-motto").textContent = SYNC.motto;
+$("c-cn").textContent = SYNC.cn;
+$("c-coords").innerHTML = SYNC.coords.map(c => `<span>${esc(c)}</span>`).join("<span aria-hidden=\"true\">·</span>");
+
+$("s-list").innerHTML = SYNC.signals.map((s,i) =>
+  `<li><span class="rk">${String(i+1).padStart(2,"0")}</span><div><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p></div><span class="tag">${esc(s.tag)}</span></li>`).join("");
+
+const fmt = (v,dec) => dec ? v.toFixed(dec) : Math.round(v).toString();
+$("n-grid").innerHTML = SYNC.numbers.map((n,i) =>
+  `<div class="num"><span class="v" data-i="${i}">${fmt(n.v,n.dec)}<small>${esc(n.u)}</small></span><span class="l">${esc(n.l)}</span><span class="s">${esc(n.s)}</span></div>`).join("");
+$("n-note").textContent = SYNC.numbersNote;
+
+$("b-list").innerHTML = SYNC.built.map(b =>
+  `<details><summary><span class="t">${esc(b.t)}<span>${esc(b.s)}</span></span><span class="k">${esc(b.k)}</span><span class="pm" aria-hidden="true">+</span></summary>
+   <div class="body"><div class="meta"><span>${esc(b.k)}</span><b>${esc(b.m)}</b></div><p>${esc(b.d)}</p></div></details>`).join("");
+
+$("p-h").textContent = SYNC.peopleH;
+$("p-note").textContent = SYNC.peopleNote;
+$("p-list").innerHTML = SYNC.people.map(x =>
+  `<li><span class="d">${esc(x.d)}<span>${esc(x.p)}</span></span><div><h3>${esc(x.org)}</h3><div class="who">${esc(x.who)}</div><p>${esc(x.what)}</p></div><span class="st${/已/.test(x.st)?" done":""}">${esc(x.st)}</span></li>`).join("");
+
+$("l-grid").innerHTML = SYNC.lines.map(l =>
+  `<div class="line"><span class="h">${esc(l.h)}</span><p>${esc(l.p)}</p><span class="c">${esc(l.c)}</span></div>`).join("");
+
+$("ch-list").innerHTML = SYNC.changed.map(c =>
+  `<figure style="margin:0"><blockquote><span class="was">以前：<s>${esc(c.was)}</s></span>${esc(c.now)}</blockquote>${c.cap?`<figcaption>${esc(c.cap)}</figcaption>`:""}</figure>`).join("");
+
+$("nx-h").textContent = SYNC.nextH;
+$("nx-list").innerHTML = SYNC.next.map(n =>
+  `<li><span class="d${n.tbd?" tbd":""}">${esc(n.d)}</span><span class="w">${esc(n.w)}${n.s?`<span>${esc(n.s)}</span>`:""}</span></li>`).join("");
+
+$("f-issues").innerHTML = ISSUES.map(x => {
+  const lab = x.status==="current" ? "本期" : x.status==="past" ? "往期 →" : x.status==="next" ? "下一期 →" : x.status==="newer" ? "阅读 →" : x.status==="latest" ? "最新一期 →" : "即将发布";
+  const inner = `<span class="i">${esc(x.no)}</span><span class="m">${esc(x.month)}</span><span class="m">${lab}</span>`;
+  return x.href && x.status!=="current" ? `<a class="issue link" href="${x.href}">${inner}</a>` : `<div class="issue${x.status==="current"?" cur":""}">${inner}</div>`;
+}).join("");
+
+/* ---------- map ---------- */
+(function(){
+  const W=1000,H=460, L0=60, SPAN=240, LAT_TOP=60, LAT_SPAN=110;
+  const px = c => ({x:((c.lon - L0 + 360) % 360)/SPAN*W, y:(LAT_TOP - c.lat)/LAT_SPAN*H});
+  const home = SYNC.cities.find(c => c.home), hp = px(home);
+  let dots = "";
+  for (let x=10; x<W; x+=20) for (let y=10; y<H; y+=20) dots += `<circle cx="${x}" cy="${y}" r="1" fill="#26262A"/>`;
+  let arcs = "", nodes = "";
+  SYNC.cities.forEach(c => {
+    const p = px(c);
+    if (!c.home) {
+      const mx=(hp.x+p.x)/2, my=Math.min(hp.y,p.y) - Math.abs(p.x-hp.x)*0.25 - 40;
+      arcs += `<path class="arc${c.plan?" plan":""}" data-c="${c.id}" d="M${hp.x.toFixed(1)} ${hp.y.toFixed(1)} Q${mx.toFixed(1)} ${my.toFixed(1)} ${p.x.toFixed(1)} ${p.y.toFixed(1)}"/>`;
+    }
+    const dx = c.dx ?? (p.x > 700 ? -12 : 12), anchor = c.anchor ?? (p.x > 700 ? "end" : "start"), dy = c.dy ?? 5;
+    nodes += `<g class="city${c.plan?" plan":""}" data-c="${c.id}"><circle class="halo" cx="${p.x}" cy="${p.y}" r="6"/><circle class="dot" cx="${p.x}" cy="${p.y}" r="5"/><text x="${p.x+dx}" y="${p.y+dy}" text-anchor="${anchor}">${c.name}</text></g>`;
+  });
+  $("w-map").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="从墨尔本连接到${SYNC.cities.filter(c=>!c.home).map(c=>c.cn).join("、")}的线路图"><g>${dots}</g><g>${arcs}</g><g>${nodes}</g></svg>`;
+  $("w-btns").innerHTML = SYNC.cities.map(c => `<button type="button" id="city-${c.id}" data-c="${c.id}" aria-pressed="false">${c.cn}</button>`).join("");
+  function pick(id){
+    const c = SYNC.cities.find(x => x.id===id);
+    document.querySelectorAll("#w-btns button").forEach(b => b.setAttribute("aria-pressed", b.dataset.c===id));
+    document.querySelectorAll("#w-map .city").forEach(g => g.classList.toggle("on", g.dataset.c===id));
+    document.querySelectorAll("#w-map .arc").forEach(a => a.classList.toggle("on", a.dataset.c===id || (c.home)));
+    $("w-panel").innerHTML = `<h3>${esc(c.name)}</h3><div class="st mono">${esc(c.cn)} · ${esc(c.st)}</div><ul>${c.items.map(i=>`<li>${esc(i)}</li>`).join("")}</ul>`;
+  }
+  $("w-btns").addEventListener("click", e => { const b = e.target.closest("button"); if (b) pick(b.dataset.c); });
+  pick("mel");
+})();
+
+/* ---------- count-up: values are already final at rest; replay once when scrolled into view ---------- */
+(function(){
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    io.unobserve(en.target);
+    const n = SYNC.numbers[+en.target.dataset.i], small = en.target.querySelector("small").outerHTML, t0 = performance.now(), dur = 1100;
+    const step = t => { const k = Math.min(1,(t-t0)/dur), e = 1-Math.pow(1-k,3);
+      en.target.innerHTML = fmt(n.v*e, n.dec) + small; if (k<1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  }), {threshold:.6});
+  document.querySelectorAll(".num .v").forEach(el => io.observe(el));
+})();
+</script>
+
+</body>
+</html>
