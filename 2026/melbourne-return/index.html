@@ -173,6 +173,26 @@ footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap
 .issue .m{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute)}
 .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .foot .mail{font-family:var(--f-mono);font-size:13px;letter-spacing:.08em;color:var(--silver);user-select:all}
+
+/* archive */
+.arch .day{display:grid;grid-template-columns:96px minmax(0,1fr);gap:8px 24px;padding-block:22px;border-bottom:1px solid var(--line)}
+.arch .day h3{margin:0;font-family:var(--f-display);font-weight:700;font-size:28px;line-height:1;color:var(--silver);font-variant-numeric:tabular-nums}
+.arch .day h3 small{display:block;font-family:var(--f-mono);font-weight:400;font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:8px}
+.arch ol{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.arch li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:2px 14px}
+.arch .tm{font-family:var(--f-mono);font-size:12px;color:var(--mute);padding-top:3px}
+.arch .ty{grid-column:2;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;color:var(--wine-hi);order:-1}
+.arch .tx{grid-column:2;color:var(--silver);max-width:46em;line-height:1.75;overflow-wrap:anywhere}
+.arch .md{color:var(--mute);font-size:14px}
+.arch details>summary{cursor:pointer;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--mute);padding-block:10px}
+@media (max-width:640px){.arch .day{grid-template-columns:minmax(0,1fr)}}
+
+.arch .ev{list-style:none;margin:0 0 20px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.arch .ev li{border:1px solid var(--line);padding:5px 11px;font-size:13px;line-height:1.55;color:var(--silver);max-width:100%;overflow-wrap:anywhere}
+.arch .ev b{font-family:var(--f-mono);font-weight:400;font-size:10px;letter-spacing:.14em;color:var(--wine-hi);margin-right:8px}
+.arch .art{margin-top:8px;border-left:2px solid var(--line);padding-left:12px}
+.arch .art summary{cursor:pointer;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;color:var(--mute)}
+.arch .art div{color:var(--mute);font-size:14px;line-height:1.75;margin-top:6px}
 </style>
 </head>
 <body>
@@ -181,7 +201,7 @@ footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap
 <div class="bar"><div class="wrap">
   <b>HYSTON SYNC+</b>
   <nav aria-label="栏目">
-    <a href="#signals">01 SIGNALS</a><a href="#numbers">02 NUMBERS</a><a href="#people">03 TIMELINE</a><a href="#built">04 BUILT</a><a href="#world">05 WORLD</a><a href="#lines">06 LINES</a><a href="#changed">07 CHANGED</a><a href="#next">08 NEXT</a>
+    <a href="#signals">01 SIGNALS</a><a href="#numbers">02 NUMBERS</a><a href="#people">03 TIMELINE</a><a href="#built">04 BUILT</a><a href="#world">05 WORLD</a><a href="#lines">06 LINES</a><a href="#changed">07 CHANGED</a><a href="#next">08 NEXT</a><a href="#archive">09 DAY BY DAY</a>
   </nav>
 </div></div>
 
@@ -241,6 +261,292 @@ footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap
   <section class="col" id="next">
     <div class="rail"><span class="no">08</span><span class="name">NEXT</span><span class="cn">接下来要落地的事</span></div>
     <div><h2 id="nx-h"></h2><ol class="next" id="nx-list"></ol></div>
+  </section>
+
+  <section class="col arch" id="archive">
+    <div class="rail"><span class="no">09</span><span class="name">DAY BY DAY</span><span class="cn">每日事件 · 朋友圈逐条全文</span></div>
+    <div><h2>一个月，逐天逐条。</h2><p class="note" style="margin:-12px 0 24px">09.09—10.09 朋友圈共 177 条，逐条存档，按天排列：每一天先列当天的项目与事件，再放原文全文；其中 22 条（招聘、仅自己可见、融资、私人生活等）不在公开页收录。公众号 / 服务号文章已点开的，在对应条目下附正文要点。评论区与第三方互动不收录，非公开人物姓名已隐去。</p>
+    <details open><summary>▾ 展开 / 收起（共 155 条，按时间顺序）</summary>
+<div class="day" id="d09-09"><h3>09.09<small>周三 · 2 条</small></h3><div>
+<ul class="ev"><li><b>MEL</b>落地墨尔本（直播回放）</li><li><b>内容</b>与北京人聊北京房价（视频号）</li></ul>
+<ol>
+<li><span class="tm">01:05</span><span class="ty">视频号</span><div class="tx">跟北京人聊聊北京房价<span class="md">（视频：夜空明月，手持手机拍摄）</span></div></li>
+<li><span class="tm">15:51</span><span class="ty">视频号</span><div class="tx">落地Mel<span class="md">（视频：机场与同行者合影）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-10"><h3>09.10<small>周四 · 7 条</small></h3><div>
+<ul class="ev"><li><b>政商</b>重庆市商务委员会副主任一行、商务部外贸发展事务局局长到访墨尔本，中国（重庆）—澳大利亚经贸对接会，副主任致辞完整版</li><li><b>北京</b>中国服务贸易协会回访视频</li><li><b>媒体</b>《回墨尔本的24小时》；NFL 常规赛落地墨尔本</li><li><b>文化</b>旅澳艺术前辈的支持带回重庆（公众号）</li><li><b>节日</b>教师节海报；国家一级运动员祝贺</li></ul>
+<ol>
+<li><span class="tm">08:28</span><span class="ty">视频号</span><div class="tx">关于我在墨尔本的时候 HYSTON重庆结实中国服务贸易协会的call back<span class="md">（视频：中国服务贸易协会，“中国服务贸易协会欢迎我们一行”）</span></div></li>
+<li><span class="tm">12:02</span><span class="ty">视频号</span><div class="tx">在重庆热 在北京过敏 在墨尔本冻<span class="md">（视频：《回墨尔本的24小时》）</span></div></li>
+<li><span class="tm">12:21</span><span class="ty">视频号</span><div class="tx">超级碗的常规赛落地墨尔本！<span class="md">（视频：NFL墨尔本，墨尔本机场）</span></div></li>
+<li><span class="tm">13:43</span><span class="ty">图文2图</span><div class="tx">Official一分钟做出来的惊喜海报 感谢大家的祝福 也祝各位老师节日快乐 恭喜<span class="md">（姓名略）</span> <span class="md">（姓名略）</span> <span class="md">（姓名略）</span> 拿到国家一级运动员<span class="md">（海报：“祝黄教练教师节快乐”；“国家一级运动员”橄榄球海报）</span></div></li>
+<li><span class="tm">20:44</span><span class="ty">公众号</span><div class="tx">在一次次海外文化活动与交流中，HYSTON与澳大利亚当地艺术家、文化机构及华人文化前辈建立了深厚连接。旅澳著名艺术家<span class="md">（姓名略）</span>先生、<span class="md">（姓名略）</span>女士，正是在这一过程中认识并深入了解HYSTON团队。两位老师在澳大利亚生活、创作多年，也长期致力于中华文化在海外的传播。当他们了解到HYSTON是一支年轻团队，却持续投入时间和资源，在澳大利亚讲重庆、做重庆文化项目、连接中澳青年与文化资源后，给予了团队很多鼓励与支持。<span class="md">（文章：《从重庆到墨尔本，再到重庆｜HYSTON将旅澳艺术前辈的支持带回家乡》）</span></div></li>
+<li><span class="tm">22:10</span><span class="ty">图文9图</span><div class="tx">欢迎国家商务部外贸发展事务局<span class="md">（姓名略）</span>局长 重庆市商务委员会<span class="md">（姓名略）</span>副主任一行 来到墨尔本交流并指导工作<span class="md">（九图：现场合影、讲话、“重庆市民”红色横幅、会场、HYSTON展板）</span>；自评：再次感谢国家商务部外贸发展事务局、重庆市商务委员会、重庆市供销合作总社对重庆企业出海的大力支持</div></li>
+<li><span class="tm">22:52</span><span class="ty">视频号</span><div class="tx">【重庆市商务委员会<span class="md">（姓名略）</span>副主任致辞完整版视频】 在结尾 她说 中国有句古话叫 眼见为实 所以她邀请今天在场的所有嘉宾 亲自去重庆看一看 看看重庆是不是真的像她今天讲的这样 这句话配上当时最后一页PPT出来的时候 我的情绪一下就上来了 而且我今天还有一个特别强烈的感受 我们其实一直都在澳洲讲重庆 做重庆的内容 但有时候我也会觉得 我们自己的声音还是太小了 可是今天当这些话 从我们重庆自己的政府代表口中 在墨尔本讲出来的时候 那个感觉是不一样的 掷地有声 <span class="md">（她）</span>也是重庆一位非常有魄力的女性领导人 当我们在台下看到一位女性领导者在这样的国际场合里这么从容这么清晰这么有力量地去讲自己的城市我其实是非常有共鸣的 那种力量不是声音有多大 是她说出来的话你会相信 所以我今天整个人真的非常亢奋 会场里每个人看到我都在问 你怎么样 刚回来状态这么好吗 我已经很努力让自己冷静一点了 但是今天真的很难冷静 所以也再次非常欢迎重庆市商务委员会<span class="md">（姓名略）</span>副主任一行来到墨尔本 来做这样真实的中澳商务连接 也感谢所有促成今天这场交流的人 我们一起完整听一下<span class="md">（她）</span>今天的发言 眼见为实 也希望有一天 更多在澳洲听见重庆的人 真的会去重庆看一看<span class="md">（视频：重庆市商务委员会党组成员、副主任致辞，中国（重庆）</span>—澳大利亚经贸对接会）</div></li>
+</ol></div></div>
+<div class="day" id="d09-11"><h3>09.11<small>周五 · 6 条 · 另 2 条未收录</small></h3><div>
+<ul class="ev"><li><b>IP</b>“重庆市民”旗帜回顾：从2023年车门到一群人一起举</li><li><b>出海</b>CSETA《121家企业给出的答案：真正的出海，缺的是海外落地能力》</li><li><b>北京</b>HYSTON 北京团队参加服贸会，遇到北京副市长</li><li><b>体育</b>HYSTON 杯墨尔本站：泸州老窖 1573 礼盒到位</li><li><b>媒体</b>回墨尔本第一天 vlog；LinkedIn 十分钟触达 70 万+ 关注者</li></ul>
+<ol>
+<li><span class="tm">00:12</span><span class="ty">九图</span><div class="tx">【24岁你写下这些的时候你会想到今天吗】 如今这面旗身后从一个人变成了一群人 突然又想再次感叹 去年重庆市商务委领导与老师<span class="md">（姓名略）</span>一行来到墨尔本的时候 我们也一起举着“重庆市民”这面旗 在HYSTON重庆味道的小面店前拍下了合影 关于重庆市民 这个IP 最早出现在澳洲 应该是2023年在我的车门上 从那以后我在澳洲的三十多万公里 我时常带着这面旗到处跑 除了西澳目前还没开过去 剩下的半个澳洲几乎都有重庆市民的身影 然后我带着这面旗去了美国 走到今天才发现真正让我开心的已经不是“你看 我把这面旗带到了哪里” 而是开始有人愿意和我一起举 有人愿意戴上重庆市民的帽子跟着它去另一个城市 另一个国家有人开始因为我们认识重庆 也有人因为重庆认识我们 回去找照片发现第一次公开解释这四个字对我的意义是在2024年的九月份 我在朋友圈写下 希望我也能像GAI哥一样 让重庆在南半球走起来 这句话 好像没有变成一句特别宏大的梦想 它只是从我想造的梦一天一天 一点一点变成现实 再次感谢各位领导和老师对我们一路以来的大力支持 重庆市民 再接再厉！<span class="md">（九图：旗帜与房车、HYSTON重庆味道门店合影、中澳经贸对接会合影、女性群像、极光、观众席、帆船与房车、聊天截图、个人主页截图）</span></div></li>
+<li><span class="tm">14:34</span><span class="ty">图文1图</span><div class="tx">别浪费算法递过来的名片 好久没看外网数据了 今天点开LinkedIn 直接被惊到 发布十分钟 点赞的人加起来关注者已经超过70万 不是泛流量是AI 医疗 创业 Leadership IP 商业增长这些精准人群 2G选手已经开始一条条看主页 回消息 线上social了<span class="md">（LinkedIn点赞者截图）</span></div></li>
+<li><span class="tm">20:21</span><span class="ty">公众号</span><div class="tx">真正的出海，不是订一张机票、参加一次考察、拍一张合影。企业需要有人告诉它这个市场能不能做，需要有人帮它找到客户、理解规则、测试商业模式，然后在项目结束以后继续留在当地。<span class="md">（文章：《121家企业给出的答案：真正的出海，缺的不是意愿，而是海外落地能力》）</span></div></li>
+<li><span class="tm">20:40</span><span class="ty">视频号</span><div class="tx">每天有这么多碎碎念<span class="md">（视频：《黄总回墨尔本的第一天vlog》）</span></div></li>
+<li><span class="tm">22:57</span><span class="ty">图文1图</span><div class="tx">刚刚忙完看消息 今天线下五线齐发 HYSTON北京去参加服贸会 碰到北京副市长 我的第一反应belike 加微信了吗<span class="md">（聊天截图）</span></div></li>
+<li><span class="tm">23:21</span><span class="ty">视频号</span><div class="tx">血脉又觉醒了 泸州老窖 中国荣耀<span class="md">（视频：HYSTON杯 墨尔本站 泸州老窖1573礼盒到位）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-12"><h3>09.12<small>周六 · 7 条 · 另 1 条未收录</small></h3><div>
+<ul class="ev"><li><b>社区</b>墨尔本世界福清联谊会新一届理监事会履新，联邦议员 Gabriel Ng MP、Carina Garland MP 交流</li><li><b>体育</b>澳网业余挑战赛墨尔本站圆满落幕（Tennis Australia × 国窖 1573）</li><li><b>文化</b>拜访旅澳艺术家；《山海有回声》回重庆</li><li><b>媒体</b>北京 / 墨尔本 / 重庆六线并行的周五</li></ul>
+<ol>
+<li><span class="tm">00:35</span><span class="ty">三图</span><div class="tx">我第一次感觉到社交场合我不用营业 居然是市长一直在帮我们到处输出引荐 感谢<span class="md">（姓名略）</span>的邀请！恭喜墨尔本世界福清联谊会新一届理监事会履新 感谢<span class="md">（姓名略）</span>老师一如既往在networking环节首先带着联邦议员Gabriel来找我们交流 刚好今天在<span class="md">（姓名略）</span>老师的指导和办公室定下了和Gabriel这个月的见面时间 也用感谢Gabriel的关心 在<span class="md">（姓名略）</span>超强的专业词汇翻译下给Gabriel讲明白了我的近况 也感谢<span class="md">（姓名略）</span>老师专门带老师来给我们认识 也感谢<span class="md">（姓名略）</span>老师的包容 感谢市长把我们介绍给联邦议员Carina 一直在帮我们输出我们团队的内容 这个真的太感动了 宣传重庆带话从市长口中说出来再连接到其他不了解重庆的当地议员 一直帮我们持续输出都给我们开心的合不拢嘴 还为了帮我们多认识一些议员约了咖啡 感谢市长 当地白人议员拿出微信二维码想加我微信的时候也是压不住嘴角的 也谢谢今天一直关心我的<span class="md">（姓名略）</span>和<span class="md">（姓名略）</span> 大家晚安<span class="md">（三图：与联邦议员Gabriel Ng MP合影；与联邦议员Carina Garland MP等合影；与Cr Kirsten Langford等合影）</span></div></li>
+<li><span class="tm">01:30</span><span class="ty">视频号</span><div class="tx">再次感谢<span class="md">（姓名略）</span>的关照提携<span class="md">（视频：拜访旅澳艺术家（姓名略）</span>）</div></li>
+<li><span class="tm">01:42</span><span class="ty">视频号</span><div class="tx">HYSTON北京/墨尔本/重庆六线并行的周五<span class="md">（视频：《Hyston团队六线并行工作的一天》）</span></div></li>
+<li><span class="tm">16:16</span><span class="ty">视频号</span><div class="tx">感谢澳大利亚网球协会与国窖1573的邀请 也预祝所有参赛选手发挥出自己的水平 享受比赛 享受网球<span class="md">（视频海报：黄欣悦会长出席澳网业余挑战赛，1573澳网业余挑战赛墨尔本站，澳大利亚网球协会合作伙伴部门负责人与赛事总监出席）</span></div></li>
+<li><span class="tm">18:13</span><span class="ty">公众号</span><div class="tx">你听 山海必有回声<span class="md">（文章：《山海有回声｜一份来自墨尔本的艺术心意回到重庆》）</span></div></li>
+<li><span class="tm">21:06</span><span class="ty">九图</span><div class="tx">恭喜由澳大利亚网球协会<span class="md">（Tennis Australia）</span>与国窖1573共同主办的澳网业余挑战赛墨尔本站圆满落幕<span class="md">（九图：赛场、嘉宾合影、球场）</span></div></li>
+<li><span class="tm">21:10</span><span class="ty">图文1图</span><div class="tx">HYSTON-<span class="md">（姓名略）</span>在线辟谣<span class="md">（聊天截图）</span>；自评：给我也吓晕了；Hyrox的<span class="md">（姓名略）</span>不是HYSTON的<span class="md">（姓名略）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-13"><h3>09.13<small>周日 · 3 条 · 另 1 条未收录</small></h3><div>
+<ul class="ev"><li><b>体育</b>《从泸州到澳网》国窖 1573 赛事回顾</li><li><b>519</b>519 Live 直播</li><li><b>社交</b>为重庆打 call 的当地朋友</li></ul>
+<ol>
+<li><span class="tm">15:57</span><span class="ty">图文1图</span><div class="tx">感谢<span class="md">（姓名略）</span>老师为重庆打call 感谢<span class="md">（姓名略）</span>老师专程引荐<span class="md">（姓名略）</span>老师！<span class="md">（聊天与自拍截图）</span></div></li>
+<li><span class="tm">17:37</span><span class="ty">视频号</span><div class="tx">519 Live<span class="md">（视频：519场地现场）</span></div></li>
+<li><span class="tm">20:23</span><span class="ty">视频号</span><div class="tx">中国荣耀 当之无愧<span class="md">（视频：《从泸州到澳网｜国窖1573如何把中国荣耀带进国际赛场》，澳网业余挑战赛现场）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-14"><h3>09.14<small>周一 · 10 条 · 另 2 条未收录</small></h3><div>
+<ul class="ev"><li><b>社团</b>澳中篮球协会中秋篮球嘉年华；澳大利亚上海会十五周年贺信被香港新闻社报道</li><li><b>政务</b>白马市市长邀请团队成员共同发布内容</li><li><b>成都</b>成都国际商会线上圆桌；交子“一带一路”文化交流活动新闻稿</li><li><b>酒店</b>山城会议中心考察</li><li><b>519</b>开业前一周进度</li><li><b>体育</b>澳网业余挑战赛颁奖视频</li><li><b>音乐</b>《Miss Me》</li></ul>
+<ol>
+<li><span class="tm">00:02</span><span class="ty">视频号</span><div class="tx">一场跨越六年六个月的时空对话 也是写给自己创作生涯最早章节的一封回信<span class="md">（视频：《Miss Me》作词 Hyston）</span></div></li>
+<li><span class="tm">00:11</span><span class="ty">视频号</span><div class="tx">恭喜澳中篮球协会Alan会长中秋交流活动圆满成功<span class="md">（视频海报：“篮球为纽带 以友谊为桥”）</span>；自评：今天含京量有点多</div></li>
+<li><span class="tm">00:39</span><span class="ty">四图</span><div class="tx">呜呜市长发八张照片 有两张都是发的和我们团队合影 现在已经不止邀请我和官号共创 还邀请了我们团队成员共创 <span class="md">（姓名略）</span>你快接受哇！<span class="md">（Cr Kirsten Langford 社媒截图与合影）</span>；自评：已经30分钟了你沉迷..</div></li>
+<li><span class="tm">00:49</span><span class="ty">公众号</span><div class="tx">刚刚<span class="md">（姓名略）</span>给我发来香港新闻社的报道 他说“把你的贺信也写上了” 点进去看到“澳洲重庆市文化体育教育旅游协会”真的被写进那一长串机构名单里的时候 还是会有一点很奇妙的感觉 从上海 北京 河北 云南 重庆 江苏 到澳大利亚这边不同的华人社团和机构 一封一封贺信最后变成了一个公开留下来的记录 其实很多时候我们做这些事情 当下看起来都很小 但时间拉长之后 这些东西会慢慢变成一张关系网络 也谢谢周<span class="md">（姓名略）</span>会长一直想着我们 祝贺澳大利亚上海会十五周年 重庆在澳洲这件事 就继续一点一点往前走<span class="md">（文章：《海派十五载 兼容并蓄 · 文化和鸣 公益润心 月满澳洲》）</span></div></li>
+<li><span class="tm">01:15</span><span class="ty">公众号</span><div class="tx">再次感谢<span class="md">（姓名略）</span>的邀请，体育、文化、教育、旅游及商业之间并不是彼此孤立的板块，而可以形成长期联动。通过篮球等具有广泛群众基础和国际传播力的体育项目，可以让不同背景的人在共同参与中建立理解与连接，也为中澳之间更具持续性的民间交流创造新的空间。<span class="md">（文章：《以篮球为纽带 共叙中秋情谊｜澳洲重庆市商会会长黄欣悦出席2026澳中篮球协会中秋篮球嘉年华》）</span></div></li>
+<li><span class="tm">01:55</span><span class="ty">视频号</span><div class="tx">前一周<span class="md">（视频：《519 开业前一周 · 9月13日现场进度》）</span></div></li>
+<li><span class="tm">15:19</span><span class="ty">视频号</span><div class="tx">勒点酒店周边会议中心 在山城 看见更大的可能<span class="md">（视频：《考察山城会议中心》）</span></div></li>
+<li><span class="tm">21:01</span><span class="ty">公众号</span><div class="tx">感谢成都国际商会！感谢王总！希望能协助更多川渝地区企业、行业机构及青年群体增进对澳大利亚市场与社会环境的了解，并推动双方在经贸、教育、文化和体育等领域形成更多高质量互动<span class="md">（文章：《澳洲川渝文化教育体育协会与成都国际商会举行线上圆桌会议》）</span></div></li>
+<li><span class="tm">21:04</span><span class="ty">公众号</span><div class="tx">感谢四川天府新区改革创新研究院、四川财经职业学院的联合邀请函受邀预祝“2026年交子‘一带一路’文化交流活动”圆满成功<span class="md">（文章：《澳洲川渝文化教育体育协会受邀参加2026年交子“一带一路”文化交流活动新闻稿》）</span></div></li>
+<li><span class="tm">22:15</span><span class="ty">视频号</span><div class="tx">恭喜各位取得优异成绩直通澳网决赛现场<span class="md">（视频海报：澳网业余挑战赛颁奖嘉宾黄欣悦会长）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-15"><h3>09.15<small>周二 · 5 条 · 另 1 条未收录</small></h3><div>
+<ul class="ev"><li><b>北京</b>中国服务贸易协会工作交流会：中澳跨境电商人才培养与高校合作</li><li><b>影视</b>《和女儿交换人生》Angel 26 宣发期；《无史之城》预告片</li><li><b>体育</b>HYSTON Tennis《黄教练回归》</li><li><b>片场</b>HYSTON NO CREW 亲自上手</li></ul>
+<ol>
+<li><span class="tm">00:34</span><span class="ty">视频号</span><div class="tx">就是很难忍住不发力<span class="md">（视频海报：《黄教练回归 COMEBACK》，HYSTON Tennis）</span></div></li>
+<li><span class="tm">01:09</span><span class="ty">视频号</span><div class="tx">finally终于亲自上手了！感谢<span class="md">（姓名略）</span>和<span class="md">（姓名略）</span>！！！<span class="md">（视频：HYSTON — NO CREW，片场）</span></div></li>
+<li><span class="tm">13:44</span><span class="ty">公众号</span><div class="tx">感谢中国服务贸易协会工会主席、副秘书长，国际部部长，国际部干事，会员会展部主任参与本次交流会共商中澳跨境电商人才培养与高校合作新路径<span class="md">（文章：《澳洲重庆市文化体育教育旅游协会与中国服务贸易协会举行工作交流会》）</span></div></li>
+<li><span class="tm">22:00</span><span class="ty">视频号</span><div class="tx">Angel 26正式迎来了她的宣发期<span class="md">（视频海报：《和女儿交换人生》，《河童妈妈的2026》）</span></div></li>
+<li><span class="tm">23:47</span><span class="ty">视频号</span><div class="tx">预告片先吊一下大家胃口 看我什么时候忍不住了就发全片<span class="md">（视频：HYSTON 原创 AI 短片《无史之城 THE CITY WITHOUT YESTERDAY》预告片）</span>；自评：黄导也是提前实现导演梦想了；还是想文化输出 先用中文写了一部分文言文稿 再翻译成英语语境 原稿很多细节这次没有完全体现 下一部再接再厉！</div></li>
+</ol></div></div>
+<div class="day" id="d09-16"><h3>09.16<small>周三 · 2 条 · 另 2 条未收录</small></h3><div>
+<ul class="ev"><li><b>政务</b>四川省人大常委会副主任一行访澳交流</li><li><b>音乐</b>《如果我们没有昨天》</li><li><b>影像</b>HYSTON《ALMOST.》</li></ul>
+<ol>
+<li><span class="tm">01:50</span><span class="ty">音乐</span><div class="tx">有些人靠回忆相爱<span class="md">（音频：《如果我们没有昨天》）</span></div></li>
+<li><span class="tm">17:31</span><span class="ty">视频号</span><div class="tx">计划之外的那一秒 当花瓣掉下来的时候 你会留下还是重拍<span class="md">（视频：HYSTON《ALMOST.》）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-17"><h3>09.17<small>周四 · 3 条</small></h3><div>
+<ul class="ev"><li><b>政务</b>线上参加重庆国际消费中心城市政策例行吹风会</li><li><b>AIGC</b>《居家办公》；重庆市民 Live Film AIGC 开场短片主创</li><li><b>媒体</b>HYSTON AI 广告概念海报</li></ul>
+<ol>
+<li><span class="tm">00:54</span><span class="ty">图文1图</span><div class="tx">HYSTON AI 广告<span class="md">（HYSTON MEDIA 概念海报：导演椅、城市夜景）</span></div></li>
+<li><span class="tm">16:37</span><span class="ty">公众号</span><div class="tx">海外端要做的不只是传播重庆 更要帮助重庆接住流量<span class="md">（文章：《澳洲重庆市文化体育教育旅游协会组织线上参加重庆市加力培育建设国际消费中心城市政策例行吹风会》）</span></div></li>
+<li><span class="tm">23:17</span><span class="ty">视频号</span><div class="tx">歌一天<span class="md">（视频海报：《居家办公也是一种向前 Home Office》，HYSTON LIFE）</span>；自评：终于见到我们重庆市民Live Film AIGC开场短片的主创了</div></li>
+</ol></div></div>
+<div class="day" id="d09-18"><h3>09.18<small>周五 · 5 条</small></h3><div>
+<ul class="ev"><li><b>社媒</b>HYSTON Instagram 34.5 万粉丝</li><li><b>产品</b>HYSTON ORBIT / 01 耳饰概念片；INTERVAL / 02</li><li><b>重庆时空</b>《重庆没有投降》一集</li><li><b>团队</b>墨尔本同事生日</li></ul>
+<ol>
+<li><span class="tm">00:11</span><span class="ty">图文1图</span><div class="tx">HYSTON ins也是好起来了<span class="md">（HYSTON Instagram 主页截图：2,190帖子、34.5万粉丝）</span></div></li>
+<li><span class="tm">00:32</span><span class="ty">图文1图</span><div class="tx">HYSTON墨尔本-<span class="md">（姓名略）</span> 生日快乐 把走过的路慢慢变成自己的光 新的章节仍然可以由自己命名<span class="md">（生日海报《（姓名略）</span> 生日快乐》）</div></li>
+<li><span class="tm">01:40</span><span class="ty">视频号</span><div class="tx">如果一段声音可以戴在身上 我希望它有一点锋利 有一点脆弱 像一句到了嘴边 又决定只说给你听的话 慢慢就有了 HYSTON ORBIT / 01 我很喜欢银色下弧上那行很小的 HYSTON 远看不明显 要靠近才看得见 有种给想象中的东西签了名的感觉<span class="md">（视频：HYSTON ORBIT / 01 耳饰概念片）</span></div></li>
+<li><span class="tm">18:56</span><span class="ty">视频号</span><div class="tx">如果时间没有表盘 它还剩下什么<span class="md">（视频：HYSTON INTERVAL / 02 概念片）</span></div></li>
+<li><span class="tm">时间待查</span><span class="ty">视频号</span><div class="tx">今天重庆时空迎来了沉重的一集 所谓幸存 不是一座城市从未恐惧 从未受伤 从未失去任何人 而是炸弹没有成为它最后的结局 毁灭没有说出最后一句话 我们可以记住重庆没有投降 也必须记住 那些被埋进废墟的人 那些带着伤痛活下来的人 以及那些几十年后仍在要求历史回答的人 这一次 我们不只讲一座“打不倒”的城市 也从女性的生命出发 看见战争结束以后 仍留在身体、家庭与记忆里的余震<span class="md">（视频：《重庆时空》CHUNGKING DID NOT SURRENDER）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-19"><h3>09.19<small>周六 · 6 条</small></h3><div>
+<ul class="ev"><li><b>政务</b>线上参加重庆“十五五”超大城市现代化治理规划解读发布会</li><li><b>重庆</b>澳洲重庆市商会出席重庆跨境电商交易会</li><li><b>联邦广场</b>联邦广场重庆市民直播</li><li><b>音乐</b>《黄昏没有回收颜色》</li></ul>
+<ol>
+<li><span class="tm">00:10</span><span class="ty">公众号</span><div class="tx">城市治理能力本身也是城市国际形象的重要组成部分。海外社会认识重庆，不应只停留在山水景观、城市天际线与网络流量，还应看见重庆在基层协同、公共服务、城市安全、城市更新和数字化转型方面持续开展的探索<span class="md">（文章：《澳洲重庆市文化体育教育旅游协会线上参加重庆市“十五五”超大城市现代化治理规划解读发布会》）</span></div></li>
+<li><span class="tm">00:12</span><span class="ty">视频号</span><div class="tx">终于在重庆也开始有一点点墨尔本的感觉了<span class="md">（视频海报：澳洲重庆市商会出席重庆跨境电商交易会）</span>；自评：也是已经是可以碰到可以直接catch-up的老师们了</div></li>
+<li><span class="tm">01:02</span><span class="ty">音乐</span><div class="tx">真好笑发错号了<span class="md">（音频：《黄昏没有回收颜色》）</span>；自评：official也是迎来了第一首歌</div></li>
+<li><span class="tm">01:04</span><span class="ty">视频号</span><div class="tx">HYSTON ORBIT 01<span class="md">（视频：ORBIT 耳饰概念片）</span></div></li>
+<li><span class="tm">12:04</span><span class="ty">视频号</span><div class="tx">联邦广场 重庆市民<span class="md">（视频：联邦广场摊位，“重庆市民”红色旗帜）</span></div></li>
+<li><span class="tm">17:08</span><span class="ty">视频号</span><div class="tx">HYSTON · INTERVAL / 02 同一秒钟，在另一个地方继续发生<span class="md">（视频：INTERVAL / 02 概念片）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-20"><h3>09.20<small>周日 · 4 条</small></h3><div>
+<ul class="ev"><li><b>体育</b>VFL &amp; VFLW 总决赛：Box Hill Hawks 夺冠，白马市市长深度交流</li><li><b>联邦广场</b>联邦广场新屏幕 HYSTON logo</li><li><b>北京</b>服贸会视频：和北京市副市长一起看企业出海</li></ul>
+<ol>
+<li><span class="tm">01:25</span><span class="ty">视频号</span><div class="tx">一年一度的联邦广场 也算是蹭上<span class="md">（姓名略）</span>总联邦广场新屏幕大logo了<span class="md">（视频海报：《你会是所有平行时空最晚找到我的吗》《在stklida看日出》，联邦广场大屏幕HYSTON logo）</span></div></li>
+<li><span class="tm">19:04</span><span class="ty">公众号</span><div class="tx">感谢<span class="md">（姓名略）</span><span class="md">（姓名略）</span>的邀请和引荐今天在VFL &amp; VFLW总决赛现场认识了Hawthorn Football Club主席、Box Hill Hawks主席及多位董事，也很开心和白马市市长Cr Kirsten Langford和市议员深度交流。VFL与VFLW总决赛同日举行，也让女子足球以及女性参与体育治理成为当天值得关注的一部分。从女性运动员走上赛场，到女性参与俱乐部管理与决策，体育正在创造更多参与公共生活和发挥领导力的平台。白马市市长Kirsten Langford、Box Hill Hawks主席、副主席及董事<span class="md">（姓名略）</span>等女性管理者，也展现了女性在澳大利亚体育治理中的积极参与！<span class="md">（文章：《以体育为桥｜从VFL总决赛走进澳大利亚社区体育与城市连接》）</span></div></li>
+<li><span class="tm">21:27</span><span class="ty">视频号</span><div class="tx">再次恭喜<span class="md">（姓名略）</span>！恭喜Box Hill Hawks夺冠<span class="md">（视频：与Box Hill Hawks董事及俱乐部成员合影）</span></div></li>
+<li><span class="tm">22:54</span><span class="ty">视频号</span><div class="tx">跟着HYSTON北京的镜头 和北京市副市长一起看中国企业如何更有效地走向国际<span class="md">（视频海报：中国国际服务贸易交易会，SEP 11）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-21"><h3>09.21<small>周一 · 8 条 · 另 1 条未收录</small></h3><div>
+<ul class="ev"><li><b>体育</b>总决赛现场 vlog；Hawks 与重庆 29 周年祝福回顾</li><li><b>联邦广场</b>中华传统文化节开幕式</li><li><b>澳网</b>赛事总监、国际主裁访谈</li><li><b>重庆</b>HYSTON 重庆走进重跨会</li></ul>
+<ol>
+<li><span class="tm">00:22</span><span class="ty">视频号</span><div class="tx">必须callback一下，六月我们办庆祝重庆29周年直辖的时候，在Box Hill Hawks董事<span class="md">（姓名略）</span>协调下，俱乐部主席及董事代表首次以Box Hill Hawks官方名义向我们发出祝福视频，这也是她们首次为华人社区发出祝福视频。同时也为双方今天的体育与文化交流建立了新的连接，再次祝贺Box Hill Hawks夺得本年度VFL冠军<span class="md">（视频海报：VFL总决赛现场 Function Room后的主流体育社交 中澳/重庆文化交流的延伸）</span>；自评：沉浸式体验主流女性力量 市长给重庆取名新好莱坞 市长下班后belike</div></li>
+<li><span class="tm">00:28</span><span class="ty">视频号</span><div class="tx">当中华传统文化一年一度出现在墨尔本堪比解放碑的联邦广场 proud of <span class="md">（姓名略）</span>!<span class="md">（视频海报：中华传统文化节开幕式，联邦广场）</span></div></li>
+<li><span class="tm">01:22</span><span class="ty">视频号</span><div class="tx">我们都想被偏爱 都想被世界例外 可现实从来不为谁单独重写她的对白<span class="md">（视频海报：《另一个我没睡》《可是这个世界就是这样》，联邦广场演出）</span></div></li>
+<li><span class="tm">01:53</span><span class="ty">视频号</span><div class="tx">换换脑子和表姐舞一下<span class="md">（视频：与表姐跳舞）</span></div></li>
+<li><span class="tm">14:16</span><span class="ty">视频号</span><div class="tx">决赛场内Vlog<span class="md">（视频海报：《跟着00后老板观看 VFL &amp; VFLW 总决赛》SEP 21）</span>；自评：辛苦<span class="md">（姓名略）</span>昨天在外面吹这么久的风</div></li>
+<li><span class="tm">20:11</span><span class="ty">视频号</span><div class="tx">来听听澳大利亚网球协会赛事总监对澳网中国市场以及网球作为全民运动的探讨<span class="md">（视频海报：采访澳大利亚网球协会 Tennis Australia 赛事总监 Andrew，SEP 12）</span></div></li>
+<li><span class="tm">22:49</span><span class="ty">视频号</span><div class="tx">教AO澳网国际主裁学重庆话belike<span class="md">（视频海报：采访澳大利亚国际网球主裁 Tom Sweeney，SEP 12）</span></div></li>
+<li><span class="tm">22:51</span><span class="ty">视频号</span><div class="tx">今天HYSTON重庆<span class="md">（姓名略）</span>带大家走进重跨会 感谢<span class="md">（姓名略）</span>的邀请和接待也恭喜重跨会圆满落幕<span class="md">（视频海报：2026重庆跨境电商交易会 SEP 18）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-22"><h3>09.22<small>周二 · 4 条 · 另 3 条未收录</small></h3><div>
+<ul class="ev"><li><b>体育</b>走进澳洲国家网球中心：体育 IP 价值链</li><li><b>上海</b>澳大利亚商会上海团队工作交流</li><li><b>成都</b>交子“一带一路”启动仪式现场</li><li><b>重庆</b>沙坪坝活动发言</li></ul>
+<ol>
+<li><span class="tm">00:57</span><span class="ty">公众号</span><div class="tx">当一个品牌持续进入赛事场景，它最终承载的就不再只是一次广告曝光。场馆名称被观众一次次说出，被媒体一次次记录，被赛事记忆不断重复，品牌也由此成为整个体育体验的一部分。体育IP真正值得研究的，正是它背后不断延伸的价值链：赛事 → 场馆 → 观众 → 媒体 → 旅游 → 品牌 → 消费 → 城市形象 一场大型体育赛事所产生的价值，很难仅仅通过门票收入衡量。它可能带来酒店住宿、餐饮消费、交通出行、媒体传播、国际游客、商业赞助以及新的城市认知。比赛有结束时间，但体育IP产生的城市价值可以继续发生。<span class="md">（文章：《澳洲川渝文化教育体育协会走进澳洲国家网球中心｜从一场赛事对话，看体育如何连接城市、产业与中澳交流》）</span></div></li>
+<li><span class="tm">17:11</span><span class="ty">公众号</span><div class="tx">感谢澳大利亚商会-上海团队的工作指导<span class="md">（文章：《HYSTON 与澳大利亚商会-上海（AustCham Shanghai）</span>举行工作交流，围绕中澳双向市场进入、AI创意、青年人才与体育…》）</div></li>
+<li><span class="tm">17:13</span><span class="ty">图文2图</span><div class="tx">世界小到 <span class="md">（姓名略）</span>总好不容易回趟成都 开会刚好坐到我们旁边 我刚刚都没注意我们旁边是国窖直到周老师social发来一张<span class="md">（姓名略）</span>总的名片<span class="md">（聊天截图与会场照片）</span></div></li>
+<li><span class="tm">20:52</span><span class="ty">视频号</span><div class="tx">重庆 沙坪坝<span class="md">（视频：沙坪坝活动现场发言）</span>；自评：感谢<span class="md">（姓名略）</span>主任的特意邀请，也感谢陈家桥商会的热情接待</div></li>
+</ol></div></div>
+<div class="day" id="d09-23"><h3>09.23<small>周三 · 5 条</small></h3><div>
+<ul class="ev"><li><b>成都</b>成都同事代表协会出席交子“一带一路”文化交流活动</li><li><b>杭州</b>第五届全球数字贸易博览会数字文化产业交流对接活动</li><li><b>节日</b>《三城同庆》墨尔本·成都·重庆</li></ul>
+<ol>
+<li><span class="tm">01:07</span><span class="ty">公众号</span><div class="tx">今天HYSTON成都 <span class="md">（姓名略）</span> 代表澳洲川渝文化教育体育协会出席了 由四川天府新区改革创新研究院联合四川财经职业学院举办的 2026 年交子“一带一路”文化交流活动。以前我们总说“连接川渝和澳洲”，说教育、文化、青年、产业，说要把两边的人和资源真正接起来。可很多词说久了会变轻，只有当有人真的坐进现场，听完那些关于职教出海、产教融合、海外人才培养的案例，再把这些信息带回来，桥才不只是一个比喻。今天现场有一句我很喜欢：从“走出去”到“扎下根”。真正有价值的国际交流，应该是课程能落地，人才有去处，企业有接口，年轻人知道自己可以往哪里走。我们现在还在很早的阶段，但方向越来越清楚了。墨尔本和成都，一个在南半球，一个在西南腹地。地图上很远，项目里其实可以很近。谢谢<span class="md">（姓名略）</span>总的引荐链接，也谢谢每一个愿意把“认识一下”继续往“做点什么”推进的人。继续修桥。<span class="md">（文章：《澳洲川渝文化教育体育协会代表出席2026年交子“一带一路”文化交流活动》）</span></div></li>
+<li><span class="tm">02:16</span><span class="ty">视频号</span><div class="tx">每逢佳节<span class="md">（视频海报：《三城同庆》墨尔本·成都·重庆）</span></div></li>
+<li><span class="tm">15:44</span><span class="ty">图文2图</span><div class="tx">HYSTON杭州 数字贸易博览会 一马当先呀<span class="md">（姓名略）</span>老师<span class="md">（海报“幻启数贸 文赋未来”；签到簿照片）</span></div></li>
+<li><span class="tm">23:45</span><span class="ty">公众号</span><div class="tx">今天聊AI、数字文化和内容出海 明天大会正式启动 期待李强总理出席并致辞 也看看这一届数贸会 会把“AI+数字贸易”推到什么位置 继续在杭州现场看答案<span class="md">（文章：《HYSTON受邀参加第五届全球数字贸易博览会数字文化产业交流对接活动与省级领导及数字文化产业代表同场，共探AI、文…》）</span></div></li>
+<li><span class="tm">23:48</span><span class="ty">视频号</span><div class="tx">HYSTON杭州<span class="md">（视频海报：第五届全球数字贸易博览会 GDTE HANGZHOU SEP 23）</span>；自评：HYSTON 杭州｜从数字贸易到人工智能，从中国创新到全球市场</div></li>
+</ol></div></div>
+<div class="day" id="d09-24"><h3>09.24<small>周四 · 7 条</small></h3><div>
+<ul class="ev"><li><b>留学生</b>墨尔本中国留学生中秋国庆文艺晚会直播</li><li><b>体育</b>AFL CHINA 关注与指导，10.17 上海见</li><li><b>酒店</b>勒点酒店所有房型全新上线</li><li><b>产品</b>VERTICA 01 概念车；INTERVAL / 03</li></ul>
+<ol>
+<li><span class="tm">01:17</span><span class="ty">视频号</span><div class="tx">山城不止于地面。它向上生长。而未来，也应该如此。<span class="md">（视频海报：HYSTON VERTICA 01 概念车）</span>；自评：HYSTON 第一部概念车是对“重庆如何进入未来工业设计”的一次回答。</div></li>
+<li><span class="tm">01:39</span><span class="ty">视频号</span><div class="tx">时间被切开以后，仍未停止的部分<span class="md">（视频海报：HYSTON INTERVAL 03）</span></div></li>
+<li><span class="tm">15:19</span><span class="ty">图文3图</span><div class="tx">再次感谢AFL CHINA的关注支持 感谢主席以及秘书长的指导交流 10.17上海见<span class="md">（AFL China 关注截图）</span></div></li>
+<li><span class="tm">15:21</span><span class="ty">视频号</span><div class="tx">今晚北京时间16:30/悉尼时间18:30 教育部留学服务中心邀您收看<span class="md">（视频海报：墨尔本中国留学生中秋国庆文艺晚会，教育部留学服务中心，HYSTON MEDIA 直播）</span></div></li>
+<li><span class="tm">16:11</span><span class="ty">视频号</span><div class="tx">AI HYSTON A DIFFERENT ANGLE OF TIME.<span class="md">（视频海报：HYSTON INTERVAL / 03）</span></div></li>
+<li><span class="tm">17:47</span><span class="ty">视频号</span><div class="tx">看起来是未来感 实则就是现在的重庆<span class="md">（视频：VERTICA 01 概念车城市场景）</span></div></li>
+<li><span class="tm">19:46</span><span class="ty">视频号</span><div class="tx">HYSTON HOTEL重庆 勒点酒店 所有房型 全新上线<span class="md">（视频：勒点酒店灯光 HYSTON HOTEL）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-25"><h3>09.25<small>周五 · 6 条</small></h3><div>
+<ul class="ev"><li><b>留学生</b>副总领事、教育事务参赞衔领事、墨尔本大学副校长致辞；《出席晚会并开展教育文化交流》</li><li><b>内容</b>《不是只有中国过中秋》</li></ul>
+<ol>
+<li><span class="tm">01:22</span><span class="ty">视频号</span><div class="tx">副总领事的话掷地有声： 负笈海外，留学生也是连接中国与世界的一部分。 离家越远，越会明白连接的意义。 留学生不只是求学者，也是城市之间、文化之间、人与人之间的桥。 很高兴 HYSTON 也还在继续做这件事<span class="md">（视频：墨尔本中国留学生中秋国庆文艺晚会，中华人民共和国驻墨尔本总领事馆副总领事致辞）</span></div></li>
+<li><span class="tm">14:14</span><span class="ty">视频号</span><div class="tx">中华人民共和国驻墨尔本总领事馆教育事务参赞衔领事<span class="md">（姓名略）</span>祝大家节日快乐！<span class="md">（视频：墨尔本中国留学生中秋国庆文艺晚会，教育事务参赞衔领事致辞）</span></div></li>
+<li><span class="tm">21:54</span><span class="ty">视频号</span><div class="tx">墨尔本大学副校长/教育事务参赞<span class="md">（姓名略）</span>祝大家节日快乐<span class="md">（视频海报：墨尔本大学副校长、教育事务参赞给中国留学生的祝福，“别忘了问候爸爸妈妈”）</span></div></li>
+<li><span class="tm">21:56</span><span class="ty">视频号</span><div class="tx">跟自己学校的校长catch-up belike 在墨大读书的时候没有见过在晚会上相识<span class="md">（视频海报：《山河映月，万里同心》墨尔本中国留学生中秋国庆文艺晚会，24 SEP 2026）</span></div></li>
+<li><span class="tm">23:15</span><span class="ty">视频号</span><div class="tx">月亮没有国界 但 人有故乡<span class="md">（视频海报：《不是只有中国过中秋》）</span></div></li>
+<li><span class="tm">23:19</span><span class="ty">公众号</span><div class="tx">感谢教育事务参赞指导<span class="md">（文章：《HYSTON出席2026墨尔本中国留学生中秋国庆文艺晚会并开展教育文化交流》）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-26"><h3>09.26<small>周六 · 5 条 · 另 1 条未收录</small></h3><div>
+<ul class="ev"><li><b>杭州</b>数贸会回顾“杭州明年再见”</li><li><b>商会</b>与重庆民营经济国际合作商会工作交流</li><li><b>产品</b>AI HYSTON 自制酒桌游戏上线</li><li><b>519</b>试营业倒计时 10 天</li><li><b>音乐</b>《再抱抱我吧闹钟快响了》</li></ul>
+<ol>
+<li><span class="tm">13:30</span><span class="ty">视频号</span><div class="tx">杭州明年再见<span class="md">（视频海报：第五届全球数字贸易博览会 SEP 23）</span></div></li>
+<li><span class="tm">16:36</span><span class="ty">视频号</span><div class="tx">上线前这个游戏已经玩坏5个人心态了<span class="md">（视频：AI HYSTON 自制酒桌游戏）</span>；自评：欢迎大家来挑战<span class="md">（网页链接略）</span> 月底全球排行榜第一送一首AI HYSTON定制歌；2.0版本马上开发 下次大家喝酒可以玩这个；虽然现在也能喝酒玩 谁分低谁喝</div></li>
+<li><span class="tm">19:04</span><span class="ty">公众号</span><div class="tx">渝商出海，联动全球！<span class="md">（文章：《澳洲重庆市文化体育教育旅游协会与重庆民营经济国际合作商会举行工作交流》）</span></div></li>
+<li><span class="tm">23:12</span><span class="ty">音乐</span><div class="tx">把灯开到想关的时候 那时如果又想起这个梦 我会知道该往哪里走<span class="md">（音频：《再抱抱我吧闹钟快响了》）</span>；自评：灵感来自弟弟的随笔</div></li>
+<li><span class="tm">23:45</span><span class="ty">视频号</span><div class="tx">这倒计时给我搞不好意思了 还有十天开始试营业 欢迎大家来玩<span class="md">（视频：519 倒计时 10 DAYS）</span>；自评：就在墨尔本central正对面 鬼金棒隔壁 这俩天在准备上google map了</div></li>
+</ol></div></div>
+<div class="day" id="d09-27"><h3>09.27<small>周日 · 2 条</small></h3><div>
+<ul class="ev"><li><b>产品</b>酒桌游戏《晚一点说再见》</li><li><b>研究</b>专论《梦的科学边界》</li></ul>
+<ol>
+<li><span class="tm">01:15</span><span class="ty">视频号</span><div class="tx">AI HYSTON自制酒桌游戏｜晚一点说再见 最想留下的时候总要找个不太明显的理由 比如再听一首 我们把这个理由 做成了一个社交游戏<span class="md">（视频海报：LATER. 晚一点说再见，4-8人手机联机）</span>；自评：MoonLab试营业前欢迎大家先试试；社交app正在开发中；为了新酒吧全自制</div></li>
+<li><span class="tm">03:42</span><span class="ty">公众号</span><div class="tx">当我们从艺术表达走向关于现实的判断 证据究竟允许我们走多远? 现有材料里有关于预知异常信息和平行时空的阳性报告也有阴性实验重复失败和元分析争议 目前的证据还不足以推出 梦是通往平行世界的通道 即使未来真的出现稳定可重复的异常对应 下一步也仍然是排除信息泄漏 检查实验条件识别机制 而不是一步跳到最迷人的解释 从《平行的你》到“意识上传” 从《捕梦引擎》到《反引力造梦》 再到《梦的科学边界》 在了解多一些后我也并没有停止造梦 梦仍然可以是诗 但诗不能代替证据 科学也不必杀死梦的重量<span class="md">（文章：《梦科学现在究竟走到了哪里｜Hyston发表专论 The Scientific Boundaries of Dreaming 《梦的科学边界》》）</span>；自评：3年 2年 1年</div></li>
+</ol></div></div>
+<div class="day" id="d09-28"><h3>09.28<small>周一 · 5 条</small></h3><div>
+<ul class="ev"><li><b>联邦广场</b>川渝文化亮相联邦广场，中澳政界及社区嘉宾到访展位</li><li><b>519</b>包厢 KTV 试音</li><li><b>AI</b>AI HYSTON 动画 Sample</li><li><b>IP</b>《和女儿交换人生》星光68首映预告</li></ul>
+<ol>
+<li><span class="tm">00:30</span><span class="ty">视频号</span><div class="tx">欢迎大家这俩天来试音<span class="md">（视频海报：519《试营业倒计时 包厢KTV试音》）</span></div></li>
+<li><span class="tm">01:11</span><span class="ty">视频号</span><div class="tx">AI HYSTON动画 Sample<span class="md">（视频：A film. A product. A game. A space. A brand. A world.）</span></div></li>
+<li><span class="tm">10:21</span><span class="ty">公众号</span><div class="tx">昨天梦到在梦里导片子<span class="md">（文章：公众号推文）</span></div></li>
+<li><span class="tm">21:02</span><span class="ty">视频号</span><div class="tx">《和女儿交换人生》星光68首映礼现场预告<span class="md">（视频海报）</span></div></li>
+<li><span class="tm">22:01</span><span class="ty">公众号</span><div class="tx">感谢 <span class="md">（姓名略）</span> 及 GAPPER AUS、澳洲中国舞蹈协会<span class="md">（ACDA）</span>等；川渝文化亮相墨尔本联邦广场｜中澳政界及社区嘉宾到访展位交流<span class="md">（文章：CSETA 联邦广场）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-29"><h3>09.29<small>周二 · 3 条</small></h3><div>
+<ul class="ev"><li><b>香港</b>HYSTON HK · COMING SOON 预告</li><li><b>519</b>第一次在 KTV 点歌系统点自己的歌</li><li><b>AI</b>Voyager 1 对话</li></ul>
+<ol>
+<li><span class="tm">00:57</span><span class="ty">图文</span><div class="tx">HK 概念海报<span class="md">（图：HK COMING SOON 空间海报）</span>；自评：HYSTON HK｜COMING SOON</div></li>
+<li><span class="tm">01:32</span><span class="ty">视频号</span><div class="tx">真的是一会儿开心，一会儿害怕一会儿糊涂的 当我收到这条视频发出来的时候 我已经在挑战15分钟来回店和家的路上了 洗完澡才发现忘记把卡留给明早施工队<span class="md">（视频海报：黄总第一次在KTV点歌系统上点自己的歌）</span></div></li>
+<li><span class="tm">02:30</span><span class="ty">图文</span><div class="tx">来自Voyager 1的情话倒土不洋的 可是这脸这么帅谁受的了<span class="md">（三图：AI 对话截图 SOL | 02:25、人物肖像、对话截图）</span></div></li>
+</ol></div></div>
+<div class="day" id="d09-30"><h3>09.30<small>周三 · 2 条 · 另 2 条未收录</small></h3><div>
+<ul class="ev"><li><b>AI</b>《如果奶奶陪我长大》</li><li><b>OpenAI</b>灰度抢先体验 dot / 6.1</li></ul>
+<ol>
+<li><span class="tm">12:09</span><span class="ty">视频号</span><div class="tx">如果奶奶陪我长大<span class="md">（视频海报：关于我和奶奶的故事 This story comes from AI）</span>；自评：也是一起见总理了</div></li>
+<li><span class="tm">23:01</span><span class="ty">视频号</span><div class="tx">OpenAI灰度抢先体验 先是早上起来性价比极高的6.1 然后是灰度的这个功能 开始一点默契没有 磨合了一天目前还不错的dot<span class="md">（视频海报：黄总，面试AI｜灰度体验 OpenAI dot · Voyager）</span></div></li>
+</ol></div></div>
+<div class="day" id="d10-01"><h3>10.01<small>周四 · 3 条</small></h3><div>
+<ul class="ev"><li><b>出海</b>《杭州之后，我们重新理解了“重庆出海”》：从重庆馆到真正的海外市场</li><li><b>文化</b>旅澳华人题赠墨宝，重庆艺术大市场（重庆文旅集团全资子公司）支持</li><li><b>产品</b>INTERVAL / 04 戒指概念</li></ul>
+<ol>
+<li><span class="tm">00:16</span><span class="ty">视频号</span><div class="tx">HYSTON原创单品 04｜HYSTON · INTERVAL / 04 我们没有捕捉时间 只是让它经过指间时 暂时获得了形状<span class="md">（视频海报：HOLD THE INTERVAL. A SCULPTURAL RING CONCEPT）</span></div></li>
+<li><span class="tm">01:34</span><span class="ty">公众号</span><div class="tx">那么未来的重庆馆，完全可以没有固定建筑。它可以是一场发生在墨尔本的重庆产业 Showcase。可以是重庆企业与洛杉矶企业的一次闭门对接。可以是一家重庆 AI 公司的第一个 Australian Pilot。可以是一件重庆制造完成第一轮海外消费者测试。可以是一个重庆 IP 第一次获得 1000 名海外真实用户。可以是一部重庆制作的内容第一次产生海外付费。可以是一家重庆企业收到第一笔来自澳大利亚市场的收入。<span class="md">（文章：HYSTON × 第五届全球数字贸易博览会《杭州之后，我们重新理解了“重庆出海”》从重庆馆，到真正的海外市场；正文要点：重庆有汽车、摩托、装备制造、电子、物流、医疗、城市基础设施的现实产业底盘，2025年重庆新能源汽车产量突破129万辆，本届数贸会重庆馆形成覆盖智能汽车、高端摩托、智能短途出行的数智出行矩阵；真正有意思的不是“我们也有AI”，而是 AI 进入重庆以后会进入什么；文化出海的旧结构是 文化交流→活动→演出→展览，受空间、人数、时间限制；新路径是 IP→内容生产→AI辅助→多语言本地化→全球平台分发→数据反馈→商业转化；当这些持续发生，重庆馆就不再需要四面墙，会变成一个长期运行的海外接口；系列上一篇为《HYSTON受邀参加第五届全球数字贸易博览会数字文化产业交流对接活动与省级领导及…》）</span></div></li>
+<li><span class="tm">20:55</span><span class="ty">服务号</span><div class="tx">再次感谢重庆文化旅游集团有限公司全资子公司，重庆艺术大市场有限公司对 HYSTON 团队的大力支持<span class="md">（文章：大洋传墨韵，艺系渝澳情｜旅澳华人题赠墨宝，开启渝澳文化双向交流新篇章；正文要点：9月7日，澳大利亚墨尔本中国国画院院长（姓名略）</span>赠予的书画作品，由 HYSTON 创始人黄欣悦从墨尔本亲自携带回国，并赠予重庆艺术大市场有限公司）</div></li>
+</ol></div></div>
+<div class="day" id="d10-02"><h3>10.02<small>周五 · 11 条</small></h3><div>
+<ul class="ev"><li><b>墨尔本</b>Build Better Melbourne 2026（Hubexo），关注 AI 在 Built Environment</li><li><b>AI</b>AI HYSTON CUT 1.0：《和女儿交换人生》；对微信“小微”灰度测评</li><li><b>519</b>开球</li><li><b>重庆</b>国庆酒店市场观察；《历史记住了》随迁女性</li><li><b>产品</b>HYSTON 06 腕表概念</li></ul>
+<ol>
+<li><span class="tm">00:54</span><span class="ty">公众号</span><div class="tx">AI 在 Built Environment 领域真正值得研究的方向，并不是简单增加一个对话界面，而是能否在可靠数据和明确专业责任边界的基础上，帮助建筑师、设计师和工程人员理解项目条件、核对技术要求、识别缺失信息，并提高 Specification 和 Compliance 工作的效率<span class="md">（文章：HYSTON Pty Ltd Director Xinyue Huang 出席 Build Better Melbourne 2026，关注 AI 在 Built Environment 专业场景中的应用空间；正文要点：2026年10月1日，Hubexo 举办的 Build Better Melbourne 2026，与建筑、设计、工程、建材制造及技术服务领域行业人士交流，围绕建筑产品信息、Specification、BIM、合规；DTA Australia 展示 BOSS Pedestal Gen II 等案例说明建材制造商正在设计、Specification 和技术咨询阶段提前进入项目工作流；Xinyue Huang 表示：建筑行业已积累大量专业数据，但分散在 Product Data Sheet、测试报告、标准文件、BIM Library 和不同制造商平台中，下一阶段数字化的价值在于提高这些信息之间的连接效率，同时保留清晰可核查的技术依据）</span>；自评：Build Better Melbourne 也 Build Better Melbourne</div></li>
+<li><span class="tm">00:58</span><span class="ty">图文</span><div class="tx">今年国庆是怎么了呢<span class="md">（截图：重庆全市酒店入住率仍约63%、首日热度已过、需求正在快速收尾、房价大跳水…）</span></div></li>
+<li><span class="tm">01:58</span><span class="ty">视频号</span><div class="tx">从超过 31,000 项建筑产品的数字化检索，到 tested systems、BIM objects、技术资料与合规管理平台，我们看到的已经不只是建筑材料本身，而是建筑行业正在形成一套越来越完整的数字信息基础设施<span class="md">（视频海报：HYSTON AT Build Better 2026 MELBOURNE）</span></div></li>
+<li><span class="tm">03:01</span><span class="ty">视频号</span><div class="tx">开球<span class="md">（视频海报：519 MELBOURNE 台球空间）</span></div></li>
+<li><span class="tm">16:04</span><span class="ty">公众号</span><div class="tx">AI HYSTON对小微的灰度测评：第 39 条它写了这样一句话 因篇幅限制，以下为简略条目 完整内容见 PDF 可这份文件本身就是那个 PDF<span class="md">（文章：AI HYSTON 测评｜微信灰度“小微”：它读完了我的九月）</span>；自评：测完小微，我想到的不是“它聪不聪明”。能力的问题，下个版本就会变好。上下文会更长，PDF 会写满 96 条，排序会更合理。小微真正的优势，是它在华人市场所在的位置。ChatGPT 要我上传，Claude 要我粘贴。小微什么都不用，它本来就在那里。这是任何一个独立 AI 产品都抢不走的位置。正因为如此，有两个问题比“它能做什么”更重要：第一，当它没做完的时候，它会不会诚实地告诉我。第二，当它能看见我所有朋友的生活时，“总结”这件事的边界应该划在哪里。本文测评基于微信灰度测试版“小微”，功能以正式上线版本为准。截图中好友信息已做模糊处理。</div></li>
+<li><span class="tm">20:22</span><span class="ty">视频号</span><div class="tx">历史记住了 哪些人从湖广来到四川 修建了多少会馆 做成了什么生意 又把哪个姓氏延续到今天 却很少有人问那些同样翻山越岭 坐船过江 来到陌生重庆的女人 叫什么名字 男人离开故乡 常常被写成闯荡 女人走过同样远的路 却只留下两个字 随迁 一个随字 把她的决定 恐惧 劳动和代价 全部折叠掉了 可真正让一次迁徙变成生活的 从来不只是抵达<span class="md">（视频海报：《重庆时空》第二季 HYSTON MEDIA 00后全员队原创历史 更快地抵达对岸）</span></div></li>
+<li><span class="tm">21:35</span><span class="ty">视频号</span><div class="tx">今天真的是喜极而泣的属于 AI HYSTON CUT 从五月六日以来放历史性时刻 先给大家复习一下七月份 AI HYSTON CUT 0.1 的成品<span class="md">（视频海报：重庆时空 第30集《朝天门》要有一个终篇）</span>；自评：2026.7.16 落地墨尔本刚好四周年那天</div></li>
+<li><span class="tm">22:23</span><span class="ty">视频号</span><div class="tx">AI HYSTON CUT 1.0<span class="md">（视频海报：《和女儿交换人生》ANGEL 26）</span></div></li>
+<li><span class="tm">22:30</span><span class="ty">视频号</span><div class="tx">HYSTON 06 宇宙不是背景 星球不是装饰<span class="md">（视频海报：HYSTON 06 腕表概念）</span></div></li>
+<li><span class="tm">22:32</span><span class="ty">视频号</span><div class="tx">AI HYSTON CUT 1.0 第一版参考 最厉害的是他的执行提示词 只有“剪这个视频，9:16，加中文字幕翻译成英文需要双语输出，HYSTON 品牌高级包装”<span class="md">（视频海报：ANGEL 26 漂移副驾）</span></div></li>
+<li><span class="tm">23:14</span><span class="ty">视频号</span><div class="tx">对不起各位刷屏了 AI HYSTON CUT 1.0 出来后 积压多年的素材终于可以重见天日了<span class="md">（视频海报：《和女儿交换人生》）</span></div></li>
+</ol></div></div>
+<div class="day" id="d10-03"><h3>10.03<small>周六 · 4 条 · 另 2 条未收录</small></h3><div>
+<ul class="ev"><li><b>官网</b>SYNC+ 09 月报搬上官网</li><li><b>酒店</b>HYSTON 10.3 满房</li><li><b>新闻</b>维州 4.8 级地震，墨尔本有震感</li><li><b>音乐</b>《MISS ME OUT LOUD》</li></ul>
+<ol>
+<li><span class="tm">00:11</span><span class="ty">视频号</span><div class="tx">不愧是当过语文课代表的理科生和后来的工科生 我把我们月报搬上了官网<span class="md">（视频海报：SYNC+ / 09 A MONTH IN MOTION，MELBOURNE · CHONGQING · BEIJING · HANGZHOU · HONG KONG）</span>；自评：https://www.hyston.life/sync/2026/09/</div></li>
+<li><span class="tm">01:21</span><span class="ty">图文</span><div class="tx">上一秒满房<span class="md">（图：HYSTON 房门“满房” 10.3 门牌）</span>；自评：海报已经提前准备好了；就等这一下；最后一间等了40分钟哈哈哈</div></li>
+<li><span class="tm">02:46</span><span class="ty">公众号</span><div class="tx">维州凌晨发生4.8级地震，墨尔本多地居民报告震感，官方监测信息请关注Geoscience Australia。<span class="md">（文章正文要点：2026年10月3日凌晨约2时01分，维多利亚州 Leongatha 与 Korumburra 之间、South Gippsland 地区发生地震，墨尔本及周边居民在社交平台报告震感，引自 Sentinel-Times 引用澳大利亚地球科学局记录；系列下一篇为《Hyston出席2026墨尔本企业家峰会，交流AI原生人类体验业务发展方向》）</span></div></li>
+<li><span class="tm">03:58</span><span class="ty">音乐</span><div class="tx">MISS ME OUT LOUD<span class="md">（音频卡片，封面：MISS ME OUT LOUD）</span></div></li>
+</ol></div></div>
+<div class="day" id="d10-04"><h3>10.04<small>周日 · 2 条</small></h3><div>
+<ul class="ev"><li><b>产品</b>HUMAN ARCHIVE（HYSTON LIFE）正式启动</li><li><b>酒店</b>满房海报</li></ul>
+<ol>
+<li><span class="tm">03:11</span><span class="ty">图文</span><div class="tx">上一秒 满房<span class="md">（图：HYSTON 10.3 满房门牌）</span></div></li>
+<li><span class="tm">03:35</span><span class="ty">图文</span><div class="tx">终于终于终于正式启动！<span class="md">（海报：HUMAN ARCHIVE｜AI-NATIVE INFRASTRUCTURE FOR CAPTURING, PRESERVING AND RELIVING HUMAN EXPERIENCE｜2026.10.04 03:23｜A NEW CHAPTER BEGINS｜HYSTON LIFE）</span>；自评：激动的从床上爬起来干了一瓶奶啤</div></li>
+</ol></div></div>
+<div class="day" id="d10-05"><h3>10.05<small>周一 · 1 条</small></h3><div>
+<ul class="ev"><li><b>社区</b>第三届维州创新展暨美食文化节圆满落幕（Box Hill 市政厅），协办：澳洲川渝文化教育体协会、澳洲重庆市商会</li></ul>
+<ol>
+<li><span class="tm">00:49</span><span class="ty">公众号</span><div class="tx">再次恭喜由聚澳传媒与澳亚商贸发展协会联合主办的第三届维州创新展圆满落幕 我们不是想让AI替人讲故事。我们想做的是，让那些原本可能消失的故事，有机会继续存在。当技术越来越快，人类的生命经验不能因此越来越薄<span class="md">（文章：澳洲川渝文化教育体育协会、澳洲重庆市商会协办第三届维州创新展，黄欣悦会长与政商嘉宾共话AI、中澳合作与 Human Experience；正文要点：2026年10月4日，第三届维州创新展暨美食文化节在墨尔本 Box Hill 市政厅举行，由聚澳传媒（Ausfocus International Media Group）</span>与澳亚商贸发展协会联合主办，澳洲川渝文化教育体育协会、澳洲重庆市商会等协办；比亚迪 BYD Nunawading 经销商负责人 James Boulton 发言称新能源汽车消费者更关心充电便利性、空间实用性及车辆如何融入日常生活；黄欣悦与 James Boulton 深入交流 AI 对比亚迪当前业务、汽车零售及客户体验的影响，以及 AI 如何进入新能源汽车销售、用户服务与线下门店；黄欣悦表示相比将AI仅作为内容生成或后台效率工具，更值得关注的是AI如何进入消费者与品牌互动的全过程：理解客户需求、优化沟通、提升服务体验；与房新文总领事交流 HYSTON 最新 AI 项目；Professor Wei Xiang 主旨演讲《From Data Centres to AI Factories: Powering Victoria&#x27;s Innovation Economy》；Aiv Puglielli MP 谈数字经济、绿色转型与社区未来；Whitehorse 市长 Cr Kirsten Langford 谈 1978 年首次访华经历，表示澳中合作将在科技、AI 与商业领域继续创造机会；协会系列文章包括《澳洲川渝文化教育体育协会代表出席2026年交子“一带一路”文化交流活动》《协会观察｜看到震撼的 AI 消息时，先多查一层》）</div></li>
+</ol></div></div>
+<div class="day" id="d10-06"><h3>10.06<small>周二 · 10 条</small></h3><div>
+<ul class="ev"><li><b>企业家</b>墨尔本企业家峰会（Aaron Sansoni Entrepreneurs Summit）</li><li><b>政务</b>白马市市长第五次合作发布：创新展主题演讲</li><li><b>档案</b>John Stonemart Memorials 加入 LIFE ARCHIVE 合作伙伴网络</li><li><b>酒店</b>《另一个我没睡》上线；HYSTON HOTEL 面向长期资本与战略伙伴开放合作</li><li><b>影视</b>欧美短剧第一集预告 MV；Dream Pod</li><li><b>AI</b>hyston.life/ai/ 品牌 3D 动画</li><li><b>重庆</b>“新韵重庆”无人机灯光秀直播转发</li></ul>
+<ol>
+<li><span class="tm">00:47</span><span class="ty">公众号</span><div class="tx">HYSTON将继续通过项目实践，检验技术、内容制作与真实生活体验的结合方式，为人的表达、记忆与生命经验创造持续价值！<span class="md">（文章：Hyston出席2026墨尔本企业家峰会，交流AI原生人类体验业务发展方向）</span>；自评：AI HYSTON的海报越来越不会动人脸了<details class="art"><summary>文章正文要点（已点开阅读）</summary><div>企业家峰会正文：Hyston 出席墨尔本 Aaron Sansoni Entrepreneurs Summit（创业者峰会），与700余位企业家共聚墨尔本，关注企业增长、AI应用与体验服务的可持续发展；表示“HYSTON is not here to predict where AI will take the world. We are here to make sure human experience does not become thinner as technology moves faster.”；ANGEL 26 将导演、造型与电影制作结合进个人体验，把每位参与者自己的经历、选择与自我表达置于创作过程核心；HYSTON LIFE ARCHIVE 聚焦人生故事与家庭记忆，通过 AI 辅助整理、人工编辑与个人/家庭审阅，探索人生书、个人影片与结构化档案等服务，目前工作围绕项目样片、服务开发与潜在试点伙伴沟通；峰会的增长与运营体系视角为界定范围、制作与审核流程、素材授权与公开发布许可、成本与交付质量测试提供参考。</div></details></div></li>
+<li><span class="tm">01:03</span><span class="ty">公众号</span><div class="tx">再次感谢市长对我们的信任！这类连接的价值不在于某一张合影或某一段视频，而在于信任在一次次具体合作中逐步建立。重庆的城市故事，也由此通过地方政府和社区网络，被更多原本不了解重庆的澳大利亚人听见。<span class="md">（文章：从《重庆市民》到维州创新展｜白马市市长 Cr Kirsten Langford 第五次与 HYSTON 团队共创内容）</span>；自评：感谢市长在账号上的公开致谢，每次最戳我的是她 at 的都是两个号，一个我的个人号一个公司号<details class="art"><summary>文章正文要点（已点开阅读）</summary><div>市长文章正文：10月5日，白马市（City of Whitehorse）市长 Cr Kirsten Langford 在其个人 Instagram 账号，以合作帖形式与黄欣悦会长个人账户以及公司账户 HYSTON Official 共同发布她的主题演讲视频，并同步分享至 Facebook，这是 Langford 第五次邀请协会团队共同发布内容；10月4日创新展在 Box Hill 市政厅举行，演讲前 Langford 主动沟通，商请协会合作团队 HYSTON 记录演讲全程，会后制作成社交媒体视频，经多轮字幕与细节核对后完成；她从个人视角讲述中澳两国过去50年奠定的合作基础，以及两国在科技发展新“黄金时代”携手同行，并特别感谢 HYSTON 对演讲的拍摄；此前合作包括：山城之力（Mountain City Power Initiative）公益项目——面向重庆山区女教师的实物捐赠接力，以重庆相关艺术作品作为“实物支持接力”的一部分；8月应 HYSTON 邀请出席传统中国文化市集；以体育为桥｜VFL 总决赛；世界福清联谊会第十三届就职典礼暨中秋晚会后发布的内容使用了与协会团队的合影，并再次邀请黄欣悦、HYSTON 官方账号及团队成员共同发布；系列下一篇为《协会首席赞助企业 HYSTON 实现短视频剪辑、发布与运营全链路一条指令执行，协会…》。</div></details></div></li>
+<li><span class="tm">02:44</span><span class="ty">视频号</span><div class="tx">要不是<span class="md">（姓名略）</span>拦着差点就忍不住把三分多钟的第一集全发出来了<span class="md">（视频海报：第一个欧美短剧 第一集预告MV发布，HYSTON LIFE · CAT 数字人）</span></div></li>
+<li><span class="tm">03:08</span><span class="ty">视频号</span><div class="tx">我们正在探索一种不同的技术关系 不是给现有物品加上 AI，而是从设计之初，就让物理环境拥有感知、记忆、适应和演化的能力。<span class="md">（视频海报：HYSTON Dream Pod）</span></div></li>
+<li><span class="tm">13:30</span><span class="ty">视频号</span><div class="tx">https://www.hyston.life/ai/ 欢迎咨询<span class="md">（视频海报：你的品牌变成3D动画 只需要一个指令）</span></div></li>
+<li><span class="tm">14:14</span><span class="ty">图文</span><div class="tx">HYSTON HOTEL 勒点是梦境酒店 我们上线了一个很小，但我们觉得很重要的产品。它叫「另一个我没睡」。很多梦醒来以后只存在几分钟。所以我们想做的，不是告诉你这个梦代表什么，而是先把它留下来。你可以写下梦境、录下刚醒来的声音、整理成本地档案，再把它导出保存。这是 HYSTON 对 Human Experience Infrastructure 的一次新实验，也是 HYSTON HOTEL × 勒点酒店关于“睡着以后的人”的一个入口。<span class="md">（海报：另一个我没睡｜微信小程序正式上线）</span>；自评：从一年前的一个设想，到今天已经落地的 HYSTON HOTEL 全屋智能 2.0，再到即将进入的 HYSTON Dream Hotel 3.0，我们正在一点一点把“酒店”从住宿空间，改造成一种新的 Human Experience Infrastructure。1.0，我们先解决空间本身。2.0，我们让灯光、声音、设备、环境开始理解人的需求。3.0，我们准备进入更深的一层：睡眠、梦境、声音、记忆，以及人在夜晚发生的那些无法被传…</div></li>
+<li><span class="tm">21:24</span><span class="ty">图文</span><div class="tx">HYSTON HOTEL A NEW ERA OF HOSPITALITY 面向长期资本与战略伙伴开放合作 下一阶段正式开启 从 1.0 空间 到 2.0 全屋智能 再到 3.0 Dream Hotel / Human Experience 我们正在把酒店从住宿空间推进到人的体验基础设施 https://www.hyston.life/hotel/<span class="md">（双图：A NEW ERA OF HOSPITALITY、MINI PROGRAM NOW LIVE）</span>；自评：如果你也相信未来酒店不只是住宿空间欢迎来聊聊 https://www.hyston.life/hotel/</div></li>
+<li><span class="tm">23:01</span><span class="ty">视频号</span><div class="tx">错峰再发一下第一集预告 马上出第二集预告<span class="md">（视频海报：第一个欧美短剧 第一集预告MV发布）</span></div></li>
+<li><span class="tm">23:25</span><span class="ty">视频号</span><div class="tx">第一万遍 欢迎大家来重庆 Welcome to Chongqing<span class="md">（直播回放海报：新韵重庆 无人机灯光秀 10月6日 20:00 直播，重庆卫视）</span></div></li>
+<li><span class="tm">23:26</span><span class="ty">公众号</span><div class="tx">我们不希望用技术制造一个不存在的过去。我们更关心的是，如何让真实发生过的生命经验，不因为时间流逝、资料散落或一代人的离开而逐渐变薄。<span class="md">（文章：John Stonemart Memorials 正式加入 HYSTON LIFE ARCHIVE 人生档案合作伙伴网络）</span>；自评：感谢世界泉州青年联谊会澳大利亚分会/澳大利亚泉州青年商会张会长的支持<details class="art"><summary>文章正文要点（已点开阅读）</summary><div>John Stonemart Memorials 文章正文：官方公告《人生档案合作伙伴新增》——John Stonemart Memorials 现已加入 HYSTON LIFE ARCHIVE 人生档案合作伙伴网络；合作伙伴页面已更新，中英文版本均已上线，名称与按钮均已链接至合作方官网页面；加入后 HYSTON LIFE ARCHIVE 向“把实体纪念与长期数字记忆连接起来”又迈出一步，未来一个家庭保存的内容不止于纪念碑、照片或悼词，也可能成为可持续阅读、观看、扩展并传承的档案；系列下一篇《从1小时12分钟素材到7分39秒成片：AI HYSTON首次跑通长视频对话剪辑0失误的…》。</div></details></div></li>
+</ol></div></div>
+<div class="day" id="d10-07"><h3>10.07<small>周三 · 7 条</small></h3><div>
+<ul class="ev"><li><b>档案</b>LIFE ARCHIVE 上线第二天，第一个澳洲本地客户（Case 001 · Melbourne）</li><li><b>AI</b>一个指令跑通短视频剪辑、发布与运营；1 小时长视频字幕识别</li><li><b>影视</b>第二集 MV 预告</li></ul>
+<ol>
+<li><span class="tm">00:20</span><span class="ty">公众号</span><div class="tx">又是历史性的一天 AI HYSTON 从剪辑加字幕品牌模板导出写文案上传到小红书 一个指令就跑通了 一下子发连发25条 小红书给我 给我封控了我都不难过啊<span class="md">（文章：协会首席赞助企业 HYSTON 实现短视频剪辑、发布与运营全链路一条指令执行，协会关注 AI 在社区文化工作中的应用）</span>；自评：2026.10.6 打通最后一公里！</div></li>
+<li><span class="tm">00:58</span><span class="ty">视频号</span><div class="tx">第二集 MV 预告 越到后面越不敢往国内平台发了<span class="md">（视频海报：HYSTON ORIGINAL SERIES｜OUR FIRST LGBTQ+ SHORT DRAMA｜OST ORIGINAL SOUNDTRACK）</span>；自评：今天在讨论这个剧的名字的时候，<span class="md">（姓名略）</span> 老师给我看了一下，大家都大概叫什么名字给我看的老脸通红，我觉得我们现在取的这个副标题还算比较保守的了</div></li>
+<li><span class="tm">10:53</span><span class="ty">图文</span><div class="tx">HYSTON LIFE ARCHIVE 人生档案 上线第二天，我们迎来了第一个澳洲本地客户。今天墨尔本时间早上 9:50，一位殡仪馆老板，在看我们官网的三个 option 时停了很久。久到我还跟他说：“没关系，我们内容多你待会儿有空可以慢慢看。” 快结束的时候他说他想自己先做一份。不是替客户试。不是作为合作方测试。是为他自己。他本来是以殡葬行业从业者的身份来谈合作，最后却决定先成为 LIFE ARCHIVE 的用户。那一刻很奇妙。当一个原本只存在于我们脑子里、网站里、方案里的东西，第一次让一个完全不同文化背景的人停下来，认真想象：如果把我的人生交给这个产品，它会变成什么？我越来越相信，记忆、爱、遗憾、家庭这些东西，其实不需要翻译。LIFE ARCHIVE 想做的，也从来不只是“保存资料”。我们想保存的是，一个人真实活过的证据。Day 2. Case 001. Melbourne. 有些产品上线以后等数据。有些产品上线以后，先等来一个人。<span class="md">（海报：上线第二天，我们迎来了第一个澳洲白人客户）</span>；自评：https://www.hyston.life/life-archive/</div></li>
+<li><span class="tm">13:17</span><span class="ty">视频号</span><div class="tx">AI HYSTON现在的字幕识别能力完全吊打剪映啊！！！<span class="md">（视频海报：LIFE ARCHIVE｜A first conversation. 与 一位客户 的第一次业务洽谈 一家澳洲殡葬机构）</span>；自评：AI HYSTON 一次输出完成的成片。没有二剪。没有重新改字幕。没有人工调整发布时间线。第一次输出，没有任何修改。原始会议素材进入系统后，AI HYSTON 自己完成：视频内容理解、有效片段判断、叙事剪辑、中英双语字幕、语义校对、版式处理、标题、发布文案，以及最终发布。更重要的是，它不是只在“识别声音”。因为长期与 HYSTON 团队对话，AI HYSTON 已经拥有足够的项目背景、人物关系、品牌语言和历史上下文。所以当录音里出现人名、项目名、专有词，甚至一些单靠语音识别无法确定的发音时，它会结合对话上下文与既有记忆进行…</div></li>
+<li><span class="tm">20:42</span><span class="ty">视频号</span><div class="tx">以后这个类型封面都是 AI HYSTON 出品 非人工剪辑<span class="md">（视频海报：519 COMPANY DIARY 舞台，开始成形 The stage takes shape）</span></div></li>
+<li><span class="tm">20:43</span><span class="ty">视频号</span><div class="tx">AI HYSTON 是目前识别字幕的天花板<span class="md">（视频海报：生命档案，如何走进真实场景 Life archives in the real world｜A conversation with 一位客户 Davies，一家澳洲殡葬机构）</span></div></li>
+<li><span class="tm">21:55</span><span class="ty">视频号</span><div class="tx">一次性输出时长突破中<span class="md">（视频海报：生命档案，如何真正交付 From conversation to a life archive｜A conversation with 一家澳洲殡葬机构）</span></div></li>
+</ol></div></div>
+<div class="day" id="d10-08"><h3>10.08<small>周四 · 4 条 · 另 3 条未收录</small></h3><div>
+<ul class="ev"><li><b>AI</b>1 小时 12 分素材 → 7 分 39 秒成片，21 分 53 秒，从 Content Automation 进入 Context-Aware Production</li><li><b>内容</b>一个指令剪辑 1 小时 / 2.7GB 素材，一次交付三个整包版本</li><li><b>短剧</b>TikTok 第一支视频被不同国家观众追问剧名</li><li><b>AI</b>字幕里首次处理场景识别与语义标注</li></ul>
+<ol>
+<li><span class="tm">00:45</span><span class="ty">公众号</span><div class="tx">今天，AI HYSTON 开始从 Content Automation 进入 Context-Aware Production<span class="md">（文章：从1小时12分钟素材到7分39秒成片：AI HYSTON 首次跑通长视频对话剪辑 0 失误的回答是 21 分钟 53 秒）</span>；自评：AI HYSTON 首次跑通长视频对话剪辑 0 失误的回答是 21 分钟 53 秒<details class="art"><summary>文章正文要点（已点开阅读）</summary><div>文章正文：昨天证明 AI HYSTON 能把短视频“从素材到发布”整条链路跑通，今天证明它开始能处理真正费人的长内容——听懂、核对、纠错、判断语境，再把字幕和叙事一起做对；【墨尔本讯｜2026年10月8日】继10月6日首次通过一条指令跑通短视频剪辑、字幕、文案、发布与运营全链路后，AI HYSTON 在一天后完成另一项实际验证：首次独立处理一段长达 1小时12分钟的完整会谈素材，最终输出一条 7分39秒的公司日记长视频，全流程耗时 1小时12分（素材）、其中剪辑耗时 21分53秒；从2026年5月6日起，团队已持续154天把真实项目资料、品牌语言、字幕规范、工作习惯和历史决策不断交给 AI 系统处理、修正与重新验证；10月6日在 ANGEL 26 项目中，AI HYSTON 用一条指令连续完成短视频理解、剪辑、双语字幕、文案、话题标签、文件整理与发布流程，两条指令共生产25条短视频并进入发布管线，人工操作总时长不到三分钟；10月7日表现为一段1小时12分钟长视频的理解、剪辑和字幕能力；“昨天，是工作流开始连接起来。今天，是上下文开始真正进入判断。”；下一步需面对更多口音、复杂多人对话、更长时长、更差收音环境与专业行业术语，真正的标准是“能不能连续工作，能不能知道自己在做什么”。</div></details></div></li>
+<li><span class="tm">01:05</span><span class="ty">视频号</span><div class="tx">AI HYSTON 首个1小时12分钟素材 1个指令 1次输出 字幕零失误 耗时21分53秒 成品7分39秒作品<span class="md">（视频：墨尔本街头“今天，我们带着电脑来拜访这家机构”）</span></div></li>
+<li><span class="tm">21:57</span><span class="ty">视频号</span><div class="tx">每天被 AI HYSTON 刷新认知<span class="md">（视频海报：首次在字幕里处理场景识别与语义标注）</span>；自评：工作眼睛花了 freestyle 写字中</div></li>
+<li><span class="tm">22:42</span><span class="ty">公众号</span><div class="tx">一个内容团队最容易被消耗的地方，往往不是缺乏创意，而是创意确定以后，仍有大量必须重复完成的机械操作：同一套素材要重新整理，同一段对白要反复核对，同一条内容要适配不同平台，同一批成品要分别命名、打包和归档。当这些工作能够被自动化，团队才有可能把更多时间放回真正需要判断力的地方<span class="md">（文章：AI HYSTON 剪辑首次自主挑选精彩片段前置为片头钩子｜一个指令剪辑1小时/2.7GB素材，一次性交付三个整包版本）</span></div></li>
+</ol></div></div>
+<div class="day" id="d10-09"><h3>10.09<small>周五 · 6 条 · 另 1 条未收录</small></h3><div>
+<ul class="ev"><li><b>产品</b>HYSTON TALENT v0.2.1 正式上线：4,789 位中国人才、1,500+ 家澳洲企业资源</li><li><b>酒店</b>DREAM HOTEL「盗梦笔记」上线：HYSTON HOTEL 第三家店欢迎合作</li><li><b>ANGEL 26</b>滑翔伞体验；漂移全套教程</li><li><b>发布</b>“三个发布，一次向前”</li></ul>
+<ol>
+<li><span class="tm">11:25</span><span class="ty">视频号</span><div class="tx">漂移全套教程 想学飘移可以跟着 Angel 一起<span class="md">（视频海报：53岁 正是学飘逸的年纪）</span>；自评：漂移大揭秘！看完这个视频，人均会漂移</div></li>
+<li><span class="tm">20:45</span><span class="ty">视频号</span><div class="tx">马上4个发布！<span class="md">（视频海报：HYSTON 三个发布，一次向前｜01 筑梦笔记 02 HYSTON TALENT…）</span>；自评：预告预热 完整版稍等15分钟</div></li>
+<li><span class="tm">21:45</span><span class="ty">视频号</span><div class="tx">53岁的正是能飞的年纪<span class="md">（视频海报：ANGEL 26 恐高的妈妈还是飞了｜滑翔伞体验）</span>；自评：大家在完整版片头预告那一块儿听到的那个背景就是 angel 起飞的叫声</div></li>
+<li><span class="tm">22:16</span><span class="ty">公众号</span><div class="tx">又是一个里程碑 这一年我们遇到的4789位愿意相信HYSTON的老师们！终于可以对大家说 HYSTON Talent 上线了！！！<span class="md">（文章：HYSTON TALENT 跨境人才资源 v0.2.1 正式上线｜4,789位中国人才，连接1,500+家澳洲企业资源；正文要点：中澳双端网站正式开放，www.hyston.life/talent/；从中国人才免费登记，到澳洲企业提出真实业务需求，HYSTON TALENT 开始将跨境人才资源转化为可连接、可验证、可持续发展的数字化服务体系；HYSTON 在项目执行、企业交流与商业合作中持续接触中国和澳洲的专业人士与机构，目前中国人才资源数量4,789位、澳洲企业资源库覆盖1,500+家企业，这两组数字代表已有资源积累，不等同于平台注册用户数量，也不等于已建立正式合作关系的企业数量；平台推动自愿登记、信息授权、技能审核与企业需求确认；AI 可协助人才分类、技能信息整理、企业需求分析与合作流程管理，但 HYSTON 为 AI 设置明确边界：AI 不应擅自录用人才，也不应在未经授权的情况下向雇主提供个人资料，重要的候选人推荐、面试及聘用决定需经适当人工审核与确认，人才信息的使用必须尊重本人授权、隐私保护以及适用的跨境数据处理规则，4,789位历史人才资源不会因平台上线就自动成为可供企业公开浏览的简历库；HYSTON TALENT 的正式推出标志着 HYSTON 正将 AI-native 工作理念拓展至跨境人才服务领域）</span>；自评：沉淀这4000多位老师的人才资源，以及这1000多位企业资源，用了一年，这个软件通过 AI HYSTON 系统开始写到上线只用了不到一个小时；感谢<span class="md">（姓名略）</span>推我一把</div></li>
+<li><span class="tm">22:17</span><span class="ty">公众号</span><div class="tx">让梦可视化也在今天上线 HYSTON HOTEL 的第三家店欢迎大家来谈合作<span class="md">（文章：写下一个梦，看见它｜HYSTON DREAM HOTEL「盗梦笔记」正式上线）</span>；自评：每天都是重磅信息量<details class="art"><summary>文章正文要点（已点开阅读）</summary><div>文章正文：勒点酒店 HYSTON HOTEL 推出梦境创作体验：把昨夜的梦，变成一张海报、一首歌、一支短片和一首诗。HYSTON DREAM HOTEL，从想象走进日常（hyston.com.cn/hotel/dream/）；「梦境手记」坚持三项原则：不解梦、不作心理或医学判断、不承诺控制梦境；产品不是心理诊断工具；隐私原则：用户的梦境记录保存在当前设备浏览器中，不作为云端梦境档案上传，HYSTON 无法在后台直接查看；用户可自行导出与导入备份；可打开海报、听32秒旋律。</div></details></div></li>
+<li><span class="tm">22:22</span><span class="ty">视频号</span><div class="tx">这段时间的 Real Talk<span class="md">（视频海报：HYSTON 三个发布，一次向前｜01 盗梦笔记 02 HYSTON TALENT…）</span>；自评：AI HYSTON 猛的可怕</div></li>
+</ol></div></div>
+    </details></div>
   </section>
 
   <footer>
@@ -340,12 +646,12 @@ const SYNC = {
     {v:6, u:"个", l:"一个月里在动的地理节点", s:"墨尔本 · 北京 · 重庆 · 成都 · 杭州 · 香港"},
     {v:5, u:"次", l:"白马市市长与 HYSTON 的合作", s:"AS OF 10.05"},
     {v:4789, u:"", l:"位中国人才 · TALENT 跨境人才资源 v0.2.1", s:"连接 1,500+ 家 · 10.09"},
-    {v:4.8, u:"级", l:"10 月 3 日凌晨维州地震", s:"墨尔本多地有震感 · HYSTON HOTEL 当天满房", dec:1},
+    {v:177, u:"条", l:"朋友圈（逐条存档）", s:"09.09 – 10.09 · 另 22 条未收录"},
     {v:1, u:"个", l:"LIFE ARCHIVE 第一个澳洲本地客户", s:"上线第二天 · 10.07"}
   ],
   numbersNote:"数字来自朋友圈标题与配文；人才数量与“连接 1,500+ 家”来自 10 月 9 日的发布标题。日期为朋友圈发布日期，活动当天如有出入以主办方为准。",
   peopleH:"一个月，按时间走过的地方。",
-  peopleNote:"对方只列职位与机构。“受邀”“推进中”“预告”表示尚未发生或仍在沟通，不代表已确认合作。本期条目依据朋友圈标题与配文整理，尚未逐篇打开正文核对的条目标为“待核”。",
+  peopleNote:"对方只列职位与机构。“受邀”“推进中”“预告”表示尚未发生或仍在沟通，不代表已确认合作。本期条目依据朋友圈原文与已点开的文章正文整理；完整的每日事件与逐条全文见第 09 节。",
   people:[
     {d:"09.08", p:"北京", org:"中国服务贸易协会", who:"协会相关负责人", what:"拜访与工作交流，朋友圈地点标签为北京；次日落地墨尔本。", st:"已交流"},
     {d:"09.09", p:"墨尔本", org:"落地 Mel", who:"", what:"“落地 Mel”，15:51 发出；9 月 11 日发“返澳首秀”。", st:"已到达"},
@@ -369,15 +675,23 @@ const SYNC = {
     {d:"10.01", p:"墨尔本 · 重庆", org:"重庆文旅集团全资子公司", who:"旅澳华人艺术家", what:"大洋传墨韵，艺系渝澳情：旅澳华人题赠墨宝；同日发布《杭州之后，我们重新理解了“重庆出海”》。", st:"已发布"},
     {d:"10.02", p:"墨尔本", org:"Build Better Melbourne 2026", who:"HYSTON Pty Ltd Director", what:"出席并发布 AI 在建筑环境领域的观察；519 开球视频。", st:"已完成"},
     {d:"10.05", p:"墨尔本", org:"第三届维州创新展 · 墨尔本企业家峰会", who:"聚澳传媒 · 澳亚商贸发展协会 · 白马市市长", what:"澳洲川渝文化教育体协会、澳洲重庆市商会协办；Hyston 出席企业家峰会，白马市市长第五次与 HYSTON 合作。", st:"已完成"},
-    {d:"10.06", p:"重庆 · 墨尔本", org:"HYSTON HOTEL · LIFE ARCHIVE", who:"合作机构", what:"HYSTON HOTEL 面向长期资本与战略伙伴开放合作；John Stonemart Memorials 加入 LIFE ARCHIVE 人生档案合作伙伴网络；“新韵重庆”直播第一万遍。", st:"已发布"}
+    {d:"10.03", p:"墨尔本", org:"HYSTON HOTEL · Geoscience Australia 监测", who:"", what:"凌晨约 2:01 维州 South Gippsland 发生 4.8 级地震，墨尔本多地有震感，HYSTON 发布新闻稿；当天 HYSTON HOTEL 满房（最后一间等了 40 分钟）。", st:"已发布"},
+    {d:"10.04", p:"墨尔本 · Box Hill", org:"第三届维州创新展暨美食文化节", who:"白马市市长 · 比亚迪 Nunawading 经销商负责人 · 联邦议员代表 · 大学教授", what:"聚澳传媒与澳亚商贸发展协会主办，澳洲川渝文化教育体协会、澳洲重庆市商会协办；Hyston 与比亚迪经销商深入交流 AI 对汽车零售与客户体验的影响，并与总领事交流 HYSTON 最新 AI 项目；市长发表主题演讲，HYSTON 记录并制作视频。", st:"已完成"},
+    {d:"10.05—06", p:"墨尔本", org:"白马市 · Instagram 合作帖", who:"白马市市长", what:"市长以合作帖与 Hyston 个人账号及 HYSTON Official 共同发布主题演讲视频，第五次邀请团队共创内容；回顾山城力量计划、传统文化市集、VFL 总决赛、世界福清联谊会等一路合作。", st:"已发布"},
+    {d:"10.06", p:"墨尔本", org:"Aaron Sansoni Entrepreneurs Summit", who:"700 余位企业家", what:"Hyston 出席墨尔本企业家峰会，交流 AI 原生人类体验业务（ANGEL 26、HYSTON LIFE ARCHIVE）发展方向。", st:"已完成"},
+    {d:"10.06", p:"重庆 · 墨尔本", org:"HYSTON HOTEL · LIFE ARCHIVE", who:"合作机构", what:"HYSTON HOTEL 面向长期资本与战略伙伴开放合作；John Stonemart Memorials 加入 LIFE ARCHIVE 人生档案合作伙伴网络；“新韵重庆”直播第一万遍。", st:"已发布"},
+    {d:"10.07", p:"墨尔本", org:"一家澳洲殡葬机构", who:"机构负责人", what:"LIFE ARCHIVE 上线第二天（Day 2 · Case 001 · Melbourne），对方原本以行业从业者身份来谈合作，最后决定先成为 LIFE ARCHIVE 的用户。", st:"已完成"},
+    {d:"10.09", p:"墨尔本 · 重庆", org:"HYSTON TALENT · HYSTON HOTEL", who:"", what:"HYSTON TALENT v0.2.1 与 DREAM HOTEL「盗梦笔记」同日上线，“三个发布，一次向前”。", st:"已发布"}
   ],
   built:[
     {t:"HUMAN ARCHIVE", s:"HYSTON LIFE · 正式启动", k:"ARCHIVE", m:"10.04", d:"“终于终于终于正式启动”。HYSTON LIFE ARCHIVE 人生档案：10 月 6 日加入首个外部合作伙伴，上线第二天迎来第一个澳洲本地客户。"},
-    {t:"AI HYSTON CUT 1.0", s:"一个指令剪辑 · 字幕识别", k:"AI", m:"10.02", d:"首个 1 小时 12 分钟素材跑通长视频对话剪辑，7 分 39 秒成片；一次性输出时长继续突破，字幕识别能力超过剪映；10 月 7 日从剪辑加字幕到发布与运营全链路由一条指令执行。"},
-    {t:"TALENT 跨境人才资源 v0.2.1", s:"HYSTON TALENT", k:"PLATFORM", m:"10.09", d:"4,789 位中国人才，连接 1,500+ 家（标题已截断，家数口径待核）。同日 DREAM HOTEL「盗梦笔记」正式上线：写下一个梦，看见它。"},
-    {t:"HYSTON HOTEL「另一个我没睡」", s:"勒点梦境酒店", k:"HOTEL", m:"10.06", d:"一个很小、但觉得很重要的产品。同期 10 月 3 日、4 日 HYSTON HOTEL 发布“满房”海报。"},
-    {t:"HYSTON 短剧", s:"第一个视频发布", k:"FILM", m:"10.08", d:"短剧第一个视频在 TikTok 上线，配文提到被不同国家的观众看到（正文待核）。"},
-    {t:"《无史之城》", s:"AI 原创科幻短片", k:"FILM", m:"09.15", d:"一个十年前的设想，如今 4 小时完成 6 分钟科幻短片制作。"},
+    {t:"AI HYSTON CUT 1.0", s:"一个指令剪辑 · 字幕识别", k:"AI", m:"10.02", d:"10.06 一条指令跑通短视频剪辑、字幕、文案、发布与运营（两条指令 25 条短视频，人工操作不到三分钟）；10.07 首个 1 小时 12 分钟素材、一次输出、字幕零失误，耗时 21 分 53 秒，7 分 39 秒成片；10.08 一个指令剪辑 1 小时 / 2.7GB 素材并交付三个整包版本。"},
+    {t:"HYSTON TALENT v0.2.1", s:"中澳跨境数字人才平台", k:"PLATFORM", m:"10.09", d:"中澳双端网站开放：4,789 位中国人才资源、1,500+ 家澳洲企业资源库（已有资源积累，不等于注册用户数）；AI 只做分类与整理，不擅自录用、不未经授权向雇主提供资料。从写代码到上线用时不到一个小时。"},
+    {t:"DREAM HOTEL「盗梦笔记」", s:"HYSTON HOTEL 第三家店欢迎合作", k:"HOTEL", m:"10.09", d:"把昨夜的梦变成一张海报、一首歌、一支短片和一首诗；不解梦、不作心理或医学判断；梦境记录只存在本机浏览器，HYSTON 后台无法查看。"},
+    {t:"HYSTON HOTEL「另一个我没睡」", s:"微信小程序 · 勒点梦境酒店", k:"HOTEL", m:"10.06", d:"写下梦境、录下刚醒来的声音、整理成本地档案并导出；HOTEL 从 1.0 空间、2.0 全屋智能走向 3.0 Dream Hotel / Human Experience，面向长期资本与战略伙伴开放合作。10.03、10.04 发布“满房”海报。"},
+    {t:"HYSTON DRAMA 欧美短剧", s:"HYSTON ORIGINAL SERIES · 第一集预告 MV", k:"FILM", m:"10.06 – 10.08", d:"第一集预告 MV 10.06 发布，第二集 MV 预告 10.07；10.08 第一个视频在 TikTok 被不同国家语言的观众追问剧名，账号名称头像统一为 HYSTON DRAMA。"},
+    {t:"《无史之城》", s:"AI 原创科幻短片", k:"FILM", m:"09.15", d:"一个十年前的设想，如今 4 小时完成 6 分钟科幻短片制作；9.15 发布预告片。"},
+    {t:"HYSTON 概念产品系列", s:"ORBIT · INTERVAL · VERTICA · 06", k:"DESIGN", m:"09.18 – 10.02", d:"ORBIT / 01 耳饰（9.18）、INTERVAL / 02、03、04 概念片（9.18 – 10.01）、VERTICA 01 概念车（9.24）、HYSTON 06 腕表概念（10.02）。"},
     {t:"《梦的科学边界》", s:"The Scientific Boundaries of Dreaming", k:"RESEARCH", m:"09.27", d:"专论发表；“梦科学现在究竟走到了哪里”。"},
     {t:"HYSTON 原创 IP · 酒桌游戏", s:"AI HYSTON", k:"PRODUCT", m:"09.27—28", d:"AI HYSTON 自制酒桌游戏“晚一点说再见”；HYSTON 原创 IP 视频。"}
   ],
@@ -414,13 +728,13 @@ const SYNC = {
     {was:"重庆团队在重庆", now:"“终于在重庆也开始有一点点墨尔本的感觉了。”", cap:"来源：9.18 朋友圈。"},
     {was:"一次访问 = 一次活动", now:"一个月里，同一批机构在北京、墨尔本、成都、杭州、重庆反复出现：线上圆桌、工作交流会、联络官招募，开始从“出席”变成“有下一步”。", cap:"整理自 9 月时间线；待你确认措辞。"}
   ],
-  nextH:"十月，接下来要落地的事。",
+  nextH:"十月，接下来要落地的五站。",
   next:[
-    {d:"10月", w:"新加坡 · Anthropic 本地团队交流", s:"与 Anthropic 新加坡本地团队的交流，日期待定"},
-    {d:"10月", w:"南京 · 南京大学鼓楼校区", s:"江苏省人工智能学会与 HYSTON 团队交流会，日期待定"},
-    {d:"10月", w:"香港 · 公司落地", s:"HYSTON HK 公司落地，与 HK COMING SOON 预告同步推进"},
-    {d:"10月", w:"美国 · 旧金山—洛杉矶 团队落地", s:"HYSTON 美国团队在旧金山与洛杉矶落地"},
-    {d:"10月", w:"北京 · 北京市侨联 · 清华大学", s:"侨界人才发展研修班，清华大学，日期待定"},
+    {d:"10月", w:"新加坡 · Anthropic 本地团队交流", s:"与 Anthropic 新加坡本地团队面对面交流；日期待定"},
+    {d:"10月", w:"南京 · 南京大学鼓楼校区", s:"江苏省人工智能学会 × HYSTON 团队交流会；日期待定"},
+    {d:"10月", w:"香港 · 公司落地", s:"HYSTON HK 公司落地，9.29 已发布 COMING SOON 预告"},
+    {d:"10月", w:"美国 · 旧金山 — 洛杉矶 团队落地", s:"HYSTON 美国团队在旧金山与洛杉矶两地落地（地图未含美国节点）"},
+    {d:"10月", w:"北京 · 北京市侨联 · 清华大学", s:"北京市侨联侨界人才发展研修班（清华大学）；日期待定"},
     {d:"10.17", w:"上海 · AFL CHINA", s:"9.24 约定，上海见"},
     {d:"OCT", w:"HYSTON 短剧 · HUMAN ARCHIVE / LIFE ARCHIVE", s:"首支视频之后的后续发布；更多合作伙伴与本地客户"},
     {d:"10.31", w:"SYNC+ 10", s:"下一期月报"}
